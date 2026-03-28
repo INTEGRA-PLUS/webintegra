@@ -1,0 +1,109 @@
+import React, { useState, useEffect } from 'react';
+import { Menu, X } from 'lucide-react';
+
+export default function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const navLinks = [
+    { label: 'Inicio', href: '#inicio' },
+    { label: 'Planes', href: '#planes' },
+    { label: 'Quiénes somos', href: '#quienes-somos' },
+    { label: 'Mi Pago', href: '#mi-pago' },
+    { label: 'Contacto', href: '#contacto' },
+  ];
+
+  return (
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled
+          ? 'bg-velonet-purple/90 backdrop-blur-md shadow-lg py-2'
+          : 'bg-transparent py-4'
+      }`}
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className={`flex justify-between items-center h-20 transition-all duration-500 rounded-3xl px-8 border ${
+          isScrolled 
+            ? 'bg-velonet-purple/40 backdrop-blur-2xl border-white/20 shadow-[0_20px_50px_rgba(0,0,0,0.3)]' 
+            : 'bg-white/5 backdrop-blur-md border-white/10'
+        }`}>
+          {/* Logo */}
+          <div className="flex-shrink-0">
+            <a href="/" className="flex items-center gap-3 group">
+              <img 
+                src="/images/empresa/logo.png" 
+                alt="Redes Tevesat S.A.S" 
+                className="h-10 md:h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300" 
+              />
+              <div className="flex flex-col">
+                <span className="text-white font-black text-xs md:text-sm tracking-tighter leading-none group-hover:text-velonet-orange transition-colors uppercase">Redes Tevesat</span>
+                <span className="text-velonet-orange font-black text-[8px] md:text-[10px] tracking-[0.2em] leading-none uppercase mt-1">S.A.S</span>
+              </div>
+            </a>
+          </div>
+
+          {/* Desktop Links */}
+          <div className="hidden md:flex items-center space-x-10">
+            {navLinks.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                className="text-xs font-black uppercase tracking-[0.2em] text-white/70 hover:text-velonet-orange transition-all duration-300 relative group"
+              >
+                {link.label}
+                <span className="absolute -bottom-2 left-0 w-0 h-1 bg-velonet-orange transition-all duration-300 group-hover:w-full rounded-full"></span>
+              </a>
+            ))}
+          </div>
+
+          {/* Desktop CTA Button */}
+          <div className="hidden md:flex">
+            <button className="bg-velonet-orange text-velonet-purple px-8 py-3 rounded-2xl font-black uppercase text-[10px] tracking-widest hover:bg-white transition-all duration-500 transform hover:scale-105 shadow-[0_10px_30px_rgba(255,170,0,0.3)]">
+              Contratar
+            </button>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <div className="md:hidden flex items-center">
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="text-white"
+            >
+              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
+        </div>
+
+        {/* Mobile Menu */}
+        {isMenuOpen && (
+          <div className="md:hidden mt-2 bg-velonet-purple/95 backdrop-blur-lg rounded-2xl border border-white/10 p-4 shadow-2xl">
+            <div className="space-y-1">
+              {navLinks.map((link) => (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  className="block px-4 py-3 rounded-xl text-base font-bold text-white hover:bg-white/10 hover:text-velonet-orange transition"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {link.label}
+                </a>
+              ))}
+              <button className="w-full mt-4 bg-velonet-orange text-velonet-purple py-4 rounded-xl font-black uppercase tracking-widest hover:bg-white transition">
+                Compra ahora
+              </button>
+            </div>
+          </div>
+        )}
+      </div>
+    </nav>
+  );
+}
