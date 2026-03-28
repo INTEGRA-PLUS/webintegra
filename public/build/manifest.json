@@ -1,15 +1,23 @@
 {
+  "resources/css/app.css": {
+    "file": "assets/app-Dp8Zuj0j.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
   "resources/js/Pages/Home.jsx": {
-    "file": "assets/Home-TJdRdU5V.js",
+    "file": "assets/Home-C3nKZ94l.js",
     "name": "Home",
     "src": "resources/js/Pages/Home.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx"
+    ],
+    "css": [
+      "assets/app-Dp8Zuj0j.css"
     ]
   },
   "resources/js/app.jsx": {
-    "file": "assets/app-CrqC49QP.js",
+    "file": "assets/app-C3OSRvbh.js",
     "name": "app",
     "src": "resources/js/app.jsx",
     "isEntry": true,
