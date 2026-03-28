@@ -1,6 +1,6 @@
 {
   "resources/js/Pages/Home.jsx": {
-    "file": "assets/Home-DE7ex0ns.js",
+    "file": "assets/Home-TJdRdU5V.js",
     "name": "Home",
     "src": "resources/js/Pages/Home.jsx",
     "isDynamicEntry": true,
@@ -9,7 +9,7 @@
     ]
   },
   "resources/js/app.jsx": {
-    "file": "assets/app-BVDrK1pL.js",
+    "file": "assets/app-CrqC49QP.js",
     "name": "app",
     "src": "resources/js/app.jsx",
     "isEntry": true,
@@ -17,7 +17,7 @@
       "resources/js/Pages/Home.jsx"
     ],
     "css": [
-      "assets/app-BJGEvp2E.css"
+      "assets/app-Dp8Zuj0j.css"
     ]
   }
 }

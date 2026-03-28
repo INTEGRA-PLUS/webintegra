@@ -25,11 +25,11 @@ export default function DiscoverSection() {
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
         {/* Left Side: Text and CTA */}
         <div className="lg:w-1/3 text-left">
-          <h2 className="text-3xl md:text-4xl font-black text-velonet-purple mb-10 leading-tight">
+          <h2 className="text-3xl md:text-4xl font-black text-tevesat-tertiary mb-10 leading-tight">
             ¡Descubre todo lo que Velonet hace por ti!
           </h2>
           
-          <button className="flex items-center gap-3 bg-gradient-to-r from-velonet-purple to-velonet-orange text-white px-8 py-4 rounded-full font-black uppercase tracking-widest hover:scale-105 transition-transform duration-300 shadow-xl shadow-velonet-orange/20">
+          <button className="flex items-center gap-3 bg-gradient-to-r from-tevesat-tertiary to-tevesat-secondary text-white px-8 py-4 rounded-full font-black uppercase tracking-widest hover:scale-105 transition-transform duration-300 shadow-xl shadow-tevesat-secondary/20">
             Compra ahora <MessageCircle size={24} />
           </button>
         </div>
@@ -43,12 +43,12 @@ export default function DiscoverSection() {
                 <img src={card.image} alt={card.title} className="w-full h-full object-cover" />
               </div>
               
-              <h3 className="text-xl font-black text-velonet-purple mb-2 tracking-tight">
+              <h3 className="text-xl font-black text-tevesat-tertiary mb-2 tracking-tight">
                 {card.title}
               </h3>
               
               {/* Orange Underline */}
-              <div className="w-12 h-1 bg-velonet-orange rounded-full mb-4"></div>
+              <div className="w-12 h-1 bg-tevesat-secondary rounded-full mb-4"></div>
               
               <p className="text-gray-500 font-medium leading-relaxed">
                 {card.description}

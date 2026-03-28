@@ -5,7 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>">
 
-        <title inertia><?php echo e(config('app.name', 'Velonet')); ?></title>
+        <title inertia><?php echo e(config('app.name', 'Redes Tevesat S.A.S')); ?></title>
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="/images/empresa/logo.png">
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">

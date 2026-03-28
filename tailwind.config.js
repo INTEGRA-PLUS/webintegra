@@ -6,12 +6,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        velonet: {
-          orange: '#FFAA00',
-          purple: '#4B2C6F',
-          'purple-light': '#592582',
-          dark: '#1A1A2E',
-          accent: '#FF8533',
+        tevesat: {
+          primary: '#b6c44e', // Lime Green
+          secondary: '#d3821a', // Orange/Amber
+          tertiary: '#114a96', // Deep Blue
+          'primary-light': '#c8d46e',
+          'tertiary-dark': '#0a2e5d',
         },
       },
       fontFamily: {

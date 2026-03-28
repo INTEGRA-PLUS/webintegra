@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function TvSection() {
   return (
-    <section className="bg-velonet-orange relative overflow-hidden py-16 md:py-0">
+    <section className="bg-tevesat-secondary relative overflow-hidden py-16 md:py-0">
       {/* Abstract Glowing Curves (Better than just an image) */}
       <div className="absolute top-0 left-0 w-full h-full pointer-events-none overflow-hidden">
         <div className="absolute -top-1/4 -right-1/4 w-[800px] h-[800px] bg-white opacity-10 rounded-full blur-[120px]"></div>
@@ -15,13 +15,13 @@ export default function TvSection() {
         <div className="md:w-1/2 text-white text-center md:text-left py-12 md:py-32">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mb-10 leading-[1.1] tracking-tight drop-shadow-lg">
             DISFRUTA DE LOS <br />
-            <span className="text-velonet-purple">MEJORES CANALES</span> <br />
+            <span className="text-tevesat-tertiary">MEJORES CANALES</span> <br />
             DE TELEVISIÓN, PARA <br />
             TU FAMILIA.
           </h2>
           
           <div className="flex flex-col sm:flex-row items-center gap-6">
-            <button className="bg-velonet-purple text-white px-10 py-5 rounded-2xl font-black uppercase text-sm tracking-[0.2em] shadow-2xl hover:bg-velonet-purple-light hover:scale-105 transition-all w-full sm:w-auto">
+            <button className="bg-tevesat-tertiary text-white px-10 py-5 rounded-2xl font-black uppercase text-sm tracking-[0.2em] shadow-2xl hover:bg-tevesat-tertiary-light hover:scale-105 transition-all w-full sm:w-auto">
               Compra sin complicaciones
             </button>
             <div className="flex items-center gap-4 bg-white/10 backdrop-blur-md px-6 py-4 rounded-2xl border border-white/10">

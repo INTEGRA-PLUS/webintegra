@@ -86,22 +86,22 @@ export default function ContactForm() {
   return (
     <section id="contacto" className="py-16 md:py-24 px-4 md:px-8 bg-gray-50 relative overflow-hidden">
       {/* Decorative background element */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-velonet-orange/5 rounded-full blur-[120px] -mr-64 -mt-64"></div>
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-tevesat-secondary/5 rounded-full blur-[120px] -mr-64 -mt-64"></div>
 
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="flex flex-col lg:flex-row gap-16 items-center">
           
           {/* Left Side: Title & Info */}
           <div className="lg:w-2/5 text-center lg:text-left">
-            <div className="inline-block bg-velonet-purple/5 px-4 py-1 rounded-full border border-velonet-purple/10 mb-6 font-black uppercase text-xs tracking-widest text-velonet-purple">
+            <div className="inline-block bg-tevesat-tertiary/5 px-4 py-1 rounded-full border border-tevesat-tertiary/10 mb-6 font-black uppercase text-xs tracking-widest text-tevesat-tertiary">
               Contacto Directo
             </div>
-            <h2 className="text-4xl md:text-5xl font-black text-velonet-purple mb-6 leading-tight tracking-tighter">
+            <h2 className="text-4xl md:text-5xl font-black text-tevesat-tertiary mb-6 leading-tight tracking-tighter">
               ¿LISTO PARA <br />
-              <span className="text-velonet-orange">CONECTARTE?</span>
+              <span className="text-tevesat-secondary">CONECTARTE?</span>
             </h2>
-            <p className="text-gray-500 text-lg font-medium max-w-md mx-auto lg:mx-0 border-l-4 border-velonet-orange/20 pl-6">
-              Déjanos tus datos y un experto te llamará en menos de <span className="text-velonet-purple font-black">10 minutos</span> para darte la mejor oferta.
+            <p className="text-gray-500 text-lg font-medium max-w-md mx-auto lg:mx-0 border-l-4 border-tevesat-secondary/20 pl-6">
+              Déjanos tus datos y un experto te llamará en menos de <span className="text-tevesat-tertiary font-black">10 minutos</span> para darte la mejor oferta.
             </p>
           </div>
 
@@ -109,14 +109,14 @@ export default function ContactForm() {
           <div className="lg:w-3/5 w-full">
             <div className="bg-white rounded-[3rem] shadow-[0_30px_100px_rgba(0,0,0,0.05)] border border-gray-100 p-8 md:p-10 relative overflow-hidden">
               {/* Form Accent */}
-              <div className="absolute top-0 left-0 w-2 h-full bg-velonet-orange"></div>
+              <div className="absolute top-0 left-0 w-2 h-full bg-tevesat-secondary"></div>
 
               {submitted ? (
                 <div className="py-12 text-center animate-fadeIn">
                   <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
                     <CheckCircle className="text-green-600" size={40} />
                   </div>
-                  <h3 className="text-3xl font-black text-velonet-purple mb-2 uppercase tracking-tighter">¡LISTO!</h3>
+                  <h3 className="text-3xl font-black text-tevesat-tertiary mb-2 uppercase tracking-tighter">¡LISTO!</h3>
                   <p className="text-gray-500 font-medium">Pronto un asesor te contactará.</p>
                 </div>
               ) : (
@@ -129,24 +129,24 @@ export default function ContactForm() {
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-1">
-                      <label className="text-[10px] font-black uppercase tracking-widest text-velonet-purple/40 ml-1">Nombre</label>
+                      <label className="text-[10px] font-black uppercase tracking-widest text-tevesat-tertiary/40 ml-1">Nombre</label>
                       <input
                         type="text"
                         name="nombre"
                         value={formData.nombre}
                         onChange={handleChange}
-                        className="w-full px-5 py-4 bg-gray-50 border-none rounded-2xl focus:ring-2 focus:ring-velonet-orange/20 text-velonet-purple font-bold transition-all text-sm"
+                        className="w-full px-5 py-4 bg-gray-50 border-none rounded-2xl focus:ring-2 focus:ring-tevesat-secondary/20 text-tevesat-tertiary font-bold transition-all text-sm"
                         placeholder="Alejandro R."
                       />
                     </div>
                     <div className="space-y-1">
-                      <label className="text-[10px] font-black uppercase tracking-widest text-velonet-purple/40 ml-1">Teléfono</label>
+                      <label className="text-[10px] font-black uppercase tracking-widest text-tevesat-tertiary/40 ml-1">Teléfono</label>
                       <input
                         type="tel"
                         name="telefono"
                         value={formData.telefono}
                         onChange={handleChange}
-                        className="w-full px-5 py-4 bg-gray-50 border-none rounded-2xl focus:ring-2 focus:ring-velonet-orange/20 text-velonet-purple font-bold transition-all text-sm"
+                        className="w-full px-5 py-4 bg-gray-50 border-none rounded-2xl focus:ring-2 focus:ring-tevesat-secondary/20 text-tevesat-tertiary font-bold transition-all text-sm"
                         placeholder="300..."
                       />
                     </div>
@@ -154,37 +154,37 @@ export default function ContactForm() {
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-1">
-                      <label className="text-[10px] font-black uppercase tracking-widest text-velonet-purple/40 ml-1">Email</label>
+                      <label className="text-[10px] font-black uppercase tracking-widest text-tevesat-tertiary/40 ml-1">Email</label>
                       <input
                         type="email"
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
-                        className="w-full px-5 py-4 bg-gray-50 border-none rounded-2xl focus:ring-2 focus:ring-velonet-orange/20 text-velonet-purple font-bold transition-all text-sm"
+                        className="w-full px-5 py-4 bg-gray-50 border-none rounded-2xl focus:ring-2 focus:ring-tevesat-secondary/20 text-tevesat-tertiary font-bold transition-all text-sm"
                         placeholder="email@tevesat.co"
                       />
                     </div>
                     <div className="space-y-1">
-                      <label className="text-[10px] font-black uppercase tracking-widest text-velonet-purple/40 ml-1">Municipio</label>
+                      <label className="text-[10px] font-black uppercase tracking-widest text-tevesat-tertiary/40 ml-1">Municipio</label>
                       <input
                         type="text"
                         name="municipio"
                         value={formData.municipio}
                         onChange={handleChange}
-                        className="w-full px-5 py-4 bg-gray-50 border-none rounded-2xl focus:ring-2 focus:ring-velonet-orange/20 text-velonet-purple font-bold transition-all text-sm"
+                        className="w-full px-5 py-4 bg-gray-50 border-none rounded-2xl focus:ring-2 focus:ring-tevesat-secondary/20 text-tevesat-tertiary font-bold transition-all text-sm"
                         placeholder="Antioquia"
                       />
                     </div>
                   </div>
 
                   <div className="space-y-1">
-                    <label className="text-[10px] font-black uppercase tracking-widest text-velonet-purple/40 ml-1">Mensaje</label>
+                    <label className="text-[10px] font-black uppercase tracking-widest text-tevesat-tertiary/40 ml-1">Mensaje</label>
                     <textarea
                       name="mensaje"
                       value={formData.mensaje}
                       onChange={handleChange}
                       rows="2"
-                      className="w-full px-5 py-4 bg-gray-50 border-none rounded-2xl focus:ring-2 focus:ring-velonet-orange/20 text-velonet-purple font-bold transition-all text-sm resize-none"
+                      className="w-full px-5 py-4 bg-gray-50 border-none rounded-2xl focus:ring-2 focus:ring-tevesat-secondary/20 text-tevesat-tertiary font-bold transition-all text-sm resize-none"
                       placeholder="Me interesan los 1000 Megas..."
                     ></textarea>
                   </div>
@@ -192,7 +192,7 @@ export default function ContactForm() {
                   <button
                     type="submit"
                     disabled={loading}
-                    className="w-full bg-velonet-purple text-white py-5 rounded-2xl font-black uppercase tracking-[0.2em] text-xs hover:bg-velonet-orange hover:text-velonet-purple transition-all duration-300 shadow-xl shadow-velonet-purple/10 disabled:opacity-50"
+                    className="w-full bg-tevesat-tertiary text-white py-5 rounded-2xl font-black uppercase tracking-[0.2em] text-xs hover:bg-tevesat-secondary hover:text-tevesat-tertiary transition-all duration-300 shadow-xl shadow-tevesat-tertiary/10 disabled:opacity-50"
                   >
                     {loading ? 'ENVIANDO...' : 'SOLICITAR ASESORÍA'}
                   </button>

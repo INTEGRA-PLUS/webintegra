@@ -3,18 +3,18 @@ import { MapPin } from 'lucide-react';
 
 export default function CoverageSection() {
   return (
-    <section className="py-24 md:py-32 px-4 md:px-8 bg-velonet-purple relative overflow-hidden">
+    <section className="py-24 md:py-32 px-4 md:px-8 bg-tevesat-tertiary relative overflow-hidden">
       {/* Decorative background accent */}
-      <div className="absolute top-1/2 left-0 w-[500px] h-[500px] bg-velonet-orange/5 rounded-full blur-[120px] -translate-y-1/2 -ml-64"></div>
+      <div className="absolute top-1/2 left-0 w-[500px] h-[500px] bg-tevesat-secondary/5 rounded-full blur-[120px] -translate-y-1/2 -ml-64"></div>
 
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Title */}
         <div className="text-center mb-20 text-white">
-          <div className="inline-block bg-white/5 backdrop-blur-md px-4 py-1 rounded-full border border-white/10 mb-6 font-black uppercase text-xs tracking-widest text-velonet-orange">
+          <div className="inline-block bg-white/5 backdrop-blur-md px-4 py-1 rounded-full border border-white/10 mb-6 font-black uppercase text-xs tracking-widest text-tevesat-secondary">
             Nuestra Red
           </div>
           <h2 className="text-5xl md:text-7xl font-black mb-6 leading-tight">
-            LLEGAMOS A <span className="text-velonet-orange text-outline-white">CUALQUIER LUGAR</span>
+            LLEGAMOS A <span className="text-tevesat-secondary text-outline-white">CUALQUIER LUGAR</span>
           </h2>
           <p className="text-white/60 text-xl max-w-2xl mx-auto font-medium leading-relaxed">
             Nuestra infraestructura de Fibra Óptica está lista para conectarte con la máxima velocidad disponible en Medellín y Antioquia.
@@ -25,9 +25,9 @@ export default function CoverageSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Map Placeholder */}
           <div className="relative group rounded-[3rem] overflow-hidden bg-white/5 border border-white/10 shadow-2xl">
-            <div className="absolute inset-0 bg-gradient-to-br from-velonet-purple via-velonet-purple/80 to-velonet-purple-light/20 flex items-center justify-center">
+            <div className="absolute inset-0 bg-gradient-to-br from-tevesat-tertiary via-tevesat-tertiary/80 to-tevesat-tertiary-light/20 flex items-center justify-center">
               <div className="text-center group-hover:scale-110 transition-transform duration-700">
-                <MapPin className="w-24 h-24 text-velonet-orange mx-auto mb-6 opacity-80" strokeWidth={1} />
+                <MapPin className="w-24 h-24 text-tevesat-secondary mx-auto mb-6 opacity-80" strokeWidth={1} />
                 <p className="text-white font-black uppercase text-xs tracking-[0.3em] opacity-40">Ver mapa interactivo completo</p>
               </div>
             </div>
@@ -44,8 +44,8 @@ export default function CoverageSection() {
 
             <div className="space-y-10 mb-12">
               <div className="flex items-start gap-6 group">
-                <div className="w-12 h-12 bg-velonet-orange rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:rotate-12 transition-transform duration-500">
-                  <div className="w-4 h-4 rounded-full bg-velonet-purple"></div>
+                <div className="w-12 h-12 bg-tevesat-secondary rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:rotate-12 transition-transform duration-500">
+                  <div className="w-4 h-4 rounded-full bg-tevesat-tertiary"></div>
                 </div>
                 <div>
                   <p className="font-black text-xl uppercase tracking-wider mb-2">Medellín Centro</p>
@@ -55,7 +55,7 @@ export default function CoverageSection() {
 
               <div className="flex items-start gap-6 group">
                 <div className="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:rotate-12 transition-transform duration-500 border border-white/10">
-                  <div className="w-4 h-4 rounded-full bg-velonet-orange"></div>
+                  <div className="w-4 h-4 rounded-full bg-tevesat-secondary"></div>
                 </div>
                 <div>
                   <p className="font-black text-xl uppercase tracking-wider mb-2">Área Metropolitana</p>
@@ -65,7 +65,7 @@ export default function CoverageSection() {
 
               <div className="flex items-start gap-6 group">
                 <div className="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:rotate-12 transition-transform duration-500 border border-white/10">
-                  <div className="w-4 h-4 rounded-full bg-velonet-orange"></div>
+                  <div className="w-4 h-4 rounded-full bg-tevesat-secondary"></div>
                 </div>
                 <div>
                   <p className="font-black text-xl uppercase tracking-wider mb-2">Municipios Antioquia</p>
@@ -75,7 +75,7 @@ export default function CoverageSection() {
             </div>
 
             {/* CTA Button */}
-            <button className="w-full bg-velonet-orange text-velonet-purple py-6 rounded-2xl font-black uppercase tracking-[0.2em] transform hover:scale-105 active:scale-95 transition-all duration-300 shadow-2xl shadow-velonet-orange/30">
+            <button className="w-full bg-tevesat-primary text-tevesat-tertiary py-6 rounded-2xl font-black uppercase tracking-[0.2em] transform hover:scale-105 active:scale-95 transition-all duration-300 shadow-2xl shadow-tevesat-primary/30">
               Verificar Cobertura
             </button>
           </div>
@@ -84,7 +84,7 @@ export default function CoverageSection() {
         {/* Coverage Stats */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-24">
           <div className="bg-white/5 backdrop-blur-xl rounded-3xl p-10 border border-white/10 text-center hover:bg-white/10 transition-colors duration-500">
-            <p className="text-5xl font-black text-velonet-orange mb-4 tracking-tighter">87%</p>
+            <p className="text-5xl font-black text-tevesat-secondary mb-4 tracking-tighter">87%</p>
             <p className="text-white/40 font-black uppercase text-[10px] tracking-[0.3em]">Área Metropolitana</p>
           </div>
           <div className="bg-white/5 backdrop-blur-xl rounded-3xl p-10 border border-white/10 text-center hover:bg-white/10 transition-colors duration-500">

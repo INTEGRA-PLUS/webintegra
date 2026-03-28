@@ -19,11 +19,11 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: theme('colors.velonet.purple');
+  background: theme('colors.tevesat.tertiary');
 }
 
 ::-webkit-scrollbar-thumb {
-  background: theme('colors.velonet.orange');
+  background: theme('colors.tevesat.secondary');
   border-radius: 10px;
   box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
 }
@@ -34,8 +34,8 @@ body {
 
 /* Custom Selection */
 ::selection {
-  background: theme('colors.velonet.orange');
-  color: theme('colors.velonet.purple');
+  background: theme('colors.tevesat.secondary');
+  color: theme('colors.tevesat.tertiary');
 }
 
 /* Animations & Utils */
@@ -59,7 +59,7 @@ body {
 }
 
 .text-outline-purple {
-  -webkit-text-stroke: 1px theme('colors.velonet.purple');
+  -webkit-text-stroke: 1px theme('colors.tevesat.tertiary');
 }
 
 .text-outline-white {
