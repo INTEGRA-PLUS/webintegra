@@ -28,7 +28,7 @@ export default function PromotionModal() {
   };
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center px-4">
+    <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 overflow-y-auto">
       {/* Backdrop */}
       <div 
         className="absolute inset-0 bg-tevesat-tertiary-dark/80 backdrop-blur-sm animate-fadeIn"
@@ -36,14 +36,14 @@ export default function PromotionModal() {
       ></div>
 
       {/* Modal Content */}
-      <div className="relative w-full max-w-lg bg-gradient-to-br from-tevesat-secondary to-tevesat-tertiary-dark rounded-[2.5rem] p-8 md:p-10 border border-white/10 shadow-[0_20px_60px_rgba(236,50,55,0.15)] animate-modalIn">
+      <div className="relative w-full max-w-lg bg-gradient-to-br from-tevesat-secondary to-tevesat-tertiary-dark rounded-[2rem] md:rounded-[2.5rem] p-6 md:p-10 border border-white/10 shadow-[0_20px_60px_rgba(236,50,55,0.15)] animate-modalIn my-auto">
         
         {/* Close Button */}
         <button 
           onClick={() => setIsOpen(false)}
-          className="absolute top-6 right-6 text-white/50 hover:text-white transition-colors"
+          className="absolute top-4 right-4 md:top-6 md:right-6 text-white/50 hover:text-white transition-colors z-20"
         >
-          <X size={28} />
+          <X size={24} className="md:w-7 md:h-7" />
         </button>
 
         {/* Promo Content */}
@@ -54,19 +54,19 @@ export default function PromotionModal() {
                 Lleva Internet
               </div>
               
-              <h4 className="text-white font-black text-2xl md:text-3xl uppercase tracking-tighter mb-2">
+              <h4 className="text-white font-black text-xl md:text-3xl uppercase tracking-tighter mb-1">
                 20% DESCUENTO
               </h4>
-              <h2 className="text-tevesat-primary font-black text-4xl md:text-5xl uppercase leading-none mb-6">
+              <h2 className="text-tevesat-primary font-black text-3xl md:text-5xl uppercase leading-none mb-6">
                 Internet 1000 megas
               </h2>
               
               <div className="mb-8">
-                <p className="text-white/70 font-bold uppercase text-sm mb-1">Mensual desde</p>
+                <p className="text-white/70 font-bold uppercase text-[10px] md:text-sm mb-1">Mensual desde</p>
                 <div className="flex items-center justify-center gap-2">
-                  <span className="text-5xl md:text-6xl font-black text-tevesat-primary">$79.900</span>
+                  <span className="text-4xl md:text-6xl font-black text-tevesat-primary">$79.900</span>
                 </div>
-                <p className="text-white/40 line-through font-bold text-lg">luego $99.900 x mes</p>
+                <p className="text-white/40 line-through font-bold text-base md:text-lg">luego $99.900 x mes</p>
               </div>
 
               <div className="bg-white/5 rounded-2xl p-4 mb-8 border border-white/5">
