@@ -1,3 +1,5 @@
+import themeColors from './resources/theme.js';
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -7,11 +9,15 @@ export default {
     extend: {
       colors: {
         tevesat: {
-          primary: '#b6c44e', // Lime Green
-          secondary: '#d3821a', // Orange/Amber
-          tertiary: '#114a96', // Deep Blue
-          'primary-light': '#c8d46e',
-          'tertiary-dark': '#0a2e5d',
+          // COLOR_PRINCIPAL (Rojo) - Se usa para acentos, botones y secciones destacadas
+          primary: themeColors.COLOR_PRINCIPAL,
+          // COLOR_SECUNDARIO (Negro/Gris) - Se usa para fondos oscuros y contrastes elegantes
+          secondary: themeColors.COLOR_SECUNDARIO,
+          // COLOR_TERCIARIO (Blanco) - Base para textos y fondos claros
+          tertiary: themeColors.COLOR_TERCIARIO,
+          
+          'primary-light': themeColors.COLOR_PRINCIPAL_LIGHT,
+          'tertiary-dark': themeColors.COLOR_TERCIARIO_DARK,
         },
       },
       fontFamily: {

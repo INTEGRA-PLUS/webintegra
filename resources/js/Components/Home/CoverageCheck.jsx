@@ -26,9 +26,9 @@ export default function CoverageCheck() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-20 bg-tevesat-tertiary relative overflow-hidden">
-      {/* Sleek Orange Separator (Thin line with gradient) */}
-      <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-tevesat-secondary to-transparent opacity-80"></div>
+    <section ref={sectionRef} className="py-20 bg-tevesat-secondary relative overflow-hidden">
+      {/* Sleek Red Separator (Thin line with gradient) */}
+      <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-tevesat-primary to-transparent opacity-80"></div>
       
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div 
@@ -38,15 +38,14 @@ export default function CoverageCheck() {
         >
           {/* Main Card */}
           <div 
-            className="rounded-[2.5rem] p-10 md:p-14 relative bg-gradient-to-br from-tevesat-tertiary-light/40 to-tevesat-tertiary border border-white/10 overflow-hidden"
-            style={{ boxShadow: '2px 2px 20px 10px #b6c44e3d inset' }}
+            className="rounded-[2.5rem] p-10 md:p-14 relative bg-gradient-to-br from-tevesat-tertiary-light/40 to-tevesat-tertiary border border-white/10 overflow-hidden shadow-[inset_2px_2px_20px_10px] shadow-tevesat-primary/30"
           >
             {/* Glow effect */}
             <div className="absolute -top-1/2 -left-1/2 w-full h-full bg-tevesat-secondary/5 rounded-full blur-[100px] pointer-events-none"></div>
 
             <div className="relative z-10 text-center">
               <h2 className="text-xl md:text-2xl font-black text-white mb-10 tracking-tight leading-relaxed max-w-3xl mx-auto">
-                Descubre si tienes cobertura con la red más confiable. <span className="text-tevesat-secondary">¡Es fácil y rápido!</span>
+                Descubre si tienes cobertura con la red más confiable. <span className="text-tevesat-primary">¡Es fácil y rápido!</span>
               </h2>
 
               {/* Form Grid */}
@@ -66,7 +65,7 @@ export default function CoverageCheck() {
                   placeholder="Dirección" 
                   className="bg-white/10 border border-white/20 rounded-2xl px-6 py-4 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-tevesat-secondary transition-all font-bold md:col-span-1"
                 />
-                <button className="bg-tevesat-secondary text-tevesat-tertiary font-black uppercase text-xs tracking-tighter hover:bg-white hover:scale-105 transition-all duration-300 py-4 px-6 rounded-2xl shadow-xl shadow-tevesat-secondary/20">
+                <button className="bg-tevesat-primary text-white font-black uppercase text-[12px] tracking-tighter hover:bg-white hover:text-tevesat-primary hover:scale-105 transition-all duration-300 py-4 px-6 rounded-2xl shadow-xl shadow-tevesat-primary/30">
                   Consulta tu cobertura aquí
                 </button>
               </div>

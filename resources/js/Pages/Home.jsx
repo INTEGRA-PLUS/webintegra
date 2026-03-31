@@ -5,7 +5,7 @@ import ServicesBar from '../Components/Home/ServicesBar';
 import PlansSection from '../Components/Home/PlansSection';
 import DiscoverSection from '../Components/Home/DiscoverSection';
 import CoverageCheck from '../Components/Home/CoverageCheck';
-import WhyTevesat from '../Components/Home/WhyVelonet';
+import WhyTevesat from '../Components/Home/WhyTevesat';
 import TvSection from '../Components/Home/TvSection';
 import MyPayment from '../Components/Home/MyPayment';
 import CoverageSection from '../Components/Home/CoverageSection';
@@ -16,12 +16,12 @@ import PromotionModal from '../Components/Home/PromotionModal';
 
 
 /**
- * Home Page - Página principal de Redes Tevesat S.A.S
+ * Home Page - Página principal de ${import.meta.env.VITE_NOMBRE_EMPRESA}
  * Integra todos los componentes de la página de inicio
  */
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-tevesat-tertiary-dark">
       {/* Navbar - Sticky */}
       <Navbar />
 

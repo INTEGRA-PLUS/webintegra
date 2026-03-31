@@ -36,7 +36,7 @@ export default function PromotionModal() {
       ></div>
 
       {/* Modal Content */}
-      <div className="relative w-full max-w-lg bg-gradient-to-br from-tevesat-tertiary to-tevesat-tertiary-dark rounded-[2.5rem] p-8 md:p-10 border border-white/10 shadow-[0_20px_60px_rgba(182,196,78,0.2)] animate-modalIn">
+      <div className="relative w-full max-w-lg bg-gradient-to-br from-tevesat-secondary to-tevesat-tertiary-dark rounded-[2.5rem] p-8 md:p-10 border border-white/10 shadow-[0_20px_60px_rgba(236,50,55,0.15)] animate-modalIn">
         
         {/* Close Button */}
         <button 
@@ -50,7 +50,7 @@ export default function PromotionModal() {
         {!submitted ? (
           <>
             <div className="text-center">
-              <div className="inline-block bg-tevesat-secondary text-white font-black uppercase text-[10px] tracking-widest px-6 py-2 rounded-full mb-8 shadow-lg shadow-tevesat-secondary/20">
+              <div className="inline-block bg-tevesat-primary text-white font-black uppercase text-[10px] tracking-widest px-6 py-2 rounded-full mb-8 shadow-lg shadow-tevesat-primary/20">
                 Lleva Internet
               </div>
               
@@ -70,9 +70,9 @@ export default function PromotionModal() {
               </div>
 
               <div className="bg-white/5 rounded-2xl p-4 mb-8 border border-white/5">
-                <p className="text-white/80 font-bold text-sm leading-relaxed">
+                <p className="text-white/80 font-bold text-sm leading-relaxed italic">
                   Y súmale otro de nuestros servicios:<br />
-                  <span className="text-tevesat-secondary uppercase text-xs font-black">Televisión DGO | Movilidad 48 GB | Cámaras 24H</span>
+                  <span className="text-tevesat-primary uppercase text-[10px] font-black tracking-widest">Televisión DGO | Movilidad 48 GB | Cámaras 24H</span>
                 </p>
               </div>
 
@@ -97,7 +97,7 @@ export default function PromotionModal() {
 
                 <button 
                   type="submit"
-                  className="w-full bg-tevesat-secondary text-tevesat-tertiary font-black uppercase py-5 rounded-2xl text-lg tracking-widest hover:bg-tevesat-primary transition-all duration-300 transform hover:scale-[1.02] shadow-xl shadow-tevesat-secondary/20"
+                  className="w-full bg-tevesat-primary text-white font-black uppercase py-5 rounded-2xl text-lg tracking-widest hover:bg-tevesat-primary-light transition-all duration-300 transform hover:scale-[1.02] shadow-xl shadow-tevesat-primary/30"
                 >
                   ¡Quiero la promo!
                 </button>

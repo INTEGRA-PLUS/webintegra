@@ -13,21 +13,21 @@ export default function MyPayment() {
   ];
 
   return (
-    <section id="mi-pago" className="py-24 md:py-32 px-4 md:px-8 bg-[#F8FAFC] relative overflow-hidden">
+    <section id="mi-pago" className="py-24 md:py-32 px-4 md:px-8 bg-tevesat-tertiary-dark relative overflow-hidden">
       {/* Background patterns */}
-      <div className="absolute top-0 right-0 w-1/3 h-full bg-tevesat-tertiary/5 -skew-x-12 transform origin-top translate-x-1/2"></div>
+      <div className="absolute top-0 right-0 w-1/3 h-full bg-tevesat-primary/5 -skew-x-12 transform origin-top translate-x-1/2"></div>
       
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Header */}
         <div className="text-center mb-20">
-          <div className="inline-block bg-tevesat-secondary/10 px-6 py-2 rounded-full border border-tevesat-secondary/20 mb-6">
-            <span className="text-tevesat-secondary font-black uppercase text-xs tracking-[0.3em]">Cero complicaciones</span>
+          <div className="inline-block bg-tevesat-primary/10 px-6 py-2 rounded-full border border-tevesat-primary/20 mb-6">
+            <span className="text-tevesat-primary-light font-black uppercase text-xs tracking-[0.3em]">Cero complicaciones</span>
           </div>
-          <h2 className="text-4xl md:text-6xl font-black text-tevesat-tertiary mb-8 tracking-tighter italic">
+          <h2 className="text-4xl md:text-6xl font-black text-white mb-8 tracking-tighter italic">
             Paga en segundos con nuestros <br className="hidden md:block" />
-            <span className="text-tevesat-secondary">Aliados de Confianza</span>
+            <span className="text-tevesat-primary">Aliados de Confianza</span>
           </h2>
-          <p className="text-gray-500 text-xl font-medium max-w-3xl mx-auto leading-relaxed">
+          <p className="text-white/60 text-xl font-medium max-w-3xl mx-auto leading-relaxed italic">
             Realiza tus pagos de forma segura a través de los corresponsales y plataformas más grandes del país.
           </p>
         </div>
@@ -39,14 +39,14 @@ export default function MyPayment() {
             href={digitalPayments[0].link}
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex flex-col bg-white p-8 rounded-[3.5rem] border border-gray-100 shadow-[0_20px_40px_rgba(0,0,0,0.05)] hover:shadow-2xl hover:border-tevesat-secondary hover:-translate-y-3 transition-all duration-500 text-center"
+            className="group flex flex-col bg-tevesat-secondary/40 backdrop-blur-xl p-8 rounded-[3.5rem] border border-white/5 shadow-2xl hover:border-tevesat-primary hover:-translate-y-3 transition-all duration-500 text-center"
           >
-            <div className="w-full aspect-square bg-gray-50 rounded-[2.5rem] flex items-center justify-center mb-8 group-hover:bg-tevesat-secondary/5 transition-colors">
+            <div className="w-full aspect-square bg-white/5 rounded-[2.5rem] flex items-center justify-center mb-8 group-hover:bg-tevesat-primary/10 transition-colors">
                <img src={digitalPayments[0].image} alt="PSE" className="w-[80%] h-[80%] object-contain" />
             </div>
-            <h3 className="text-2xl font-black text-tevesat-tertiary mb-2">Pagar con PSE</h3>
-            <p className="text-gray-400 font-bold uppercase text-[10px] tracking-widest mb-6">Trámite 100% Digital</p>
-            <div className="mt-auto bg-tevesat-tertiary text-white py-4 rounded-2xl font-black uppercase text-[10px] tracking-widest group-hover:bg-tevesat-secondary transition-colors">
+            <h3 className="text-2xl font-black text-white mb-2">Pagar con PSE</h3>
+            <p className="text-white/40 font-bold uppercase text-[10px] tracking-widest mb-6">Trámite 100% Digital</p>
+            <div className="mt-auto bg-tevesat-primary text-white py-4 rounded-2xl font-black uppercase text-[10px] tracking-widest group-hover:bg-white group-hover:text-tevesat-primary transition-all duration-300">
                Ir a pagar ahora
             </div>
           </a>
@@ -55,16 +55,16 @@ export default function MyPayment() {
           {physicalPayments.map((p) => (
             <div 
               key={p.name}
-              className="group flex flex-col bg-white p-8 rounded-[3.5rem] border border-gray-100 shadow-[0_20px_40px_rgba(0,0,0,0.05)] hover:shadow-2xl transition-all duration-500 text-center"
+              className="group flex flex-col bg-tevesat-secondary/40 backdrop-blur-xl p-8 rounded-[3.5rem] border border-white/5 shadow-2xl transition-all duration-500 text-center"
             >
-              <div className="w-full aspect-square bg-gray-50 rounded-[2.5rem] flex items-center justify-center mb-8 border border-gray-100/50">
+              <div className="w-full aspect-square bg-white/5 rounded-[2.5rem] flex items-center justify-center mb-8 border border-white/5">
                  <img src={p.image} alt={p.name} className="w-[85%] h-[85%] object-contain group-hover:scale-110 transition-transform duration-500" />
               </div>
-              <h3 className="text-xl font-black text-tevesat-tertiary mb-4 leading-tight">{p.name}</h3>
+              <h3 className="text-xl font-black text-white mb-4 leading-tight">{p.name}</h3>
               
-              <div className="mt-auto bg-gray-100/50 rounded-2xl p-4 border border-dashed border-gray-200 group-hover:border-tevesat-secondary/50 transition-all">
-                <p className="text-[10px] text-gray-400 font-black uppercase tracking-widest mb-1">Número de Convenio</p>
-                <p className="text-3xl font-black text-tevesat-secondary tracking-tighter">{p.convenio}</p>
+              <div className="mt-auto bg-white/5 rounded-2xl p-4 border border-dashed border-white/10 group-hover:border-tevesat-primary/50 transition-all">
+                <p className="text-[10px] text-white/40 font-black uppercase tracking-widest mb-1">Número de Convenio</p>
+                <p className="text-3xl font-black text-tevesat-primary tracking-tighter">{p.convenio}</p>
               </div>
             </div>
           ))}
@@ -72,9 +72,9 @@ export default function MyPayment() {
 
         {/* Footer Info */}
         <div className="mt-20 text-center">
-            <p className="text-gray-400 font-bold text-sm flex items-center justify-center gap-3">
-              <span className="w-2 h-2 bg-tevesat-secondary rounded-full animate-pulse"></span>
-              Disponible en todo el territorio nacional a través de sus puntos de servicio.
+            <p className="text-white/40 font-bold text-sm flex items-center justify-center gap-3 italic uppercase tracking-widest">
+              <span className="w-2 h-2 bg-tevesat-primary rounded-full animate-pulse"></span>
+              Disponible en todo el territorio nacional
             </p>
         </div>
       </div>
