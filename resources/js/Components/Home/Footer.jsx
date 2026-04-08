@@ -126,7 +126,7 @@ export default function Footer() {
 
 
           <p className="text-white/40 font-black uppercase text-[10px] tracking-[0.3em] text-center md:text-left">
-            GRA-NOR © CUIT: 20-11387169-6 | <span className="text-white">Razón Social: Rossi, Norberto Adolfo</span>
+            NIT: 901551794-1 | <span className="text-white">Razón Social: REINTECHSAS</span>
           </p>
 
           <button
