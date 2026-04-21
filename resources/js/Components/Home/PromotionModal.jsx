@@ -30,16 +30,16 @@ export default function PromotionModal() {
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center px-4">
       {/* Backdrop */}
-      <div 
+      <div
         className="absolute inset-0 bg-tevesat-tertiary-dark/80 backdrop-blur-sm animate-fadeIn"
         onClick={() => setIsOpen(false)}
       ></div>
 
       {/* Modal Content */}
       <div className="relative w-full max-w-lg bg-gradient-to-br from-tevesat-tertiary to-tevesat-tertiary-dark rounded-[2.5rem] p-8 md:p-10 border border-white/10 shadow-[0_20px_60px_rgba(182,196,78,0.2)] animate-modalIn">
-        
+
         {/* Close Button */}
-        <button 
+        <button
           onClick={() => setIsOpen(false)}
           className="absolute top-6 right-6 text-white/50 hover:text-white transition-colors"
         >
@@ -53,14 +53,14 @@ export default function PromotionModal() {
               <div className="inline-block bg-tevesat-secondary text-white font-black uppercase text-[10px] tracking-widest px-6 py-2 rounded-full mb-8 shadow-lg shadow-tevesat-secondary/20">
                 Lleva Internet
               </div>
-              
+
               <h4 className="text-white font-black text-2xl md:text-3xl uppercase tracking-tighter mb-2">
                 20% DESCUENTO
               </h4>
               <h2 className="text-tevesat-primary font-black text-4xl md:text-5xl uppercase leading-none mb-6">
-                Internet 1000 megas
+                Internet megas
               </h2>
-              
+
               <div className="mb-8">
                 <p className="text-white/70 font-bold uppercase text-sm mb-1">Mensual desde</p>
                 <div className="flex items-center justify-center gap-2">
@@ -84,8 +84,8 @@ export default function PromotionModal() {
                   </label>
                   <div className="relative">
                     <Phone className="absolute left-4 top-1/2 -translate-y-1/2 text-white/30" size={20} />
-                    <input 
-                      type="tel" 
+                    <input
+                      type="tel"
                       placeholder="Ej: 3003330000"
                       className="w-full bg-white/10 border border-white/20 rounded-2xl py-5 pl-12 pr-6 text-white font-bold placeholder:text-white/20 focus:outline-none focus:border-tevesat-primary focus:ring-1 focus:ring-tevesat-primary transition-all"
                       value={phone}
@@ -95,7 +95,7 @@ export default function PromotionModal() {
                   </div>
                 </div>
 
-                <button 
+                <button
                   type="submit"
                   className="w-full bg-tevesat-secondary text-tevesat-tertiary font-black uppercase py-5 rounded-2xl text-lg tracking-widest hover:bg-tevesat-primary transition-all duration-300 transform hover:scale-[1.02] shadow-xl shadow-tevesat-secondary/20"
                 >
