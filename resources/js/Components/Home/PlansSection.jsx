@@ -11,7 +11,7 @@ const PlanCard = ({ plan }) => {
 
   return (
     <div className="flex flex-col h-full">
-      <div 
+      <div
         className="group relative rounded-[2.5rem] p-8 md:p-10 bg-gradient-to-b from-tevesat-tertiary-light/50 to-tevesat-tertiary border border-white/10 transition-all duration-700 hover:-translate-y-2 text-center overflow-hidden flex-1 flex flex-col"
         style={{ boxShadow: '2px 2px 20px 10px #b6c44e3d inset' }}
       >
@@ -43,7 +43,7 @@ const PlanCard = ({ plan }) => {
           {plan.promo ? (
             <div className="bg-tevesat-secondary rounded-xl py-3 px-6 flex items-center gap-3 shadow-lg transform group-hover:scale-110 transition-transform duration-500">
               <div className="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center text-white">
-                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17 1H7c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2m0 18H7V5h10v14z"/></svg>
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17 1H7c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2m0 18H7V5h10v14z" /></svg>
               </div>
               <span className="text-tevesat-tertiary font-black uppercase text-[12px] tracking-tighter leading-tight text-left">
                 {plan.promo.split(' ')[0]}<br />{plan.promo.split(' ').slice(1).join(' ')}
@@ -51,14 +51,14 @@ const PlanCard = ({ plan }) => {
             </div>
           ) : (
             <div className="bg-tevesat-tertiary-dark border border-white/10 rounded-xl py-3 px-6 flex items-center gap-1">
-               <span className="text-white font-black text-xl tracking-tighter italic">DGO</span>
-               <span className="text-tevesat-primary font-black text-xl tracking-tighter italic">FLEX</span>
+              <span className="text-white font-black text-xl tracking-tighter italic">DGO</span>
+              <span className="text-tevesat-primary font-black text-xl tracking-tighter italic">FLEX</span>
             </div>
           )}
         </div>
 
         <p className="text-white/60 font-black uppercase text-[10px] tracking-widest mb-2">Por solo:</p>
-        
+
         {/* Price */}
         <div className="flex items-start justify-center mb-10 text-white">
           <span className="text-lg font-black mt-2 mr-1 text-tevesat-primary">$</span>
@@ -77,7 +77,7 @@ const PlanCard = ({ plan }) => {
             Compra ahora <MessageCircle size={20} />
           </button>
 
-          <button 
+          <button
             onClick={() => setShowBenefits(!showBenefits)}
             className="text-white/40 hover:text-white font-black uppercase text-[10px] tracking-[0.2em] underline decoration-tevesat-secondary/30 underline-offset-8 transition-all flex items-center justify-center mx-auto gap-2"
           >
@@ -91,18 +91,18 @@ const PlanCard = ({ plan }) => {
         <div className="bg-white/5 backdrop-blur-md rounded-[2rem] p-8 border border-white/10 text-left">
           {benefitsList.map((section, sidx) => (
             <div key={sidx} className="mb-6 last:mb-0">
-               <h4 className="text-tevesat-secondary font-black text-sm uppercase mb-4 flex items-center gap-2">
-                 <div className="w-1.5 h-1.5 bg-tevesat-secondary rounded-full"></div>
-                 {section.title}
-               </h4>
-               <ul className="space-y-3">
-                 {section.items.map((item, iidx) => (
-                   <li key={iidx} className="flex items-start gap-3 text-white/70 text-xs font-bold leading-relaxed">
-                     <Check size={14} className="text-tevesat-secondary flex-shrink-0 mt-0.5" />
-                     {item}
-                   </li>
-                 ))}
-               </ul>
+              <h4 className="text-tevesat-secondary font-black text-sm uppercase mb-4 flex items-center gap-2">
+                <div className="w-1.5 h-1.5 bg-tevesat-secondary rounded-full"></div>
+                {section.title}
+              </h4>
+              <ul className="space-y-3">
+                {section.items.map((item, iidx) => (
+                  <li key={iidx} className="flex items-start gap-3 text-white/70 text-xs font-bold leading-relaxed">
+                    <Check size={14} className="text-tevesat-secondary flex-shrink-0 mt-0.5" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
@@ -143,15 +143,15 @@ const StratumHeader = ({ subtitle, title, arrowText }) => (
 
 export default function PlansSection() {
   const stratum456Plans = [
-    { velocidad: '1000', precio: '99', decimal: '.900', badge: 'Oferta de lanzamiento zonas nuevas' },
-    { velocidad: '1000', precio: '99', decimal: '.900', badge: 'Oferta de lanzamiento zonas nuevas', promo: 'MOVILIDAD PROMO 48GB' },
-    { velocidad: '1000', precio: '99', decimal: '.900', badge: 'Oferta de lanzamiento zonas nuevas', promo: 'CÁMARA DE MONITOREO 24H' },
+    { velocidad: '', precio: '99', decimal: '.900', badge: 'Oferta de lanzamiento zonas nuevas' },
+    { velocidad: '', precio: '99', decimal: '.900', badge: 'Oferta de lanzamiento zonas nuevas', promo: 'MOVILIDAD PROMO 48GB' },
+    { velocidad: '', precio: '99', decimal: '.900', badge: 'Oferta de lanzamiento zonas nuevas', promo: 'CÁMARA DE MONITOREO 24H' },
   ];
 
   const stratum123Plans = [
-    { velocidad: '1000', precio: '109', decimal: '.900', priceLabel: 'Mensual' },
-    { velocidad: '1000', precio: '109', decimal: '.900', priceLabel: 'Mensual', promo: 'MOVILIDAD PROMO 48GB' },
-    { velocidad: '1000', precio: '109', decimal: '.900', priceLabel: 'Mensual', promo: 'CÁMARA DE MONITOREO 24H' },
+    { velocidad: '', precio: '109', decimal: '.900', priceLabel: 'Mensual' },
+    { velocidad: '', precio: '109', decimal: '.900', priceLabel: 'Mensual', promo: 'MOVILIDAD PROMO 48GB' },
+    { velocidad: '', precio: '109', decimal: '.900', priceLabel: 'Mensual', promo: 'CÁMARA DE MONITOREO 24H' },
   ];
 
   return (
@@ -160,10 +160,10 @@ export default function PlansSection() {
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-tevesat-tertiary-light/10 via-transparent to-transparent opacity-50"></div>
 
       <div className="max-w-7xl mx-auto flex flex-col gap-32 relative z-10">
-        
+
         {/* Stratum 4, 5, 6 Section */}
         <div className="flex flex-col lg:flex-row gap-16 items-start">
-          <StratumHeader 
+          <StratumHeader
             subtitle="Oferta de lanzamiento para nuestros planes para estratos 4, 5 y 6"
             title="¡Redes Tevesat S.A.S te ofrece la velocidad y estabilidad que necesitas en Fibra Óptica!"
             arrowText="Ver todos los planes estratos 4, 5 y 6"
@@ -179,8 +179,8 @@ export default function PlansSection() {
         <div className="flex flex-col lg:flex-row gap-16 items-start relative">
           {/* Subtle Professional Divider Line */}
           <div className="absolute -top-16 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
-          
-          <StratumHeader 
+
+          <StratumHeader
             subtitle="Nuestros planes estratos 1, 2 y 3"
             title="Conéctate con la mejor red de Fibra Óptica"
             arrowText="Ver todos los planes estratos 1, 2 y 3"
