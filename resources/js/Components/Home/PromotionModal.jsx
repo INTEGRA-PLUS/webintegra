@@ -55,7 +55,7 @@ export default function PromotionModal() {
               </div>
 
               <h4 className="text-white font-black text-2xl md:text-3xl uppercase tracking-tighter mb-2">
-                20% DESCUENTO
+                {/* 20% DESCUENTO */}
               </h4>
               <h2 className="text-tevesat-primary font-black text-4xl md:text-5xl uppercase leading-none mb-6">
                 Internet megas
