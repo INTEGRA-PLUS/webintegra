@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../Components/Home/Navbar';
 import HeroBanner from '../Components/Home/HeroBanner';
 import ServicesBar from '../Components/Home/ServicesBar';
+import ServicesOverview from '../Components/Home/ServicesOverview';
 import PlansSection from '../Components/Home/PlansSection';
 import DiscoverSection from '../Components/Home/DiscoverSection';
 import CoverageCheck from '../Components/Home/CoverageCheck';
@@ -31,8 +32,8 @@ export default function Home() {
       {/* Services Bar - Servicios principales */}
       <ServicesBar />
 
-      {/* Professional Divider */}
-      <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-gray-200 to-transparent"></div>
+      {/* Services Overview - Nueva sección profesional */}
+      <ServicesOverview />
 
       {/* Plans Section - Planes de internet con tabs */}
       <PlansSection />
@@ -72,7 +73,7 @@ export default function Home() {
 
       {/* Floating WhatsApp CTA */}
       <a 
-        href="https://wa.me/573001234567" 
+        href="https://wa.me/573142497234" 
         target="_blank" 
         rel="noopener noreferrer"
         className="fixed bottom-8 right-8 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform duration-300 animate-pulse-orange border-4 border-white"

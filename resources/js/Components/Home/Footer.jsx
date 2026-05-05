@@ -101,12 +101,12 @@ export default function Footer() {
                   </div>
                 </a>
 
-                <a href="mailto:internet@tevesat.co" className="flex items-center gap-4 group">
+                <a href="mailto:internet@reintech.co" className="flex items-center gap-4 group">
                   <div className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center text-tevesat-primary group-hover:bg-tevesat-primary group-hover:text-white transition-all duration-300">
                     <Mail size={22} strokeWidth={2.5} />
                   </div>
                   <div>
-                    <p className="text-white font-black text-sm break-all leading-none italic">internet@tevesat.co</p>
+                    <p className="text-white font-black text-sm break-all leading-none italic">internet@reintech.co</p>
                     <p className="text-white/40 text-[10px] font-black uppercase tracking-widest mt-1">Correo Soporte</p>
                   </div>
                 </a>

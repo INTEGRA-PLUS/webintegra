@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
+import { Link } from '@inertiajs/react';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,11 +17,20 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { label: 'Inicio', href: '#inicio' },
-    { label: 'Planes', href: '#planes' },
-    { label: 'Quiénes somos', href: '#quienes-somos' },
-    { label: 'Mi Pago', href: '#mi-pago' },
-    { label: 'Contacto', href: '#contacto' },
+    { label: 'Inicio', href: '/' },
+    { label: 'Planes', href: '/#planes' },
+    { label: 'Quiénes somos', href: '/#quienes-somos' },
+    { label: 'Mi Pago', href: '/#mi-pago' },
+    { label: 'Contacto', href: '/#contacto' },
+  ];
+
+  const services = [
+    { label: 'Cableado Estructurado', href: '/servicios/cableado-estructurado' },
+    { label: 'Manos Remotas', href: '/servicios/manos-remotas' },
+    { label: 'Ciberseguridad', href: '/servicios/ciberseguridad' },
+    { label: 'Redes Inalámbricas', href: '/servicios/redes-inalambricas' },
+    { label: 'Energías Renovables', href: '/servicios/energias-renovables' },
+    { label: 'CCTV', href: '/servicios/cctv' },
   ];
 
   return (
@@ -38,7 +49,7 @@ export default function Navbar() {
         }`}>
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="/" className="flex items-center gap-3 group">
+            <Link href="/" className="flex items-center gap-3 group">
               <img 
                 src="/images/empresa/logo.png" 
                 alt={import.meta.env.VITE_NOMBRE_EMPRESA} 
@@ -47,21 +58,47 @@ export default function Navbar() {
               <div className="flex flex-col">
                 <span className="text-white font-black text-xs md:text-sm tracking-tighter leading-none group-hover:text-tevesat-primary transition-colors uppercase">{import.meta.env.VITE_NOMBRE_EMPRESA}</span>
               </div>
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Links */}
-          <div className="hidden md:flex items-center space-x-10">
+          <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
               <a
                 key={link.label}
                 href={link.href}
-                className="text-xs font-black uppercase tracking-[0.2em] text-white/70 hover:text-tevesat-primary transition-all duration-300 relative group"
+                className="text-[10px] font-black uppercase tracking-[0.2em] text-white/70 hover:text-tevesat-primary transition-all duration-300 relative group"
               >
                 {link.label}
                 <span className="absolute -bottom-2 left-0 w-0 h-1 bg-tevesat-primary transition-all duration-300 group-hover:w-full rounded-full"></span>
               </a>
             ))}
+
+            {/* Services Dropdown */}
+            <div 
+              className="relative group"
+              onMouseEnter={() => setIsServicesOpen(true)}
+              onMouseLeave={() => setIsServicesOpen(false)}
+            >
+              <button className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-white/70 hover:text-tevesat-primary transition-all duration-300">
+                Servicios
+                <ChevronDown size={14} className={`transition-transform duration-300 ${isServicesOpen ? 'rotate-180' : ''}`} />
+              </button>
+              
+              <div className={`absolute top-full left-1/2 -translate-x-1/2 mt-4 w-64 bg-tevesat-tertiary-dark border border-white/10 rounded-2xl p-4 shadow-2xl transition-all duration-300 ${isServicesOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-4'}`}>
+                <div className="grid gap-2">
+                  {services.map((service) => (
+                    <Link
+                      key={service.label}
+                      href={service.href}
+                      className="block px-4 py-3 rounded-xl text-[10px] font-bold uppercase tracking-widest text-white/70 hover:bg-tevesat-primary hover:text-white transition-all"
+                    >
+                      {service.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Desktop CTA Button */}
@@ -84,18 +121,33 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-2 bg-tevesat-tertiary-dark/95 backdrop-blur-lg rounded-2xl border border-white/10 p-4 shadow-2xl">
+          <div className="md:hidden mt-2 bg-tevesat-tertiary-dark/95 backdrop-blur-lg rounded-2xl border border-white/10 p-4 shadow-2xl max-h-[80vh] overflow-y-auto">
             <div className="space-y-1">
               {navLinks.map((link) => (
                 <a
                   key={link.label}
                   href={link.href}
-                  className="block px-4 py-3 rounded-xl text-base font-bold text-white hover:bg-tevesat-primary hover:text-white transition"
+                  className="block px-4 py-3 rounded-xl text-sm font-bold text-white hover:bg-tevesat-primary hover:text-white transition"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {link.label}
                 </a>
               ))}
+              
+              <div className="border-t border-white/10 my-2 pt-2">
+                <span className="block px-4 py-2 text-[10px] font-black uppercase tracking-widest text-gray-500">Servicios</span>
+                {services.map((service) => (
+                  <Link
+                    key={service.label}
+                    href={service.href}
+                    className="block px-4 py-3 rounded-xl text-sm font-bold text-white hover:bg-tevesat-primary hover:text-white transition"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {service.label}
+                  </Link>
+                ))}
+              </div>
+
               <button className="w-full mt-4 bg-tevesat-primary text-white py-4 rounded-xl font-black uppercase tracking-widest hover:bg-tevesat-primary-light transition shadow-lg shadow-tevesat-primary/20">
                 Compra ahora
               </button>

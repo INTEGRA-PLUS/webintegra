@@ -45,10 +45,10 @@ export default function WhyTevesat() {
               <span className="text-tevesat-primary font-black uppercase text-[10px] tracking-[0.3em]">Beneficios {import.meta.env.VITE_NOMBRE_EMPRESA}</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-black text-white mb-8 leading-[1.1] tracking-tight">
-              Conéctate con la red que <span className="text-tevesat-primary">potencia</span> tu vida
+              Seguridad y <span className="text-tevesat-primary">respaldo</span> para tu vida
             </h2>
             <p className="text-white/60 text-lg font-medium leading-relaxed max-w-xl border-l-4 border-tevesat-primary/20 pl-6 group-hover:text-white transition-colors italic">
-              Descubre por qué miles de usuarios en Colombia confían en <span className="text-white">{import.meta.env.VITE_NOMBRE_EMPRESA}</span> para sus necesidades de conectividad. Con opciones de planes flexibles y un servicio al cliente inigualable.
+              En <span className="text-white">{import.meta.env.VITE_NOMBRE_EMPRESA}</span> somos tu mejor aliaddo. Brindamos la protección y el respaldo tecnológico que tu familia y empresa necesitan para estar siempre tranquilos.
             </p>
           </div>
 

@@ -90,7 +90,7 @@ export default function ContactForm() {
 
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="flex flex-col lg:flex-row gap-16 items-center">
-          
+
           {/* Left Side: Title & Info */}
           <div className="lg:w-2/5 text-center lg:text-left">
             <div className="inline-block bg-tevesat-primary/10 px-4 py-1 rounded-full border border-tevesat-primary/20 mb-6 font-black uppercase text-xs tracking-widest text-tevesat-primary">
@@ -161,7 +161,7 @@ export default function ContactForm() {
                         value={formData.email}
                         onChange={handleChange}
                         className="w-full px-5 py-4 bg-white/5 border border-white/10 rounded-2xl focus:ring-2 focus:ring-tevesat-primary/30 focus:border-tevesat-primary text-white font-bold transition-all text-sm placeholder-white/20"
-                        placeholder="email@tevesat.co"
+                        placeholder="email@reintech.co"
                       />
                     </div>
                     <div className="space-y-1">

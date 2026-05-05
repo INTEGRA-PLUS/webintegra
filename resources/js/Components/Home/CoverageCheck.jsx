@@ -65,9 +65,14 @@ export default function CoverageCheck() {
                   placeholder="Dirección" 
                   className="bg-white/10 border border-white/20 rounded-2xl px-6 py-4 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-tevesat-secondary transition-all font-bold md:col-span-1"
                 />
-                <button className="bg-tevesat-primary text-white font-black uppercase text-[12px] tracking-tighter hover:bg-white hover:text-tevesat-primary hover:scale-105 transition-all duration-300 py-4 px-6 rounded-2xl shadow-xl shadow-tevesat-primary/30">
+                <a 
+                  href="https://wa.me/573142497234" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-tevesat-primary text-white font-black uppercase text-[12px] tracking-tighter hover:bg-white hover:text-tevesat-primary hover:scale-105 transition-all duration-300 py-4 px-6 rounded-2xl shadow-xl shadow-tevesat-primary/30 text-center flex items-center justify-center"
+                >
                   Consulta tu cobertura aquí
-                </button>
+                </a>
               </div>
             </div>
           </div>
