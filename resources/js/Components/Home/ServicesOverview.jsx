@@ -42,7 +42,7 @@ export default function ServicesOverview() {
             <div className="absolute -inset-4 bg-tevesat-primary/20 rounded-[3rem] blur-2xl group-hover:bg-tevesat-primary/30 transition-all duration-700"></div>
             <div className="relative rounded-[2.5rem] overflow-hidden border border-white/10 shadow-2xl">
               <img 
-                src="/images/servicios_hogar_empresa_banner.png" 
+                src="https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=1000" 
                 alt="Diseño de Servicios Integra" 
                 className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-1000"
               />
