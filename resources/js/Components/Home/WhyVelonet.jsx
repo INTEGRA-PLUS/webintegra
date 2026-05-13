@@ -104,7 +104,7 @@ export default function WhyTevesat() {
             <div className="absolute top-0 right-0 w-96 h-96 bg-tevesat-secondary/10 rounded-full blur-[100px] -mr-48 -mt-48"></div>
             <div className="absolute bottom-0 left-0 w-96 h-96 bg-white/5 rounded-full blur-[100px] -ml-48 -mb-48"></div>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 relative z-10 divide-y md:divide-y-0 md:divide-x divide-white/10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 relative z-10 divide-y md:divide-y-0 md:divide-x divide-white/10">
                <div className="pb-12 md:pb-0 text-center animate-fade-in">
                  <p className="text-6xl md:text-7xl font-black text-tevesat-secondary mb-4 tracking-tighter drop-shadow-[0_0_20px_rgba(255,170,0,0.4)]">
                    +50K
@@ -117,13 +117,6 @@ export default function WhyTevesat() {
                    99.9%
                  </p>
                  <p className="text-white/60 font-black uppercase text-[10px] tracking-[0.4em] mt-2">Disponibilidad Real</p>
-               </div>
-               
-               <div className="pt-12 md:pt-0 text-center">
-                 <p className="text-6xl md:text-7xl font-black text-white mb-4 tracking-tighter">
-                   24/7
-                 </p>
-                 <p className="text-white/60 font-black uppercase text-[10px] tracking-[0.4em] mt-2">Soporte Humano</p>
                </div>
             </div>
          </div>

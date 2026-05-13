@@ -1,17 +1,6 @@
 import React from 'react';
 import { CreditCard, MapPin, ExternalLink } from 'lucide-react';
-
 export default function MyPayment() {
-  const physicalPayments = [
-    { name: 'Corresponsales Bancolombia', convenio: '94342', image: '/images/payments/bancolombia.png' },
-    { name: 'Efecty', convenio: '112426', image: '/images/payments/efecty.png' },
-    { name: 'Gana', convenio: '384', image: '/images/payments/gana.png' },
-  ];
-
-  const digitalPayments = [
-    { name: 'PSE / OnePay', link: 'https://pagos.onepay.la/velonet', image: '/images/payments/pse.png' },
-  ];
-
   return (
     <section id="mi-pago" className="py-24 md:py-32 px-4 md:px-8 bg-[#F8FAFC] relative overflow-hidden">
       {/* Background patterns */}
@@ -19,63 +8,36 @@ export default function MyPayment() {
       
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Header */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-16">
           <div className="inline-block bg-tevesat-secondary/10 px-6 py-2 rounded-full border border-tevesat-secondary/20 mb-6">
             <span className="text-tevesat-secondary font-black uppercase text-xs tracking-[0.3em]">Cero complicaciones</span>
           </div>
           <h2 className="text-4xl md:text-6xl font-black text-tevesat-tertiary mb-8 tracking-tighter italic">
-            Paga en segundos con nuestros <br className="hidden md:block" />
-            <span className="text-tevesat-secondary">Aliados de Confianza</span>
+            Paga en segundos con <br className="hidden md:block" />
+            <span className="text-tevesat-secondary">IntegraPay</span>
           </h2>
           <p className="text-gray-500 text-xl font-medium max-w-3xl mx-auto leading-relaxed">
-            Realiza tus pagos de forma segura a través de los corresponsales y plataformas más grandes del país.
+            Realiza tus pagos de forma rápida y segura a través de nuestra pasarela de pagos oficial.
           </p>
         </div>
 
-        {/* Payment Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Digital Payment - PSE */}
+        {/* IntegraPay Central Card */}
+        <div className="flex justify-center">
           <a 
-            href={digitalPayments[0].link}
+            href="https://redestvsat.com/pay.php"
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex flex-col bg-white p-8 rounded-[3.5rem] border border-gray-100 shadow-[0_20px_40px_rgba(0,0,0,0.05)] hover:shadow-2xl hover:border-tevesat-secondary hover:-translate-y-3 transition-all duration-500 text-center"
+            className="group flex flex-col items-center bg-white p-12 rounded-[3.5rem] border border-gray-100 shadow-[0_20px_40px_rgba(0,0,0,0.05)] hover:shadow-2xl hover:border-tevesat-secondary hover:-translate-y-3 transition-all duration-500 text-center w-full max-w-lg"
           >
-            <div className="w-full aspect-square bg-gray-50 rounded-[2.5rem] flex items-center justify-center mb-8 group-hover:bg-tevesat-secondary/5 transition-colors">
-               <img src={digitalPayments[0].image} alt="PSE" className="w-[80%] h-[80%] object-contain" />
+            <div className="w-32 h-32 bg-tevesat-tertiary/5 rounded-[2.5rem] flex items-center justify-center mb-8 group-hover:bg-tevesat-secondary/10 transition-colors">
+               <CreditCard className="w-16 h-16 text-tevesat-secondary" strokeWidth={1.5} />
             </div>
-            <h3 className="text-2xl font-black text-tevesat-tertiary mb-2">Pagar con PSE</h3>
-            <p className="text-gray-400 font-bold uppercase text-[10px] tracking-widest mb-6">Trámite 100% Digital</p>
-            <div className="mt-auto bg-tevesat-tertiary text-white py-4 rounded-2xl font-black uppercase text-[10px] tracking-widest group-hover:bg-tevesat-secondary transition-colors">
-               Ir a pagar ahora
+            <h3 className="text-3xl font-black text-tevesat-tertiary mb-4">IntegraPay</h3>
+            <p className="text-gray-400 font-bold uppercase text-xs tracking-widest mb-8">Trámite 100% Digital y Seguro</p>
+            <div className="w-full bg-tevesat-primary text-tevesat-tertiary py-5 rounded-2xl font-black uppercase text-sm tracking-[0.2em] group-hover:bg-tevesat-secondary group-hover:text-white transition-all shadow-xl shadow-tevesat-primary/20">
+               Paga Aquí
             </div>
           </a>
-
-          {/* Physical Payments */}
-          {physicalPayments.map((p) => (
-            <div 
-              key={p.name}
-              className="group flex flex-col bg-white p-8 rounded-[3.5rem] border border-gray-100 shadow-[0_20px_40px_rgba(0,0,0,0.05)] hover:shadow-2xl transition-all duration-500 text-center"
-            >
-              <div className="w-full aspect-square bg-gray-50 rounded-[2.5rem] flex items-center justify-center mb-8 border border-gray-100/50">
-                 <img src={p.image} alt={p.name} className="w-[85%] h-[85%] object-contain group-hover:scale-110 transition-transform duration-500" />
-              </div>
-              <h3 className="text-xl font-black text-tevesat-tertiary mb-4 leading-tight">{p.name}</h3>
-              
-              <div className="mt-auto bg-gray-100/50 rounded-2xl p-4 border border-dashed border-gray-200 group-hover:border-tevesat-secondary/50 transition-all">
-                <p className="text-[10px] text-gray-400 font-black uppercase tracking-widest mb-1">Número de Convenio</p>
-                <p className="text-3xl font-black text-tevesat-secondary tracking-tighter">{p.convenio}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Footer Info */}
-        <div className="mt-20 text-center">
-            <p className="text-gray-400 font-bold text-sm flex items-center justify-center gap-3">
-              <span className="w-2 h-2 bg-tevesat-secondary rounded-full animate-pulse"></span>
-              Disponible en todo el territorio nacional a través de sus puntos de servicio.
-            </p>
         </div>
       </div>
     </section>
