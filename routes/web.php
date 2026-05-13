@@ -17,3 +17,7 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 // Otras rutas pueden agregarse aquí
 // Route::get('/planes', [PlansController::class, 'index'])->name('planes');
 // Route::get('/quienes-somos', [AboutController::class, 'index'])->name('about');
+
+Route::get('/normatividad', function () {
+    return inertia('Normatividad');
+})->name('normatividad');

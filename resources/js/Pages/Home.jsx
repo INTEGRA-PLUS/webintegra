@@ -10,7 +10,6 @@ import TvSection from '../Components/Home/TvSection';
 import MyPayment from '../Components/Home/MyPayment';
 import CoverageSection from '../Components/Home/CoverageSection';
 import ContactForm from '../Components/Home/ContactForm';
-import ImageBanner from '../Components/Home/ImageBanner';
 import Footer from '../Components/Home/Footer';
 import PromotionModal from '../Components/Home/PromotionModal';
 
@@ -63,9 +62,6 @@ export default function Home() {
 
       {/* Contact Form - Formulario de contacto */}
       <ContactForm />
-
-      {/* Image Banner - Promocional */}
-      <ImageBanner />
 
       {/* Footer - Pie de página */}
       <Footer />

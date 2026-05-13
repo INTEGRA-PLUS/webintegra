@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
-export default function Navbar() {
+export default function Navbar({ alwaysSolid = false }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  
+  const activeScrolled = isScrolled || alwaysSolid;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,13 +26,13 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${activeScrolled
         ? 'bg-tevesat-tertiary/90 backdrop-blur-md shadow-lg py-2'
         : 'bg-transparent py-4'
         }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className={`flex justify-between items-center h-20 transition-all duration-500 rounded-3xl px-8 border ${isScrolled
+        <div className={`flex justify-between items-center h-20 transition-all duration-500 rounded-3xl px-8 border ${activeScrolled
           ? 'bg-tevesat-tertiary/40 backdrop-blur-2xl border-white/20 shadow-[0_20px_50px_rgba(0,0,0,0.3)]'
           : 'bg-white/5 backdrop-blur-md border-white/10'
           }`}>

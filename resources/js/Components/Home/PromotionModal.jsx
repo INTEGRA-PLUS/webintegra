@@ -72,7 +72,7 @@ export default function PromotionModal() {
               <div className="bg-white/5 rounded-2xl p-4 mb-8 border border-white/5">
                 <p className="text-white/80 font-bold text-sm leading-relaxed">
                   Y súmale otro de nuestros servicios:<br />
-                  <span className="text-tevesat-secondary uppercase text-xs font-black">Televisión DGO</span>
+                  <span className="text-tevesat-secondary uppercase text-xs font-black">Televisión</span>
                 </p>
               </div>
 
