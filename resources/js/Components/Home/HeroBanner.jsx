@@ -3,9 +3,9 @@ export default function HeroBanner() {
     <section id="inicio" className="relative h-screen flex items-center justify-start overflow-hidden pt-16">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
-        <img 
-          src="/images/hero.png" 
-          alt="Velonet Family" 
+        <img
+          src="/images/hero.png"
+          alt="Velonet Family"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-tevesat-tertiary via-tevesat-tertiary/60 to-transparent"></div>
@@ -17,11 +17,11 @@ export default function HeroBanner() {
         <div className="inline-block bg-white/10 backdrop-blur-md px-4 py-1 rounded-full border border-white/20 mb-6 animate-fadeIn">
           <span className="text-tevesat-primary font-black uppercase text-xs tracking-[0.2em]">Más cobertura, más diversión</span>
         </div>
-        
+
         <h1 className="text-5xl md:text-8xl font-black text-white mb-6 leading-[0.9] animate-fadeIn">
           VIVE EL<br />
           <span className="text-tevesat-primary">PODER DEL</span><br />
-          WI-FI 6
+          WI-FI 5G
         </h1>
 
         <p className="text-xl md:text-2xl text-white/90 mb-10 max-w-xl font-medium animate-fadeIn" style={{ animationDelay: '0.2s' }}>
@@ -31,12 +31,16 @@ export default function HeroBanner() {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-6 animate-fadeIn" style={{ animationDelay: '0.4s' }}>
-          <button className="bg-tevesat-primary text-tevesat-tertiary px-10 py-5 rounded-2xl font-black uppercase tracking-wider hover:bg-white hover:scale-105 transition-all duration-300 shadow-2xl shadow-tevesat-primary/30">
-            Me interesa
-          </button>
-          <button className="bg-white/10 backdrop-blur-md border border-white/30 text-white px-10 py-5 rounded-2xl font-black uppercase tracking-wider hover:bg-white/20 transition-all">
-            Ver cobertura
-          </button>
+          <a href="https://api.whatsapp.com/send/?phone=+573122425591&text=Hola%2C%20quiero%20conocer%20más%20sobre%20los%20planes%20de%20internet%20de%20Tevesat." target="_blank">
+            <button className="bg-tevesat-primary text-tevesat-tertiary px-10 py-5 rounded-2xl font-black uppercase tracking-wider hover:bg-white hover:scale-105 transition-all duration-300 shadow-2xl shadow-tevesat-primary/30">
+              Me interesa
+            </button>
+          </a>
+          <a href="">
+            <button className="bg-white/10 backdrop-blur-md border border-white/30 text-white px-10 py-5 rounded-2xl font-black uppercase tracking-wider hover:bg-white/20 transition-all">
+              Ver cobertura
+            </button>
+          </a>
         </div>
 
         {/* Tech Badges */}

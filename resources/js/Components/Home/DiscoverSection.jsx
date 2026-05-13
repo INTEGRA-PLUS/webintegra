@@ -9,11 +9,6 @@ export default function DiscoverSection() {
       image: '/images/gamer_man_velonet_1774657602850.png',
     },
     {
-      title: 'Móvil',
-      description: 'Mantente conectado donde quiera que estés con nuestros planes móviles.',
-      image: '/images/mobile_woman_velonet_1774657616513.png',
-    },
-    {
       title: 'TV',
       description: 'Transforma tus noches en pura diversión con los mejores canales de TV en vivo y streaming.',
       image: '/images/tv_remote_woman_velonet_1774657629715.png',
@@ -35,7 +30,7 @@ export default function DiscoverSection() {
         </div>
 
         {/* Right Side: Cards */}
-        <div className="lg:w-2/3 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-8">
           {cards.map((card, idx) => (
             <div key={idx} className="bg-white rounded-[2rem] p-6 shadow-2xl shadow-black/5 hover:-translate-y-4 transition-all duration-500">
               {/* Image Container */}

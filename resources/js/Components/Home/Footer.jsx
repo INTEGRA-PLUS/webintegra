@@ -51,7 +51,7 @@ export default function Footer() {
             <div>
               <h4 className="text-base font-black uppercase tracking-widest text-tevesat-secondary mb-8 italic">Sitios de Interés</h4>
               <ul className="space-y-4">
-                {['Planes de Internet', 'Medidor de Velocidad', 'Internet Móvil', 'Cámaras de Seguridad', 'Soluciones PYME', 'Trabaja con nosotros'].map((item) => (
+                {['Planes de Internet', 'Medidor de Velocidad', 'Soluciones PYME', 'Trabaja con nosotros'].map((item) => (
                   <li key={item}>
                     <a href="#" className="text-white/50 hover:text-white transition-all font-bold text-sm uppercase tracking-wider flex items-center gap-2 group">
                       <div className="w-1 h-1 bg-tevesat-secondary rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>

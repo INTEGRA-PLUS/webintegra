@@ -64,7 +64,7 @@ export default function PromotionModal() {
               <div className="mb-8">
                 <p className="text-white/70 font-bold uppercase text-sm mb-1">Mensual desde</p>
                 <div className="flex items-center justify-center gap-2">
-                  <span className="text-5xl md:text-6xl font-black text-tevesat-primary">$79.900</span>
+                  <span className="text-5xl md:text-6xl font-black text-tevesat-primary">$60.000</span>
                 </div>
                 <p className="text-white/40 line-through font-bold text-lg">luego $99.900 x mes</p>
               </div>
@@ -72,7 +72,7 @@ export default function PromotionModal() {
               <div className="bg-white/5 rounded-2xl p-4 mb-8 border border-white/5">
                 <p className="text-white/80 font-bold text-sm leading-relaxed">
                   Y súmale otro de nuestros servicios:<br />
-                  <span className="text-tevesat-secondary uppercase text-xs font-black">Televisión DGO | Movilidad 48 GB | Cámaras 24H</span>
+                  <span className="text-tevesat-secondary uppercase text-xs font-black">Televisión DGO</span>
                 </p>
               </div>
 

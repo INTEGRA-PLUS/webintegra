@@ -144,14 +144,10 @@ const StratumHeader = ({ subtitle, title, arrowText }) => (
 export default function PlansSection() {
   const stratum456Plans = [
     { velocidad: '', precio: '99', decimal: '.900', badge: 'Oferta de lanzamiento zonas nuevas' },
-    { velocidad: '', precio: '99', decimal: '.900', badge: 'Oferta de lanzamiento zonas nuevas', promo: 'MOVILIDAD PROMO 48GB' },
-    { velocidad: '', precio: '99', decimal: '.900', badge: 'Oferta de lanzamiento zonas nuevas', promo: 'CÁMARA DE MONITOREO 24H' },
   ];
 
   const stratum123Plans = [
     { velocidad: '', precio: '109', decimal: '.900', priceLabel: 'Mensual' },
-    { velocidad: '', precio: '109', decimal: '.900', priceLabel: 'Mensual', promo: 'MOVILIDAD PROMO 48GB' },
-    { velocidad: '', precio: '109', decimal: '.900', priceLabel: 'Mensual', promo: 'CÁMARA DE MONITOREO 24H' },
   ];
 
   return (
@@ -168,7 +164,7 @@ export default function PlansSection() {
             title="¡Redes Tevesat S.A.S te ofrece la velocidad y estabilidad que necesitas en Fibra Óptica!"
             arrowText="Ver todos los planes estratos 4, 5 y 6"
           />
-          <div className="lg:w-2/3 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="lg:w-2/3 flex flex-wrap gap-8">
             {stratum456Plans.map((plan, idx) => (
               <PlanCard key={idx} plan={plan} />
             ))}
@@ -185,7 +181,7 @@ export default function PlansSection() {
             title="Conéctate con la mejor red de Fibra Óptica"
             arrowText="Ver todos los planes estratos 1, 2 y 3"
           />
-          <div className="lg:w-2/3 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="lg:w-2/3 flex flex-wrap gap-8">
             {stratum123Plans.map((plan, idx) => (
               <PlanCard key={idx} plan={plan} />
             ))}
