@@ -113,7 +113,7 @@ export default function PromotionModal() {
           <div className="text-center py-10 animate-fadeIn">
             <CheckCircle2 size={80} className="text-tevesat-primary mx-auto mb-6" />
             <h3 className="text-3xl font-black text-white mb-4 uppercase">¡RECIBIDO!</h3>
-            <p className="text-white/70 font-bold text-lg">Te llamaremos en menos de 10 minutos para activar tu descuento.</p>
+            <p className="text-white/70 font-bold text-lg">Te llamaremos tan pronto sea posible para activar tu descuento.</p>
           </div>
         )}
       </div>

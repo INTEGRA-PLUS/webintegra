@@ -46,7 +46,7 @@ export default function ContactForm() {
     return true;
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setError('');
 
@@ -54,33 +54,11 @@ export default function ContactForm() {
       return;
     }
 
-    setLoading(true);
-
-    try {
-      // Simular envío al servidor
-      // En un proyecto real, aquí harías una llamada a tu API de Laravel
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-
-      // Resetear formulario
-      setFormData({
-        nombre: '',
-        telefono: '',
-        email: '',
-        municipio: '',
-        mensaje: '',
-      });
-
-      setSubmitted(true);
-
-      // Ocultar mensaje de éxito después de 5 segundos
-      setTimeout(() => {
-        setSubmitted(false);
-      }, 5000);
-    } catch (err) {
-      setError('Error al enviar el formulario. Intenta nuevamente.');
-    } finally {
-      setLoading(false);
-    }
+    const { nombre, telefono, email, municipio, mensaje } = formData;
+    const text = `Hola, quiero solicitar asesoría.\n*Nombre:* ${nombre}\n*Teléfono:* ${telefono}\n*Email:* ${email}\n*Municipio:* ${municipio}\n*Mensaje:* ${mensaje}`;
+    const url = `https://api.whatsapp.com/send/?phone=%2B573122425591&text=${encodeURIComponent(text)}&type=phone_number&app_absent=0`;
+    
+    window.open(url, '_blank');
   };
 
   return (
@@ -101,7 +79,7 @@ export default function ContactForm() {
               <span className="text-tevesat-secondary">CONECTARTE?</span>
             </h2>
             <p className="text-gray-500 text-lg font-medium max-w-md mx-auto lg:mx-0 border-l-4 border-tevesat-secondary/20 pl-6">
-              Déjanos tus datos y un experto te llamará en menos de <span className="text-tevesat-tertiary font-black">10 minutos</span> para darte la mejor oferta.
+              Déjanos tus datos y un experto te contactará tan pronto sea posible para darte la mejor oferta.
             </p>
           </div>
 
@@ -191,10 +169,9 @@ export default function ContactForm() {
 
                   <button
                     type="submit"
-                    disabled={loading}
-                    className="w-full bg-tevesat-tertiary text-white py-5 rounded-2xl font-black uppercase tracking-[0.2em] text-xs hover:bg-tevesat-secondary hover:text-tevesat-tertiary transition-all duration-300 shadow-xl shadow-tevesat-tertiary/10 disabled:opacity-50"
+                    className="w-full bg-tevesat-tertiary text-white py-5 rounded-2xl font-black uppercase tracking-[0.2em] text-xs hover:bg-tevesat-secondary hover:text-tevesat-tertiary transition-all duration-300 shadow-xl shadow-tevesat-tertiary/10"
                   >
-                    {loading ? 'ENVIANDO...' : 'SOLICITAR ASESORÍA'}
+                    SOLICITAR ASESORÍA
                   </button>
                 </form>
               )}
