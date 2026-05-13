@@ -72,7 +72,7 @@ export default function Home() {
 
       {/* Floating WhatsApp CTA */}
       <a 
-        href="https://wa.me/573001234567" 
+        href="https://api.whatsapp.com/send/?phone=%2B573122425591&text=Hola%2C%20requiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios.&type=phone_number&app_absent=0" 
         target="_blank" 
         rel="noopener noreferrer"
         className="fixed bottom-8 right-8 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform duration-300 animate-pulse-orange border-4 border-white"

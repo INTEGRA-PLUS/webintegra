@@ -24,25 +24,23 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? 'bg-tevesat-tertiary/90 backdrop-blur-md shadow-lg py-2'
-          : 'bg-transparent py-4'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
+        ? 'bg-tevesat-tertiary/90 backdrop-blur-md shadow-lg py-2'
+        : 'bg-transparent py-4'
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className={`flex justify-between items-center h-20 transition-all duration-500 rounded-3xl px-8 border ${
-          isScrolled 
-            ? 'bg-tevesat-tertiary/40 backdrop-blur-2xl border-white/20 shadow-[0_20px_50px_rgba(0,0,0,0.3)]' 
-            : 'bg-white/5 backdrop-blur-md border-white/10'
-        }`}>
+        <div className={`flex justify-between items-center h-20 transition-all duration-500 rounded-3xl px-8 border ${isScrolled
+          ? 'bg-tevesat-tertiary/40 backdrop-blur-2xl border-white/20 shadow-[0_20px_50px_rgba(0,0,0,0.3)]'
+          : 'bg-white/5 backdrop-blur-md border-white/10'
+          }`}>
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="/" className="flex items-center gap-3 group">
-              <img 
-                src="/images/empresa/logo.png" 
-                alt="Redes Tevesat S.A.S" 
-                className="h-10 md:h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300" 
+              <img
+                src="/images/empresa/logo.png"
+                alt="Redes Tevesat S.A.S"
+                className="h-10 md:h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300"
               />
               <div className="flex flex-col">
                 <span className="text-white font-black text-xs md:text-sm tracking-tighter leading-none group-hover:text-tevesat-secondary transition-colors uppercase">Redes Tevesat</span>
@@ -67,9 +65,11 @@ export default function Navbar() {
 
           {/* Desktop CTA Button */}
           <div className="hidden md:flex">
-            <button className="bg-tevesat-primary text-tevesat-tertiary px-8 py-3 rounded-2xl font-black uppercase text-[10px] tracking-widest hover:bg-white transition-all duration-500 transform hover:scale-105 shadow-[0_10px_30px_rgba(182,196,78,0.3)]">
-              Contratar
-            </button>
+            <a href="https://api.whatsapp.com/send/?phone=%2B573122425591&text=Hola%2C%20requiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios.&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
+              <button className="bg-tevesat-primary text-tevesat-tertiary px-8 py-3 rounded-2xl font-black uppercase text-[10px] tracking-widest hover:bg-white transition-all duration-500 transform hover:scale-105 shadow-[0_10px_30px_rgba(182,196,78,0.3)]">
+                Contratar
+              </button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
