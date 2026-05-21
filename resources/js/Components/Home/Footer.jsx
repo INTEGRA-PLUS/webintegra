@@ -67,13 +67,13 @@ export default function Footer() {
               <h4 className="text-base font-black uppercase tracking-widest text-tevesat-secondary mb-8 italic">Legal</h4>
               <ul className="space-y-4">
                 {[
-                  { name: 'Contrato Redes Tevesat', href: '#' },
-                  { name: 'Mapa de cobertura', href: '#' },
+                  { name: 'Contrato Redes Tevesat', href: '/normatividad' },
+                  { name: 'Mapa de cobertura', href: '/#cobertura' },
                   { name: 'Normatividad y Leyes', href: '/normatividad' },
                   { name: 'Protección al usuario', href: '/normatividad#proteccion-usuarios' },
-                  { name: 'Neutralidad en la red', href: '#' },
-                  { name: 'Internet Sano', href: '#' },
-                  { name: 'PQRS', href: '#' }
+                  { name: 'Neutralidad en la red', href: '/normatividad' },
+                  { name: 'Internet Sano', href: '/normatividad' },
+                  { name: 'PQRS', href: '/normatividad' }
                 ].map((item) => (
                   <li key={item.name}>
                     <a href={item.href} className="text-white/50 hover:text-white transition-all font-bold text-sm uppercase tracking-wider flex items-center gap-2 group">

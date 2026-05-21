@@ -3,7 +3,7 @@ import { MapPin } from 'lucide-react';
 
 export default function CoverageSection() {
   return (
-    <section className="py-24 md:py-32 px-4 md:px-8 bg-tevesat-tertiary relative overflow-hidden">
+    <section id="cobertura" className="py-24 md:py-32 px-4 md:px-8 bg-tevesat-tertiary relative overflow-hidden">
       {/* Decorative background accent */}
       <div className="absolute top-1/2 left-0 w-[500px] h-[500px] bg-tevesat-secondary/5 rounded-full blur-[120px] -translate-y-1/2 -ml-64"></div>
 
