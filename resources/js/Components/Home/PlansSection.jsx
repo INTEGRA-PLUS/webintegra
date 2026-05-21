@@ -178,9 +178,9 @@ export default function PlansSection() {
 
         <div className="flex flex-col lg:flex-row gap-16 items-start">
           <StratumHeader
-            subtitle="Oferta de lanzamiento para nuestros planes para estratos 4, 5 y 6"
+            subtitle="Oferta de lanzamiento para nuestros planes"
             title="¡Redes Tevesat S.A.S te ofrece la velocidad y estabilidad que necesitas en Fibra Óptica!"
-            arrowText="Ver todos los planes estratos 4, 5 y 6"
+            arrowText="Ver todos los planes"
           />
           <div className="lg:w-2/3 flex flex-wrap gap-8 justify-center lg:justify-start">
             {stratum456Plans.map((plan, idx) => (
@@ -193,9 +193,9 @@ export default function PlansSection() {
           <div className="absolute -top-16 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
 
           <StratumHeader
-            subtitle="Nuestros planes estratos 1, 2 y 3"
+            subtitle="Nuestros planes"
             title="Conéctate con la mejor red de Fibra Óptica"
-            arrowText="Ver todos los planes estratos 1, 2 y 3"
+            arrowText="Ver todos los planes"
           />
           <div className="lg:w-2/3 flex flex-wrap gap-8 justify-center lg:justify-start">
             {stratum123Plans.map((plan, idx) => (
