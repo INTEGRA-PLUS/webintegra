@@ -21,9 +21,8 @@ export default function DiscoverSection() {
         {/* Left Side: Text and CTA */}
         <div className="lg:w-1/3 text-left">
           <h2 className="text-3xl md:text-4xl font-black text-tevesat-tertiary mb-10 leading-tight">
-            ¡Descubre todo lo que Velonet hace por ti!
+            ¡Descubre todo lo que Redes Tevesat hace por ti!
           </h2>
-          
           <button className="flex items-center gap-3 bg-gradient-to-r from-tevesat-tertiary to-tevesat-secondary text-white px-8 py-4 rounded-full font-black uppercase tracking-widest hover:scale-105 transition-transform duration-300 shadow-xl shadow-tevesat-secondary/20">
             Compra ahora <MessageCircle size={24} />
           </button>

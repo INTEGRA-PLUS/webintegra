@@ -11,6 +11,7 @@ export default {
           secondary: '#d3821a', // Orange/Amber
           tertiary: '#114a96', // Deep Blue
           'primary-light': '#c8d46e',
+          'tertiary-light': '#1a5fb8',
           'tertiary-dark': '#0a2e5d',
         },
       },

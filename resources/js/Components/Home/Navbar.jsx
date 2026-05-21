@@ -17,11 +17,11 @@ export default function Navbar({ alwaysSolid = false }) {
   }, []);
 
   const navLinks = [
-    { label: 'Inicio', href: '#inicio' },
-    { label: 'Planes', href: '#planes' },
-    { label: 'Quiénes somos', href: '#quienes-somos' },
-    { label: 'Mi Pago', href: '#mi-pago' },
-    { label: 'Contacto', href: '#contacto' },
+    { label: 'Inicio', href: '/#inicio' },
+    { label: 'Planes', href: '/#planes' },
+    { label: 'Quiénes somos', href: '/#quienes-somos' },
+    { label: 'Mi Pago', href: '/#mi-pago' },
+    { label: 'Contacto', href: '/#contacto' },
   ];
 
   return (

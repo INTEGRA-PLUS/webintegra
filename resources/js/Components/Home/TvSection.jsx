@@ -32,11 +32,6 @@ export default function TvSection() {
         {/* Right Side: Family Image */}
         <div className="md:w-1/2 relative mt-12 md:mt-0 flex justify-center md:justify-end">
           <div className="relative w-full max-w-[600px] transform hover:scale-[1.03] transition-transform duration-1000">
-            {/* Glossy orb element like DGO in ref */}
-            <div className="absolute -top-10 left-10 w-24 h-24 bg-white/20 backdrop-blur-xl rounded-full border border-white/30 flex items-center justify-center p-4 shadow-2xl animate-bounce-slow">
-              <span className="text-white font-black italic text-2xl drop-shadow-md">DGO</span>
-            </div>
-
             <img
               src="/images/tv_family.png"
               alt="Familia viendo televisión Redes Tevesat S.A.S"

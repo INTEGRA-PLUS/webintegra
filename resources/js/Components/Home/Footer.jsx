@@ -49,7 +49,7 @@ export default function Footer() {
               <h4 className="text-base font-black uppercase tracking-widest text-tevesat-secondary mb-8 italic">Sitios de Interés</h4>
               <ul className="space-y-4">
                 {[
-                  { name: 'Planes de Internet', href: '#planes' },
+                  { name: 'Planes de Internet', href: '/#planes' },
                   { name: 'Medidor de Velocidad', href: 'https://www.speedtest.net/', target: '_blank' },
                 ].map((item) => (
                   <li key={item.name}>
