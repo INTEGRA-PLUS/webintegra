@@ -1,6 +1,6 @@
 {
-  "_Footer-C_RopImY.js": {
-    "file": "assets/Footer-C_RopImY.js",
+  "_Footer-DeZY6wmr.js": {
+    "file": "assets/Footer-DeZY6wmr.js",
     "name": "Footer",
     "imports": [
       "resources/js/app.jsx"
@@ -12,33 +12,33 @@
     "isEntry": true
   },
   "resources/js/Pages/Home.jsx": {
-    "file": "assets/Home-C-Rewz4Z.js",
+    "file": "assets/Home-hrrX5M8I.js",
     "name": "Home",
     "src": "resources/js/Pages/Home.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_Footer-C_RopImY.js"
+      "_Footer-DeZY6wmr.js"
     ],
     "css": [
       "assets/app-BV7m0pNV.css"
     ]
   },
   "resources/js/Pages/Normatividad.jsx": {
-    "file": "assets/Normatividad-DkM61KfF.js",
+    "file": "assets/Normatividad-CnXtwdoK.js",
     "name": "Normatividad",
     "src": "resources/js/Pages/Normatividad.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_Footer-C_RopImY.js"
+      "_Footer-DeZY6wmr.js"
     ],
     "css": [
       "assets/app-BV7m0pNV.css"
     ]
   },
   "resources/js/app.jsx": {
-    "file": "assets/app-TrhbPvMi.js",
+    "file": "assets/app-BPxk07Q-.js",
     "name": "app",
     "src": "resources/js/app.jsx",
     "isEntry": true,
