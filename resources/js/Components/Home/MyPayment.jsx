@@ -9,7 +9,7 @@ export default function MyPayment() {
   ];
 
   const digitalPayments = [
-    { name: 'PSE / OnePay', link: 'https://pagos.onepay.la/velonet', image: '/images/payments/pse.png' },
+    // { name: 'PSE / OnePay', link: 'https://pagos.onepay.la/velonet', image: '/images/payments/pse.png' },
   ];
 
   return (
