@@ -3,9 +3,9 @@ import { CreditCard, MapPin, ExternalLink } from 'lucide-react';
 
 export default function MyPayment() {
   const physicalPayments = [
-    { name: 'Corresponsales Bancolombia', convenio: '94342', image: '/images/payments/bancolombia.png' },
-    { name: 'Efecty', convenio: '112426', image: '/images/payments/efecty.png' },
-    { name: 'Gana', convenio: '384', image: '/images/payments/gana.png' },
+    // { name: 'Corresponsales Bancolombia', convenio: '94342', image: '/images/payments/bancolombia.png' },
+    // { name: 'Efecty', convenio: '112426', image: '/images/payments/efecty.png' },
+    // { name: 'Gana', convenio: '384', image: '/images/payments/gana.png' },
   ];
 
   const digitalPayments = [
