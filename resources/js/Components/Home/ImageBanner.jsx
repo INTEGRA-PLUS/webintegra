@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function ImageBanner() {
   return (
-    <section className="w-full bg-tevesat-tertiary-dark">
+    <section className="w-full bg-white">
       <div className="w-full relative overflow-hidden h-[400px] md:h-[550px] lg:h-[650px] xl:h-[600px] group">
         <img
           src="/images/banner_red_theme.png"
@@ -11,7 +11,7 @@ export default function ImageBanner() {
         />
         
         {/* Modern Overlay Content */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/40 to-transparent flex items-center">
+        <div className="absolute inset-0 bg-gradient-to-r from-tevesat-tertiary-dark/85 via-tevesat-tertiary-dark/40 to-transparent flex items-center">
           <div className="max-w-7xl mx-auto px-4 md:px-16 lg:px-24 w-full">
             <div className="max-w-2xl">
               <div className="inline-block bg-tevesat-primary px-6 py-2 rounded-full mb-8 animate-bounce-slow">

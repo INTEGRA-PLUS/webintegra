@@ -7,63 +7,62 @@ export default function WhyTevesat() {
       icon: Zap,
       title: 'Velocidad Imbatible',
       description: 'Conéctate al instante con nuestra fibra óptica ultrarrápida.',
-      color: 'bg-tevesat-primary',
+      filled: true,
     },
     {
       icon: Shield,
       title: 'Confiabilidad Garantizada',
       description: 'Navega tranquilo con un servicio estable y avanzado.',
-      color: 'bg-tevesat-tertiary',
+      filled: false,
     },
     {
       icon: Headphones,
       title: 'Atención al Cliente',
       description: 'Soporte dedicado, siempre disponible para ti.',
-      color: 'bg-tevesat-primary',
+      filled: true,
     },
     {
       icon: ArrowRightLeft,
       title: 'Planes Flexibles',
       description: 'Encuentra el plan perfecto que se adapta a tu necesidad.',
-      color: 'bg-tevesat-tertiary',
+      filled: false,
     },
   ];
 
   return (
-    <section id="quienes-somos" className="py-24 md:py-32 px-4 md:px-8 bg-tevesat-tertiary-dark relative overflow-hidden">
-      {/* Background blobs for depth */}
-      <div className="absolute top-0 -left-20 w-96 h-96 bg-tevesat-primary/5 rounded-full blur-[100px] pointer-events-none"></div>
-      <div className="absolute bottom-0 -right-20 w-96 h-96 bg-tevesat-primary/5 rounded-full blur-[100px] pointer-events-none"></div>
+    <section id="quienes-somos" className="relative overflow-hidden bg-gray-50 py-24 px-4 md:px-8 md:py-32">
+      {/* Acentos decorativos */}
+      <div className="pointer-events-none absolute top-0 -left-20 h-96 w-96 rounded-full bg-tevesat-primary/5 blur-[100px]" />
+      <div className="pointer-events-none absolute bottom-0 -right-20 h-96 w-96 rounded-full bg-tevesat-primary/5 blur-[100px]" />
 
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-20 relative z-10">
-        {/* Left Side: Content */}
+      <div className="relative z-10 mx-auto flex max-w-7xl flex-col items-center gap-20 lg:flex-row">
+        {/* Izquierda: contenido */}
         <div className="lg:w-1/2">
-          {/* Header */}
           <div className="mb-16">
-            <div className="flex items-center gap-2 mb-6">
-              <div className="h-px w-8 bg-tevesat-primary"></div>
-              <span className="text-tevesat-primary font-black uppercase text-[10px] tracking-[0.3em]">Beneficios {import.meta.env.VITE_NOMBRE_EMPRESA}</span>
+            <div className="mb-6 flex items-center gap-2">
+              <div className="h-px w-8 bg-tevesat-primary" />
+              <span className="text-[10px] font-black uppercase tracking-[0.3em] text-tevesat-primary">Beneficios {import.meta.env.VITE_NOMBRE_EMPRESA}</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-black text-white mb-8 leading-[1.1] tracking-tight">
+            <h2 className="mb-8 text-4xl font-black leading-[1.1] tracking-tight text-tevesat-tertiary-dark md:text-5xl">
               Seguridad y <span className="text-tevesat-primary">respaldo</span> para tu vida
             </h2>
-            <p className="text-white/60 text-lg font-medium leading-relaxed max-w-xl border-l-4 border-tevesat-primary/20 pl-6 group-hover:text-white transition-colors italic">
-              En <span className="text-white">{import.meta.env.VITE_NOMBRE_EMPRESA}</span> somos tu mejor aliaddo. Brindamos la protección y el respaldo tecnológico que tu familia y empresa necesitan para estar siempre tranquilos.
+            <p className="max-w-xl border-l-4 border-tevesat-primary/30 pl-6 text-lg font-medium italic leading-relaxed text-gray-500">
+              En <span className="text-tevesat-tertiary-dark">{import.meta.env.VITE_NOMBRE_EMPRESA}</span> somos tu mejor aliado. Brindamos la protección y el respaldo tecnológico que tu familia y empresa necesitan para estar siempre tranquilos.
             </p>
           </div>
 
-          {/* Features Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12">
+          {/* Grid de beneficios */}
+          <div className="grid grid-cols-1 gap-x-12 gap-y-12 md:grid-cols-2">
             {features.map((feature, idx) => (
-              <div key={idx} className="flex items-start gap-5 group">
-                <div className={`w-16 h-16 ${feature.color === 'bg-tevesat-primary' ? 'bg-tevesat-primary' : 'bg-white/5 border border-white/10'} rounded-2xl flex items-center justify-center flex-shrink-0 shadow-xl group-hover:scale-110 transition-transform duration-300`}>
-                  <feature.icon className="text-white" size={28} strokeWidth={2.5} />
+              <div key={idx} className="group flex items-start gap-5">
+                <div className={`flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-2xl shadow-xl transition-transform duration-300 group-hover:scale-110 ${feature.filled ? 'bg-tevesat-primary shadow-tevesat-primary/20' : 'border border-gray-100 bg-white'}`}>
+                  <feature.icon className={feature.filled ? 'text-white' : 'text-tevesat-primary'} size={28} strokeWidth={2.5} />
                 </div>
                 <div>
-                  <h3 className="text-xl font-black text-white mb-2 tracking-tight">
+                  <h3 className="mb-2 text-xl font-black tracking-tight text-tevesat-tertiary-dark">
                     {feature.title}
                   </h3>
-                  <p className="text-gray-400 text-sm font-bold leading-relaxed">
+                  <p className="text-sm font-bold leading-relaxed text-gray-500">
                     {feature.description}
                   </p>
                 </div>
@@ -72,61 +71,54 @@ export default function WhyTevesat() {
           </div>
         </div>
 
-        {/* Right Side: Image Column with floating elements */}
-        <div className="lg:w-1/2 relative group">
-          <div className="absolute -top-10 -right-10 w-full h-full border-2 border-tevesat-primary/10 rounded-[4rem] -z-10 group-hover:translate-x-4 group-hover:-translate-y-4 transition-transform duration-700"></div>
-          
-          <div className="rounded-[4rem] overflow-hidden shadow-[0_50px_100px_rgba(0,0,0,0.5)] border-8 border-tevesat-secondary relative">
-             <img 
-               src="/images/couple_sofa.png" 
-               alt={`Gente disfrutando internet ${import.meta.env.VITE_NOMBRE_EMPRESA}`} 
-               className="w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-1000"
-             />
-             
-             {/* Floating Badge */}
-             <div className="absolute bottom-10 left-10 bg-tevesat-tertiary-dark/90 backdrop-blur-md p-6 rounded-3xl shadow-2xl flex items-center gap-4 animate-bounce-slow border border-white/10">
-                <div className="w-12 h-12 bg-tevesat-primary rounded-xl flex items-center justify-center text-white font-black text-xl italic">
-                  100%
-                </div>
-                <div>
-                   <p className="text-white/60 font-black text-xs uppercase tracking-widest">Tecnología</p>
-                   <p className="text-white font-black text-lg leading-none">FIBRA ÓPTICA</p>
-                </div>
-             </div>
+        {/* Derecha: imagen con elementos flotantes */}
+        <div className="group relative lg:w-1/2">
+          <div className="absolute -top-10 -right-10 -z-10 h-full w-full rounded-[4rem] border-2 border-tevesat-primary/15 transition-transform duration-700 group-hover:translate-x-4 group-hover:-translate-y-4" />
+
+          <div className="relative overflow-hidden rounded-[4rem] border-8 border-white shadow-[0_50px_100px_-30px_rgba(0,0,0,0.3)]">
+            <img
+              src="/images/couple_sofa.png"
+              alt={`Gente disfrutando internet ${import.meta.env.VITE_NOMBRE_EMPRESA}`}
+              className="h-full w-full scale-110 object-cover transition-transform duration-1000 group-hover:scale-100"
+            />
+
+            {/* Badge flotante */}
+            <div className="absolute bottom-10 left-10 flex animate-bounce-slow items-center gap-4 rounded-3xl border border-gray-100 bg-white/90 p-6 shadow-2xl backdrop-blur-md">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-tevesat-primary text-xl font-black italic text-white">
+                100%
+              </div>
+              <div>
+                <p className="text-xs font-black uppercase tracking-widest text-gray-400">Tecnología</p>
+                <p className="text-lg font-black leading-none text-tevesat-tertiary-dark">FIBRA ÓPTICA</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Stats Integrated below - Professional Redesign */}
-      <div className="max-w-7xl mx-auto mt-24 px-4">
-         <div className="relative rounded-[3.5rem] bg-tevesat-secondary p-12 md:p-16 shadow-[0_50px_100px_rgba(0,0,0,0.5)] overflow-hidden border border-white/5">
-            {/* Background glowing accents */}
-            <div className="absolute top-0 right-0 w-96 h-96 bg-tevesat-secondary/10 rounded-full blur-[100px] -mr-48 -mt-48"></div>
-            <div className="absolute bottom-0 left-0 w-96 h-96 bg-white/5 rounded-full blur-[100px] -ml-48 -mb-48"></div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 relative z-10 divide-y md:divide-y-0 md:divide-x divide-white/10">
-               <div className="pb-12 md:pb-0 text-center animate-fade-in">
-                 <p className="text-6xl md:text-7xl font-black text-tevesat-primary mb-4 tracking-tighter drop-shadow-[0_0_20px_rgba(236,50,55,0.2)]">
-                   +50K
-                 </p>
-                 <p className="text-white/60 font-black uppercase text-[10px] tracking-[0.4em] mt-2">Usuarios Activos</p>
-               </div>
-               
-               <div className="py-12 md:py-0 md:px-12 text-center">
-                 <p className="text-6xl md:text-7xl font-black text-white mb-4 tracking-tighter shadow-white/10 group-hover:text-tevesat-primary transition-colors">
-                   99.9%
-                 </p>
-                 <p className="text-white/60 font-black uppercase text-[10px] tracking-[0.4em] mt-2">Disponibilidad Real</p>
-               </div>
-               
-               <div className="pt-12 md:pt-0 text-center">
-                 <p className="text-6xl md:text-7xl font-black text-white mb-4 tracking-tighter">
-                   24/7
-                 </p>
-                 <p className="text-white/60 font-black uppercase text-[10px] tracking-[0.4em] mt-2">Soporte Humano</p>
-               </div>
+      {/* Estadísticas */}
+      <div className="mx-auto mt-24 max-w-7xl px-4">
+        <div className="relative overflow-hidden rounded-[3.5rem] border border-gray-100 bg-white p-12 shadow-[0_50px_100px_-30px_rgba(0,0,0,0.25)] md:p-16">
+          <div className="absolute top-0 right-0 -mr-48 -mt-48 h-96 w-96 rounded-full bg-tevesat-primary/5 blur-[100px]" />
+          <div className="absolute bottom-0 left-0 -ml-48 -mb-48 h-96 w-96 rounded-full bg-tevesat-primary/5 blur-[100px]" />
+
+          <div className="relative z-10 grid grid-cols-1 gap-12 divide-y divide-gray-100 md:grid-cols-3 md:divide-y-0 md:divide-x">
+            <div className="pb-12 text-center md:pb-0">
+              <p className="mb-4 text-6xl font-black tracking-tighter text-tevesat-primary md:text-7xl">+50K</p>
+              <p className="mt-2 text-[10px] font-black uppercase tracking-[0.4em] text-gray-400">Usuarios Activos</p>
             </div>
-         </div>
+
+            <div className="py-12 text-center md:px-12 md:py-0">
+              <p className="mb-4 text-6xl font-black tracking-tighter text-tevesat-tertiary-dark md:text-7xl">99.9%</p>
+              <p className="mt-2 text-[10px] font-black uppercase tracking-[0.4em] text-gray-400">Disponibilidad Real</p>
+            </div>
+
+            <div className="pt-12 text-center md:pt-0">
+              <p className="mb-4 text-6xl font-black tracking-tighter text-tevesat-tertiary-dark md:text-7xl">24/7</p>
+              <p className="mt-2 text-[10px] font-black uppercase tracking-[0.4em] text-gray-400">Soporte Humano</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

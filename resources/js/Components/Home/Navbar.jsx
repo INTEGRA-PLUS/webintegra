@@ -18,9 +18,11 @@ export default function Navbar() {
 
   const navLinks = [
     { label: 'Inicio', href: '/' },
-    { label: 'Planes', href: '/#planes' },
+    { label: 'Planes', href: '/planes' },
+    { label: 'Televisión', href: '/television' },
+    { label: 'Speedtest', href: '/speedtest' },
     { label: 'Quiénes somos', href: '/#quienes-somos' },
-    { label: 'Mi Pago', href: '/#mi-pago' },
+    { label: 'PQRS', href: '/pqrs' },
     { label: 'Contacto', href: '/#contacto' },
   ];
 
@@ -36,27 +38,25 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? 'bg-tevesat-tertiary-dark/80 backdrop-blur-md shadow-2xl py-2'
-          : 'bg-transparent py-4'
+        isScrolled ? 'py-2' : 'py-4'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className={`flex justify-between items-center h-20 transition-all duration-500 rounded-3xl px-8 border ${
-          isScrolled 
-            ? 'bg-tevesat-secondary/40 backdrop-blur-2xl border-white/5 shadow-[0_20px_50px_rgba(0,0,0,0.5)]' 
-            : 'bg-white/5 backdrop-blur-md border-white/10'
+          isScrolled
+            ? 'bg-white/90 backdrop-blur-2xl border-gray-100 shadow-[0_20px_50px_-20px_rgba(0,0,0,0.25)]'
+            : 'bg-white/60 backdrop-blur-md border-gray-100/80'
         }`}>
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center gap-3 group">
-              <img 
-                src="/images/empresa/logo.png" 
-                alt={import.meta.env.VITE_NOMBRE_EMPRESA} 
-                className="h-10 md:h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300" 
+              <img
+                src="/images/empresa/logo.png"
+                alt={import.meta.env.VITE_NOMBRE_EMPRESA}
+                className="h-10 md:h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300"
               />
               <div className="flex flex-col">
-                <span className="text-white font-black text-xs md:text-sm tracking-tighter leading-none group-hover:text-tevesat-primary transition-colors uppercase">{import.meta.env.VITE_NOMBRE_EMPRESA}</span>
+                <span className="text-tevesat-tertiary-dark font-black text-xs md:text-sm tracking-tighter leading-none group-hover:text-tevesat-primary transition-colors uppercase">{import.meta.env.VITE_NOMBRE_EMPRESA}</span>
               </div>
             </Link>
           </div>
@@ -67,7 +67,7 @@ export default function Navbar() {
               <a
                 key={link.label}
                 href={link.href}
-                className="text-[10px] font-black uppercase tracking-[0.2em] text-white/70 hover:text-tevesat-primary transition-all duration-300 relative group"
+                className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-500 hover:text-tevesat-primary transition-all duration-300 relative group"
               >
                 {link.label}
                 <span className="absolute -bottom-2 left-0 w-0 h-1 bg-tevesat-primary transition-all duration-300 group-hover:w-full rounded-full"></span>
@@ -75,23 +75,23 @@ export default function Navbar() {
             ))}
 
             {/* Services Dropdown */}
-            <div 
+            <div
               className="relative group"
               onMouseEnter={() => setIsServicesOpen(true)}
               onMouseLeave={() => setIsServicesOpen(false)}
             >
-              <button className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-white/70 hover:text-tevesat-primary transition-all duration-300">
+              <button className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-gray-500 hover:text-tevesat-primary transition-all duration-300">
                 Servicios
                 <ChevronDown size={14} className={`transition-transform duration-300 ${isServicesOpen ? 'rotate-180' : ''}`} />
               </button>
-              
-              <div className={`absolute top-full left-1/2 -translate-x-1/2 mt-4 w-64 bg-tevesat-tertiary-dark border border-white/10 rounded-2xl p-4 shadow-2xl transition-all duration-300 ${isServicesOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-4'}`}>
+
+              <div className={`absolute top-full left-1/2 -translate-x-1/2 mt-4 w-64 bg-white border border-gray-100 rounded-2xl p-4 shadow-[0_30px_70px_-20px_rgba(0,0,0,0.25)] transition-all duration-300 ${isServicesOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-4'}`}>
                 <div className="grid gap-2">
                   {services.map((service) => (
                     <Link
                       key={service.label}
                       href={service.href}
-                      className="block px-4 py-3 rounded-xl text-[10px] font-bold uppercase tracking-widest text-white/70 hover:bg-tevesat-primary hover:text-white transition-all"
+                      className="block px-4 py-3 rounded-xl text-[10px] font-bold uppercase tracking-widest text-gray-500 hover:bg-tevesat-primary hover:text-white transition-all"
                     >
                       {service.label}
                     </Link>
@@ -112,7 +112,7 @@ export default function Navbar() {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-white"
+              className="text-tevesat-tertiary-dark"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -121,26 +121,26 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-2 bg-tevesat-tertiary-dark/95 backdrop-blur-lg rounded-2xl border border-white/10 p-4 shadow-2xl max-h-[80vh] overflow-y-auto">
+          <div className="md:hidden mt-2 bg-white/95 backdrop-blur-lg rounded-2xl border border-gray-100 p-4 shadow-[0_30px_70px_-20px_rgba(0,0,0,0.25)] max-h-[80vh] overflow-y-auto">
             <div className="space-y-1">
               {navLinks.map((link) => (
                 <a
                   key={link.label}
                   href={link.href}
-                  className="block px-4 py-3 rounded-xl text-sm font-bold text-white hover:bg-tevesat-primary hover:text-white transition"
+                  className="block px-4 py-3 rounded-xl text-sm font-bold text-tevesat-tertiary-dark hover:bg-tevesat-primary hover:text-white transition"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {link.label}
                 </a>
               ))}
-              
-              <div className="border-t border-white/10 my-2 pt-2">
-                <span className="block px-4 py-2 text-[10px] font-black uppercase tracking-widest text-gray-500">Servicios</span>
+
+              <div className="border-t border-gray-100 my-2 pt-2">
+                <span className="block px-4 py-2 text-[10px] font-black uppercase tracking-widest text-gray-400">Servicios</span>
                 {services.map((service) => (
                   <Link
                     key={service.label}
                     href={service.href}
-                    className="block px-4 py-3 rounded-xl text-sm font-bold text-white hover:bg-tevesat-primary hover:text-white transition"
+                    className="block px-4 py-3 rounded-xl text-sm font-bold text-tevesat-tertiary-dark hover:bg-tevesat-primary hover:text-white transition"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {service.label}

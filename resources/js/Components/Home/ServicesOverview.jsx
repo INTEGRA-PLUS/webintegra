@@ -11,81 +11,81 @@ export default function ServicesOverview() {
   };
 
   return (
-    <section className="py-24 px-4 md:px-8 bg-black relative overflow-hidden">
-      {/* Decorative Accents */}
-      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-tevesat-primary/5 rounded-full blur-[150px] -mr-96 -mt-96"></div>
-      
-      <div className="max-w-7xl mx-auto relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          
-          {/* Left Side: Services Titles */}
-          <div className="lg:col-span-3 space-y-12">
+    <section className="relative overflow-hidden bg-white py-24 px-4 md:px-8">
+      {/* Acentos decorativos suaves */}
+      <div className="pointer-events-none absolute top-0 right-0 h-[600px] w-[600px] -mr-96 -mt-96 rounded-full bg-tevesat-primary/5 blur-[150px]" />
+
+      <div className="relative z-10 mx-auto max-w-7xl">
+        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-12">
+
+          {/* Izquierda: títulos de servicios */}
+          <div className="space-y-12 lg:col-span-3">
             <div className="group cursor-default">
-              <h3 className="text-tevesat-primary font-black text-xs uppercase tracking-[0.3em] mb-4">Soluciones Corporativas</h3>
-              <h2 className="text-3xl md:text-4xl font-black text-white leading-tight group-hover:text-tevesat-primary transition-colors duration-300">
+              <h3 className="mb-4 text-xs font-black uppercase tracking-[0.3em] text-tevesat-primary">Soluciones Corporativas</h3>
+              <h2 className="text-3xl font-black leading-tight text-tevesat-tertiary-dark transition-colors duration-300 group-hover:text-tevesat-primary md:text-4xl">
                 SERVICIOS PARA <span className="italic">EMPRESAS</span>
               </h2>
-              <div className="w-12 h-1 bg-tevesat-primary mt-4 group-hover:w-full transition-all duration-700"></div>
+              <div className="mt-4 h-1 w-12 bg-tevesat-primary transition-all duration-700 group-hover:w-full" />
             </div>
 
             <div className="group cursor-default">
-              <h3 className="text-tevesat-primary font-black text-xs uppercase tracking-[0.3em] mb-4">Conectividad Total</h3>
-              <h2 className="text-3xl md:text-4xl font-black text-white leading-tight group-hover:text-tevesat-primary transition-colors duration-300">
+              <h3 className="mb-4 text-xs font-black uppercase tracking-[0.3em] text-tevesat-primary">Conectividad Total</h3>
+              <h2 className="text-3xl font-black leading-tight text-tevesat-tertiary-dark transition-colors duration-300 group-hover:text-tevesat-primary md:text-4xl">
                 SERVICIOS PARA <span className="italic">HOGAR</span>
               </h2>
-              <div className="w-12 h-1 bg-tevesat-primary mt-4 group-hover:w-full transition-all duration-700"></div>
+              <div className="mt-4 h-1 w-12 bg-tevesat-primary transition-all duration-700 group-hover:w-full" />
             </div>
           </div>
 
-          {/* Middle: Professional Design (Image) */}
-          <div className="lg:col-span-5 relative group">
-            <div className="absolute -inset-4 bg-tevesat-primary/20 rounded-[3rem] blur-2xl group-hover:bg-tevesat-primary/30 transition-all duration-700"></div>
-            <div className="relative rounded-[2.5rem] overflow-hidden border border-white/10 shadow-2xl">
-              <img 
-                src="https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=1000" 
-                alt="Diseño de Servicios Integra" 
-                className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-1000"
+          {/* Centro: imagen */}
+          <div className="group relative lg:col-span-5">
+            <div className="absolute -inset-4 rounded-[3rem] bg-tevesat-primary/10 blur-2xl transition-all duration-700 group-hover:bg-tevesat-primary/20" />
+            <div className="relative overflow-hidden rounded-[2.5rem] border border-gray-100 shadow-[0_40px_90px_-30px_rgba(0,0,0,0.3)]">
+              <img
+                src="https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=1000"
+                alt="Diseño de Servicios Integra"
+                className="h-full w-full transform object-cover transition-transform duration-1000 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-              
+              <div className="absolute inset-0 bg-gradient-to-t from-tevesat-tertiary-dark/70 via-transparent to-transparent" />
+
               <div className="absolute bottom-8 left-8 right-8">
-                <div className="flex items-center gap-3 text-white/80 font-bold text-sm uppercase tracking-widest mb-2">
-                  <Shield size={18} className="text-tevesat-primary" />
+                <div className="mb-2 flex items-center gap-3 text-sm font-bold uppercase tracking-widest text-white/90">
+                  <Shield size={18} className="text-white" />
                   Garantía de Conexión
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Right Side: Respaldo and CTA */}
-          <div className="lg:col-span-4 space-y-8 lg:pl-8">
+          {/* Derecha: promesa y CTA */}
+          <div className="space-y-8 lg:col-span-4 lg:pl-8">
             <div className="space-y-4">
-              <h4 className="text-tevesat-primary font-black text-sm uppercase tracking-[0.2em] italic">
+              <h4 className="text-sm font-black uppercase tracking-[0.2em] italic text-tevesat-primary">
                 Nuestra Promesa
               </h4>
-              <p className="text-4xl md:text-5xl font-black text-white leading-[0.9] tracking-tighter">
+              <p className="text-4xl font-black leading-[0.9] tracking-tighter text-tevesat-tertiary-dark md:text-5xl">
                 SOMOS EL <br />
-                <span className="text-tevesat-primary italic">RESPALDO</span> <br />
+                <span className="italic text-tevesat-primary">RESPALDO</span> <br />
                 DE NUESTROS CLIENTES
               </p>
             </div>
 
             <div className="space-y-6">
-              <div className="flex items-center gap-4 text-white/70">
-                <Globe size={24} className="text-tevesat-primary flex-shrink-0" />
-                <p className="font-bold text-lg leading-tight">
+              <div className="flex items-center gap-4 text-gray-600">
+                <Globe size={24} className="flex-shrink-0 text-tevesat-primary" />
+                <p className="text-lg font-bold leading-tight text-tevesat-tertiary-dark">
                   INTERNET HOGAR Y EMPRESAS <br />
-                  <span className="text-sm font-medium text-white/40 uppercase tracking-widest">Al alcance de todos, zona rural y urbana</span>
+                  <span className="text-sm font-medium uppercase tracking-widest text-gray-400">Al alcance de todos, zona rural y urbana</span>
                 </p>
               </div>
 
-              <a 
+              <a
                 href="#planes"
                 onClick={scrollToPlans}
-                className="group flex items-center justify-between bg-white text-black px-8 py-6 rounded-2xl font-black uppercase tracking-widest hover:bg-tevesat-primary hover:text-white transition-all duration-500 transform hover:scale-105 active:scale-95 shadow-xl shadow-white/5"
+                className="group flex transform items-center justify-between rounded-2xl bg-tevesat-primary px-8 py-6 font-black uppercase tracking-widest text-white shadow-xl shadow-tevesat-primary/30 transition-all duration-500 hover:scale-105 hover:bg-tevesat-primary-light active:scale-95"
               >
                 Ver nuestros planes
-                <ArrowRight size={24} className="group-hover:translate-x-2 transition-transform duration-300" />
+                <ArrowRight size={24} className="transition-transform duration-300 group-hover:translate-x-2" />
               </a>
             </div>
           </div>

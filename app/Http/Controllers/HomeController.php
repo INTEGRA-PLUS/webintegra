@@ -19,4 +19,44 @@ class HomeController extends Controller
     {
         return Inertia::render('Home');
     }
+
+    /**
+     * Mostrar la página de planes
+     *
+     * @return \Inertia\Response
+     */
+    public function planes()
+    {
+        return Inertia::render('Planes');
+    }
+
+    /**
+     * Mostrar la página de televisión
+     *
+     * @return \Inertia\Response
+     */
+    public function television()
+    {
+        return Inertia::render('Television');
+    }
+
+    /**
+     * Mostrar la página de test de velocidad
+     *
+     * @return \Inertia\Response
+     */
+    public function speedtest()
+    {
+        return Inertia::render('Speedtest');
+    }
+
+    /**
+     * Mostrar la página de PQRS
+     *
+     * @return \Inertia\Response
+     */
+    public function pqrs()
+    {
+        return Inertia::render('Pqrs');
+    }
 }

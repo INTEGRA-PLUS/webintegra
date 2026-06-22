@@ -26,50 +26,47 @@ export default function CoverageCheck() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-20 bg-tevesat-secondary relative overflow-hidden">
-      {/* Sleek Red Separator (Thin line with gradient) */}
-      <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-tevesat-primary to-transparent opacity-80"></div>
-      
-      <div className="max-w-7xl mx-auto px-4 md:px-8">
-        <div 
+    <section ref={sectionRef} id="cobertura" className="py-20 bg-white relative overflow-hidden px-4 md:px-8">
+      <div className="max-w-7xl mx-auto">
+        <div
           className={`transition-all duration-1000 transform ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
           }`}
         >
-          {/* Main Card */}
-          <div 
-            className="rounded-[2.5rem] p-10 md:p-14 relative bg-gradient-to-br from-tevesat-tertiary-light/40 to-tevesat-tertiary border border-white/10 overflow-hidden shadow-[inset_2px_2px_20px_10px] shadow-tevesat-primary/30"
+          {/* Main Card - Banda roja CTA */}
+          <div
+            className="rounded-[2.5rem] p-10 md:p-14 relative bg-gradient-to-br from-tevesat-primary to-tevesat-primary-light overflow-hidden shadow-[0_40px_90px_-30px_rgba(236,50,55,0.5)]"
           >
             {/* Glow effect */}
-            <div className="absolute -top-1/2 -left-1/2 w-full h-full bg-tevesat-secondary/5 rounded-full blur-[100px] pointer-events-none"></div>
+            <div className="absolute -top-1/2 -left-1/2 w-full h-full bg-white/10 rounded-full blur-[100px] pointer-events-none"></div>
 
             <div className="relative z-10 text-center">
               <h2 className="text-xl md:text-2xl font-black text-white mb-10 tracking-tight leading-relaxed max-w-3xl mx-auto">
-                Descubre si tienes cobertura con la red más confiable. <span className="text-tevesat-primary">¡Es fácil y rápido!</span>
+                Descubre si tienes cobertura con la red más confiable. <span className="text-tevesat-tertiary-dark">¡Es fácil y rápido!</span>
               </h2>
 
               {/* Form Grid */}
               <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-                <input 
-                  type="text" 
-                  placeholder="Nombre" 
-                  className="bg-white/10 border border-white/20 rounded-2xl px-6 py-4 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-tevesat-secondary transition-all font-bold"
+                <input
+                  type="text"
+                  placeholder="Nombre"
+                  className="bg-white border border-white/40 rounded-2xl px-6 py-4 text-tevesat-tertiary-dark placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-tevesat-tertiary-dark transition-all font-bold"
                 />
-                <input 
-                  type="text" 
-                  placeholder="Teléfono" 
-                  className="bg-white/10 border border-white/20 rounded-2xl px-6 py-4 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-tevesat-secondary transition-all font-bold"
+                <input
+                  type="text"
+                  placeholder="Teléfono"
+                  className="bg-white border border-white/40 rounded-2xl px-6 py-4 text-tevesat-tertiary-dark placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-tevesat-tertiary-dark transition-all font-bold"
                 />
-                <input 
-                  type="text" 
-                  placeholder="Dirección" 
-                  className="bg-white/10 border border-white/20 rounded-2xl px-6 py-4 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-tevesat-secondary transition-all font-bold md:col-span-1"
+                <input
+                  type="text"
+                  placeholder="Dirección"
+                  className="bg-white border border-white/40 rounded-2xl px-6 py-4 text-tevesat-tertiary-dark placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-tevesat-tertiary-dark transition-all font-bold md:col-span-1"
                 />
-                <a 
-                  href="https://wa.me/573142497234" 
-                  target="_blank" 
+                <a
+                  href="https://wa.me/573142497234"
+                  target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-tevesat-primary text-white font-black uppercase text-[12px] tracking-tighter hover:bg-white hover:text-tevesat-primary hover:scale-105 transition-all duration-300 py-4 px-6 rounded-2xl shadow-xl shadow-tevesat-primary/30 text-center flex items-center justify-center"
+                  className="bg-tevesat-tertiary-dark text-white font-black uppercase text-[12px] tracking-tighter hover:bg-white hover:text-tevesat-primary hover:scale-105 transition-all duration-300 py-4 px-6 rounded-2xl shadow-xl text-center flex items-center justify-center"
                 >
                   Consulta tu cobertura aquí
                 </a>

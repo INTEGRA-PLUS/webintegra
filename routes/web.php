@@ -12,6 +12,18 @@ use App\Http\Controllers\ServiciosController;
 // Ruta principal - Home
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
+// Página de Planes
+Route::get('/planes', [HomeController::class, 'planes'])->name('planes');
+
+// Página de Televisión
+Route::get('/television', [HomeController::class, 'television'])->name('television');
+
+// Test de velocidad
+Route::get('/speedtest', [HomeController::class, 'speedtest'])->name('speedtest');
+
+// PQRS
+Route::get('/pqrs', [HomeController::class, 'pqrs'])->name('pqrs');
+
 // Rutas de API/AJAX (descomenta cuando integres el formulario)
 // Route::post('/api/contacto', [ContactoController::class, 'store'])->name('contacto.store');
 

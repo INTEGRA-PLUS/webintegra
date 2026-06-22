@@ -1,89 +1,141 @@
+import React from 'react';
+import { ArrowRight, ShieldCheck, Headphones, Zap, MapPin } from 'lucide-react';
+
 export default function HeroBanner() {
   return (
-    <section id="inicio" className="relative h-screen flex items-center justify-start overflow-hidden pt-16">
-      {/* Background Image with Overlay */}
-      <div className="absolute inset-0">
-        <img 
-          src="/images/hero.png" 
-          alt="Velonet Family" 
-          className="w-full h-full object-cover"
+    <section
+      id="inicio"
+      className="relative flex min-h-screen items-center overflow-hidden bg-white pt-24 pb-16"
+    >
+      {/* Fondo claro con acentos suaves del rojo del logo */}
+      <div className="pointer-events-none absolute inset-0">
+        <div className="absolute -top-40 -right-32 h-[640px] w-[640px] rounded-full bg-tevesat-primary/10 blur-[140px]" />
+        <div className="absolute -bottom-40 -left-32 h-[520px] w-[520px] rounded-full bg-tevesat-primary/5 blur-[140px]" />
+        {/* Grid sutil */}
+        <div
+          className="absolute inset-0 opacity-[0.5]"
+          style={{
+            backgroundImage:
+              'radial-gradient(circle at 1px 1px, rgba(0,0,0,0.04) 1px, transparent 0)',
+            backgroundSize: '34px 34px',
+          }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-tevesat-tertiary-dark via-tevesat-tertiary-dark/60 to-transparent"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-tevesat-tertiary-dark/80 via-transparent to-tevesat-tertiary-dark/20"></div>
       </div>
 
-      {/* Content */}
-      <div className="relative z-10 text-left px-4 md:px-16 lg:px-24 max-w-5xl">
-        <div className="inline-block bg-tevesat-primary/10 backdrop-blur-md px-4 py-1 rounded-full border border-tevesat-primary/20 mb-6 animate-fadeIn">
-          <span className="text-tevesat-primary-light font-black uppercase text-xs tracking-[0.2em]">Protección avanzada y respaldo total</span>
-        </div>
-        
-        <h1 className="text-5xl md:text-8xl font-black text-white mb-6 leading-[0.9] animate-fadeIn">
-          SEGURIDAD Y<br />
-          <span className="text-tevesat-primary drop-shadow-[0_2px_10px_rgba(37,37,37,0.5)]">RESPALDO</span>
-        </h1>
-
-        <p className="text-xl md:text-2xl text-white/90 mb-10 max-w-xl font-medium animate-fadeIn" style={{ animationDelay: '0.2s' }}>
-          Somos tu mejor aliaddo.<br />
-          Tu tranquilidad es nuestra prioridad con soluciones integrales de alta tecnología.
-        </p>
-
-        {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-6 animate-fadeIn" style={{ animationDelay: '0.4s' }}>
-          <a 
-            href="https://wa.me/573142497234" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="bg-tevesat-primary text-white px-10 py-5 rounded-2xl font-black uppercase tracking-wider hover:bg-tevesat-primary-light hover:scale-105 transition-all duration-300 shadow-2xl shadow-tevesat-primary/40 text-center"
-          >
-            Me interesa
-          </a>
-          <a 
-            href="https://wa.me/573142497234" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="bg-white/5 backdrop-blur-md border border-white/10 text-white px-10 py-5 rounded-2xl font-black uppercase tracking-wider hover:bg-white/10 transition-all text-center"
-          >
-            Ver cobertura
-          </a>
-        </div>
-
-        {/* Tech Badges */}
-        <div className="mt-16 flex flex-wrap gap-8 items-center opacity-60 animate-fadeIn" style={{ animationDelay: '0.6s' }}>
-          <div className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center">
-              <span className="text-white font-black text-xs">S</span>
-            </div>
-            <span className="text-white font-bold text-xs uppercase">Soporte 24/7</span>
+      <div className="relative z-10 mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-12 px-4 md:px-8 lg:grid-cols-12 lg:gap-8">
+        {/* Lado izquierdo: contenido */}
+        <div className="lg:col-span-7">
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-tevesat-primary/20 bg-tevesat-primary/5 px-5 py-2 animate-[fadeIn_0.8s_ease]">
+            <ShieldCheck size={16} className="text-tevesat-primary" />
+            <span className="text-xs font-black uppercase tracking-[0.25em] text-tevesat-primary">
+              Protección avanzada y respaldo total
+            </span>
           </div>
-          <div className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center">
-              <span className="text-white font-black text-xs">R</span>
+
+          <h1 className="mb-6 text-5xl font-black leading-[0.95] tracking-tight text-tevesat-tertiary-dark animate-[fadeIn_0.8s_ease] md:text-7xl">
+            SEGURIDAD Y<br />
+            <span className="text-tevesat-primary italic">RESPALDO</span>
+          </h1>
+
+          <p
+            className="mb-10 max-w-xl text-lg font-medium leading-relaxed text-gray-500 animate-[fadeIn_0.8s_ease] md:text-xl"
+            style={{ animationDelay: '0.15s' }}
+          >
+            Somos tu mejor aliado. Tu tranquilidad es nuestra prioridad con soluciones
+            integrales de alta tecnología para tu hogar y tu empresa.
+          </p>
+
+          {/* Botones CTA */}
+          <div
+            className="flex flex-col gap-4 sm:flex-row animate-[fadeIn_0.8s_ease]"
+            style={{ animationDelay: '0.3s' }}
+          >
+            <a
+              href="https://wa.me/573142497234"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center justify-center gap-2 rounded-2xl bg-tevesat-primary px-9 py-5 font-black uppercase tracking-wider text-white shadow-xl shadow-tevesat-primary/30 transition-all duration-300 hover:scale-105 hover:bg-tevesat-primary-light active:scale-95"
+            >
+              Me interesa
+              <ArrowRight size={20} className="transition-transform group-hover:translate-x-1" />
+            </a>
+            <a
+              href="#cobertura"
+              className="flex items-center justify-center gap-2 rounded-2xl border-2 border-gray-200 bg-white px-9 py-5 font-black uppercase tracking-wider text-tevesat-tertiary-dark transition-all duration-300 hover:border-tevesat-primary hover:text-tevesat-primary"
+            >
+              <MapPin size={20} />
+              Ver cobertura
+            </a>
+          </div>
+
+          {/* Sellos de confianza */}
+          <div
+            className="mt-14 flex flex-wrap items-center gap-x-10 gap-y-5 animate-[fadeIn_0.8s_ease]"
+            style={{ animationDelay: '0.45s' }}
+          >
+            <div className="flex items-center gap-3">
+              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-tevesat-primary/10 text-tevesat-primary">
+                <Headphones size={20} strokeWidth={2.4} />
+              </div>
+              <span className="text-sm font-black uppercase tracking-wide text-gray-600">
+                Soporte 24/7
+              </span>
             </div>
-            <span className="text-white font-bold text-xs uppercase">Respaldo Total</span>
+            <div className="flex items-center gap-3">
+              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-tevesat-primary/10 text-tevesat-primary">
+                <ShieldCheck size={20} strokeWidth={2.4} />
+              </div>
+              <span className="text-sm font-black uppercase tracking-wide text-gray-600">
+                Respaldo Total
+              </span>
+            </div>
+            <div className="flex items-center gap-3">
+              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-tevesat-primary/10 text-tevesat-primary">
+                <Zap size={20} strokeWidth={2.4} />
+              </div>
+              <span className="text-sm font-black uppercase tracking-wide text-gray-600">
+                Fibra Óptica
+              </span>
+            </div>
           </div>
         </div>
 
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-10 right-10 animate-vertical-bounce hidden lg:block">
-          <div className="w-8 h-12 rounded-full border-2 border-white/30 flex justify-center p-2">
-            <div className="w-1 h-3 bg-tevesat-primary rounded-full"></div>
+        {/* Lado derecho: imagen más pequeña enmarcada con detalles flotantes */}
+        <div className="lg:col-span-5">
+          <div
+            className="group relative mx-auto max-w-md animate-[fadeIn_1s_ease]"
+            style={{ animationDelay: '0.3s' }}
+          >
+            {/* Marco decorativo detrás */}
+            <div className="absolute -right-5 -top-5 h-full w-full rounded-[2.5rem] border-2 border-tevesat-primary/15 transition-transform duration-700 group-hover:translate-x-3 group-hover:-translate-y-3" />
+
+            <div className="relative overflow-hidden rounded-[2.5rem] border border-gray-100 shadow-[0_40px_90px_-30px_rgba(0,0,0,0.3)]">
+              <img
+                src="/images/hero.png"
+                alt={`Familia disfrutando del servicio ${import.meta.env.VITE_NOMBRE_EMPRESA}`}
+                className="h-full w-full object-cover transition-transform duration-1000 group-hover:scale-105"
+              />
+              {/* Velo blanco inferior muy sutil para integrar al fondo claro */}
+              <div className="absolute inset-0 bg-gradient-to-t from-white/20 to-transparent" />
+            </div>
+
+            {/* Badge flotante */}
+            <div className="absolute -bottom-6 -left-6 flex items-center gap-4 rounded-3xl border border-gray-100 bg-white/90 p-5 shadow-2xl backdrop-blur-md animate-bounce-slow">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-tevesat-primary text-lg font-black italic text-white">
+                100%
+              </div>
+              <div>
+                <p className="text-[10px] font-black uppercase tracking-widest text-gray-400">
+                  Tecnología
+                </p>
+                <p className="text-base font-black leading-none text-tevesat-tertiary-dark">
+                  FIBRA ÓPTICA
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
-      <style>{`
-        @keyframes fadeIn {
-          from { opacity: 0; transform: translateY(30px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes vertical-bounce {
-          0%, 100% { transform: translateY(0); }
-          50% { transform: translateY(10px); }
-        }
-        .animate-fadeIn { animation: fadeIn 1s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
-        .animate-vertical-bounce { animation: vertical-bounce 2s ease-in-out infinite; }
-      `}</style>
     </section>
   );
 }

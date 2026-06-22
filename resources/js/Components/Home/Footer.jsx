@@ -5,7 +5,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-tevesat-tertiary-dark text-white pt-24 relative overflow-hidden">
+    <footer className="bg-gray-50 text-tevesat-tertiary-dark pt-24 relative overflow-hidden border-t border-gray-100">
       {/* Decorative Background Element */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-tevesat-primary/5 to-transparent pointer-events-none"></div>
 
@@ -18,11 +18,11 @@ export default function Footer() {
               <div className="flex items-center gap-4">
                 <img src="/images/empresa/logo.png" alt={import.meta.env.VITE_NOMBRE_EMPRESA} className="h-14 w-auto" />
                 <div className="flex flex-col">
-                  <span className="text-white font-black text-2xl tracking-tighter leading-none uppercase">{import.meta.env.VITE_NOMBRE_EMPRESA}</span>
+                  <span className="text-tevesat-tertiary-dark font-black text-2xl tracking-tighter leading-none uppercase">{import.meta.env.VITE_NOMBRE_EMPRESA}</span>
                 </div>
               </div>
 
-              <p className="text-white/70 text-lg font-medium leading-relaxed max-w-sm">
+              <p className="text-gray-500 text-lg font-medium leading-relaxed max-w-sm">
                 Conectando familias y negocios con lo mejor en tecnología. <br />
                 <span className="text-tevesat-primary font-black">¡Más cerca es mejor!</span>
               </p>
@@ -38,7 +38,7 @@ export default function Footer() {
                   <a
                     key={i}
                     href={social.href}
-                    className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-tevesat-primary hover:text-white hover:border-tevesat-primary transition-all duration-500 hover:-translate-y-2 shadow-lg"
+                    className="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center text-tevesat-tertiary-dark hover:bg-tevesat-primary hover:text-white hover:border-tevesat-primary transition-all duration-500 hover:-translate-y-2 shadow-sm"
                   >
                     <social.Icon size={20} />
                   </a>
@@ -52,7 +52,7 @@ export default function Footer() {
               <ul className="space-y-4">
                 {['Planes de Internet', 'Medidor de Velocidad', 'Internet Móvil', 'Cámaras de Seguridad', 'Soluciones PYME', 'Trabaja con nosotros'].map((item) => (
                   <li key={item}>
-                    <a href="#" className="text-white/50 hover:text-white transition-all font-bold text-sm uppercase tracking-wider flex items-center gap-2 group">
+                    <a href="#" className="text-gray-500 hover:text-tevesat-primary transition-all font-bold text-sm uppercase tracking-wider flex items-center gap-2 group">
                       <div className="w-1 h-1 bg-tevesat-primary rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
                       {item}
                     </a>
@@ -67,7 +67,7 @@ export default function Footer() {
               <ul className="space-y-4">
                 {[`Contrato ${import.meta.env.VITE_NOMBRE_EMPRESA}`, 'Mapa de cobertura', 'Protección al usuario', 'Neutralidad en la red', 'Internet Sano', 'PQRS'].map((item) => (
                   <li key={item}>
-                    <a href="#" className="text-white/50 hover:text-white transition-all font-bold text-sm uppercase tracking-wider flex items-center gap-2 group">
+                    <a href={item === 'PQRS' ? '/pqrs' : '#'} className="text-gray-500 hover:text-tevesat-primary transition-all font-bold text-sm uppercase tracking-wider flex items-center gap-2 group">
                       <div className="w-1 h-1 bg-tevesat-primary rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
                       {item}
                     </a>
@@ -82,32 +82,32 @@ export default function Footer() {
 
               <div className="space-y-6">
                 <a href="tel:3009109110" className="flex items-center gap-4 group">
-                  <div className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center text-tevesat-primary group-hover:bg-tevesat-primary group-hover:text-white transition-all duration-300">
+                  <div className="w-12 h-12 rounded-2xl bg-white border border-gray-200 flex items-center justify-center text-tevesat-primary group-hover:bg-tevesat-primary group-hover:text-white transition-all duration-300">
                     <Phone size={22} strokeWidth={2.5} />
                   </div>
                   <div>
-                    <p className="text-white font-black text-lg leading-none">300 910 9110</p>
-                    <p className="text-white/40 text-[10px] font-black uppercase tracking-widest mt-1">Línea Nacional</p>
+                    <p className="text-tevesat-tertiary-dark font-black text-lg leading-none">300 910 9110</p>
+                    <p className="text-gray-400 text-[10px] font-black uppercase tracking-widest mt-1">Línea Nacional</p>
                   </div>
                 </a>
 
                 <a href="https://wa.me/573004798909" className="flex items-center gap-4 group">
-                  <div className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center text-tevesat-primary group-hover:bg-tevesat-primary group-hover:text-white transition-all duration-300">
+                  <div className="w-12 h-12 rounded-2xl bg-white border border-gray-200 flex items-center justify-center text-tevesat-primary group-hover:bg-tevesat-primary group-hover:text-white transition-all duration-300">
                     <WhatsappIcon className="w-6 h-6 text-tevesat-primary group-hover:text-white" />
                   </div>
                   <div>
-                    <p className="text-white font-black text-lg leading-none">300 479 8909</p>
-                    <p className="text-white/40 text-[10px] font-black uppercase tracking-widest mt-1">WhatsApp Ventas</p>
+                    <p className="text-tevesat-tertiary-dark font-black text-lg leading-none">300 479 8909</p>
+                    <p className="text-gray-400 text-[10px] font-black uppercase tracking-widest mt-1">WhatsApp Ventas</p>
                   </div>
                 </a>
 
                 <a href="mailto:internet@reintech.co" className="flex items-center gap-4 group">
-                  <div className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center text-tevesat-primary group-hover:bg-tevesat-primary group-hover:text-white transition-all duration-300">
+                  <div className="w-12 h-12 rounded-2xl bg-white border border-gray-200 flex items-center justify-center text-tevesat-primary group-hover:bg-tevesat-primary group-hover:text-white transition-all duration-300">
                     <Mail size={22} strokeWidth={2.5} />
                   </div>
                   <div>
-                    <p className="text-white font-black text-sm break-all leading-none italic">internet@reintech.co</p>
-                    <p className="text-white/40 text-[10px] font-black uppercase tracking-widest mt-1">Correo Soporte</p>
+                    <p className="text-tevesat-tertiary-dark font-black text-sm break-all leading-none italic">internet@reintech.co</p>
+                    <p className="text-gray-400 text-[10px] font-black uppercase tracking-widest mt-1">Correo Soporte</p>
                   </div>
                 </a>
               </div>
@@ -118,22 +118,22 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="bg-black/20 border-t border-white/5 py-8 px-4 md:px-16 lg:px-24">
+      <div className="bg-gray-100 border-t border-gray-200 py-8 px-4 md:px-16 lg:px-24">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-white/40 font-black uppercase text-[10px] tracking-[0.3em] text-center md:text-left">
-            © {currentYear} <span className="text-white">{import.meta.env.VITE_NOMBRE_EMPRESA}</span> | Todos los derechos reservados
+          <p className="text-gray-400 font-black uppercase text-[10px] tracking-[0.3em] text-center md:text-left">
+            © {currentYear} <span className="text-tevesat-tertiary-dark">{import.meta.env.VITE_NOMBRE_EMPRESA}</span> | Todos los derechos reservados
           </p>
 
 
-          <p className="text-white/40 font-black uppercase text-[10px] tracking-[0.3em] text-center md:text-left">
-            NIT: 901551794-1 | <span className="text-white">Razón Social: REINTECHSAS</span>
+          <p className="text-gray-400 font-black uppercase text-[10px] tracking-[0.3em] text-center md:text-left">
+            NIT: 901551794-1 | <span className="text-tevesat-tertiary-dark">Razón Social: REINTECHSAS</span>
           </p>
 
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="group flex items-center gap-3 bg-white/5 px-6 py-3 rounded-full hover:bg-tevesat-primary transition-all duration-500"
+            className="group flex items-center gap-3 bg-white border border-gray-200 px-6 py-3 rounded-full hover:bg-tevesat-primary hover:border-tevesat-primary transition-all duration-500"
           >
-            <span className="text-white font-black text-[10px] uppercase tracking-widest">Volver al inicio</span>
+            <span className="text-tevesat-tertiary-dark group-hover:text-white font-black text-[10px] uppercase tracking-widest transition-colors">Volver al inicio</span>
             <div className="w-8 h-8 rounded-full bg-tevesat-primary group-hover:bg-white flex items-center justify-center transition-all">
               <ArrowUp size={16} className="text-white group-hover:text-tevesat-primary" strokeWidth={3} />
             </div>
