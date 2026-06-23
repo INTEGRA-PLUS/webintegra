@@ -16,9 +16,8 @@ export default function Footer() {
             {/* Column 1: Brand & Social */}
             <div className="lg:col-span-2 space-y-8">
               <div className="flex items-center gap-4">
-                <img src="/images/empresa/logo.png" alt={import.meta.env.VITE_NOMBRE_EMPRESA} className="h-14 w-auto" />
-                <div className="flex flex-col">
-                  <span className="text-tevesat-tertiary-dark font-black text-2xl tracking-tighter leading-none uppercase">{import.meta.env.VITE_NOMBRE_EMPRESA}</span>
+                <div className="flex items-center justify-center rounded-2xl bg-tevesat-tertiary-dark p-2.5 shadow-sm">
+                  <img src="/images/empresa/logo.png" alt={import.meta.env.VITE_NOMBRE_EMPRESA} className="h-16 w-auto object-contain" />
                 </div>
               </div>
 

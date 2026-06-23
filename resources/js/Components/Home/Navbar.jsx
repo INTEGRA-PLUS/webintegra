@@ -50,13 +50,12 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center gap-3 group">
-              <img
-                src="/images/empresa/logo.png"
-                alt={import.meta.env.VITE_NOMBRE_EMPRESA}
-                className="h-10 md:h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300"
-              />
-              <div className="flex flex-col">
-                <span className="text-tevesat-tertiary-dark font-black text-xs md:text-sm tracking-tighter leading-none group-hover:text-tevesat-primary transition-colors uppercase">{import.meta.env.VITE_NOMBRE_EMPRESA}</span>
+              <div className="flex items-center justify-center rounded-xl bg-tevesat-tertiary-dark p-1.5 shadow-sm">
+                <img
+                  src="/images/empresa/logo.png"
+                  alt={import.meta.env.VITE_NOMBRE_EMPRESA}
+                  className="h-9 md:h-11 w-auto object-contain group-hover:scale-105 transition-transform duration-300"
+                />
               </div>
             </Link>
           </div>
