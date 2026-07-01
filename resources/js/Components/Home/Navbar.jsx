@@ -18,8 +18,6 @@ export default function Navbar() {
 
   const navLinks = [
     { label: 'Inicio', href: '/' },
-    { label: 'Planes', href: '/planes' },
-    { label: 'Televisión', href: '/television' },
     { label: 'Speedtest', href: '/speedtest' },
     { label: 'Quiénes somos', href: '/#quienes-somos' },
     { label: 'PQRS', href: '/pqrs' },

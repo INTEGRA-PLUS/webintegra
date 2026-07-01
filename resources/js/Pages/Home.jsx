@@ -3,8 +3,6 @@ import Navbar from '../Components/Home/Navbar';
 import HeroBanner from '../Components/Home/HeroBanner';
 import ServicesBar from '../Components/Home/ServicesBar';
 import ServicesOverview from '../Components/Home/ServicesOverview';
-import InteractiveAssistant from '../Components/Home/Assistant/InteractiveAssistant';
-import FeaturedPlans from '../Components/Home/FeaturedPlans';
 import DiscoverSection from '../Components/Home/DiscoverSection';
 import CoverageCheck from '../Components/Home/CoverageCheck';
 import WhyTevesat from '../Components/Home/WhyTevesat';
@@ -33,15 +31,6 @@ export default function Home() {
 
       {/* Services Overview - Nueva sección profesional */}
       <ServicesOverview />
-
-      {/* Interactive Assistant - Quiz para recomendar velocidad/plan */}
-      <InteractiveAssistant />
-
-      {/* Featured Plans - "Planes diseñados para ti" (3 destacados) */}
-      <FeaturedPlans />
-
-      {/* Professional Divider */}
-      <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-gray-200 to-transparent"></div>
 
       {/* Discover Section - Servicios adicionales */}
       <DiscoverSection />

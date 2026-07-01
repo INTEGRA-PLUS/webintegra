@@ -1,392 +1,367 @@
 {
-  "_Footer-eecP-jEe.js": {
-    "file": "assets/Footer-eecP-jEe.js",
+  "_Footer-CRmSaoyh.js": {
+    "file": "assets/Footer-CRmSaoyh.js",
     "name": "Footer",
     "imports": [
       "resources/js/app.jsx"
     ]
   },
-  "_PlanCard-BkLBMpW7.js": {
-    "file": "assets/PlanCard-BkLBMpW7.js",
-    "name": "PlanCard",
-    "imports": [
-      "_Footer-eecP-jEe.js",
-      "resources/js/app.jsx",
-      "_star-D1nbRi3d.js",
-      "_zap-oWnLMizh.js",
-      "_arrow-right-CcVc5lDG.js"
-    ]
-  },
-  "_ServiceLayout-Bm9NR_5g.js": {
-    "file": "assets/ServiceLayout-Bm9NR_5g.js",
+  "_ServiceLayout-D0LdJGwn.js": {
+    "file": "assets/ServiceLayout-D0LdJGwn.js",
     "name": "ServiceLayout",
     "imports": [
       "resources/js/app.jsx",
-      "_Footer-eecP-jEe.js"
+      "_Footer-CRmSaoyh.js"
     ]
   },
-  "_activity-BA-7MQSs.js": {
-    "file": "assets/activity-BA-7MQSs.js",
+  "_activity-QqWAN-Oo.js": {
+    "file": "assets/activity-QqWAN-Oo.js",
     "name": "activity",
     "imports": [
-      "_Footer-eecP-jEe.js"
+      "_Footer-CRmSaoyh.js"
     ]
   },
-  "_arrow-right-CcVc5lDG.js": {
-    "file": "assets/arrow-right-CcVc5lDG.js",
+  "_arrow-right-Jn1zG8xh.js": {
+    "file": "assets/arrow-right-Jn1zG8xh.js",
     "name": "arrow-right",
     "imports": [
-      "_Footer-eecP-jEe.js"
+      "_Footer-CRmSaoyh.js"
     ]
   },
-  "_cable-EDDKysgq.js": {
-    "file": "assets/cable-EDDKysgq.js",
+  "_cable-Cf2p1Qv6.js": {
+    "file": "assets/cable-Cf2p1Qv6.js",
     "name": "cable",
     "imports": [
-      "_Footer-eecP-jEe.js"
+      "_Footer-CRmSaoyh.js"
     ]
   },
-  "_camera-DelaF6BK.js": {
-    "file": "assets/camera-DelaF6BK.js",
+  "_camera-B7Bniozg.js": {
+    "file": "assets/camera-B7Bniozg.js",
     "name": "camera",
     "imports": [
-      "_Footer-eecP-jEe.js"
+      "_Footer-CRmSaoyh.js"
     ]
   },
-  "_circle-check-big-CsCPzN-B.js": {
-    "file": "assets/circle-check-big-CsCPzN-B.js",
+  "_circle-check-big-Dr0YsAXv.js": {
+    "file": "assets/circle-check-big-Dr0YsAXv.js",
     "name": "circle-check-big",
     "imports": [
-      "_Footer-eecP-jEe.js"
+      "_Footer-CRmSaoyh.js"
     ]
   },
-  "_eye-xH8u0G71.js": {
-    "file": "assets/eye-xH8u0G71.js",
+  "_circle-help-CUb5VHE3.js": {
+    "file": "assets/circle-help-CUb5VHE3.js",
+    "name": "circle-help",
+    "imports": [
+      "_Footer-CRmSaoyh.js"
+    ]
+  },
+  "_eye-CNcyBKS0.js": {
+    "file": "assets/eye-CNcyBKS0.js",
     "name": "eye",
     "imports": [
-      "_Footer-eecP-jEe.js"
+      "_Footer-CRmSaoyh.js"
     ]
   },
-  "_gauge-BRNoKX60.js": {
-    "file": "assets/gauge-BRNoKX60.js",
+  "_gauge-CBTECpDf.js": {
+    "file": "assets/gauge-CBTECpDf.js",
     "name": "gauge",
     "imports": [
-      "_Footer-eecP-jEe.js"
+      "_Footer-CRmSaoyh.js"
     ]
   },
-  "_globe-H_-vxmF9.js": {
-    "file": "assets/globe-H_-vxmF9.js",
+  "_globe-D0zwO8h1.js": {
+    "file": "assets/globe-D0zwO8h1.js",
     "name": "globe",
     "imports": [
-      "_Footer-eecP-jEe.js"
+      "_Footer-CRmSaoyh.js"
     ]
   },
-  "_lightbulb-Bkx8xGu_.js": {
-    "file": "assets/lightbulb-Bkx8xGu_.js",
+  "_lightbulb-CwVufPA3.js": {
+    "file": "assets/lightbulb-CwVufPA3.js",
     "name": "lightbulb",
     "imports": [
-      "_Footer-eecP-jEe.js"
+      "_Footer-CRmSaoyh.js"
     ]
   },
-  "_lock-CL2yXoFN.js": {
-    "file": "assets/lock-CL2yXoFN.js",
+  "_lock-D246Fy3Y.js": {
+    "file": "assets/lock-D246Fy3Y.js",
     "name": "lock",
     "imports": [
-      "_Footer-eecP-jEe.js"
+      "_Footer-CRmSaoyh.js"
     ]
   },
-  "_radio-pvH1HX0j.js": {
-    "file": "assets/radio-pvH1HX0j.js",
-    "name": "radio",
+  "_plus-7caZZKD0.js": {
+    "file": "assets/plus-7caZZKD0.js",
+    "name": "plus",
     "imports": [
-      "_Footer-eecP-jEe.js"
+      "_Footer-CRmSaoyh.js"
     ]
   },
-  "_rotate-ccw-BeXPDJdA.js": {
-    "file": "assets/rotate-ccw-BeXPDJdA.js",
-    "name": "rotate-ccw",
-    "imports": [
-      "_Footer-eecP-jEe.js"
-    ]
-  },
-  "_search-BtywJNn3.js": {
-    "file": "assets/search-BtywJNn3.js",
+  "_search-DlnsGFHI.js": {
+    "file": "assets/search-DlnsGFHI.js",
     "name": "search",
     "imports": [
-      "_Footer-eecP-jEe.js"
+      "_Footer-CRmSaoyh.js"
     ]
   },
-  "_settings-C-VoxIja.js": {
-    "file": "assets/settings-C-VoxIja.js",
+  "_settings-Bpqec19N.js": {
+    "file": "assets/settings-Bpqec19N.js",
     "name": "settings",
     "imports": [
-      "_Footer-eecP-jEe.js"
+      "_Footer-CRmSaoyh.js"
     ]
   },
-  "_shield-W4A1-5Hk.js": {
-    "file": "assets/shield-W4A1-5Hk.js",
+  "_shield-BRN7ODea.js": {
+    "file": "assets/shield-BRN7ODea.js",
     "name": "shield",
     "imports": [
-      "_Footer-eecP-jEe.js"
+      "_Footer-CRmSaoyh.js"
     ]
   },
-  "_shield-check-NfDp-N61.js": {
-    "file": "assets/shield-check-NfDp-N61.js",
+  "_shield-check-BhSIA8ZG.js": {
+    "file": "assets/shield-check-BhSIA8ZG.js",
     "name": "shield-check",
     "imports": [
-      "_Footer-eecP-jEe.js"
+      "_Footer-CRmSaoyh.js"
     ]
   },
-  "_sparkles-d0axE--0.js": {
-    "file": "assets/sparkles-d0axE--0.js",
-    "name": "sparkles",
-    "imports": [
-      "_Footer-eecP-jEe.js"
-    ]
-  },
-  "_star-D1nbRi3d.js": {
-    "file": "assets/star-D1nbRi3d.js",
+  "_star-53BYEBo_.js": {
+    "file": "assets/star-53BYEBo_.js",
     "name": "star",
     "imports": [
-      "_Footer-eecP-jEe.js"
+      "_Footer-CRmSaoyh.js"
     ]
   },
-  "_tv-DRaA3zey.js": {
-    "file": "assets/tv-DRaA3zey.js",
+  "_tv-CjQ3d6i9.js": {
+    "file": "assets/tv-CjQ3d6i9.js",
     "name": "tv",
     "imports": [
-      "_Footer-eecP-jEe.js"
+      "_Footer-CRmSaoyh.js"
     ]
   },
-  "_wifi-BxXXJXMr.js": {
-    "file": "assets/wifi-BxXXJXMr.js",
+  "_wifi-DINrwqGR.js": {
+    "file": "assets/wifi-DINrwqGR.js",
     "name": "wifi",
     "imports": [
-      "_Footer-eecP-jEe.js"
+      "_Footer-CRmSaoyh.js"
     ]
   },
-  "_zap-oWnLMizh.js": {
-    "file": "assets/zap-oWnLMizh.js",
+  "_zap-DHeOg2zA.js": {
+    "file": "assets/zap-DHeOg2zA.js",
     "name": "zap",
     "imports": [
-      "_Footer-eecP-jEe.js"
+      "_Footer-CRmSaoyh.js"
     ]
   },
   "resources/css/app.css": {
-    "file": "assets/app-C3HycQ7y.css",
+    "file": "assets/app-hfP5VjsH.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
   "resources/js/Pages/Home.jsx": {
-    "file": "assets/Home-D7SN3X7a.js",
+    "file": "assets/Home-B6gmZukf.js",
     "name": "Home",
     "src": "resources/js/Pages/Home.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_Footer-eecP-jEe.js",
-      "_shield-check-NfDp-N61.js",
-      "_arrow-right-CcVc5lDG.js",
-      "_PlanCard-BkLBMpW7.js",
-      "_zap-oWnLMizh.js",
-      "_wifi-BxXXJXMr.js",
-      "_tv-DRaA3zey.js",
-      "_camera-DelaF6BK.js",
-      "_shield-W4A1-5Hk.js",
-      "_globe-H_-vxmF9.js",
-      "_sparkles-d0axE--0.js",
-      "_star-D1nbRi3d.js",
-      "_rotate-ccw-BeXPDJdA.js",
-      "_radio-pvH1HX0j.js",
-      "_gauge-BRNoKX60.js",
-      "_circle-check-big-CsCPzN-B.js"
+      "_Footer-CRmSaoyh.js",
+      "_shield-check-BhSIA8ZG.js",
+      "_arrow-right-Jn1zG8xh.js",
+      "_plus-7caZZKD0.js",
+      "_zap-DHeOg2zA.js",
+      "_wifi-DINrwqGR.js",
+      "_camera-B7Bniozg.js",
+      "_shield-BRN7ODea.js",
+      "_globe-D0zwO8h1.js",
+      "_circle-help-CUb5VHE3.js",
+      "_circle-check-big-Dr0YsAXv.js"
     ],
     "css": [
-      "assets/app-C3HycQ7y.css"
+      "assets/app-hfP5VjsH.css"
     ]
   },
   "resources/js/Pages/Planes.jsx": {
-    "file": "assets/Planes-BFIJJWR4.js",
+    "file": "assets/Planes-DfaSFwiV.js",
     "name": "Planes",
     "src": "resources/js/Pages/Planes.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_Footer-eecP-jEe.js",
-      "_PlanCard-BkLBMpW7.js",
-      "_zap-oWnLMizh.js",
-      "_wifi-BxXXJXMr.js",
-      "_shield-check-NfDp-N61.js",
-      "_star-D1nbRi3d.js",
-      "_arrow-right-CcVc5lDG.js"
+      "_Footer-CRmSaoyh.js",
+      "_star-53BYEBo_.js",
+      "_zap-DHeOg2zA.js",
+      "_arrow-right-Jn1zG8xh.js",
+      "_wifi-DINrwqGR.js",
+      "_shield-check-BhSIA8ZG.js",
+      "_plus-7caZZKD0.js"
     ],
     "css": [
-      "assets/app-C3HycQ7y.css"
+      "assets/app-hfP5VjsH.css"
     ]
   },
   "resources/js/Pages/Pqrs.jsx": {
-    "file": "assets/Pqrs-DxPBt3V8.js",
+    "file": "assets/Pqrs-KEXzTIcd.js",
     "name": "Pqrs",
     "src": "resources/js/Pages/Pqrs.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_Footer-eecP-jEe.js",
-      "_circle-check-big-CsCPzN-B.js",
-      "_lightbulb-Bkx8xGu_.js",
-      "_shield-check-NfDp-N61.js"
+      "_Footer-CRmSaoyh.js",
+      "_circle-check-big-Dr0YsAXv.js",
+      "_lightbulb-CwVufPA3.js",
+      "_shield-check-BhSIA8ZG.js"
     ],
     "css": [
-      "assets/app-C3HycQ7y.css"
+      "assets/app-hfP5VjsH.css"
     ]
   },
   "resources/js/Pages/Services/Cableado.jsx": {
-    "file": "assets/Cableado-C4T4GS9i.js",
+    "file": "assets/Cableado-FhxFHiG9.js",
     "name": "Cableado",
     "src": "resources/js/Pages/Services/Cableado.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_ServiceLayout-Bm9NR_5g.js",
-      "_activity-BA-7MQSs.js",
-      "_cable-EDDKysgq.js",
-      "_zap-oWnLMizh.js",
-      "_tv-DRaA3zey.js",
-      "_shield-check-NfDp-N61.js",
-      "_wifi-BxXXJXMr.js",
-      "_Footer-eecP-jEe.js"
+      "_ServiceLayout-D0LdJGwn.js",
+      "_activity-QqWAN-Oo.js",
+      "_cable-Cf2p1Qv6.js",
+      "_zap-DHeOg2zA.js",
+      "_tv-CjQ3d6i9.js",
+      "_shield-check-BhSIA8ZG.js",
+      "_wifi-DINrwqGR.js",
+      "_Footer-CRmSaoyh.js"
     ],
     "css": [
-      "assets/app-C3HycQ7y.css"
+      "assets/app-hfP5VjsH.css"
     ]
   },
   "resources/js/Pages/Services/Cctv.jsx": {
-    "file": "assets/Cctv-sSMTkW62.js",
+    "file": "assets/Cctv-CnqWCfAa.js",
     "name": "Cctv",
     "src": "resources/js/Pages/Services/Cctv.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_ServiceLayout-Bm9NR_5g.js",
-      "_Footer-eecP-jEe.js",
-      "_shield-W4A1-5Hk.js",
-      "_camera-DelaF6BK.js",
-      "_settings-C-VoxIja.js",
-      "_cable-EDDKysgq.js",
-      "_eye-xH8u0G71.js"
+      "_ServiceLayout-D0LdJGwn.js",
+      "_Footer-CRmSaoyh.js",
+      "_shield-BRN7ODea.js",
+      "_camera-B7Bniozg.js",
+      "_settings-Bpqec19N.js",
+      "_cable-Cf2p1Qv6.js",
+      "_eye-CNcyBKS0.js"
     ],
     "css": [
-      "assets/app-C3HycQ7y.css"
+      "assets/app-hfP5VjsH.css"
     ]
   },
   "resources/js/Pages/Services/Ciberseguridad.jsx": {
-    "file": "assets/Ciberseguridad-BBlWzUSl.js",
+    "file": "assets/Ciberseguridad-EBv3oRRX.js",
     "name": "Ciberseguridad",
     "src": "resources/js/Pages/Services/Ciberseguridad.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_ServiceLayout-Bm9NR_5g.js",
-      "_Footer-eecP-jEe.js",
-      "_search-BtywJNn3.js",
-      "_shield-check-NfDp-N61.js",
-      "_lock-CL2yXoFN.js",
-      "_eye-xH8u0G71.js"
+      "_ServiceLayout-D0LdJGwn.js",
+      "_Footer-CRmSaoyh.js",
+      "_search-DlnsGFHI.js",
+      "_shield-check-BhSIA8ZG.js",
+      "_lock-D246Fy3Y.js",
+      "_eye-CNcyBKS0.js"
     ],
     "css": [
-      "assets/app-C3HycQ7y.css"
+      "assets/app-hfP5VjsH.css"
     ]
   },
   "resources/js/Pages/Services/EnergiasRenovables.jsx": {
-    "file": "assets/EnergiasRenovables-yiv-RLN2.js",
+    "file": "assets/EnergiasRenovables-CVNQSeV2.js",
     "name": "EnergiasRenovables",
     "src": "resources/js/Pages/Services/EnergiasRenovables.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_Footer-eecP-jEe.js",
-      "_zap-oWnLMizh.js",
-      "_lightbulb-Bkx8xGu_.js",
-      "_gauge-BRNoKX60.js",
-      "_arrow-right-CcVc5lDG.js",
-      "_shield-check-NfDp-N61.js"
+      "_Footer-CRmSaoyh.js",
+      "_zap-DHeOg2zA.js",
+      "_lightbulb-CwVufPA3.js",
+      "_gauge-CBTECpDf.js",
+      "_arrow-right-Jn1zG8xh.js",
+      "_shield-check-BhSIA8ZG.js"
     ],
     "css": [
-      "assets/app-C3HycQ7y.css"
+      "assets/app-hfP5VjsH.css"
     ]
   },
   "resources/js/Pages/Services/ManosRemotas.jsx": {
-    "file": "assets/ManosRemotas-Y_xzmFKG.js",
+    "file": "assets/ManosRemotas-BkvAfraq.js",
     "name": "ManosRemotas",
     "src": "resources/js/Pages/Services/ManosRemotas.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_ServiceLayout-Bm9NR_5g.js",
-      "_globe-H_-vxmF9.js",
-      "_Footer-eecP-jEe.js",
-      "_shield-W4A1-5Hk.js",
-      "_settings-C-VoxIja.js"
+      "_ServiceLayout-D0LdJGwn.js",
+      "_globe-D0zwO8h1.js",
+      "_Footer-CRmSaoyh.js",
+      "_shield-BRN7ODea.js",
+      "_settings-Bpqec19N.js"
     ],
     "css": [
-      "assets/app-C3HycQ7y.css"
+      "assets/app-hfP5VjsH.css"
     ]
   },
   "resources/js/Pages/Services/RedesInalambricas.jsx": {
-    "file": "assets/RedesInalambricas-Dv3sM587.js",
+    "file": "assets/RedesInalambricas-BDtShug4.js",
     "name": "RedesInalambricas",
     "src": "resources/js/Pages/Services/RedesInalambricas.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_ServiceLayout-Bm9NR_5g.js",
-      "_Footer-eecP-jEe.js",
-      "_radio-pvH1HX0j.js",
-      "_zap-oWnLMizh.js",
-      "_wifi-BxXXJXMr.js",
-      "_lock-CL2yXoFN.js"
+      "_ServiceLayout-D0LdJGwn.js",
+      "_Footer-CRmSaoyh.js",
+      "_zap-DHeOg2zA.js",
+      "_wifi-DINrwqGR.js",
+      "_lock-D246Fy3Y.js",
+      "_circle-help-CUb5VHE3.js"
     ],
     "css": [
-      "assets/app-C3HycQ7y.css"
+      "assets/app-hfP5VjsH.css"
     ]
   },
   "resources/js/Pages/Speedtest.jsx": {
-    "file": "assets/Speedtest-B0w0tfUE.js",
+    "file": "assets/Speedtest-Bu2cVRFk.js",
     "name": "Speedtest",
     "src": "resources/js/Pages/Speedtest.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_Footer-eecP-jEe.js",
-      "_activity-BA-7MQSs.js",
-      "_rotate-ccw-BeXPDJdA.js",
-      "_gauge-BRNoKX60.js"
+      "_Footer-CRmSaoyh.js",
+      "_activity-QqWAN-Oo.js",
+      "_gauge-CBTECpDf.js"
     ],
     "css": [
-      "assets/app-C3HycQ7y.css"
+      "assets/app-hfP5VjsH.css"
     ]
   },
   "resources/js/Pages/Television.jsx": {
-    "file": "assets/Television-B9BtK4oT.js",
+    "file": "assets/Television-D76ITI0P.js",
     "name": "Television",
     "src": "resources/js/Pages/Television.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_Footer-eecP-jEe.js",
-      "_sparkles-d0axE--0.js",
-      "_globe-H_-vxmF9.js",
-      "_star-D1nbRi3d.js",
-      "_tv-DRaA3zey.js",
-      "_arrow-right-CcVc5lDG.js",
-      "_search-BtywJNn3.js"
+      "_Footer-CRmSaoyh.js",
+      "_globe-D0zwO8h1.js",
+      "_star-53BYEBo_.js",
+      "_tv-CjQ3d6i9.js",
+      "_arrow-right-Jn1zG8xh.js",
+      "_search-DlnsGFHI.js"
     ],
     "css": [
-      "assets/app-C3HycQ7y.css"
+      "assets/app-hfP5VjsH.css"
     ]
   },
   "resources/js/app.jsx": {
-    "file": "assets/app-BB9VEYU8.js",
+    "file": "assets/app-yKMuw7qV.js",
     "name": "app",
     "src": "resources/js/app.jsx",
     "isEntry": true,
@@ -404,7 +379,7 @@
       "resources/js/Pages/Television.jsx"
     ],
     "css": [
-      "assets/app-C3HycQ7y.css"
+      "assets/app-hfP5VjsH.css"
     ]
   }
 }

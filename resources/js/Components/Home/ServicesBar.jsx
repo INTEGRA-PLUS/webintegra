@@ -1,5 +1,5 @@
 import React from 'react';
-import { Wifi, Tv, Smartphone, Camera } from 'lucide-react';
+import { Wifi, Camera } from 'lucide-react';
 
 export default function ServicesBar() {
   const services = [
@@ -7,16 +7,6 @@ export default function ServicesBar() {
       icon: Wifi,
       title: 'Internet Hogar',
       description: 'Conexión rápida y confiable',
-    },
-    {
-      icon: Tv,
-      title: 'Televisión',
-      description: 'Canales HD incluidos',
-    },
-    {
-      icon: Smartphone,
-      title: 'Internet Móvil',
-      description: 'Cobertura en toda la región',
     },
     {
       icon: Camera,
@@ -45,7 +35,7 @@ export default function ServicesBar() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mx-auto grid max-w-4xl grid-cols-1 gap-8 md:grid-cols-2">
           {services.map((service) => {
             const IconComponent = service.icon;
             return (

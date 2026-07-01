@@ -2,11 +2,11 @@ import React from 'react';
 import { Shield, Globe, ArrowRight } from 'lucide-react';
 
 export default function ServicesOverview() {
-  const scrollToPlans = (e) => {
+  const scrollToContacto = (e) => {
     e.preventDefault();
-    const plansSection = document.getElementById('planes');
-    if (plansSection) {
-      plansSection.scrollIntoView({ behavior: 'smooth' });
+    const contactoSection = document.getElementById('contacto');
+    if (contactoSection) {
+      contactoSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -80,11 +80,11 @@ export default function ServicesOverview() {
               </div>
 
               <a
-                href="#planes"
-                onClick={scrollToPlans}
+                href="#contacto"
+                onClick={scrollToContacto}
                 className="group flex transform items-center justify-between rounded-2xl bg-tevesat-primary px-8 py-6 font-black uppercase tracking-widest text-white shadow-xl shadow-tevesat-primary/30 transition-all duration-500 hover:scale-105 hover:bg-tevesat-primary-light active:scale-95"
               >
-                Ver nuestros planes
+                Contáctanos
                 <ArrowRight size={24} className="transition-transform duration-300 group-hover:translate-x-2" />
               </a>
             </div>
