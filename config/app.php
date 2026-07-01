@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'name' => env('NOMBRE_EMPRESA', 'Redes Tevesat S.A.S'),
+    'name' => env('NOMBRE_EMPRESA', 'SM Telecomunicaciones'),
     'env' => env('APP_ENV', 'production'),
     'debug' => (bool) env('APP_DEBUG', false),
     'url' => env('APP_URL', 'http://localhost'),

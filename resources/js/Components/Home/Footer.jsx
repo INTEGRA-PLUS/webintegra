@@ -125,7 +125,7 @@ export default function Footer() {
 
 
           <p className="text-gray-400 font-black uppercase text-[10px] tracking-[0.3em] text-center md:text-left">
-            NIT: 901551794-1 | <span className="text-tevesat-tertiary-dark">Razón Social: REINTECHSAS</span>
+            NIT: 901551794-1 | <span className="text-tevesat-tertiary-dark">Razón Social: SM TELECOMUNICACIONES SAS</span>
           </p>
 
           <button

@@ -161,7 +161,7 @@ export default function ContactForm() {
                         value={formData.email}
                         onChange={handleChange}
                         className="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-tevesat-primary/30 focus:border-tevesat-primary text-tevesat-tertiary-dark font-bold transition-all text-sm placeholder-gray-400"
-                        placeholder="email@reintech.co"
+                        placeholder="tucorreo@ejemplo.com"
                       />
                     </div>
                     <div className="space-y-1">
