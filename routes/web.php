@@ -18,6 +18,9 @@ Route::get('/planes', [HomeController::class, 'planes'])->name('planes');
 // Página de Televisión
 Route::get('/television', [HomeController::class, 'television'])->name('television');
 
+// Página Nosotros (institucional)
+Route::get('/nosotros', [HomeController::class, 'nosotros'])->name('nosotros');
+
 // Test de velocidad
 Route::get('/speedtest', [HomeController::class, 'speedtest'])->name('speedtest');
 

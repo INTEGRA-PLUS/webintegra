@@ -1,27 +1,18 @@
-import React, { useState, useMemo } from 'react';
-import ChannelFinder from './ChannelFinder';
-import ChannelGrid from './ChannelGrid';
-import { CHANNELS } from './data/tv';
+import React, { useState } from 'react';
+import { Sparkles, SlidersHorizontal } from 'lucide-react';
+import TvFlyer from './TvFlyer';
+import ChannelSearch from './ChannelSearch';
 
 /**
- * ChannelGuide - Sección "Parrilla Oficial" con buscador interactivo al lado.
+ * ChannelGuide - Parrilla oficial de canales con dos vistas conmutables:
  *
- * Maneja el estado de búsqueda (texto + categoría) y filtra la parrilla en
- * tiempo real. Delega la presentación en ChannelFinder (panel lateral) y
- * ChannelGrid (grilla de canales).
+ *   1. "Parrilla Oficial (Folleto Recreado)" -> folleto NUPLIN (TvFlyer)
+ *   2. "Buscador Interactivo"                -> buscador filtrable (ChannelSearch)
+ *
+ * Replica la sección de televisión de la parrilla oficial autorizada por TVYMAS.
  */
 export default function ChannelGuide() {
-  const [query, setQuery] = useState('');
-  const [category, setCategory] = useState('Todas');
-
-  const filtered = useMemo(() => {
-    const term = query.trim().toLowerCase();
-    return CHANNELS.filter((ch) => {
-      const matchCategory = category === 'Todas' || ch.category === category;
-      const matchQuery = term === '' || ch.name.toLowerCase().includes(term);
-      return matchCategory && matchQuery;
-    });
-  }, [query, category]);
+  const [view, setView] = useState('flyer');
 
   return (
     <section className="relative overflow-hidden bg-gray-50 px-4 py-24 md:px-8">
@@ -29,35 +20,53 @@ export default function ChannelGuide() {
 
       <div className="relative z-10 mx-auto max-w-7xl">
         {/* Encabezado */}
-        <div className="mx-auto mb-14 max-w-2xl text-center">
+        <div className="mx-auto mb-10 max-w-2xl text-center">
           <span className="text-xs font-black uppercase tracking-[0.3em] text-tevesat-primary">
             Todos nuestros canales
           </span>
           <h2 className="mt-4 text-4xl font-black leading-[1.05] tracking-tight text-tevesat-tertiary-dark md:text-5xl">
             Parrilla <span className="italic text-tevesat-primary">Oficial</span>
           </h2>
-          <p className="mx-auto mt-3 text-sm font-bold uppercase tracking-widest text-gray-400">
-            (Folleto Recreado)
-          </p>
         </div>
 
-        {/* Buscador (lado) + parrilla */}
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-12">
-          <div className="lg:col-span-4">
-            <ChannelFinder
-              query={query}
-              onQueryChange={setQuery}
-              activeCategory={category}
-              onCategoryChange={setCategory}
-              resultCount={filtered.length}
-              totalCount={CHANNELS.length}
-            />
-          </div>
-
-          <div className="lg:col-span-8">
-            <ChannelGrid channels={filtered} />
+        {/* Toggle de vista */}
+        <div className="mb-10 flex justify-center">
+          <div className="inline-flex gap-1 rounded-2xl border border-gray-200 bg-white p-1.5 shadow-sm">
+            <button
+              type="button"
+              onClick={() => setView('flyer')}
+              className={`flex items-center gap-2 rounded-xl px-5 py-2.5 text-xs font-extrabold uppercase tracking-wide transition-all ${
+                view === 'flyer'
+                  ? 'bg-tevesat-primary font-black text-white shadow-md'
+                  : 'text-gray-600 hover:text-gray-900'
+              }`}
+            >
+              <Sparkles
+                size={16}
+                className={view === 'flyer' ? 'text-amber-300' : 'animate-pulse text-amber-500'}
+              />
+              Parrilla Oficial (Folleto Recreado)
+            </button>
+            <button
+              type="button"
+              onClick={() => setView('search')}
+              className={`flex items-center gap-2 rounded-xl px-5 py-2.5 text-xs font-extrabold uppercase tracking-wide transition-all ${
+                view === 'search'
+                  ? 'bg-tevesat-primary font-black text-white shadow-md'
+                  : 'text-gray-600 hover:text-gray-900'
+              }`}
+            >
+              <SlidersHorizontal
+                size={16}
+                className={view === 'search' ? 'text-white' : 'text-tevesat-primary'}
+              />
+              Buscador Interactivo
+            </button>
           </div>
         </div>
+
+        {/* Vista activa */}
+        {view === 'flyer' ? <TvFlyer /> : <ChannelSearch />}
       </div>
     </section>
   );

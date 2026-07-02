@@ -41,6 +41,16 @@ class HomeController extends Controller
     }
 
     /**
+     * Mostrar la página institucional (Nosotros)
+     *
+     * @return \Inertia\Response
+     */
+    public function nosotros()
+    {
+        return Inertia::render('Nosotros');
+    }
+
+    /**
      * Mostrar la página de test de velocidad
      *
      * @return \Inertia\Response
