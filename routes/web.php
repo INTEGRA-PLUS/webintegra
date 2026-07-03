@@ -28,6 +28,9 @@ Route::get('/pqrs', [HomeController::class, 'pqrs'])->name('pqrs');
 Route::get('/normatividad', [HomeController::class, 'normatividad'])->name('normatividad');
 Route::redirect('/normativa', '/normatividad');
 
+// Documentos
+Route::get('/documentos', [HomeController::class, 'documentos'])->name('documentos');
+
 // Rutas de API/AJAX (descomenta cuando integres el formulario)
 // Route::post('/api/contacto', [ContactoController::class, 'store'])->name('contacto.store');
 

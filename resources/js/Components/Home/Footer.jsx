@@ -72,7 +72,8 @@ export default function Footer() {
               <h4 className="text-base font-black uppercase tracking-widest text-tevesat-primary mb-8 italic">Legal</h4>
               <ul className="space-y-4">
                 {[
-                  { label: `Contrato ${import.meta.env.VITE_NOMBRE_EMPRESA}`, href: '#' },
+                  { label: `Contrato ${import.meta.env.VITE_NOMBRE_EMPRESA}`, href: '/documentos' },
+                  { label: 'Documentos', href: '/documentos' },
                   { label: 'Protección al usuario', href: '/normatividad' },
                   { label: 'Neutralidad en la red', href: '/normatividad' },
                   { label: 'Internet Sano', href: '/normatividad' },

@@ -24,6 +24,7 @@ export default function Navbar() {
     { label: 'Quiénes somos', href: '/#quienes-somos', anchor: true },
     { label: 'PQRS', href: '/pqrs' },
     { label: 'Normatividad', href: '/normatividad' },
+    { label: 'Documentos', href: '/documentos' },
     { label: 'Contacto', href: '/#contacto', anchor: true },
   ];
 

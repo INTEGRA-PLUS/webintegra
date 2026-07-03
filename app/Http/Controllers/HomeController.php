@@ -69,4 +69,14 @@ class HomeController extends Controller
     {
         return Inertia::render('Normatividad');
     }
+
+    /**
+     * Mostrar la página de Documentos
+     *
+     * @return \Inertia\Response
+     */
+    public function documentos()
+    {
+        return Inertia::render('Documentos');
+    }
 }
