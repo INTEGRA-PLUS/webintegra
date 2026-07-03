@@ -59,4 +59,14 @@ class HomeController extends Controller
     {
         return Inertia::render('Pqrs');
     }
+
+    /**
+     * Mostrar la página de Normatividad
+     *
+     * @return \Inertia\Response
+     */
+    public function normatividad()
+    {
+        return Inertia::render('Normatividad');
+    }
 }

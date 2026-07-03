@@ -49,11 +49,18 @@ export default function Footer() {
             <div>
               <h4 className="text-base font-black uppercase tracking-widest text-tevesat-primary mb-8 italic">Sitios de Interés</h4>
               <ul className="space-y-4">
-                {['Planes de Internet', 'Medidor de Velocidad', 'Internet Móvil', 'Cámaras de Seguridad', 'Soluciones PYME', 'Trabaja con nosotros'].map((item) => (
-                  <li key={item}>
-                    <a href="#" className="text-gray-500 hover:text-tevesat-primary transition-all font-bold text-sm uppercase tracking-wider flex items-center gap-2 group">
+                {[
+                  { label: 'Planes de Internet', href: '#' },
+                  { label: 'Medidor de Velocidad', href: '/speedtest' },
+                  { label: 'Internet Móvil', href: '#' },
+                  { label: 'Cámaras de Seguridad', href: '/servicios/cctv' },
+                  { label: 'Soluciones PYME', href: '/servicios/redes-inalambricas' },
+                  { label: 'Trabaja con nosotros', href: '/#contacto' },
+                ].map((item) => (
+                  <li key={item.label}>
+                    <a href={item.href} className="text-gray-500 hover:text-tevesat-primary transition-all font-bold text-sm uppercase tracking-wider flex items-center gap-2 group">
                       <div className="w-1 h-1 bg-tevesat-primary rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                      {item}
+                      {item.label}
                     </a>
                   </li>
                 ))}
@@ -64,11 +71,18 @@ export default function Footer() {
             <div>
               <h4 className="text-base font-black uppercase tracking-widest text-tevesat-primary mb-8 italic">Legal</h4>
               <ul className="space-y-4">
-                {[`Contrato ${import.meta.env.VITE_NOMBRE_EMPRESA}`, 'Mapa de cobertura', 'Protección al usuario', 'Neutralidad en la red', 'Internet Sano', 'PQRS'].map((item) => (
-                  <li key={item}>
-                    <a href={item === 'PQRS' ? '/pqrs' : '#'} className="text-gray-500 hover:text-tevesat-primary transition-all font-bold text-sm uppercase tracking-wider flex items-center gap-2 group">
+                {[
+                  { label: `Contrato ${import.meta.env.VITE_NOMBRE_EMPRESA}`, href: '#' },
+                  { label: 'Protección al usuario', href: '/normatividad' },
+                  { label: 'Neutralidad en la red', href: '/normatividad' },
+                  { label: 'Internet Sano', href: '/normatividad' },
+                  { label: 'Normatividad', href: '/normatividad' },
+                  { label: 'PQRS', href: '/pqrs' },
+                ].map((item) => (
+                  <li key={item.label}>
+                    <a href={item.href} className="text-gray-500 hover:text-tevesat-primary transition-all font-bold text-sm uppercase tracking-wider flex items-center gap-2 group">
                       <div className="w-1 h-1 bg-tevesat-primary rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                      {item}
+                      {item.label}
                     </a>
                   </li>
                 ))}

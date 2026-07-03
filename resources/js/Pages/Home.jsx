@@ -6,7 +6,6 @@ import ServicesOverview from '../Components/Home/ServicesOverview';
 import DiscoverSection from '../Components/Home/DiscoverSection';
 import CoverageCheck from '../Components/Home/CoverageCheck';
 import WhyTevesat from '../Components/Home/WhyTevesat';
-import CoverageSection from '../Components/Home/CoverageSection';
 import Faq from '../Components/Home/Faq';
 import ContactForm from '../Components/Home/ContactForm';
 import ImageBanner from '../Components/Home/ImageBanner';
@@ -40,9 +39,6 @@ export default function Home() {
 
       {/* Why Tevesat - Beneficios */}
       <WhyTevesat />
-
-      {/* Coverage Section - Cobertura */}
-      <CoverageSection />
 
       {/* FAQ - Preguntas Frecuentes */}
       <Faq />

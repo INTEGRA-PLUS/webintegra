@@ -16,12 +16,15 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Los links con hash (#) navegan a anclas dentro del Home, por eso usan <a>;
+  // el resto son rutas Inertia y usan <Link> para navegación SPA sin recarga.
   const navLinks = [
     { label: 'Inicio', href: '/' },
     { label: 'Speedtest', href: '/speedtest' },
-    { label: 'Quiénes somos', href: '/#quienes-somos' },
+    { label: 'Quiénes somos', href: '/#quienes-somos', anchor: true },
     { label: 'PQRS', href: '/pqrs' },
-    { label: 'Contacto', href: '/#contacto' },
+    { label: 'Normatividad', href: '/normatividad' },
+    { label: 'Contacto', href: '/#contacto', anchor: true },
   ];
 
   const services = [
@@ -60,16 +63,19 @@ export default function Navbar() {
 
           {/* Desktop Links */}
           <div className="hidden md:flex items-center space-x-8">
-            {navLinks.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-500 hover:text-tevesat-primary transition-all duration-300 relative group"
-              >
-                {link.label}
-                <span className="absolute -bottom-2 left-0 w-0 h-1 bg-tevesat-primary transition-all duration-300 group-hover:w-full rounded-full"></span>
-              </a>
-            ))}
+            {navLinks.map((link) => {
+              const LinkTag = link.anchor ? 'a' : Link;
+              return (
+                <LinkTag
+                  key={link.label}
+                  href={link.href}
+                  className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-500 hover:text-tevesat-primary transition-all duration-300 relative group"
+                >
+                  {link.label}
+                  <span className="absolute -bottom-2 left-0 w-0 h-1 bg-tevesat-primary transition-all duration-300 group-hover:w-full rounded-full"></span>
+                </LinkTag>
+              );
+            })}
 
             {/* Services Dropdown */}
             <div
@@ -120,16 +126,19 @@ export default function Navbar() {
         {isMenuOpen && (
           <div className="md:hidden mt-2 bg-white/95 backdrop-blur-lg rounded-2xl border border-gray-100 p-4 shadow-[0_30px_70px_-20px_rgba(0,0,0,0.25)] max-h-[80vh] overflow-y-auto">
             <div className="space-y-1">
-              {navLinks.map((link) => (
-                <a
-                  key={link.label}
-                  href={link.href}
-                  className="block px-4 py-3 rounded-xl text-sm font-bold text-tevesat-tertiary-dark hover:bg-tevesat-primary hover:text-white transition"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {link.label}
-                </a>
-              ))}
+              {navLinks.map((link) => {
+                const LinkTag = link.anchor ? 'a' : Link;
+                return (
+                  <LinkTag
+                    key={link.label}
+                    href={link.href}
+                    className="block px-4 py-3 rounded-xl text-sm font-bold text-tevesat-tertiary-dark hover:bg-tevesat-primary hover:text-white transition"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {link.label}
+                  </LinkTag>
+                );
+              })}
 
               <div className="border-t border-gray-100 my-2 pt-2">
                 <span className="block px-4 py-2 text-[10px] font-black uppercase tracking-widest text-gray-400">Servicios</span>

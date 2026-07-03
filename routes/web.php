@@ -24,6 +24,9 @@ Route::get('/speedtest', [HomeController::class, 'speedtest'])->name('speedtest'
 // PQRS
 Route::get('/pqrs', [HomeController::class, 'pqrs'])->name('pqrs');
 
+// Normatividad
+Route::get('/normatividad', [HomeController::class, 'normatividad'])->name('normatividad');
+
 // Rutas de API/AJAX (descomenta cuando integres el formulario)
 // Route::post('/api/contacto', [ContactoController::class, 'store'])->name('contacto.store');
 
