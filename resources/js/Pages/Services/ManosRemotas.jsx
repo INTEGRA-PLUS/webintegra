@@ -77,7 +77,7 @@ export default function ManosRemotas() {
                 Nuestros técnicos están listos para intervenir de forma remota o presencial según la necesidad de su infraestructura. Optimizamos sus tiempos de respuesta y minimizamos el downtime.
               </p>
               <a 
-                href="https://wa.me/573142497234" 
+                href="https://wa.me/573214486466" 
                 target="_blank" 
                 className="inline-block bg-white text-tevesat-primary px-10 py-4 rounded-2xl font-black uppercase tracking-widest hover:bg-gray-100 transition-colors shadow-2xl"
               >

@@ -7,7 +7,7 @@ import QuizNav from './QuizNav';
 import { STEPS, TOTAL_STEPS } from './data/quizSteps';
 import { buildRecommendation } from './data/recommendation';
 
-const WHATSAPP_URL = 'https://wa.me/573142497234';
+const WHATSAPP_URL = 'https://wa.me/573214486466';
 
 /**
  * InteractiveAssistant - Asistente interactivo "¿Qué plan necesitas realmente?"

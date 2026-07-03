@@ -1,6 +1,6 @@
 import { Battery, Zap, Sun, Lightbulb, Droplet, Gauge, Leaf, TreePine, Wind } from 'lucide-react';
 
-export const WHATSAPP_URL = 'https://wa.me/573142497234';
+export const WHATSAPP_URL = 'https://wa.me/573214486466';
 
 /**
  * Datos de la página de Energías Renovables.

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook, Instagram, Youtube, Linkedin, Phone, Mail, ArrowUp } from 'lucide-react';
+import { Facebook, Instagram, Youtube, Linkedin, Phone, Mail, MapPin, ArrowUp } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -95,35 +95,45 @@ export default function Footer() {
               <h4 className="text-base font-black uppercase tracking-widest text-tevesat-primary mb-8 italic">Contacto</h4>
 
               <div className="space-y-6">
-                <a href="tel:3009109110" className="flex items-center gap-4 group">
+                <a href="tel:+573154808114" className="flex items-center gap-4 group">
                   <div className="w-12 h-12 rounded-2xl bg-white border border-gray-200 flex items-center justify-center text-tevesat-primary group-hover:bg-tevesat-primary group-hover:text-white transition-all duration-300">
                     <Phone size={22} strokeWidth={2.5} />
                   </div>
                   <div>
-                    <p className="text-tevesat-tertiary-dark font-black text-lg leading-none">300 910 9110</p>
-                    <p className="text-gray-400 text-[10px] font-black uppercase tracking-widest mt-1">Línea Nacional</p>
+                    <p className="text-tevesat-tertiary-dark font-black text-lg leading-none">315 480 8114</p>
+                    <p className="text-gray-400 text-[10px] font-black uppercase tracking-widest mt-1">Línea Principal / Ventas</p>
                   </div>
                 </a>
 
-                <a href="https://wa.me/573004798909" className="flex items-center gap-4 group">
+                <a href="https://wa.me/573214486466" className="flex items-center gap-4 group">
                   <div className="w-12 h-12 rounded-2xl bg-white border border-gray-200 flex items-center justify-center text-tevesat-primary group-hover:bg-tevesat-primary group-hover:text-white transition-all duration-300">
                     <WhatsappIcon className="w-6 h-6 text-tevesat-primary group-hover:text-white" />
                   </div>
                   <div>
-                    <p className="text-tevesat-tertiary-dark font-black text-lg leading-none">300 479 8909</p>
-                    <p className="text-gray-400 text-[10px] font-black uppercase tracking-widest mt-1">WhatsApp Ventas</p>
+                    <p className="text-tevesat-tertiary-dark font-black text-lg leading-none">321 448 6466</p>
+                    <p className="text-gray-400 text-[10px] font-black uppercase tracking-widest mt-1">WhatsApp / Soporte</p>
                   </div>
                 </a>
 
-                <a href="mailto:internet@reintech.co" className="flex items-center gap-4 group">
+                <a href="mailto:somosopticalfiber@gmail.com" className="flex items-center gap-4 group">
                   <div className="w-12 h-12 rounded-2xl bg-white border border-gray-200 flex items-center justify-center text-tevesat-primary group-hover:bg-tevesat-primary group-hover:text-white transition-all duration-300">
                     <Mail size={22} strokeWidth={2.5} />
                   </div>
                   <div>
-                    <p className="text-tevesat-tertiary-dark font-black text-sm break-all leading-none italic">internet@reintech.co</p>
-                    <p className="text-gray-400 text-[10px] font-black uppercase tracking-widest mt-1">Correo Soporte</p>
+                    <p className="text-tevesat-tertiary-dark font-black text-sm break-all leading-none italic">somosopticalfiber@gmail.com</p>
+                    <p className="text-gray-400 text-[10px] font-black uppercase tracking-widest mt-1">Correo</p>
                   </div>
                 </a>
+
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-2xl bg-white border border-gray-200 flex items-center justify-center text-tevesat-primary">
+                    <MapPin size={22} strokeWidth={2.5} />
+                  </div>
+                  <div>
+                    <p className="text-tevesat-tertiary-dark font-black text-sm leading-snug">Cra 11E # 29A-29, Local La Cumbre</p>
+                    <p className="text-gray-400 text-[10px] font-black uppercase tracking-widest mt-1">Floridablanca, Santander</p>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -140,7 +150,7 @@ export default function Footer() {
 
 
           <p className="text-gray-400 font-black uppercase text-[10px] tracking-[0.3em] text-center md:text-left">
-            NIT: 901551794-1 | <span className="text-tevesat-tertiary-dark">Razón Social: SM TELECOMUNICACIONES SAS</span>
+            NIT: 901499070-6 | <span className="text-tevesat-tertiary-dark">Razón Social: SERVICIO DE INTERNET FIBRA OPTICA</span>
           </p>
 
           <button

@@ -95,7 +95,7 @@ export default function Faq({ faqs = DEFAULT_FAQS }) {
         <div className="mt-12 text-center">
           <p className="mb-4 text-sm font-bold text-gray-500">¿Aún tienes preguntas?</p>
           <a
-            href="https://wa.me/573142497234"
+            href="https://wa.me/573214486466"
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center justify-center gap-2 rounded-2xl bg-tevesat-primary px-8 py-4 font-black uppercase tracking-widest text-white shadow-xl shadow-tevesat-primary/30 transition-all duration-300 hover:scale-105 hover:bg-tevesat-primary-light active:scale-95"

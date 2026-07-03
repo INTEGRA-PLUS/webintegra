@@ -57,7 +57,7 @@ export default function Home() {
 
       {/* Floating WhatsApp CTA */}
       <a 
-        href="https://wa.me/573142497234" 
+        href="https://wa.me/573214486466" 
         target="_blank" 
         rel="noopener noreferrer"
         className="fixed bottom-8 right-8 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform duration-300 animate-pulse-orange border-4 border-white"
