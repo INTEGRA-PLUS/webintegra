@@ -21,12 +21,13 @@ export default function Navbar() {
     { label: 'Planes', href: '/planes' },
     { label: 'Televisión', href: '/television' },
     { label: 'Speedtest', href: '/speedtest' },
-    { label: 'Nosotros', href: '/nosotros', spa: true },
     { label: 'PQRS', href: '/pqrs' },
     { label: 'Contacto', href: '/#contacto' },
+    { label: 'Pagar Factura', href: 'https://pagos.onepay.la/reintechsas', external: true },
   ];
 
   const services = [
+    { label: 'Nosotros', href: '/nosotros' },
     { label: 'Cableado Estructurado', href: '/servicios/cableado-estructurado' },
     { label: 'Manos Remotas', href: '/servicios/manos-remotas' },
     { label: 'Ciberseguridad', href: '/servicios/ciberseguridad' },
@@ -64,11 +65,13 @@ export default function Navbar() {
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => {
               const LinkTag = link.spa ? Link : 'a';
+              const externalProps = link.external ? { target: '_blank', rel: 'noopener noreferrer' } : {};
               return (
                 <LinkTag
                   key={link.label}
                   href={link.href}
                   className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-500 hover:text-tevesat-primary transition-all duration-300 relative group"
+                  {...externalProps}
                 >
                   {link.label}
                   <span className="absolute -bottom-2 left-0 w-0 h-1 bg-tevesat-primary transition-all duration-300 group-hover:w-full rounded-full"></span>
@@ -90,13 +93,25 @@ export default function Navbar() {
               <div className={`absolute top-full left-1/2 -translate-x-1/2 mt-4 w-64 bg-white border border-gray-100 rounded-2xl p-4 shadow-[0_30px_70px_-20px_rgba(0,0,0,0.25)] transition-all duration-300 ${isServicesOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-4'}`}>
                 <div className="grid gap-2">
                   {services.map((service) => (
-                    <Link
-                      key={service.label}
-                      href={service.href}
-                      className="block px-4 py-3 rounded-xl text-[10px] font-bold uppercase tracking-widest text-gray-500 hover:bg-tevesat-primary hover:text-white transition-all"
-                    >
-                      {service.label}
-                    </Link>
+                    service.external ? (
+                      <a
+                        key={service.label}
+                        href={service.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block px-4 py-3 rounded-xl text-[10px] font-bold uppercase tracking-widest text-gray-500 hover:bg-tevesat-primary hover:text-white transition-all"
+                      >
+                        {service.label}
+                      </a>
+                    ) : (
+                      <Link
+                        key={service.label}
+                        href={service.href}
+                        className="block px-4 py-3 rounded-xl text-[10px] font-bold uppercase tracking-widest text-gray-500 hover:bg-tevesat-primary hover:text-white transition-all"
+                      >
+                        {service.label}
+                      </Link>
+                    )
                   ))}
                 </div>
               </div>
@@ -127,12 +142,14 @@ export default function Navbar() {
             <div className="space-y-1">
               {navLinks.map((link) => {
                 const LinkTag = link.spa ? Link : 'a';
+                const externalProps = link.external ? { target: '_blank', rel: 'noopener noreferrer' } : {};
                 return (
                   <LinkTag
                     key={link.label}
                     href={link.href}
                     className="block px-4 py-3 rounded-xl text-sm font-bold text-tevesat-tertiary-dark hover:bg-tevesat-primary hover:text-white transition"
                     onClick={() => setIsMenuOpen(false)}
+                    {...externalProps}
                   >
                     {link.label}
                   </LinkTag>
@@ -142,14 +159,27 @@ export default function Navbar() {
               <div className="border-t border-gray-100 my-2 pt-2">
                 <span className="block px-4 py-2 text-[10px] font-black uppercase tracking-widest text-gray-400">Servicios</span>
                 {services.map((service) => (
-                  <Link
-                    key={service.label}
-                    href={service.href}
-                    className="block px-4 py-3 rounded-xl text-sm font-bold text-tevesat-tertiary-dark hover:bg-tevesat-primary hover:text-white transition"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    {service.label}
-                  </Link>
+                  service.external ? (
+                    <a
+                      key={service.label}
+                      href={service.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block px-4 py-3 rounded-xl text-sm font-bold text-tevesat-tertiary-dark hover:bg-tevesat-primary hover:text-white transition"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      {service.label}
+                    </a>
+                  ) : (
+                    <Link
+                      key={service.label}
+                      href={service.href}
+                      className="block px-4 py-3 rounded-xl text-sm font-bold text-tevesat-tertiary-dark hover:bg-tevesat-primary hover:text-white transition"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      {service.label}
+                    </Link>
+                  )
                 ))}
               </div>
 
