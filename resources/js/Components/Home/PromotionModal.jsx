@@ -36,7 +36,7 @@ export default function PromotionModal() {
       ></div>
 
       {/* Modal Content */}
-      <div className="relative w-full max-w-lg bg-white rounded-[2rem] md:rounded-[2.5rem] p-6 md:p-10 border border-gray-100 shadow-[0_30px_80px_rgba(236,50,55,0.2)] animate-modalIn my-auto">
+      <div className="relative w-full max-w-lg bg-white rounded-[2rem] md:rounded-[2.5rem] p-6 md:p-10 border border-gray-100 shadow-[0_30px_80px_rgba(127,171,60,0.2)] animate-modalIn my-auto">
 
         {/* Close Button */}
         <button

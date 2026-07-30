@@ -6,11 +6,11 @@ export default {
      * de rama de Git para la otra empresa, se cargarán sus propios colores 
      * en lugar de requerir cambios en el archivo .env (que Git ignora).
      */
-    COLOR_PRINCIPAL: "#ec3237",
+    COLOR_PRINCIPAL: "#7fab3c",
     COLOR_SECUNDARIO: "#252525",
     COLOR_TERCIARIO: "#ffffff",
 
-    // Variantes calibradas para tener excelentes contrastes (Modo oscuro sofisticado)
-    COLOR_PRINCIPAL_LIGHT: "#ff474b", // Rojo un poco más claro para hovers/brillos
+    // Variantes calibradas para tener excelentes contrastes
+    COLOR_PRINCIPAL_LIGHT: "#93c24e", // Verde más claro para hovers/brillos
     COLOR_TERCIARIO_DARK: "#171717",  // Negro más profundo para contrastar las tarjetas oscuras
 };

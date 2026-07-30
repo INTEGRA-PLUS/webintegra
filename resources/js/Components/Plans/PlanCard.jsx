@@ -17,7 +17,7 @@ export default function PlanCard({ plan }) {
     <div
       className={`group relative flex flex-col rounded-[2.5rem] p-8 transition-all duration-500 ${
         popular
-          ? 'border-2 border-tevesat-primary bg-white shadow-[0_40px_90px_-30px_rgba(236,50,55,0.45)] lg:-translate-y-4 lg:scale-[1.03]'
+          ? 'border-2 border-tevesat-primary bg-white shadow-[0_40px_90px_-30px_rgba(127,171,60,0.45)] lg:-translate-y-4 lg:scale-[1.03]'
           : 'border border-gray-100 bg-white shadow-[0_30px_70px_-30px_rgba(0,0,0,0.2)] hover:-translate-y-2'
       }`}
     >

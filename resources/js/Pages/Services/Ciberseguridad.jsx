@@ -92,7 +92,7 @@ export default function Ciberseguridad() {
               <p className="text-lg text-gray-400 mb-10 leading-relaxed">
                 Nuestras certificaciones y metodologías aseguran que su infraestructura cumpla con los estándares más exigentes de la industria. Analizamos, protegemos y respondemos ante cualquier amenaza.
               </p>
-              <button className="bg-tevesat-primary text-white px-12 py-5 rounded-2xl font-black uppercase tracking-widest hover:bg-tevesat-primary/90 transition-all shadow-[0_20px_50px_rgba(236,50,55,0.3)]">
+              <button className="bg-tevesat-primary text-white px-12 py-5 rounded-2xl font-black uppercase tracking-widest hover:bg-tevesat-primary/90 transition-all shadow-[0_20px_50px_rgba(127,171,60,0.3)]">
                 Agendar Consultoría
               </button>
             </div>

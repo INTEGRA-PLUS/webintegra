@@ -72,7 +72,7 @@ const PlanCard = ({ plan }) => {
 
         {/* Action Button & More - Pushed to bottom */}
         <div className="mt-auto">
-          <button className="w-full bg-tevesat-primary text-white py-4 rounded-[2rem] font-black uppercase tracking-[0.1em] text-[12px] flex items-center justify-center gap-3 hover:bg-white hover:text-tevesat-primary transition-all duration-300 shadow-[0_15px_30px_rgba(236,50,55,0.2)] mb-8 font-outfit">
+          <button className="w-full bg-tevesat-primary text-white py-4 rounded-[2rem] font-black uppercase tracking-[0.1em] text-[12px] flex items-center justify-center gap-3 hover:bg-white hover:text-tevesat-primary transition-all duration-300 shadow-[0_15px_30px_rgba(127,171,60,0.2)] mb-8 font-outfit">
             Compra ahora <MessageCircle size={20} />
           </button>
 

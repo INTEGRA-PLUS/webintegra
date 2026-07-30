@@ -24,7 +24,7 @@ const NewPlanCard = ({ speed, category }) => {
 
         <div className="mt-auto w-full">
           <a
-            href="https://wa.me/573214486466"
+            href="https://wa.me/573506833695"
             target="_blank"
             rel="noopener noreferrer"
             className="flex w-full items-center justify-center gap-3 rounded-xl border border-gray-200 bg-gray-50 py-4 text-[10px] font-black uppercase tracking-widest text-tevesat-tertiary-dark transition-all duration-300 hover:border-tevesat-primary hover:bg-tevesat-primary hover:text-white"

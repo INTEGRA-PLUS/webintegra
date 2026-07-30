@@ -16,14 +16,14 @@ export default function Footer() {
             {/* Column 1: Brand & Social */}
             <div className="lg:col-span-2 space-y-8">
               <div className="flex items-center gap-4">
-                <div className="flex items-center justify-center rounded-2xl bg-tevesat-tertiary-dark p-2.5 shadow-sm">
+                <div className="flex items-center justify-center rounded-2xl bg-white border border-gray-100 p-2.5 shadow-sm">
                   <img src="/images/empresa/logo.png" alt={import.meta.env.VITE_NOMBRE_EMPRESA} className="h-16 w-auto object-contain" />
                 </div>
               </div>
 
               <p className="text-gray-500 text-lg font-medium leading-relaxed max-w-sm">
-                Conectando familias y negocios con lo mejor en tecnología. <br />
-                <span className="text-tevesat-primary font-black">¡Más cerca es mejor!</span>
+                Conectando familias y negocios con Internet de fibra óptica de alta velocidad. <br />
+                <span className="text-tevesat-primary font-black">¡Tu conexión, nuestra prioridad!</span>
               </p>
 
               <div className="flex flex-wrap gap-4">
@@ -95,32 +95,32 @@ export default function Footer() {
               <h4 className="text-base font-black uppercase tracking-widest text-tevesat-primary mb-8 italic">Contacto</h4>
 
               <div className="space-y-6">
-                <a href="tel:+573154808114" className="flex items-center gap-4 group">
+                <a href="tel:+603053208911" className="flex items-center gap-4 group">
                   <div className="w-12 h-12 rounded-2xl bg-white border border-gray-200 flex items-center justify-center text-tevesat-primary group-hover:bg-tevesat-primary group-hover:text-white transition-all duration-300">
                     <Phone size={22} strokeWidth={2.5} />
                   </div>
                   <div>
-                    <p className="text-tevesat-tertiary-dark font-black text-lg leading-none">315 480 8114</p>
+                    <p className="text-tevesat-tertiary-dark font-black text-lg leading-none">305 320 8911</p>
                     <p className="text-gray-400 text-[10px] font-black uppercase tracking-widest mt-1">Línea Principal / Ventas</p>
                   </div>
                 </a>
 
-                <a href="https://wa.me/573214486466" className="flex items-center gap-4 group">
+                <a href="https://wa.me/573506833695" className="flex items-center gap-4 group">
                   <div className="w-12 h-12 rounded-2xl bg-white border border-gray-200 flex items-center justify-center text-tevesat-primary group-hover:bg-tevesat-primary group-hover:text-white transition-all duration-300">
                     <WhatsappIcon className="w-6 h-6 text-tevesat-primary group-hover:text-white" />
                   </div>
                   <div>
-                    <p className="text-tevesat-tertiary-dark font-black text-lg leading-none">321 448 6466</p>
+                    <p className="text-tevesat-tertiary-dark font-black text-lg leading-none">350 683 3695</p>
                     <p className="text-gray-400 text-[10px] font-black uppercase tracking-widest mt-1">WhatsApp / Soporte</p>
                   </div>
                 </a>
 
-                <a href="mailto:somosopticalfiber@gmail.com" className="flex items-center gap-4 group">
+                <a href="mailto:fibernetcolombia@gmail.com" className="flex items-center gap-4 group">
                   <div className="w-12 h-12 rounded-2xl bg-white border border-gray-200 flex items-center justify-center text-tevesat-primary group-hover:bg-tevesat-primary group-hover:text-white transition-all duration-300">
                     <Mail size={22} strokeWidth={2.5} />
                   </div>
                   <div>
-                    <p className="text-tevesat-tertiary-dark font-black text-sm break-all leading-none italic">somosopticalfiber@gmail.com</p>
+                    <p className="text-tevesat-tertiary-dark font-black text-sm break-all leading-none italic">fibernetcolombia@gmail.com</p>
                     <p className="text-gray-400 text-[10px] font-black uppercase tracking-widest mt-1">Correo</p>
                   </div>
                 </a>
@@ -130,8 +130,8 @@ export default function Footer() {
                     <MapPin size={22} strokeWidth={2.5} />
                   </div>
                   <div>
-                    <p className="text-tevesat-tertiary-dark font-black text-sm leading-snug">Cra 11E # 29A-29, Local La Cumbre</p>
-                    <p className="text-gray-400 text-[10px] font-black uppercase tracking-widest mt-1">Floridablanca, Santander</p>
+                    <p className="text-tevesat-tertiary-dark font-black text-sm leading-snug">CL 10 9-40</p>
+                    <p className="text-gray-400 text-[10px] font-black uppercase tracking-widest mt-1">Sogamoso, Boyacá</p>
                   </div>
                 </div>
               </div>
@@ -150,7 +150,7 @@ export default function Footer() {
 
 
           <p className="text-gray-400 font-black uppercase text-[10px] tracking-[0.3em] text-center md:text-left">
-            NIT: 901499070-6 | <span className="text-tevesat-tertiary-dark">Razón Social: SERVICIO DE INTERNET FIBRA OPTICA</span>
+            NIT: 901245802 | <span className="text-tevesat-tertiary-dark">Razón Social: FIBERNET COLOMBIA</span>
           </p>
 
           <button

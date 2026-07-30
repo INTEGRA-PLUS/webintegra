@@ -9,7 +9,7 @@ export default function TvCta() {
   return (
     <section className="bg-white px-4 pb-24 md:px-8">
       <div className="mx-auto max-w-5xl">
-        <div className="relative overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-tevesat-primary to-tevesat-primary-light p-10 text-center shadow-[0_40px_90px_-30px_rgba(236,50,55,0.5)] md:p-16">
+        <div className="relative overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-tevesat-primary to-tevesat-primary-light p-10 text-center shadow-[0_40px_90px_-30px_rgba(127,171,60,0.5)] md:p-16">
           <div className="pointer-events-none absolute -top-1/2 -left-1/2 h-full w-full rounded-full bg-white/10 blur-[100px]" />
           <div className="relative z-10">
             <h2 className="text-3xl font-black leading-tight tracking-tight text-white md:text-4xl">

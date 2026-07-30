@@ -5,7 +5,7 @@
  * Cada plan: { name, tagline, speed, unit, price, period, popular, features[], tech }
  */
 
-const WHATSAPP_URL = 'https://wa.me/573214486466';
+const WHATSAPP_URL = 'https://wa.me/573506833695';
 export { WHATSAPP_URL };
 
 // 3 planes destacados que se muestran en el Home ("Planes diseñados para ti").

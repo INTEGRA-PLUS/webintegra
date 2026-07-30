@@ -52,7 +52,7 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center gap-3 group">
-              <div className="flex items-center justify-center rounded-xl bg-tevesat-tertiary-dark p-1.5 shadow-sm">
+              <div className="flex items-center justify-center rounded-xl bg-white border border-gray-100 p-1.5 shadow-sm">
                 <img
                   src="/images/empresa/logo.png"
                   alt={import.meta.env.VITE_NOMBRE_EMPRESA}
@@ -107,7 +107,7 @@ export default function Navbar() {
 
           {/* Desktop CTA Button */}
           <div className="hidden md:flex">
-            <button className="bg-tevesat-primary text-white border-2 border-transparent px-8 py-3 rounded-2xl font-black uppercase text-[10px] tracking-widest hover:bg-transparent hover:border-tevesat-primary hover:text-tevesat-primary transition-all duration-500 transform hover:scale-105 shadow-[0_10px_30px_rgba(236,50,55,0.3)]">
+            <button className="bg-tevesat-primary text-white border-2 border-transparent px-8 py-3 rounded-2xl font-black uppercase text-[10px] tracking-widest hover:bg-transparent hover:border-tevesat-primary hover:text-tevesat-primary transition-all duration-500 transform hover:scale-105 shadow-[0_10px_30px_rgba(127,171,60,0.3)]">
               Contratar
             </button>
           </div>
