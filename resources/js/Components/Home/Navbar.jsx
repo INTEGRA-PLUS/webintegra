@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, ChevronDown } from 'lucide-react';
+import { Menu, X, ChevronDown, CreditCard } from 'lucide-react';
 import { Link } from '@inertiajs/react';
+import { PAYMENT_URL } from '../Plans/data/plans';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,7 +24,6 @@ export default function Navbar() {
     { label: 'Speedtest', href: '/speedtest' },
     { label: 'PQRS', href: '/pqrs' },
     { label: 'Contacto', href: '/#contacto' },
-    { label: 'Pagar Factura', href: 'https://pagos.onepay.la/reintechsas', external: true },
   ];
 
   const services = [
@@ -120,9 +120,15 @@ export default function Navbar() {
 
           {/* Desktop CTA Button */}
           <div className="hidden md:flex">
-            <button className="bg-tevesat-primary text-white border-2 border-transparent px-8 py-3 rounded-2xl font-black uppercase text-[10px] tracking-widest hover:bg-transparent hover:border-tevesat-primary hover:text-tevesat-primary transition-all duration-500 transform hover:scale-105 shadow-[0_10px_30px_rgba(236,50,55,0.3)]">
-              Contratar
-            </button>
+            <a
+              href={PAYMENT_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-tevesat-primary text-white border-2 border-transparent px-8 py-3 rounded-2xl font-black uppercase text-[10px] tracking-widest hover:bg-transparent hover:border-tevesat-primary hover:text-tevesat-primary transition-all duration-500 transform hover:scale-105 shadow-[0_10px_30px_rgba(236,50,55,0.3)]"
+            >
+              <CreditCard size={14} />
+              Pagar Factura
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -183,9 +189,16 @@ export default function Navbar() {
                 ))}
               </div>
 
-              <button className="w-full mt-4 bg-tevesat-primary text-white py-4 rounded-xl font-black uppercase tracking-widest hover:bg-tevesat-primary-light transition shadow-lg shadow-tevesat-primary/20">
-                Compra ahora
-              </button>
+              <a
+                href={PAYMENT_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsMenuOpen(false)}
+                className="mt-4 flex w-full items-center justify-center gap-2 bg-tevesat-primary text-white py-4 rounded-xl font-black uppercase tracking-widest hover:bg-tevesat-primary-light transition shadow-lg shadow-tevesat-primary/20"
+              >
+                <CreditCard size={16} />
+                Pagar Factura
+              </a>
             </div>
           </div>
         )}

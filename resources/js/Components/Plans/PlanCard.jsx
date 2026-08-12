@@ -39,16 +39,33 @@ export default function PlanCard({ plan }) {
       </div>
 
       {/* Velocidad */}
-      <div className="mb-6 flex items-end justify-center gap-2">
+      <div className={`flex items-end justify-center gap-2 ${plan.tv ? 'mb-2' : 'mb-6'}`}>
         <span className="text-6xl font-black leading-none tracking-tighter text-tevesat-tertiary-dark">
           {plan.speed}
         </span>
         <span className="mb-2 text-lg font-black italic text-tevesat-primary">{plan.unit}</span>
       </div>
 
-      {/* Tecnología */}
-      <div className="mx-auto mb-6 inline-flex items-center gap-2 rounded-full bg-tevesat-primary/5 px-4 py-1.5 text-[10px] font-black uppercase tracking-widest text-tevesat-primary">
-        <Zap size={12} /> {plan.tech}
+      {/* TV incluida */}
+      {plan.tv && (
+        <p className="mb-6 text-center text-sm font-black uppercase tracking-widest text-tevesat-primary">
+          + {plan.tv}
+        </p>
+      )}
+
+      {/* Tecnología y servicios incluidos */}
+      <div className="mb-6 flex flex-wrap items-center justify-center gap-2">
+        <span className="inline-flex items-center gap-2 rounded-full bg-tevesat-primary/5 px-4 py-1.5 text-[10px] font-black uppercase tracking-widest text-tevesat-primary">
+          <Zap size={12} /> {plan.tech}
+        </span>
+        {plan.addons?.map((addon) => (
+          <span
+            key={addon}
+            className="inline-flex items-center gap-2 rounded-full bg-tevesat-primary/5 px-4 py-1.5 text-[10px] font-black uppercase tracking-widest text-tevesat-primary"
+          >
+            <Star size={12} /> {addon} incluido
+          </span>
+        ))}
       </div>
 
       {/* Precio */}

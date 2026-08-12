@@ -3,86 +3,137 @@
  * (FeaturedPlans) y por la página completa de planes (/planes).
  *
  * Cada plan: { name, tagline, speed, unit, price, period, popular, features[], tech }
+ * Los planes hogar además incluyen: { tv, addons[] } (TV incluida y servicios como WIN+ / Disney+).
  */
 
 const WHATSAPP_URL = 'https://wa.me/573142497234';
 export { WHATSAPP_URL };
 
-// 3 planes destacados que se muestran en el Home ("Planes diseñados para ti").
-export const HOME_PLANS = [
+const PAYMENT_URL = 'https://pagos.onepay.la/reintechsas';
+export { PAYMENT_URL };
+
+// Planes hogar completos (6, según portafolio oficial).
+const HOGAR_PLANS = [
   {
-    name: 'Plan Esencial',
-    tagline: 'Ideal para empezar',
-    speed: '200',
+    name: 'Plan Hogar',
+    tagline: 'Ideal para parejas y hogares pequeños',
+    speed: '100',
     unit: 'MEGAS',
-    price: '59.900',
+    tv: 'TV Básico',
+    price: '60.000',
     period: '/mes',
     popular: false,
     tech: 'Fibra Óptica',
+    addons: [],
     features: [
-      'Fibra óptica 100%',
+      '58 canales de TV',
+      '5 perfiles',
       'Red WiFi incluida',
-      'Instalación sin costo',
       'Soporte 24/7',
     ],
   },
   {
     name: 'Plan Familiar',
-    tagline: 'El preferido de los hogares',
-    speed: '400',
+    tagline: 'Ideal para familias conectadas',
+    speed: '200',
     unit: 'MEGAS',
-    price: '79.900',
+    tv: 'TV Básico',
+    price: '80.000',
     period: '/mes',
     popular: true,
     tech: 'Fibra Óptica',
+    addons: [],
     features: [
-      'Todo lo del Esencial',
-      'TV con DGO incluida',
-      'Streaming 4K sin cortes',
-      'Router de alta potencia',
+      '58 canales de TV',
+      '5 perfiles',
+      'Red WiFi incluida',
+      'Soporte 24/7',
     ],
   },
   {
-    name: 'Plan Premium',
-    tagline: 'Máximo rendimiento',
-    speed: '600',
+    name: 'Plan Deportivo',
+    tagline: 'Ideal para amantes del deporte',
+    speed: '300',
     unit: 'MEGAS',
-    price: '99.900',
+    tv: 'TV Flex',
+    price: '100.000',
     period: '/mes',
     popular: false,
     tech: 'Fibra Óptica',
+    addons: ['WIN+'],
     features: [
-      'Todo lo del Familiar',
-      'Velocidad para gaming',
-      'Múltiples dispositivos',
-      'Prioridad de soporte',
+      '47 canales de TV',
+      '5 perfiles',
+      'WIN+ incluido',
+      'Soporte 24/7',
+    ],
+  },
+  {
+    name: 'Plan Entretenimiento',
+    tagline: 'Ideal para disfrutar en familia',
+    speed: '400',
+    unit: 'MEGAS',
+    tv: 'TV Básico',
+    price: '130.000',
+    period: '/mes',
+    popular: false,
+    tech: 'Fibra Óptica',
+    addons: ['WIN+', 'Disney+'],
+    features: [
+      '58 canales de TV',
+      '5 perfiles',
+      'WIN+ incluido',
+      'Disney+ incluido',
+    ],
+  },
+  {
+    name: 'Plan Gamer',
+    tagline: 'Ideal para gaming y streaming',
+    speed: '500',
+    unit: 'MEGAS',
+    tv: 'TV Básico+',
+    price: '180.000',
+    period: '/mes',
+    popular: false,
+    tech: 'Fibra Óptica',
+    addons: ['WIN+'],
+    features: [
+      '84 canales de TV',
+      '5 perfiles',
+      'WIN+ incluido',
+      'Soporte 24/7',
+    ],
+  },
+  {
+    name: 'Plan Ultra',
+    tagline: 'Máxima velocidad y entretenimiento',
+    speed: '700',
+    unit: 'MEGAS',
+    tv: 'TV Básico+',
+    price: '230.000',
+    period: '/mes',
+    popular: false,
+    tech: 'Fibra Óptica',
+    addons: ['WIN+', 'Disney+'],
+    features: [
+      '84 canales de TV',
+      '5 perfiles',
+      'WIN+ incluido',
+      'Disney+ incluido',
     ],
   },
 ];
+
+// 3 planes destacados que se muestran en el Home ("Planes diseñados para ti").
+export const HOME_PLANS = ['Plan Hogar', 'Plan Familiar', 'Plan Ultra'].map(
+  (name) => HOGAR_PLANS.find((plan) => plan.name === name)
+);
 
 // Planes completos por categoría para la página /planes.
 export const PLAN_GROUPS = {
   hogar: {
     label: 'Hogar',
-    plans: [
-      ...HOME_PLANS,
-      {
-        name: 'Plan Ultra',
-        tagline: 'Para el hogar más exigente',
-        speed: '900',
-        unit: 'MEGAS',
-        price: '129.900',
-        period: '/mes',
-        popular: false,
-        tech: 'Fibra Óptica',
-        features: [
-          'Todo lo del Premium',
-          'Hogar inteligente total',
-          'Velocidad simétrica',
-          'Atención preferencial',
-        ],
-      },
-    ],
+    plans: HOGAR_PLANS,
   },
   empresa: {
     label: 'Empresas',

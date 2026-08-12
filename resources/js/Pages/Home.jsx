@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../Components/Home/Navbar';
 import HeroBanner from '../Components/Home/HeroBanner';
 import ServicesBar from '../Components/Home/ServicesBar';
+import PayBillBanner from '../Components/Home/PayBillBanner';
 import ServicesOverview from '../Components/Home/ServicesOverview';
 import InteractiveAssistant from '../Components/Home/Assistant/InteractiveAssistant';
 import FeaturedPlans from '../Components/Home/FeaturedPlans';
@@ -30,6 +31,9 @@ export default function Home() {
 
       {/* Services Bar - Servicios principales */}
       <ServicesBar />
+
+      {/* Pay Bill Banner - Pago de factura en línea */}
+      <PayBillBanner />
 
       {/* Services Overview - Nueva sección profesional */}
       <ServicesOverview />

@@ -66,7 +66,7 @@ export default function Cableado() {
               <div>
                 <h2 className="text-3xl font-black text-white mb-6 uppercase">Infraestructura de Clase Mundial</h2>
                 <p className="text-gray-300 mb-8 leading-relaxed">
-                  En Velonet nos especializamos en crear soluciones de cableado que no solo cumplen con las necesidades actuales, sino que están preparadas para el crecimiento futuro. Utilizamos materiales de la más alta calidad y seguimos las normativas TIA/EIA para asegurar que su red sea un activo confiable para su negocio.
+                  En Reintechsas nos especializamos en crear soluciones de cableado que no solo cumplen con las necesidades actuales, sino que están preparadas para el crecimiento futuro. Utilizamos materiales de la más alta calidad y seguimos las normativas TIA/EIA para asegurar que su red sea un activo confiable para su negocio.
                 </p>
                 <button className="bg-tevesat-primary text-white px-10 py-4 rounded-2xl font-bold uppercase tracking-widest hover:scale-105 transition-transform">
                   Solicitar Auditoría

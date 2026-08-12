@@ -10,10 +10,10 @@ import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
  * Configura Inertia.js con React
  */
 
-const appName = import.meta.env.VITE_NOMBRE_EMPRESA || 'Velonet';
+const appName = import.meta.env.VITE_NOMBRE_EMPRESA || 'Reintechsas';
 
 createInertiaApp({
-  title: (title) => `${title} - ${appName}`,
+  title: (title) => (title ? `${title} - ${appName}` : appName),
   resolve: (name) => resolvePageComponent(
     `./Pages/${name}.jsx`,
     import.meta.glob('./Pages/**/*.jsx')
