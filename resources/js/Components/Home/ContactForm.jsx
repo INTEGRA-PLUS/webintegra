@@ -85,7 +85,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section id="contacto" className="py-16 md:py-24 px-4 md:px-8 bg-gray-50 relative overflow-hidden">
+    <section className="py-16 md:py-24 px-4 md:px-8 bg-gray-50 relative overflow-hidden">
       {/* Decorative background element */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-tevesat-primary/5 rounded-full blur-[120px] -mr-64 -mt-64"></div>
 

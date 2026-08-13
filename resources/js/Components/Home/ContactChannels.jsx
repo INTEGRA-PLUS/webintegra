@@ -15,7 +15,7 @@ const CHANNEL_ICONS = {
  */
 export default function ContactChannels() {
   return (
-    <div className="mt-20">
+    <div id="contacto" className="mt-20 scroll-mt-32">
       {/* Encabezado */}
       <div className="mb-10 text-center">
         <div className="inline-block bg-tevesat-primary/5 px-4 py-1 rounded-full border border-tevesat-primary/20 mb-4 font-black uppercase text-xs tracking-widest text-tevesat-primary">
