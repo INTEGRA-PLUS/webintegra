@@ -17,7 +17,7 @@ import {
   Palette,
 } from 'lucide-react';
 
-export const WHATSAPP_URL = 'https://wa.me/573142497234';
+export const WHATSAPP_URL = 'https://wa.me/573334010174';
 
 /**
  * Datos de la página de Televisión (Televisión DGO).

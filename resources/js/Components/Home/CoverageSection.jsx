@@ -72,7 +72,7 @@ export default function CoverageSection() {
 
             {/* CTA */}
             <a
-              href="https://wa.me/573142497234"
+              href="https://wa.me/573334010174"
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full transform rounded-2xl bg-tevesat-primary py-6 text-center font-black uppercase tracking-[0.2em] text-white shadow-xl shadow-tevesat-primary/30 transition-all duration-300 hover:scale-105 hover:bg-tevesat-primary-light active:scale-95"

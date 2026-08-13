@@ -1,5 +1,6 @@
 import React from 'react';
-import { Facebook, Instagram, Youtube, Linkedin, Phone, Mail, ArrowUp } from 'lucide-react';
+import { Facebook, Instagram, Youtube, Linkedin, Mail, ArrowUp } from 'lucide-react';
+import { CONTACT_CHANNELS, CONTACT_EMAIL } from './data/contact';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -80,32 +81,30 @@ export default function Footer() {
               <h4 className="text-base font-black uppercase tracking-widest text-tevesat-primary mb-8 italic">Contacto</h4>
 
               <div className="space-y-6">
-                <a href="tel:3009109110" className="flex items-center gap-4 group">
-                  <div className="w-12 h-12 rounded-2xl bg-white border border-gray-200 flex items-center justify-center text-tevesat-primary group-hover:bg-tevesat-primary group-hover:text-white transition-all duration-300">
-                    <Phone size={22} strokeWidth={2.5} />
-                  </div>
-                  <div>
-                    <p className="text-tevesat-tertiary-dark font-black text-lg leading-none">300 910 9110</p>
-                    <p className="text-gray-400 text-[10px] font-black uppercase tracking-widest mt-1">Línea Nacional</p>
-                  </div>
-                </a>
+                {CONTACT_CHANNELS.map((channel) => (
+                  <a
+                    key={channel.key}
+                    href={channel.whatsapp}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-4 group"
+                  >
+                    <div className="w-12 h-12 rounded-2xl bg-white border border-gray-200 flex items-center justify-center text-tevesat-primary group-hover:bg-tevesat-primary group-hover:text-white transition-all duration-300">
+                      <WhatsappIcon className="w-6 h-6 text-tevesat-primary group-hover:text-white" />
+                    </div>
+                    <div>
+                      <p className="text-tevesat-tertiary-dark font-black text-lg leading-none">{channel.number}</p>
+                      <p className="text-gray-400 text-[10px] font-black uppercase tracking-widest mt-1">{channel.label}</p>
+                    </div>
+                  </a>
+                ))}
 
-                <a href="https://wa.me/573004798909" className="flex items-center gap-4 group">
-                  <div className="w-12 h-12 rounded-2xl bg-white border border-gray-200 flex items-center justify-center text-tevesat-primary group-hover:bg-tevesat-primary group-hover:text-white transition-all duration-300">
-                    <WhatsappIcon className="w-6 h-6 text-tevesat-primary group-hover:text-white" />
-                  </div>
-                  <div>
-                    <p className="text-tevesat-tertiary-dark font-black text-lg leading-none">300 479 8909</p>
-                    <p className="text-gray-400 text-[10px] font-black uppercase tracking-widest mt-1">WhatsApp Ventas</p>
-                  </div>
-                </a>
-
-                <a href="mailto:internet@reintech.co" className="flex items-center gap-4 group">
+                <a href={`mailto:${CONTACT_EMAIL}`} className="flex items-center gap-4 group">
                   <div className="w-12 h-12 rounded-2xl bg-white border border-gray-200 flex items-center justify-center text-tevesat-primary group-hover:bg-tevesat-primary group-hover:text-white transition-all duration-300">
                     <Mail size={22} strokeWidth={2.5} />
                   </div>
                   <div>
-                    <p className="text-tevesat-tertiary-dark font-black text-sm break-all leading-none italic">internet@reintech.co</p>
+                    <p className="text-tevesat-tertiary-dark font-black text-sm break-all leading-none italic">{CONTACT_EMAIL}</p>
                     <p className="text-gray-400 text-[10px] font-black uppercase tracking-widest mt-1">Correo Soporte</p>
                   </div>
                 </a>

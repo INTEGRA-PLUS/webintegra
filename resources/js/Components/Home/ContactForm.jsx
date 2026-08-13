@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { CheckCircle } from 'lucide-react';
+import ContactChannels from './ContactChannels';
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -202,6 +203,9 @@ export default function ContactForm() {
           </div>
 
         </div>
+
+        {/* Líneas de atención oficiales + horario */}
+        <ContactChannels />
       </div>
 
       <style>{`

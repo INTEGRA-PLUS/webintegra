@@ -6,7 +6,7 @@
  * Los planes hogar además incluyen: { tv, addons[] } (TV incluida y servicios como WIN+ / Disney+).
  */
 
-const WHATSAPP_URL = 'https://wa.me/573142497234';
+const WHATSAPP_URL = 'https://wa.me/573334010174';
 export { WHATSAPP_URL };
 
 const PAYMENT_URL = 'https://pagos.onepay.la/reintechsas';

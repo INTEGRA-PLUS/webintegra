@@ -9,7 +9,7 @@ import {
   Sparkles,
 } from 'lucide-react';
 
-export const WHATSAPP_URL = 'https://wa.me/573004798909';
+export const WHATSAPP_URL = 'https://wa.me/573334010174';
 
 /**
  * Datos de la página institucional "Nosotros" (REINTECH S.A.S).

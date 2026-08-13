@@ -63,7 +63,7 @@ export default function CoverageCheck() {
                   className="bg-white border border-white/40 rounded-2xl px-6 py-4 text-tevesat-tertiary-dark placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-tevesat-tertiary-dark transition-all font-bold md:col-span-1"
                 />
                 <a
-                  href="https://wa.me/573142497234"
+                  href="https://wa.me/573334010174"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-tevesat-tertiary-dark text-white font-black uppercase text-[12px] tracking-tighter hover:bg-white hover:text-tevesat-primary hover:scale-105 transition-all duration-300 py-4 px-6 rounded-2xl shadow-xl text-center flex items-center justify-center"
