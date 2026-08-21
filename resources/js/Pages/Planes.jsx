@@ -117,8 +117,12 @@ export default function Planes() {
             </div>
           </div>
 
-          {/* Grid */}
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:items-center">
+          {/* Grid: 4 columnas cuando el grupo tiene 4 planes (Empresas), 3 en el resto */}
+          <div
+            className={`grid grid-cols-1 gap-8 sm:grid-cols-2 lg:items-center ${
+              activePlans.length === 4 ? 'lg:grid-cols-4' : 'lg:grid-cols-3'
+            }`}
+          >
             {activePlans.map((plan) => (
               <PlanCard key={`${activeTab}-${plan.name}`} plan={plan} />
             ))}
