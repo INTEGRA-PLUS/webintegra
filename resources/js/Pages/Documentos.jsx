@@ -12,10 +12,8 @@ import Footer from '../Components/Home/Footer';
 export default function Documentos() {
   const companyDocs = [
     { title: 'Contrato único de prestación de servicios', href: 'https://usc1.contabostorage.com/ec0270e0cc0b4fc6bf9c10fa0d981689:integra/smtelecomunicaciones/adjuntos/CONTRATO%20DIGITAL%20SM.pdf' },
-    { title: 'Contrato único convergente de servicios fijos y móviles (pospago)', href: '/docs/contrato-unico-convergente-pospago.pdf' },
     { title: 'Carta de suspensión de contrato de servicios de internet', href: 'https://usc1.contabostorage.com/ec0270e0cc0b4fc6bf9c10fa0d981689:integra/smtelecomunicaciones/adjuntos/CARTA%20DE%20SUSPENSION%20DEL%20CONTRATO.pdf' },
     { title: 'Formato de cesión de derechos', href: 'https://usc1.contabostorage.com/ec0270e0cc0b4fc6bf9c10fa0d981689:integra/smtelecomunicaciones/adjuntos/formato-cesion-de-derechos.pdf' },
-    { title: 'Formato de autorización de propietario', href: '/docs/formato-autorizacion-propietario.docx' },
     { title: 'Formato de solicitud de ampliación o cambio de plan', href: 'https://usc1.contabostorage.com/ec0270e0cc0b4fc6bf9c10fa0d981689:integra/smtelecomunicaciones/adjuntos/Formato_Cambio_de_Plan_SM_Telecomunicaciones.pdf' },
     { title: 'Procedimiento de solicitudes y PQRS', href: 'https://usc1.contabostorage.com/ec0270e0cc0b4fc6bf9c10fa0d981689:integra/smtelecomunicaciones/adjuntos/FORMATO%20DE%20PETICIONES.pdf' },
     { title: 'Política de neutralidad en internet', href: 'https://usc1.contabostorage.com/ec0270e0cc0b4fc6bf9c10fa0d981689:integra/smtelecomunicaciones/adjuntos/POLITICA%20DE%20NEUTRALIDAD%20EN%20LA%20RED%20DE%20SM%20OPTIAL%20FIBER%20S.pdf' },
