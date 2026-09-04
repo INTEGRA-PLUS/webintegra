@@ -7,32 +7,32 @@ export default function ManosRemotas() {
     {
       title: "Configuración ONT y OLT",
       description: "Servicios especializados en el aprovisionamiento y gestión de redes GPON, asegurando una conectividad de última milla eficiente y estable.",
-      icon: <Globe className="w-8 h-8 text-tevesat-primary" />
+      icon: <Globe className="w-8 h-8 text-tevesat-primary-deep" />
     },
     {
       title: "Networking Avanzado",
       description: "Configuración de equipos Mikrotik en capas 1, 2, 3 y 4. Gestión de ruteo, switching y políticas de red personalizadas.",
-      icon: <Server className="w-8 h-8 text-tevesat-primary" />
+      icon: <Server className="w-8 h-8 text-tevesat-primary-deep" />
     },
     {
       title: "Soporte Multi-marca",
       description: "Experiencia técnica en dispositivos Cisco y Fortinet. Implementación de reglas de firewall y segmentación de redes corporativas.",
-      icon: <Shield className="w-8 h-8 text-tevesat-primary" />
+      icon: <Shield className="w-8 h-8 text-tevesat-primary-deep" />
     },
     {
       title: "Gestión de Routers",
       description: "Configuración y optimización de routers de todas las marcas del mercado para maximizar el rendimiento de la conexión local.",
-      icon: <Settings className="w-8 h-8 text-tevesat-primary" />
+      icon: <Settings className="w-8 h-8 text-tevesat-primary-deep" />
     },
     {
       title: "Mantenimiento de PC",
       description: "Soporte técnico integral para estaciones de trabajo, incluyendo limpieza de hardware, optimización de software y eliminación de malware.",
-      icon: <Monitor className="w-8 h-8 text-tevesat-primary" />
+      icon: <Monitor className="w-8 h-8 text-tevesat-primary-deep" />
     },
     {
       title: "Sistemas Inteligentes",
       description: "Configuración e integración de dispositivos IoT y sistemas inteligentes para automatización de oficinas y hogares.",
-      icon: <Cpu className="w-8 h-8 text-tevesat-primary" />
+      icon: <Cpu className="w-8 h-8 text-tevesat-primary-deep" />
     }
   ];
 
@@ -70,7 +70,7 @@ export default function ManosRemotas() {
             ))}
           </div>
 
-          <div className="mt-20 flex flex-col md:flex-row items-center gap-12 bg-tevesat-primary rounded-[3rem] p-10 md:p-16 text-white overflow-hidden relative">
+          <div className="mt-20 flex flex-col md:flex-row items-center gap-12 bg-tevesat-primary rounded-[3rem] p-10 md:p-16 text-tevesat-tertiary-dark overflow-hidden relative">
             <div className="flex-1 relative z-10">
               <h2 className="text-4xl font-black mb-6 uppercase tracking-tighter">¿Necesitas ayuda inmediata?</h2>
               <p className="text-lg opacity-90 mb-8 leading-relaxed">
@@ -79,7 +79,7 @@ export default function ManosRemotas() {
               <a 
                 href="https://wa.me/573144333896" 
                 target="_blank" 
-                className="inline-block bg-white text-tevesat-primary px-10 py-4 rounded-2xl font-black uppercase tracking-widest hover:bg-gray-100 transition-colors shadow-2xl"
+                className="inline-block bg-white text-tevesat-primary-deep px-10 py-4 rounded-2xl font-black uppercase tracking-widest hover:bg-gray-100 transition-colors shadow-2xl"
               >
                 Contactar Soporte
               </a>

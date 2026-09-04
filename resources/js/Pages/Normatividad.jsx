@@ -65,13 +65,13 @@ export default function Normatividad() {
         />
         <div className="relative z-10 mx-auto max-w-3xl text-center">
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-tevesat-primary/20 bg-tevesat-primary/5 px-5 py-2">
-            <Scale size={16} className="text-tevesat-primary" />
-            <span className="text-xs font-black uppercase tracking-[0.3em] text-tevesat-primary">
+            <Scale size={16} className="text-tevesat-primary-deep" />
+            <span className="text-xs font-black uppercase tracking-[0.3em] text-tevesat-primary-deep">
               Marco Regulatorio
             </span>
           </div>
           <h1 className="text-4xl font-black leading-[1.05] tracking-tight text-tevesat-tertiary-dark md:text-6xl">
-            <span className="italic text-tevesat-primary">Normatividad</span>
+            <span className="italic text-tevesat-primary-deep">Normatividad</span>
           </h1>
           <p className="mx-auto mt-5 max-w-xl text-lg font-medium leading-relaxed text-gray-500">
             Campañas, canales de denuncia y entidades de regulación y control del
@@ -99,7 +99,7 @@ export default function Normatividad() {
                 <h2 className="text-2xl font-black uppercase tracking-tight text-tevesat-tertiary-dark">
                   {card.title}
                 </h2>
-                <p className="mb-4 text-sm font-black uppercase tracking-[0.2em] text-tevesat-primary">
+                <p className="mb-4 text-sm font-black uppercase tracking-[0.2em] text-tevesat-primary-deep">
                   {card.subtitle}
                 </p>
                 <p className="flex-1 text-justify text-sm font-medium leading-relaxed text-gray-500">
@@ -109,7 +109,7 @@ export default function Normatividad() {
                   href={card.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-6 inline-flex items-center justify-center gap-2 rounded-2xl bg-tevesat-primary py-4 text-xs font-black uppercase tracking-[0.2em] text-white shadow-lg shadow-tevesat-primary/20 transition-all duration-300 hover:scale-105 hover:bg-tevesat-primary-light"
+                  className="mt-6 inline-flex items-center justify-center gap-2 rounded-2xl bg-tevesat-primary py-4 text-xs font-black uppercase tracking-[0.2em] text-tevesat-tertiary-dark shadow-lg shadow-tevesat-primary/20 transition-all duration-300 hover:scale-105 hover:bg-tevesat-primary-light"
                 >
                   {card.cta}
                   <ExternalLink size={14} />
@@ -125,7 +125,7 @@ export default function Normatividad() {
         <div className="mx-auto max-w-7xl">
           <div className="mb-14 text-center">
             <h2 className="text-3xl font-black uppercase tracking-tight text-tevesat-tertiary-dark md:text-4xl">
-              Entidades de <span className="italic text-tevesat-primary">Regulación y Control</span>
+              Entidades de <span className="italic text-tevesat-primary-deep">Regulación y Control</span>
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-base font-medium text-gray-500">
               Organismos que vigilan, regulan y protegen a los usuarios del sector TIC.

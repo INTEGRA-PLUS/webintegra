@@ -18,9 +18,9 @@ export default {
           
           'primary-light': themeColors.COLOR_PRINCIPAL_LIGHT,
           'tertiary-dark': themeColors.COLOR_TERCIARIO_DARK,
-          // COLOR_ACENTO - Solo para elementos decorativos: su contraste sobre
-          // blanco es 1.56:1, insuficiente para texto o para llevar texto encima.
-          accent: themeColors.COLOR_ACENTO,
+          // COLOR_PRINCIPAL_DEEP - Para texto sobre fondo claro. El amarillo
+          // principal solo sirve como fondo, y siempre con texto oscuro encima.
+          'primary-deep': themeColors.COLOR_PRINCIPAL_DEEP,
         },
       },
       fontFamily: {

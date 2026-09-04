@@ -10,16 +10,16 @@ const NewPlanCard = ({ speed, category }) => {
       <div className="relative flex h-full flex-col items-center rounded-[2rem] border border-gray-100 bg-white p-8 text-center shadow-[0_30px_70px_-30px_rgba(0,0,0,0.2)] transition-all duration-500 group-hover:-translate-y-2">
         <div className={`mb-6 flex h-16 w-16 items-center justify-center rounded-2xl ${isFiber ? 'bg-tevesat-primary' : 'bg-gray-100'} shadow-lg transition-transform duration-500 group-hover:scale-110`}>
           {isFiber ? (
-            <Zap className="text-white" size={32} />
+            <Zap className="text-tevesat-tertiary-dark" size={32} />
           ) : (
-            <Radio className="text-tevesat-primary" size={32} />
+            <Radio className="text-tevesat-primary-deep" size={32} />
           )}
         </div>
 
         <h3 className="mb-2 text-xs font-black uppercase tracking-[0.3em] text-gray-400">Internet {isFiber ? 'Fibra' : 'Inalámbrico'}</h3>
         <div className="mb-8 flex items-baseline gap-2">
           <span className="text-5xl font-black tracking-tighter text-tevesat-tertiary-dark">{speed}</span>
-          <span className="text-xl font-black italic text-tevesat-primary">MEGAS</span>
+          <span className="text-xl font-black italic text-tevesat-primary-deep">MEGAS</span>
         </div>
 
         <div className="mt-auto w-full">
@@ -27,7 +27,7 @@ const NewPlanCard = ({ speed, category }) => {
             href="https://wa.me/573144333896"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex w-full items-center justify-center gap-3 rounded-xl border border-gray-200 bg-gray-50 py-4 text-[10px] font-black uppercase tracking-widest text-tevesat-tertiary-dark transition-all duration-300 hover:border-tevesat-primary hover:bg-tevesat-primary hover:text-white"
+            className="flex w-full items-center justify-center gap-3 rounded-xl border border-gray-200 bg-gray-50 py-4 text-[10px] font-black uppercase tracking-widest text-tevesat-tertiary-dark transition-all duration-300 hover:border-tevesat-primary hover:bg-tevesat-primary hover:text-tevesat-tertiary-dark"
           >
             Lo quiero <MessageCircle size={16} />
           </a>
@@ -52,10 +52,10 @@ export default function PlansSection() {
       <div className="relative z-10 mx-auto max-w-7xl">
         <div className="mb-20 text-center">
           <div className="mb-6 inline-block rounded-full border border-tevesat-primary/20 bg-tevesat-primary/5 px-6 py-2">
-            <span className="text-xs font-black uppercase tracking-[0.3em] text-tevesat-primary">Nuestros Planes</span>
+            <span className="text-xs font-black uppercase tracking-[0.3em] text-tevesat-primary-deep">Nuestros Planes</span>
           </div>
           <h2 className="mb-8 text-5xl font-black tracking-tighter text-tevesat-tertiary-dark md:text-7xl">
-            ELIGE TU <span className="italic text-tevesat-primary">PLAN IDEAL</span>
+            ELIGE TU <span className="italic text-tevesat-primary-deep">PLAN IDEAL</span>
           </h2>
           <p className="mx-auto max-w-2xl text-xl font-medium italic leading-relaxed text-gray-500">
             Conectividad a tu medida. Selecciona la velocidad que mejor se adapte a tus necesidades.
@@ -80,7 +80,7 @@ export default function PlansSection() {
         <div>
           <div className="mb-12 flex items-center gap-4">
             <div className="h-px flex-1 bg-gradient-to-r from-transparent via-gray-200 to-transparent"></div>
-            <h3 className="px-8 text-sm font-black uppercase tracking-[0.4em] text-tevesat-primary">Fibra Óptica</h3>
+            <h3 className="px-8 text-sm font-black uppercase tracking-[0.4em] text-tevesat-primary-deep">Fibra Óptica</h3>
             <div className="h-px flex-1 bg-gradient-to-r from-transparent via-gray-200 to-transparent"></div>
           </div>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">

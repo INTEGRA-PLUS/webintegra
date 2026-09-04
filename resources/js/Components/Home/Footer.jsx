@@ -23,7 +23,7 @@ export default function Footer() {
 
               <p className="text-gray-500 text-lg font-medium leading-relaxed max-w-sm">
                 Conectando familias y negocios con lo mejor en tecnología. <br />
-                <span className="text-tevesat-primary font-black">¡Más cerca es mejor!</span>
+                <span className="text-tevesat-primary-deep font-black">¡Más cerca es mejor!</span>
               </p>
 
               <div className="flex flex-wrap gap-4">
@@ -37,7 +37,7 @@ export default function Footer() {
                   <a
                     key={i}
                     href={social.href}
-                    className="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center text-tevesat-tertiary-dark hover:bg-tevesat-primary hover:text-white hover:border-tevesat-primary transition-all duration-500 hover:-translate-y-2 shadow-sm"
+                    className="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center text-tevesat-tertiary-dark hover:bg-tevesat-primary hover:text-tevesat-tertiary-dark hover:border-tevesat-primary transition-all duration-500 hover:-translate-y-2 shadow-sm"
                   >
                     <social.Icon size={20} />
                   </a>
@@ -47,7 +47,7 @@ export default function Footer() {
 
             {/* Column 2: Sitios de Interés */}
             <div>
-              <h4 className="text-base font-black uppercase tracking-widest text-tevesat-primary mb-8 italic">Sitios de Interés</h4>
+              <h4 className="text-base font-black uppercase tracking-widest text-tevesat-primary-deep mb-8 italic">Sitios de Interés</h4>
               <ul className="space-y-4">
                 {[
                   { label: 'Planes de Internet', href: '#' },
@@ -58,7 +58,7 @@ export default function Footer() {
                   { label: 'Trabaja con nosotros', href: '/#contacto' },
                 ].map((item) => (
                   <li key={item.label}>
-                    <a href={item.href} className="text-gray-500 hover:text-tevesat-primary transition-all font-bold text-sm uppercase tracking-wider flex items-center gap-2 group">
+                    <a href={item.href} className="text-gray-500 hover:text-tevesat-primary-deep transition-all font-bold text-sm uppercase tracking-wider flex items-center gap-2 group">
                       <div className="w-1 h-1 bg-tevesat-accent rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
                       {item.label}
                     </a>
@@ -69,7 +69,7 @@ export default function Footer() {
 
             {/* Column 3: Legal */}
             <div>
-              <h4 className="text-base font-black uppercase tracking-widest text-tevesat-primary mb-8 italic">Legal</h4>
+              <h4 className="text-base font-black uppercase tracking-widest text-tevesat-primary-deep mb-8 italic">Legal</h4>
               <ul className="space-y-4">
                 {[
                   { label: `Contrato ${import.meta.env.VITE_NOMBRE_EMPRESA}`, href: '/documentos' },
@@ -81,7 +81,7 @@ export default function Footer() {
                   { label: 'PQRS', href: '/pqrs' },
                 ].map((item) => (
                   <li key={item.label}>
-                    <a href={item.href} className="text-gray-500 hover:text-tevesat-primary transition-all font-bold text-sm uppercase tracking-wider flex items-center gap-2 group">
+                    <a href={item.href} className="text-gray-500 hover:text-tevesat-primary-deep transition-all font-bold text-sm uppercase tracking-wider flex items-center gap-2 group">
                       <div className="w-1 h-1 bg-tevesat-accent rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
                       {item.label}
                     </a>
@@ -92,11 +92,11 @@ export default function Footer() {
 
             {/* Column 4: Contacto */}
             <div className="space-y-8">
-              <h4 className="text-base font-black uppercase tracking-widest text-tevesat-primary mb-8 italic">Contacto</h4>
+              <h4 className="text-base font-black uppercase tracking-widest text-tevesat-primary-deep mb-8 italic">Contacto</h4>
 
               <div className="space-y-6">
                 <a href="tel:+573144333896" className="flex items-center gap-4 group">
-                  <div className="w-12 h-12 rounded-2xl bg-white border border-gray-200 flex items-center justify-center text-tevesat-primary group-hover:bg-tevesat-primary group-hover:text-white transition-all duration-300">
+                  <div className="w-12 h-12 rounded-2xl bg-white border border-gray-200 flex items-center justify-center text-tevesat-primary-deep group-hover:bg-tevesat-primary group-hover:text-tevesat-tertiary-dark transition-all duration-300">
                     <Phone size={22} strokeWidth={2.5} />
                   </div>
                   <div>
@@ -106,8 +106,8 @@ export default function Footer() {
                 </a>
 
                 <a href="https://wa.me/573144333896" className="flex items-center gap-4 group">
-                  <div className="w-12 h-12 rounded-2xl bg-white border border-gray-200 flex items-center justify-center text-tevesat-primary group-hover:bg-tevesat-primary group-hover:text-white transition-all duration-300">
-                    <WhatsappIcon className="w-6 h-6 text-tevesat-primary group-hover:text-white" />
+                  <div className="w-12 h-12 rounded-2xl bg-white border border-gray-200 flex items-center justify-center text-tevesat-primary-deep group-hover:bg-tevesat-primary group-hover:text-tevesat-tertiary-dark transition-all duration-300">
+                    <WhatsappIcon className="w-6 h-6 text-tevesat-primary-deep group-hover:text-tevesat-tertiary-dark" />
                   </div>
                   <div>
                     <p className="text-tevesat-tertiary-dark font-black text-lg leading-none">314 433 3896</p>
@@ -116,7 +116,7 @@ export default function Footer() {
                 </a>
 
                 <a href="mailto:interjassas@gmail.com" className="flex items-center gap-4 group">
-                  <div className="w-12 h-12 rounded-2xl bg-white border border-gray-200 flex items-center justify-center text-tevesat-primary group-hover:bg-tevesat-primary group-hover:text-white transition-all duration-300">
+                  <div className="w-12 h-12 rounded-2xl bg-white border border-gray-200 flex items-center justify-center text-tevesat-primary-deep group-hover:bg-tevesat-primary group-hover:text-tevesat-tertiary-dark transition-all duration-300">
                     <Mail size={22} strokeWidth={2.5} />
                   </div>
                   <div>
@@ -147,9 +147,9 @@ export default function Footer() {
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="group flex items-center gap-3 bg-white border border-gray-200 px-6 py-3 rounded-full hover:bg-tevesat-primary hover:border-tevesat-primary transition-all duration-500"
           >
-            <span className="text-tevesat-tertiary-dark group-hover:text-white font-black text-[10px] uppercase tracking-widest transition-colors">Volver al inicio</span>
+            <span className="text-tevesat-tertiary-dark group-hover:text-tevesat-tertiary-dark font-black text-[10px] uppercase tracking-widest transition-colors">Volver al inicio</span>
             <div className="w-8 h-8 rounded-full bg-tevesat-primary group-hover:bg-white flex items-center justify-center transition-all">
-              <ArrowUp size={16} className="text-white group-hover:text-tevesat-primary" strokeWidth={3} />
+              <ArrowUp size={16} className="text-tevesat-tertiary-dark group-hover:text-tevesat-primary-deep" strokeWidth={3} />
             </div>
           </button>
         </div>

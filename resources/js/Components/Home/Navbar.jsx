@@ -70,7 +70,7 @@ export default function Navbar() {
                 <LinkTag
                   key={link.label}
                   href={link.href}
-                  className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-500 hover:text-tevesat-primary transition-all duration-300 relative group"
+                  className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-500 hover:text-tevesat-primary-deep transition-all duration-300 relative group"
                 >
                   {link.label}
                   <span className="absolute -bottom-2 left-0 w-0 h-1 bg-tevesat-primary transition-all duration-300 group-hover:w-full rounded-full"></span>
@@ -84,7 +84,7 @@ export default function Navbar() {
               onMouseEnter={() => setIsServicesOpen(true)}
               onMouseLeave={() => setIsServicesOpen(false)}
             >
-              <button className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-gray-500 hover:text-tevesat-primary transition-all duration-300">
+              <button className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-gray-500 hover:text-tevesat-primary-deep transition-all duration-300">
                 Servicios
                 <ChevronDown size={14} className={`transition-transform duration-300 ${isServicesOpen ? 'rotate-180' : ''}`} />
               </button>
@@ -95,7 +95,7 @@ export default function Navbar() {
                     <Link
                       key={service.label}
                       href={service.href}
-                      className="block px-4 py-3 rounded-xl text-[10px] font-bold uppercase tracking-widest text-gray-500 hover:bg-tevesat-primary hover:text-white transition-all"
+                      className="block px-4 py-3 rounded-xl text-[10px] font-bold uppercase tracking-widest text-gray-500 hover:bg-tevesat-primary hover:text-tevesat-tertiary-dark transition-all"
                     >
                       {service.label}
                     </Link>
@@ -107,7 +107,7 @@ export default function Navbar() {
 
           {/* Desktop CTA Button */}
           <div className="hidden md:flex">
-            <button className="bg-tevesat-primary text-white border-2 border-transparent px-8 py-3 rounded-2xl font-black uppercase text-[10px] tracking-widest hover:bg-transparent hover:border-tevesat-primary hover:text-tevesat-primary transition-all duration-500 transform hover:scale-105 shadow-[0_10px_30px_rgba(236,50,55,0.3)]">
+            <button className="bg-tevesat-primary text-tevesat-tertiary-dark border-2 border-transparent px-8 py-3 rounded-2xl font-black uppercase text-[10px] tracking-widest hover:bg-transparent hover:border-tevesat-primary hover:text-tevesat-primary-deep transition-all duration-500 transform hover:scale-105 shadow-[0_10px_30px_rgba(239,205,40,0.3)]">
               Contratar
             </button>
           </div>
@@ -133,7 +133,7 @@ export default function Navbar() {
                   <LinkTag
                     key={link.label}
                     href={link.href}
-                    className="block px-4 py-3 rounded-xl text-sm font-bold text-tevesat-tertiary-dark hover:bg-tevesat-primary hover:text-white transition"
+                    className="block px-4 py-3 rounded-xl text-sm font-bold text-tevesat-tertiary-dark hover:bg-tevesat-primary hover:text-tevesat-tertiary-dark transition"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {link.label}
@@ -147,7 +147,7 @@ export default function Navbar() {
                   <Link
                     key={service.label}
                     href={service.href}
-                    className="block px-4 py-3 rounded-xl text-sm font-bold text-tevesat-tertiary-dark hover:bg-tevesat-primary hover:text-white transition"
+                    className="block px-4 py-3 rounded-xl text-sm font-bold text-tevesat-tertiary-dark hover:bg-tevesat-primary hover:text-tevesat-tertiary-dark transition"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {service.label}
@@ -155,7 +155,7 @@ export default function Navbar() {
                 ))}
               </div>
 
-              <button className="w-full mt-4 bg-tevesat-primary text-white py-4 rounded-xl font-black uppercase tracking-widest hover:bg-tevesat-primary-light transition shadow-lg shadow-tevesat-primary/20">
+              <button className="w-full mt-4 bg-tevesat-primary text-tevesat-tertiary-dark py-4 rounded-xl font-black uppercase tracking-widest hover:bg-tevesat-primary-light transition shadow-lg shadow-tevesat-primary/20">
                 Compra ahora
               </button>
             </div>

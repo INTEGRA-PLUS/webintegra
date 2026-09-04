@@ -26,15 +26,15 @@ export default function HeroBanner() {
         {/* Lado izquierdo: contenido */}
         <div className="lg:col-span-7">
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-tevesat-primary/20 bg-tevesat-primary/5 px-5 py-2 animate-[fadeIn_0.8s_ease]">
-            <ShieldCheck size={16} className="text-tevesat-primary" />
-            <span className="text-xs font-black uppercase tracking-[0.25em] text-tevesat-primary">
+            <ShieldCheck size={16} className="text-tevesat-primary-deep" />
+            <span className="text-xs font-black uppercase tracking-[0.25em] text-tevesat-primary-deep">
               Protección avanzada y respaldo total
             </span>
           </div>
 
           <h1 className="mb-6 text-5xl font-black leading-[0.95] tracking-tight text-tevesat-tertiary-dark animate-[fadeIn_0.8s_ease] md:text-7xl">
             SEGURIDAD Y<br />
-            <span className="text-tevesat-primary italic">RESPALDO</span>
+            <span className="text-tevesat-primary-deep italic">RESPALDO</span>
           </h1>
 
           <p
@@ -54,14 +54,14 @@ export default function HeroBanner() {
               href="https://wa.me/573144333896"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center justify-center gap-2 rounded-2xl bg-tevesat-primary px-9 py-5 font-black uppercase tracking-wider text-white shadow-xl shadow-tevesat-primary/30 transition-all duration-300 hover:scale-105 hover:bg-tevesat-primary-light active:scale-95"
+              className="group flex items-center justify-center gap-2 rounded-2xl bg-tevesat-primary px-9 py-5 font-black uppercase tracking-wider text-tevesat-tertiary-dark shadow-xl shadow-tevesat-primary/30 transition-all duration-300 hover:scale-105 hover:bg-tevesat-primary-light active:scale-95"
             >
               Me interesa
               <ArrowRight size={20} className="transition-transform group-hover:translate-x-1" />
             </a>
             <a
               href="#cobertura"
-              className="flex items-center justify-center gap-2 rounded-2xl border-2 border-gray-200 bg-white px-9 py-5 font-black uppercase tracking-wider text-tevesat-tertiary-dark transition-all duration-300 hover:border-tevesat-primary hover:text-tevesat-primary"
+              className="flex items-center justify-center gap-2 rounded-2xl border-2 border-gray-200 bg-white px-9 py-5 font-black uppercase tracking-wider text-tevesat-tertiary-dark transition-all duration-300 hover:border-tevesat-primary hover:text-tevesat-primary-deep"
             >
               <MapPin size={20} />
               Ver cobertura
@@ -74,7 +74,7 @@ export default function HeroBanner() {
             style={{ animationDelay: '0.45s' }}
           >
             <div className="flex items-center gap-3">
-              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-tevesat-primary/10 text-tevesat-primary">
+              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-tevesat-primary/10 text-tevesat-primary-deep">
                 <Headphones size={20} strokeWidth={2.4} />
               </div>
               <span className="text-sm font-black uppercase tracking-wide text-gray-600">
@@ -82,7 +82,7 @@ export default function HeroBanner() {
               </span>
             </div>
             <div className="flex items-center gap-3">
-              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-tevesat-primary/10 text-tevesat-primary">
+              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-tevesat-primary/10 text-tevesat-primary-deep">
                 <ShieldCheck size={20} strokeWidth={2.4} />
               </div>
               <span className="text-sm font-black uppercase tracking-wide text-gray-600">
@@ -90,7 +90,7 @@ export default function HeroBanner() {
               </span>
             </div>
             <div className="flex items-center gap-3">
-              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-tevesat-primary/10 text-tevesat-primary">
+              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-tevesat-primary/10 text-tevesat-primary-deep">
                 <Zap size={20} strokeWidth={2.4} />
               </div>
               <span className="text-sm font-black uppercase tracking-wide text-gray-600">
@@ -121,7 +121,7 @@ export default function HeroBanner() {
 
             {/* Badge flotante */}
             <div className="absolute -bottom-6 -left-6 flex items-center gap-4 rounded-3xl border border-gray-100 bg-white/90 p-5 shadow-2xl backdrop-blur-md animate-bounce-slow">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-tevesat-primary text-lg font-black italic text-white">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-tevesat-primary text-lg font-black italic text-tevesat-tertiary-dark">
                 100%
               </div>
               <div>

@@ -30,11 +30,11 @@ export default function ChannelGuide() {
       <div className="relative z-10 mx-auto max-w-7xl">
         {/* Encabezado */}
         <div className="mx-auto mb-14 max-w-2xl text-center">
-          <span className="text-xs font-black uppercase tracking-[0.3em] text-tevesat-primary">
+          <span className="text-xs font-black uppercase tracking-[0.3em] text-tevesat-primary-deep">
             Todos nuestros canales
           </span>
           <h2 className="mt-4 text-4xl font-black leading-[1.05] tracking-tight text-tevesat-tertiary-dark md:text-5xl">
-            Parrilla <span className="italic text-tevesat-primary">Oficial</span>
+            Parrilla <span className="italic text-tevesat-primary-deep">Oficial</span>
           </h2>
           <p className="mx-auto mt-3 text-sm font-bold uppercase tracking-widest text-gray-400">
             (Folleto Recreado)

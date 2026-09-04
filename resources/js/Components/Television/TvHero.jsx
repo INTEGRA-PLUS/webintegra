@@ -21,14 +21,14 @@ export default function TvHero() {
 
       <div className="relative z-10 mx-auto max-w-3xl text-center">
         <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-tevesat-primary/20 bg-tevesat-primary/5 px-5 py-2">
-          <Tv size={16} className="text-tevesat-primary" />
-          <span className="text-xs font-black uppercase tracking-[0.3em] text-tevesat-primary">
+          <Tv size={16} className="text-tevesat-primary-deep" />
+          <span className="text-xs font-black uppercase tracking-[0.3em] text-tevesat-primary-deep">
             Televisión Digital IPTV
           </span>
         </div>
 
         <h1 className="text-5xl font-black leading-[0.98] tracking-tight text-tevesat-tertiary-dark md:text-7xl">
-          DISFRUTA LOS <span className="italic text-tevesat-primary">MEJORES CANALES</span> PARA TU FAMILIA
+          DISFRUTA LOS <span className="italic text-tevesat-primary-deep">MEJORES CANALES</span> PARA TU FAMILIA
         </h1>
 
         <p className="mx-auto mt-6 max-w-xl text-lg font-medium leading-relaxed text-gray-500 md:text-xl">
@@ -41,14 +41,14 @@ export default function TvHero() {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex items-center justify-center gap-2 rounded-2xl bg-tevesat-primary px-9 py-5 font-black uppercase tracking-wider text-white shadow-xl shadow-tevesat-primary/30 transition-all duration-300 hover:scale-105 hover:bg-tevesat-primary-light active:scale-95"
+            className="group flex items-center justify-center gap-2 rounded-2xl bg-tevesat-primary px-9 py-5 font-black uppercase tracking-wider text-tevesat-tertiary-dark shadow-xl shadow-tevesat-primary/30 transition-all duration-300 hover:scale-105 hover:bg-tevesat-primary-light active:scale-95"
           >
             <PlayCircle size={20} />
             Quiero mi TV
           </a>
           <a
             href="#planes-tv"
-            className="flex items-center justify-center gap-2 rounded-2xl border-2 border-gray-200 bg-white px-9 py-5 font-black uppercase tracking-wider text-tevesat-tertiary-dark transition-all duration-300 hover:border-tevesat-primary hover:text-tevesat-primary"
+            className="flex items-center justify-center gap-2 rounded-2xl border-2 border-gray-200 bg-white px-9 py-5 font-black uppercase tracking-wider text-tevesat-tertiary-dark transition-all duration-300 hover:border-tevesat-primary hover:text-tevesat-primary-deep"
           >
             Ver paquetes
           </a>

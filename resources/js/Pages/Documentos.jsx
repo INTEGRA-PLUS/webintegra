@@ -86,13 +86,13 @@ export default function Documentos() {
         />
         <div className="relative z-10 mx-auto max-w-3xl text-center">
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-tevesat-primary/20 bg-tevesat-primary/5 px-5 py-2">
-            <FileText size={16} className="text-tevesat-primary" />
-            <span className="text-xs font-black uppercase tracking-[0.3em] text-tevesat-primary">
+            <FileText size={16} className="text-tevesat-primary-deep" />
+            <span className="text-xs font-black uppercase tracking-[0.3em] text-tevesat-primary-deep">
               Centro de Documentación
             </span>
           </div>
           <h1 className="text-4xl font-black leading-[1.05] tracking-tight text-tevesat-tertiary-dark md:text-6xl">
-            <span className="italic text-tevesat-primary">Documentos</span>
+            <span className="italic text-tevesat-primary-deep">Documentos</span>
           </h1>
           <p className="mx-auto mt-5 max-w-xl text-lg font-medium leading-relaxed text-gray-500">
             Contratos, formatos, políticas y la normativa TIC que rige la prestación
@@ -106,7 +106,7 @@ export default function Documentos() {
         <div className="mx-auto max-w-7xl">
           <div className="mb-12 text-center">
             <h2 className="text-3xl font-black uppercase tracking-tight text-tevesat-tertiary-dark md:text-4xl">
-              Documentos y <span className="italic text-tevesat-primary">Formatos</span>
+              Documentos y <span className="italic text-tevesat-primary-deep">Formatos</span>
             </h2>
           </div>
 
@@ -116,7 +116,7 @@ export default function Documentos() {
                 key={doc.title}
                 className="flex items-center gap-4 rounded-2xl border border-gray-100 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_50px_-25px_rgba(0,0,0,0.25)]"
               >
-                <div className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-xl bg-tevesat-primary/5 text-tevesat-primary">
+                <div className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-xl bg-tevesat-primary/5 text-tevesat-primary-deep">
                   <FileText size={20} strokeWidth={2.4} />
                 </div>
                 <p className="flex-1 text-sm font-bold leading-snug text-tevesat-tertiary-dark">
@@ -127,7 +127,7 @@ export default function Documentos() {
                     href={doc.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl bg-tevesat-primary text-white shadow-lg shadow-tevesat-primary/20 transition-all duration-300 hover:scale-110 hover:bg-tevesat-primary-light"
+                    className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl bg-tevesat-primary text-tevesat-tertiary-dark shadow-lg shadow-tevesat-primary/20 transition-all duration-300 hover:scale-110 hover:bg-tevesat-primary-light"
                     title="Descargar"
                   >
                     <Download size={17} strokeWidth={2.4} />
@@ -152,13 +152,13 @@ export default function Documentos() {
         <div className="mx-auto max-w-5xl">
           <div className="mb-14 text-center">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-tevesat-primary/20 bg-tevesat-primary/5 px-5 py-2">
-              <Landmark size={16} className="text-tevesat-primary" />
-              <span className="text-xs font-black uppercase tracking-[0.3em] text-tevesat-primary">
+              <Landmark size={16} className="text-tevesat-primary-deep" />
+              <span className="text-xs font-black uppercase tracking-[0.3em] text-tevesat-primary-deep">
                 Marco Legal
               </span>
             </div>
             <h2 className="text-3xl font-black uppercase tracking-tight text-tevesat-tertiary-dark md:text-4xl">
-              Leyes y <span className="italic text-tevesat-primary">Normativa TIC</span>
+              Leyes y <span className="italic text-tevesat-primary-deep">Normativa TIC</span>
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-base font-medium text-gray-500">
               Normativa colombiana que regula el sector de las telecomunicaciones,
@@ -184,7 +184,7 @@ export default function Documentos() {
                   href={law.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex flex-shrink-0 items-center justify-center gap-2 rounded-2xl bg-tevesat-primary px-8 py-4 text-xs font-black uppercase tracking-[0.2em] text-white shadow-lg shadow-tevesat-primary/20 transition-all duration-300 hover:scale-105 hover:bg-tevesat-primary-light"
+                  className="inline-flex flex-shrink-0 items-center justify-center gap-2 rounded-2xl bg-tevesat-primary px-8 py-4 text-xs font-black uppercase tracking-[0.2em] text-tevesat-tertiary-dark shadow-lg shadow-tevesat-primary/20 transition-all duration-300 hover:scale-105 hover:bg-tevesat-primary-light"
                 >
                   Descargar
                   <ExternalLink size={14} />

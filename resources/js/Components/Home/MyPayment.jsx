@@ -23,11 +23,11 @@ export default function MyPayment() {
         {/* Header */}
         <div className="text-center mb-20">
           <div className="inline-block bg-tevesat-primary/5 px-6 py-2 rounded-full border border-tevesat-primary/20 mb-6">
-            <span className="text-tevesat-primary font-black uppercase text-xs tracking-[0.3em]">Cero complicaciones</span>
+            <span className="text-tevesat-primary-deep font-black uppercase text-xs tracking-[0.3em]">Cero complicaciones</span>
           </div>
           <h2 className="text-4xl md:text-6xl font-black text-tevesat-tertiary-dark mb-8 tracking-tighter italic">
             Paga en segundos con nuestros <br className="hidden md:block" />
-            <span className="text-tevesat-primary">Aliados de Confianza</span>
+            <span className="text-tevesat-primary-deep">Aliados de Confianza</span>
           </h2>
           <p className="text-gray-500 text-xl font-medium max-w-3xl mx-auto leading-relaxed italic">
             Realiza tus pagos de forma segura a través de los corresponsales y plataformas más grandes del país.
@@ -48,7 +48,7 @@ export default function MyPayment() {
             </div>
             <h3 className="text-2xl font-black text-tevesat-tertiary-dark mb-2">Pagar con PSE</h3>
             <p className="text-gray-400 font-bold uppercase text-[10px] tracking-widest mb-6">Trámite 100% Digital</p>
-            <div className="mt-auto bg-tevesat-primary text-white py-4 rounded-2xl font-black uppercase text-[10px] tracking-widest group-hover:bg-white group-hover:text-tevesat-primary transition-all duration-300">
+            <div className="mt-auto bg-tevesat-primary text-tevesat-tertiary-dark py-4 rounded-2xl font-black uppercase text-[10px] tracking-widest group-hover:bg-white group-hover:text-tevesat-primary-deep transition-all duration-300">
                Ir a pagar ahora
             </div>
           </a>
@@ -66,7 +66,7 @@ export default function MyPayment() {
 
               <div className="mt-auto bg-gray-50 rounded-2xl p-4 border border-dashed border-gray-200 group-hover:border-tevesat-primary/50 transition-all">
                 <p className="text-[10px] text-gray-400 font-black uppercase tracking-widest mb-1">Número de Convenio</p>
-                <p className="text-3xl font-black text-tevesat-primary tracking-tighter">{p.convenio}</p>
+                <p className="text-3xl font-black text-tevesat-primary-deep tracking-tighter">{p.convenio}</p>
               </div>
             </div>
           ))}

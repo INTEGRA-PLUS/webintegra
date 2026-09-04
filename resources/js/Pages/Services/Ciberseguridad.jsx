@@ -7,47 +7,47 @@ export default function Ciberseguridad() {
     {
       title: "Análisis de vulnerabilidad",
       description: "Identificación proactiva de debilidades en su red y sistemas para prevenir ataques antes de que sucedan.",
-      icon: <Search className="w-8 h-8 text-tevesat-primary" />
+      icon: <Search className="w-8 h-8 text-tevesat-primary-deep" />
     },
     {
       title: "Control de acceso (RBAC)",
       description: "Implementación de políticas de acceso basadas en roles para asegurar que cada usuario solo acceda a lo necesario.",
-      icon: <UserCheck className="w-8 h-8 text-tevesat-primary" />
+      icon: <UserCheck className="w-8 h-8 text-tevesat-primary-deep" />
     },
     {
       title: "Protección Antivirus EDR",
       description: "Soluciones avanzadas de protección para endpoints con detección y respuesta ante incidentes en tiempo real.",
-      icon: <ShieldCheck className="w-8 h-8 text-tevesat-primary" />
+      icon: <ShieldCheck className="w-8 h-8 text-tevesat-primary-deep" />
     },
     {
       title: "Firma Digital",
       description: "Seguridad y autenticidad para sus documentos electrónicos mediante certificados digitales validados.",
-      icon: <FileCheck className="w-8 h-8 text-tevesat-primary" />
+      icon: <FileCheck className="w-8 h-8 text-tevesat-primary-deep" />
     },
     {
       title: "Next-Gen Firewall",
       description: "Gestión perimetral avanzada con filtrado de paquetes, detección de intrusos (IDS/IPS) y VPN seguras.",
-      icon: <Lock className="w-8 h-8 text-tevesat-primary" />
+      icon: <Lock className="w-8 h-8 text-tevesat-primary-deep" />
     },
     {
       title: "Pruebas de Penetración",
       description: "Simulacros de ataques reales para evaluar la resistencia de sus defensas tecnológicas (Pentesting).",
-      icon: <Target className="w-8 h-8 text-tevesat-primary" />
+      icon: <Target className="w-8 h-8 text-tevesat-primary-deep" />
     },
     {
       title: "Detección XDR",
       description: "Visibilidad holística y respuesta automatizada a amenazas a través de múltiples capas de seguridad.",
-      icon: <Eye className="w-8 h-8 text-tevesat-primary" />
+      icon: <Eye className="w-8 h-8 text-tevesat-primary-deep" />
     },
     {
       title: "Marco MITRE ATT&CK",
       description: "Alineación de estrategias de defensa basadas en tácticas y técnicas reales utilizadas por atacantes globales.",
-      icon: <Landmark className="w-8 h-8 text-tevesat-primary" />
+      icon: <Landmark className="w-8 h-8 text-tevesat-primary-deep" />
     },
     {
       title: "Filtrado SPF y Email",
       description: "Protección contra phishing y suplantación de identidad mediante protocolos de seguridad en el correo electrónico.",
-      icon: <Filter className="w-8 h-8 text-tevesat-primary" />
+      icon: <Filter className="w-8 h-8 text-tevesat-primary-deep" />
     }
   ];
 
@@ -84,7 +84,7 @@ export default function Ciberseguridad() {
             </div>
             
             <div className="relative z-10 max-w-2xl">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-tevesat-primary/20 text-tevesat-primary border border-tevesat-primary/30 mb-8">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-tevesat-primary/20 text-tevesat-primary-deep border border-tevesat-primary/30 mb-8">
                 <ShieldAlert size={16} />
                 <span className="text-xs font-bold uppercase tracking-widest">Seguridad Prioritaria</span>
               </div>
@@ -92,7 +92,7 @@ export default function Ciberseguridad() {
               <p className="text-lg text-gray-400 mb-10 leading-relaxed">
                 Nuestras certificaciones y metodologías aseguran que su infraestructura cumpla con los estándares más exigentes de la industria. Analizamos, protegemos y respondemos ante cualquier amenaza.
               </p>
-              <button className="bg-tevesat-primary text-white px-12 py-5 rounded-2xl font-black uppercase tracking-widest hover:bg-tevesat-primary/90 transition-all shadow-[0_20px_50px_rgba(236,50,55,0.3)]">
+              <button className="bg-tevesat-primary text-tevesat-tertiary-dark px-12 py-5 rounded-2xl font-black uppercase tracking-widest hover:bg-tevesat-primary/90 transition-all shadow-[0_20px_50px_rgba(239,205,40,0.3)]">
                 Agendar Consultoría
               </button>
             </div>

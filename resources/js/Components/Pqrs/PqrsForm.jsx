@@ -70,7 +70,7 @@ export default function PqrsForm() {
     return (
       <div className="rounded-[2.5rem] border border-gray-100 bg-white p-12 text-center shadow-[0_40px_90px_-30px_rgba(0,0,0,0.25)]">
         <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-tevesat-primary/10">
-          <CheckCircle size={40} className="text-tevesat-primary" />
+          <CheckCircle size={40} className="text-tevesat-primary-deep" />
         </div>
         <h3 className="text-2xl font-black uppercase tracking-tight text-tevesat-tertiary-dark">
           ¡Solicitud recibida!
@@ -89,7 +89,7 @@ export default function PqrsForm() {
 
       <form onSubmit={handleSubmit} className="space-y-6">
         {error && (
-          <div className="rounded-xl border-l-4 border-tevesat-primary bg-tevesat-primary/5 px-4 py-3 text-sm font-bold text-tevesat-primary">
+          <div className="rounded-xl border-l-4 border-tevesat-primary bg-tevesat-primary/5 px-4 py-3 text-sm font-bold text-tevesat-primary-deep">
             ⚠️ {error}
           </div>
         )}
@@ -113,12 +113,12 @@ export default function PqrsForm() {
                 >
                   <t.icon
                     size={22}
-                    className={active ? 'text-tevesat-primary' : 'text-gray-400'}
+                    className={active ? 'text-tevesat-primary-deep' : 'text-gray-400'}
                     strokeWidth={2.4}
                   />
                   <span
                     className={`text-xs font-black uppercase tracking-wider ${
-                      active ? 'text-tevesat-primary' : 'text-gray-500'
+                      active ? 'text-tevesat-primary-deep' : 'text-gray-500'
                     }`}
                   >
                     {t.label}
@@ -206,7 +206,7 @@ export default function PqrsForm() {
         <button
           type="submit"
           disabled={loading}
-          className="flex w-full items-center justify-center gap-2 rounded-2xl bg-tevesat-primary py-5 text-xs font-black uppercase tracking-[0.2em] text-white shadow-xl shadow-tevesat-primary/30 transition-all duration-300 hover:bg-tevesat-primary-light disabled:opacity-50"
+          className="flex w-full items-center justify-center gap-2 rounded-2xl bg-tevesat-primary py-5 text-xs font-black uppercase tracking-[0.2em] text-tevesat-tertiary-dark shadow-xl shadow-tevesat-primary/30 transition-all duration-300 hover:bg-tevesat-primary-light disabled:opacity-50"
         >
           {loading ? 'Enviando...' : 'Enviar solicitud'}
           {!loading && <Send size={16} />}

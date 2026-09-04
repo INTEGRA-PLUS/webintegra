@@ -15,7 +15,7 @@ export default function QuizNav({ onBack, onReset, canGoBack }) {
         type="button"
         onClick={onBack}
         disabled={!canGoBack}
-        className="flex items-center gap-2 text-sm font-bold text-gray-400 transition-colors hover:text-tevesat-primary disabled:cursor-not-allowed disabled:opacity-0"
+        className="flex items-center gap-2 text-sm font-bold text-gray-400 transition-colors hover:text-tevesat-primary-deep disabled:cursor-not-allowed disabled:opacity-0"
       >
         <ArrowLeft size={18} />
         Atrás
@@ -24,7 +24,7 @@ export default function QuizNav({ onBack, onReset, canGoBack }) {
       <button
         type="button"
         onClick={onReset}
-        className="flex items-center gap-2 text-sm font-bold text-gray-400 transition-colors hover:text-tevesat-primary"
+        className="flex items-center gap-2 text-sm font-bold text-gray-400 transition-colors hover:text-tevesat-primary-deep"
       >
         <RotateCcw size={16} />
         Reiniciar

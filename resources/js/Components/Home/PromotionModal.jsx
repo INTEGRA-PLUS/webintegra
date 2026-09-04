@@ -36,12 +36,12 @@ export default function PromotionModal() {
       ></div>
 
       {/* Modal Content */}
-      <div className="relative w-full max-w-lg bg-white rounded-[2rem] md:rounded-[2.5rem] p-6 md:p-10 border border-gray-100 shadow-[0_30px_80px_rgba(236,50,55,0.2)] animate-modalIn my-auto">
+      <div className="relative w-full max-w-lg bg-white rounded-[2rem] md:rounded-[2.5rem] p-6 md:p-10 border border-gray-100 shadow-[0_30px_80px_rgba(239,205,40,0.2)] animate-modalIn my-auto">
 
         {/* Close Button */}
         <button
           onClick={() => setIsOpen(false)}
-          className="absolute top-4 right-4 md:top-6 md:right-6 text-gray-400 hover:text-tevesat-primary transition-colors z-20"
+          className="absolute top-4 right-4 md:top-6 md:right-6 text-gray-400 hover:text-tevesat-primary-deep transition-colors z-20"
         >
           <X size={24} className="md:w-7 md:h-7" />
         </button>
@@ -50,21 +50,21 @@ export default function PromotionModal() {
         {!submitted ? (
           <>
             <div className="text-center">
-              <div className="inline-block bg-tevesat-primary text-white font-black uppercase text-[10px] tracking-widest px-6 py-2 rounded-full mb-8 shadow-lg shadow-tevesat-primary/20">
+              <div className="inline-block bg-tevesat-primary text-tevesat-tertiary-dark font-black uppercase text-[10px] tracking-widest px-6 py-2 rounded-full mb-8 shadow-lg shadow-tevesat-primary/20">
                 Lleva Internet
               </div>
 
               <h4 className="text-tevesat-tertiary-dark font-black text-xl md:text-3xl uppercase tracking-tighter mb-1">
                 20% DESCUENTO
               </h4>
-              <h2 className="text-tevesat-primary font-black text-3xl md:text-5xl uppercase leading-none mb-6">
+              <h2 className="text-tevesat-primary-deep font-black text-3xl md:text-5xl uppercase leading-none mb-6">
                 Internet 1000 megas
               </h2>
 
               <div className="mb-8">
                 <p className="text-gray-500 font-bold uppercase text-[10px] md:text-sm mb-1">Mensual desde</p>
                 <div className="flex items-center justify-center gap-2">
-                  <span className="text-4xl md:text-6xl font-black text-tevesat-primary">$79.900</span>
+                  <span className="text-4xl md:text-6xl font-black text-tevesat-primary-deep">$79.900</span>
                 </div>
                 <p className="text-gray-400 line-through font-bold text-base md:text-lg">luego $99.900 x mes</p>
               </div>
@@ -72,7 +72,7 @@ export default function PromotionModal() {
               <div className="bg-gray-50 rounded-2xl p-4 mb-8 border border-gray-100">
                 <p className="text-gray-600 font-bold text-sm leading-relaxed italic">
                   Y súmale otro de nuestros servicios:<br />
-                  <span className="text-tevesat-primary uppercase text-[10px] font-black tracking-widest">Televisión DGO | Movilidad 48 GB | Cámaras 24H</span>
+                  <span className="text-tevesat-primary-deep uppercase text-[10px] font-black tracking-widest">Televisión DGO | Movilidad 48 GB | Cámaras 24H</span>
                 </p>
               </div>
 
@@ -97,7 +97,7 @@ export default function PromotionModal() {
 
                 <button 
                   type="submit"
-                  className="w-full bg-tevesat-primary text-white font-black uppercase py-5 rounded-2xl text-lg tracking-widest hover:bg-tevesat-primary-light transition-all duration-300 transform hover:scale-[1.02] shadow-xl shadow-tevesat-primary/30"
+                  className="w-full bg-tevesat-primary text-tevesat-tertiary-dark font-black uppercase py-5 rounded-2xl text-lg tracking-widest hover:bg-tevesat-primary-light transition-all duration-300 transform hover:scale-[1.02] shadow-xl shadow-tevesat-primary/30"
                 >
                   ¡Quiero la promo!
                 </button>
@@ -111,7 +111,7 @@ export default function PromotionModal() {
           </>
         ) : (
           <div className="text-center py-10 animate-modalFade">
-            <CheckCircle2 size={80} className="text-tevesat-primary mx-auto mb-6" />
+            <CheckCircle2 size={80} className="text-tevesat-primary-deep mx-auto mb-6" />
             <h3 className="text-3xl font-black text-tevesat-tertiary-dark mb-4 uppercase">¡RECIBIDO!</h3>
             <p className="text-gray-500 font-bold text-lg">Te llamaremos en menos de 10 minutos para activar tu descuento.</p>
           </div>

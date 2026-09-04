@@ -25,13 +25,13 @@ export default function ServicesBar() {
         <div className="mx-auto mb-16 max-w-2xl text-center">
           <div className="mb-5 flex items-center justify-center gap-2">
             <span className="h-px w-8 bg-tevesat-primary" />
-            <span className="text-xs font-black uppercase tracking-[0.3em] text-tevesat-primary">
+            <span className="text-xs font-black uppercase tracking-[0.3em] text-tevesat-primary-deep">
               Nuestros Servicios
             </span>
             <span className="h-px w-8 bg-tevesat-primary" />
           </div>
           <h2 className="text-3xl font-black leading-tight tracking-tight text-tevesat-tertiary-dark md:text-4xl">
-            Todo lo que necesitas en <span className="text-tevesat-primary italic">un solo lugar</span>
+            Todo lo que necesitas en <span className="text-tevesat-primary-deep italic">un solo lugar</span>
           </h2>
         </div>
 
@@ -48,13 +48,13 @@ export default function ServicesBar() {
 
                 <div className="relative z-10">
                   <div className="relative z-10 mb-8 inline-flex h-20 w-20 transform items-center justify-center rounded-2xl bg-tevesat-primary shadow-xl shadow-tevesat-primary/20 transition-all duration-500 group-hover:rotate-6 group-hover:bg-tevesat-primary-light">
-                    <IconComponent className="text-white" size={40} strokeWidth={2.5} />
+                    <IconComponent className="text-tevesat-tertiary-dark" size={40} strokeWidth={2.5} />
                   </div>
                   <h3 className="mb-4 text-2xl font-black uppercase tracking-tighter text-tevesat-tertiary-dark">
                     {service.title}
                   </h3>
                   <div className="mx-auto mb-6 h-1 w-10 rounded-full bg-tevesat-primary transition-all duration-500 group-hover:w-20" />
-                  <p className="text-sm font-bold italic tracking-wide text-gray-500 transition-colors group-hover:text-tevesat-primary">
+                  <p className="text-sm font-bold italic tracking-wide text-gray-500 transition-colors group-hover:text-tevesat-primary-deep">
                     {service.description}
                   </p>
                 </div>

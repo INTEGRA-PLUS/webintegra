@@ -35,13 +35,13 @@ export default function CoverageCheck() {
         >
           {/* Main Card - Banda roja CTA */}
           <div
-            className="rounded-[2.5rem] p-10 md:p-14 relative bg-gradient-to-br from-tevesat-primary to-tevesat-primary-light overflow-hidden shadow-[0_40px_90px_-30px_rgba(236,50,55,0.5)]"
+            className="rounded-[2.5rem] p-10 md:p-14 relative bg-gradient-to-br from-tevesat-primary to-tevesat-primary-light overflow-hidden shadow-[0_40px_90px_-30px_rgba(239,205,40,0.5)]"
           >
             {/* Glow effect */}
             <div className="absolute -top-1/2 -left-1/2 w-full h-full bg-white/10 rounded-full blur-[100px] pointer-events-none"></div>
 
             <div className="relative z-10 text-center">
-              <h2 className="text-xl md:text-2xl font-black text-white mb-10 tracking-tight leading-relaxed max-w-3xl mx-auto">
+              <h2 className="text-xl md:text-2xl font-black text-tevesat-tertiary-dark mb-10 tracking-tight leading-relaxed max-w-3xl mx-auto">
                 Descubre si tienes cobertura con la red más confiable. <span className="text-tevesat-tertiary-dark">¡Es fácil y rápido!</span>
               </h2>
 
@@ -66,7 +66,7 @@ export default function CoverageCheck() {
                   href="https://wa.me/573144333896"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-tevesat-tertiary-dark text-white font-black uppercase text-[12px] tracking-tighter hover:bg-white hover:text-tevesat-primary hover:scale-105 transition-all duration-300 py-4 px-6 rounded-2xl shadow-xl text-center flex items-center justify-center"
+                  className="bg-tevesat-tertiary-dark text-white font-black uppercase text-[12px] tracking-tighter hover:bg-white hover:text-tevesat-primary-deep hover:scale-105 transition-all duration-300 py-4 px-6 rounded-2xl shadow-xl text-center flex items-center justify-center"
                 >
                   Consulta tu cobertura aquí
                 </a>

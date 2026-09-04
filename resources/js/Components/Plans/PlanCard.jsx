@@ -17,14 +17,14 @@ export default function PlanCard({ plan }) {
     <div
       className={`group relative flex flex-col rounded-[2.5rem] p-8 transition-all duration-500 ${
         popular
-          ? 'border-2 border-tevesat-primary bg-white shadow-[0_40px_90px_-30px_rgba(236,50,55,0.45)] lg:-translate-y-4 lg:scale-[1.03]'
+          ? 'border-2 border-tevesat-primary bg-white shadow-[0_40px_90px_-30px_rgba(239,205,40,0.45)] lg:-translate-y-4 lg:scale-[1.03]'
           : 'border border-gray-100 bg-white shadow-[0_30px_70px_-30px_rgba(0,0,0,0.2)] hover:-translate-y-2'
       }`}
     >
       {/* Badge popular */}
       {popular && (
         <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-tevesat-primary px-5 py-2 text-[10px] font-black uppercase tracking-[0.2em] text-white shadow-lg shadow-tevesat-primary/30">
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-tevesat-primary px-5 py-2 text-[10px] font-black uppercase tracking-[0.2em] text-tevesat-tertiary-dark shadow-lg shadow-tevesat-primary/30">
             <Star size={12} className="fill-white" /> Más popular
           </span>
         </div>
@@ -43,11 +43,11 @@ export default function PlanCard({ plan }) {
         <span className="text-6xl font-black leading-none tracking-tighter text-tevesat-tertiary-dark">
           {plan.speed}
         </span>
-        <span className="mb-2 text-lg font-black italic text-tevesat-primary">{plan.unit}</span>
+        <span className="mb-2 text-lg font-black italic text-tevesat-primary-deep">{plan.unit}</span>
       </div>
 
       {/* Tecnología */}
-      <div className="mx-auto mb-6 inline-flex items-center gap-2 rounded-full bg-tevesat-primary/5 px-4 py-1.5 text-[10px] font-black uppercase tracking-widest text-tevesat-primary">
+      <div className="mx-auto mb-6 inline-flex items-center gap-2 rounded-full bg-tevesat-primary/5 px-4 py-1.5 text-[10px] font-black uppercase tracking-widest text-tevesat-primary-deep">
         <Zap size={12} /> {plan.tech}
       </div>
 
@@ -65,7 +65,7 @@ export default function PlanCard({ plan }) {
         {plan.features.map((feature) => (
           <li key={feature} className="flex items-center gap-3 text-sm font-bold text-gray-600">
             <span className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-tevesat-primary/10">
-              <Check size={12} className="text-tevesat-primary" strokeWidth={3.5} />
+              <Check size={12} className="text-tevesat-primary-deep" strokeWidth={3.5} />
             </span>
             {feature}
           </li>
@@ -79,8 +79,8 @@ export default function PlanCard({ plan }) {
         rel="noopener noreferrer"
         className={`group/cta mt-auto flex items-center justify-center gap-2 rounded-2xl py-4 text-xs font-black uppercase tracking-widest transition-all duration-300 ${
           popular
-            ? 'bg-tevesat-primary text-white shadow-xl shadow-tevesat-primary/30 hover:bg-tevesat-primary-light hover:scale-105'
-            : 'border-2 border-gray-200 bg-white text-tevesat-tertiary-dark hover:border-tevesat-primary hover:text-tevesat-primary'
+            ? 'bg-tevesat-primary text-tevesat-tertiary-dark shadow-xl shadow-tevesat-primary/30 hover:bg-tevesat-primary-light hover:scale-105'
+            : 'border-2 border-gray-200 bg-white text-tevesat-tertiary-dark hover:border-tevesat-primary hover:text-tevesat-primary-deep'
         }`}
       >
         Lo quiero

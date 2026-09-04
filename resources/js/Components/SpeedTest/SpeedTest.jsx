@@ -192,7 +192,7 @@ export default function SpeedTest() {
               <button
                 type="button"
                 onClick={runTest}
-                className="group flex items-center gap-3 rounded-2xl bg-tevesat-primary px-10 py-5 font-black uppercase tracking-widest text-white shadow-xl shadow-tevesat-primary/30 transition-all duration-300 hover:scale-105 hover:bg-tevesat-primary-light active:scale-95"
+                className="group flex items-center gap-3 rounded-2xl bg-tevesat-primary px-10 py-5 font-black uppercase tracking-widest text-tevesat-tertiary-dark shadow-xl shadow-tevesat-primary/30 transition-all duration-300 hover:scale-105 hover:bg-tevesat-primary-light active:scale-95"
               >
                 <Play size={20} className="fill-white" />
                 Iniciar test
@@ -200,7 +200,7 @@ export default function SpeedTest() {
             )}
             {running && (
               <div className="flex items-center gap-3 rounded-2xl border border-gray-200 bg-gray-50 px-8 py-5 font-black uppercase tracking-widest text-gray-400">
-                <Activity size={20} className="animate-pulse text-tevesat-primary" />
+                <Activity size={20} className="animate-pulse text-tevesat-primary-deep" />
                 Midiendo...
               </div>
             )}
@@ -208,7 +208,7 @@ export default function SpeedTest() {
               <button
                 type="button"
                 onClick={runTest}
-                className="group flex items-center gap-3 rounded-2xl border-2 border-gray-200 bg-white px-10 py-5 font-black uppercase tracking-widest text-tevesat-tertiary-dark transition-all duration-300 hover:border-tevesat-primary hover:text-tevesat-primary"
+                className="group flex items-center gap-3 rounded-2xl border-2 border-gray-200 bg-white px-10 py-5 font-black uppercase tracking-widest text-tevesat-tertiary-dark transition-all duration-300 hover:border-tevesat-primary hover:text-tevesat-primary-deep"
               >
                 <RotateCcw size={20} />
                 Repetir test
@@ -217,7 +217,7 @@ export default function SpeedTest() {
           </div>
 
           {error && (
-            <p className="mt-6 text-center text-sm font-bold text-tevesat-primary">{error}</p>
+            <p className="mt-6 text-center text-sm font-bold text-tevesat-primary-deep">{error}</p>
           )}
 
           {/* Resultados */}

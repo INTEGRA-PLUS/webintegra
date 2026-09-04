@@ -41,10 +41,10 @@ export default function WhyTevesat() {
           <div className="mb-16">
             <div className="mb-6 flex items-center gap-2">
               <div className="h-px w-8 bg-tevesat-primary" />
-              <span className="text-[10px] font-black uppercase tracking-[0.3em] text-tevesat-primary">Beneficios {import.meta.env.VITE_NOMBRE_EMPRESA}</span>
+              <span className="text-[10px] font-black uppercase tracking-[0.3em] text-tevesat-primary-deep">Beneficios {import.meta.env.VITE_NOMBRE_EMPRESA}</span>
             </div>
             <h2 className="mb-8 text-4xl font-black leading-[1.1] tracking-tight text-tevesat-tertiary-dark md:text-5xl">
-              Seguridad y <span className="text-tevesat-primary">respaldo</span> para tu vida
+              Seguridad y <span className="text-tevesat-primary-deep">respaldo</span> para tu vida
             </h2>
             <p className="max-w-xl border-l-4 border-tevesat-primary/30 pl-6 text-lg font-medium italic leading-relaxed text-gray-500">
               En <span className="text-tevesat-tertiary-dark">{import.meta.env.VITE_NOMBRE_EMPRESA}</span> somos tu mejor aliado. Brindamos la protección y el respaldo tecnológico que tu familia y empresa necesitan para estar siempre tranquilos.
@@ -56,7 +56,7 @@ export default function WhyTevesat() {
             {features.map((feature, idx) => (
               <div key={idx} className="group flex items-start gap-5">
                 <div className={`flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-2xl shadow-xl transition-transform duration-300 group-hover:scale-110 ${feature.filled ? 'bg-tevesat-primary shadow-tevesat-primary/20' : 'border border-gray-100 bg-white'}`}>
-                  <feature.icon className={feature.filled ? 'text-white' : 'text-tevesat-primary'} size={28} strokeWidth={2.5} />
+                  <feature.icon className={feature.filled ? 'text-tevesat-tertiary-dark' : 'text-tevesat-primary-deep'} size={28} strokeWidth={2.5} />
                 </div>
                 <div>
                   <h3 className="mb-2 text-xl font-black tracking-tight text-tevesat-tertiary-dark">
@@ -84,7 +84,7 @@ export default function WhyTevesat() {
 
             {/* Badge flotante */}
             <div className="absolute bottom-10 left-10 flex animate-bounce-slow items-center gap-4 rounded-3xl border border-gray-100 bg-white/90 p-6 shadow-2xl backdrop-blur-md">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-tevesat-primary text-xl font-black italic text-white">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-tevesat-primary text-xl font-black italic text-tevesat-tertiary-dark">
                 100%
               </div>
               <div>
@@ -104,7 +104,7 @@ export default function WhyTevesat() {
 
           <div className="relative z-10 grid grid-cols-1 gap-12 divide-y divide-gray-100 md:grid-cols-3 md:divide-y-0 md:divide-x">
             <div className="pb-12 text-center md:pb-0">
-              <p className="mb-4 text-6xl font-black tracking-tighter text-tevesat-primary md:text-7xl">+50K</p>
+              <p className="mb-4 text-6xl font-black tracking-tighter text-tevesat-primary-deep md:text-7xl">+50K</p>
               <p className="mt-2 text-[10px] font-black uppercase tracking-[0.4em] text-gray-400">Usuarios Activos</p>
             </div>
 

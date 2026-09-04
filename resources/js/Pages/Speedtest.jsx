@@ -29,13 +29,13 @@ export default function Speedtest() {
         <div className="relative z-10">
           <div className="mx-auto mb-14 max-w-2xl text-center">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-tevesat-primary/20 bg-tevesat-primary/5 px-5 py-2">
-              <Gauge size={16} className="text-tevesat-primary" />
-              <span className="text-xs font-black uppercase tracking-[0.3em] text-tevesat-primary">
+              <Gauge size={16} className="text-tevesat-primary-deep" />
+              <span className="text-xs font-black uppercase tracking-[0.3em] text-tevesat-primary-deep">
                 Test de Velocidad
               </span>
             </div>
             <h1 className="text-4xl font-black leading-[1.05] tracking-tight text-tevesat-tertiary-dark md:text-6xl">
-              Mide tu <span className="italic text-tevesat-primary">velocidad real</span>
+              Mide tu <span className="italic text-tevesat-primary-deep">velocidad real</span>
             </h1>
             <p className="mx-auto mt-5 max-w-xl text-lg font-medium leading-relaxed text-gray-500">
               Comprueba en segundos la velocidad de descarga, subida y la latencia de tu
