@@ -52,7 +52,7 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center gap-3 group">
-              <div className="flex items-center justify-center rounded-xl bg-tevesat-tertiary-dark p-1.5 shadow-sm">
+              <div className="flex items-center justify-center rounded-xl bg-white p-1.5">
                 <img
                   src="/images/empresa/logo.png"
                   alt={import.meta.env.VITE_NOMBRE_EMPRESA}

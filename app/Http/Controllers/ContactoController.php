@@ -41,7 +41,7 @@ class ContactoController extends Controller
         // Ejemplo: Enviar email
         // Mail::send('emails.contacto', $validated, function($message) {
         //     $message->to('info@velonet.co')
-        //             ->subject('Nuevo Contacto - Velonet');
+        //             ->subject('Nuevo Contacto - INTERJAS');
         // });
 
         return response()->json([

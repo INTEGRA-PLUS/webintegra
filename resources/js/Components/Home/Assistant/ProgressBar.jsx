@@ -17,7 +17,7 @@ export default function ProgressBar({ label, percent }) {
       </div>
       <div className="h-2 w-full overflow-hidden rounded-full bg-gray-100">
         <div
-          className="h-full rounded-full bg-gradient-to-r from-tevesat-primary to-tevesat-primary-light transition-all duration-500 ease-out"
+          className="h-full rounded-full bg-gradient-to-r from-tevesat-primary to-tevesat-accent transition-all duration-500 ease-out"
           style={{ width: `${percent}%` }}
         />
       </div>
