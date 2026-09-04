@@ -16,7 +16,7 @@ export default function Footer() {
             {/* Column 1: Brand & Social */}
             <div className="lg:col-span-2 space-y-8">
               <div className="flex items-center gap-4">
-                <div className="flex items-center justify-center rounded-2xl bg-tevesat-tertiary-dark p-2.5 shadow-sm">
+                <div className="flex items-center justify-center rounded-2xl bg-white border border-gray-200 p-2.5 shadow-sm">
                   <img src="/images/empresa/logo.png" alt={import.meta.env.VITE_NOMBRE_EMPRESA} className="h-16 w-auto object-contain" />
                 </div>
               </div>
@@ -150,7 +150,7 @@ export default function Footer() {
 
 
           <p className="text-gray-400 font-black uppercase text-[10px] tracking-[0.3em] text-center md:text-left">
-            NIT: 901499070-6 | <span className="text-tevesat-tertiary-dark">Razón Social: SERVICIO DE INTERNET FIBRA OPTICA</span>
+            NIT: 901279098-8 | <span className="text-tevesat-tertiary-dark">Razón Social: SERVICIO DE INTERNET FIBRA OPTICA</span>
           </p>
 
           <button

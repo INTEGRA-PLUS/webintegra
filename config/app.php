@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'name' => env('NOMBRE_EMPRESA', 'SM Telecomunicaciones'),
+    'name' => env('NOMBRE_EMPRESA', 'Enternet Comunicaciones'),
     'env' => env('APP_ENV', 'production'),
     'debug' => (bool) env('APP_DEBUG', false),
     'url' => env('APP_URL', 'http://localhost'),
