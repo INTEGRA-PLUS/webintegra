@@ -24,7 +24,7 @@ export default function TvFeatures() {
               key={feature.title}
               className="group rounded-3xl border border-gray-100 bg-white p-8 shadow-[0_30px_70px_-30px_rgba(0,0,0,0.2)] transition-all duration-500 hover:-translate-y-2"
             >
-              <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-tevesat-primary text-tevesat-tertiary-dark shadow-lg shadow-tevesat-primary/20 transition-transform duration-300 group-hover:scale-110">
+              <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-tevesat-primary text-white shadow-lg shadow-tevesat-primary/20 transition-transform duration-300 group-hover:scale-110">
                 <feature.icon size={28} strokeWidth={2.4} />
               </div>
               <h3 className="mb-2 text-xl font-black tracking-tight text-tevesat-tertiary-dark">

@@ -18,8 +18,8 @@ export default {
           
           'primary-light': themeColors.COLOR_PRINCIPAL_LIGHT,
           'tertiary-dark': themeColors.COLOR_TERCIARIO_DARK,
-          // COLOR_PRINCIPAL_DEEP - Para texto sobre fondo claro. El amarillo
-          // principal solo sirve como fondo, y siempre con texto oscuro encima.
+          // COLOR_PRINCIPAL_DEEP - Para texto sobre fondo claro, con más
+          // contraste que el principal.
           'primary-deep': themeColors.COLOR_PRINCIPAL_DEEP,
         },
       },

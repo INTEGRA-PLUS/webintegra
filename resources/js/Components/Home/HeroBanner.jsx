@@ -51,10 +51,10 @@ export default function HeroBanner() {
             style={{ animationDelay: '0.3s' }}
           >
             <a
-              href="https://wa.me/573144333896"
+              href="https://wa.me/573112728366"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center justify-center gap-2 rounded-2xl bg-tevesat-primary px-9 py-5 font-black uppercase tracking-wider text-tevesat-tertiary-dark shadow-xl shadow-tevesat-primary/30 transition-all duration-300 hover:scale-105 hover:bg-tevesat-primary-light active:scale-95"
+              className="group flex items-center justify-center gap-2 rounded-2xl bg-tevesat-primary px-9 py-5 font-black uppercase tracking-wider text-white shadow-xl shadow-tevesat-primary/30 transition-all duration-300 hover:scale-105 hover:bg-tevesat-primary-light active:scale-95"
             >
               Me interesa
               <ArrowRight size={20} className="transition-transform group-hover:translate-x-1" />
@@ -121,7 +121,7 @@ export default function HeroBanner() {
 
             {/* Badge flotante */}
             <div className="absolute -bottom-6 -left-6 flex items-center gap-4 rounded-3xl border border-gray-100 bg-white/90 p-5 shadow-2xl backdrop-blur-md animate-bounce-slow">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-tevesat-primary text-lg font-black italic text-tevesat-tertiary-dark">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-tevesat-primary text-lg font-black italic text-white">
                 100%
               </div>
               <div>

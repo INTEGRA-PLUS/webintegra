@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Inertia\Inertia;
 
 /**
- * HomeController - Controlador principal de la página Home de INTERJAS
+ * HomeController - Controlador principal de la página Home de ZOMAC
  * Renderiza la página de inicio usando Inertia.js
  */
 class HomeController extends Controller

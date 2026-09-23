@@ -48,7 +48,7 @@ export default function MyPayment() {
             </div>
             <h3 className="text-2xl font-black text-tevesat-tertiary-dark mb-2">Pagar con PSE</h3>
             <p className="text-gray-400 font-bold uppercase text-[10px] tracking-widest mb-6">Trámite 100% Digital</p>
-            <div className="mt-auto bg-tevesat-primary text-tevesat-tertiary-dark py-4 rounded-2xl font-black uppercase text-[10px] tracking-widest group-hover:bg-white group-hover:text-tevesat-primary-deep transition-all duration-300">
+            <div className="mt-auto bg-tevesat-primary text-white py-4 rounded-2xl font-black uppercase text-[10px] tracking-widest group-hover:bg-white group-hover:text-tevesat-primary-deep transition-all duration-300">
                Ir a pagar ahora
             </div>
           </a>

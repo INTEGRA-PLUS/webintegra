@@ -56,7 +56,7 @@ export default function WhyTevesat() {
             {features.map((feature, idx) => (
               <div key={idx} className="group flex items-start gap-5">
                 <div className={`flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-2xl shadow-xl transition-transform duration-300 group-hover:scale-110 ${feature.filled ? 'bg-tevesat-primary shadow-tevesat-primary/20' : 'border border-gray-100 bg-white'}`}>
-                  <feature.icon className={feature.filled ? 'text-tevesat-tertiary-dark' : 'text-tevesat-primary-deep'} size={28} strokeWidth={2.5} />
+                  <feature.icon className={feature.filled ? 'text-white' : 'text-tevesat-primary-deep'} size={28} strokeWidth={2.5} />
                 </div>
                 <div>
                   <h3 className="mb-2 text-xl font-black tracking-tight text-tevesat-tertiary-dark">
@@ -84,7 +84,7 @@ export default function WhyTevesat() {
 
             {/* Badge flotante */}
             <div className="absolute bottom-10 left-10 flex animate-bounce-slow items-center gap-4 rounded-3xl border border-gray-100 bg-white/90 p-6 shadow-2xl backdrop-blur-md">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-tevesat-primary text-xl font-black italic text-tevesat-tertiary-dark">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-tevesat-primary text-xl font-black italic text-white">
                 100%
               </div>
               <div>

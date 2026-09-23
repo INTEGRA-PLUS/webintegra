@@ -92,7 +92,7 @@ export default function Cctv() {
                 </div>
               </div>
               <div className="flex justify-center">
-                 <button className="bg-tevesat-primary text-tevesat-tertiary-dark text-xl px-12 py-6 rounded-3xl font-black uppercase tracking-widest hover:scale-110 transition-all shadow-[0_30px_60px_rgba(239,205,40,0.4)]">
+                 <button className="bg-tevesat-primary text-white text-xl px-12 py-6 rounded-3xl font-black uppercase tracking-widest hover:scale-110 transition-all shadow-[0_30px_60px_rgba(53,122,184,0.4)]">
                     Solicitar Diseño
                  </button>
               </div>

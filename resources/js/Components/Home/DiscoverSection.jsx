@@ -20,7 +20,7 @@ export default function DiscoverSection() {
             ¡Descubre todo lo que <span className="text-tevesat-primary-deep">{import.meta.env.VITE_NOMBRE_EMPRESA}</span> hace por ti!
           </h2>
 
-          <button className="flex items-center gap-4 text-tevesat-tertiary-dark group bg-gray-50 pr-8 pl-2 py-2 rounded-full border border-gray-200 hover:bg-tevesat-primary hover:text-tevesat-tertiary-dark hover:border-tevesat-primary transition-all duration-300 shadow-lg">
+          <button className="flex items-center gap-4 text-tevesat-tertiary-dark group bg-gray-50 pr-8 pl-2 py-2 rounded-full border border-gray-200 hover:bg-tevesat-primary hover:text-white hover:border-tevesat-primary transition-all duration-300 shadow-lg">
             Compra ahora <MessageCircle size={24} />
           </button>
         </div>

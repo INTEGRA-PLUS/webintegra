@@ -109,7 +109,7 @@ export default function Normatividad() {
                   href={card.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-6 inline-flex items-center justify-center gap-2 rounded-2xl bg-tevesat-primary py-4 text-xs font-black uppercase tracking-[0.2em] text-tevesat-tertiary-dark shadow-lg shadow-tevesat-primary/20 transition-all duration-300 hover:scale-105 hover:bg-tevesat-primary-light"
+                  className="mt-6 inline-flex items-center justify-center gap-2 rounded-2xl bg-tevesat-primary py-4 text-xs font-black uppercase tracking-[0.2em] text-white shadow-lg shadow-tevesat-primary/20 transition-all duration-300 hover:scale-105 hover:bg-tevesat-primary-light"
                 >
                   {card.cta}
                   <ExternalLink size={14} />

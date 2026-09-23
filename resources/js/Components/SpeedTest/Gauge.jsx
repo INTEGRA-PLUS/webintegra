@@ -49,7 +49,7 @@ export default function Gauge({ value = 0, max = 500, label = 'Mbps', caption = 
         <defs>
           <linearGradient id="gaugeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stopColor="#ff474b" />
-            <stop offset="100%" stopColor="#efcd28" />
+            <stop offset="100%" stopColor="#357ab8" />
           </linearGradient>
         </defs>
       </svg>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook, Instagram, Youtube, Linkedin, Phone, Mail, ArrowUp } from 'lucide-react';
+import { Facebook, Instagram, Youtube, Linkedin, Phone, Mail, MapPin, ArrowUp } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -37,7 +37,7 @@ export default function Footer() {
                   <a
                     key={i}
                     href={social.href}
-                    className="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center text-tevesat-tertiary-dark hover:bg-tevesat-primary hover:text-tevesat-tertiary-dark hover:border-tevesat-primary transition-all duration-500 hover:-translate-y-2 shadow-sm"
+                    className="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center text-tevesat-tertiary-dark hover:bg-tevesat-primary hover:text-white hover:border-tevesat-primary transition-all duration-500 hover:-translate-y-2 shadow-sm"
                   >
                     <social.Icon size={20} />
                   </a>
@@ -95,35 +95,45 @@ export default function Footer() {
               <h4 className="text-base font-black uppercase tracking-widest text-tevesat-primary-deep mb-8 italic">Contacto</h4>
 
               <div className="space-y-6">
-                <a href="tel:+573144333896" className="flex items-center gap-4 group">
-                  <div className="w-12 h-12 rounded-2xl bg-white border border-gray-200 flex items-center justify-center text-tevesat-primary-deep group-hover:bg-tevesat-primary group-hover:text-tevesat-tertiary-dark transition-all duration-300">
+                <a href="tel:+573112728366" className="flex items-center gap-4 group">
+                  <div className="w-12 h-12 rounded-2xl bg-white border border-gray-200 flex items-center justify-center text-tevesat-primary-deep group-hover:bg-tevesat-primary group-hover:text-white transition-all duration-300">
                     <Phone size={22} strokeWidth={2.5} />
                   </div>
                   <div>
-                    <p className="text-tevesat-tertiary-dark font-black text-lg leading-none">314 433 3896</p>
+                    <p className="text-tevesat-tertiary-dark font-black text-lg leading-none">311 272 8366</p>
                     <p className="text-gray-400 text-[10px] font-black uppercase tracking-widest mt-1">Línea Principal / Ventas</p>
                   </div>
                 </a>
 
-                <a href="https://wa.me/573144333896" className="flex items-center gap-4 group">
-                  <div className="w-12 h-12 rounded-2xl bg-white border border-gray-200 flex items-center justify-center text-tevesat-primary-deep group-hover:bg-tevesat-primary group-hover:text-tevesat-tertiary-dark transition-all duration-300">
-                    <WhatsappIcon className="w-6 h-6 text-tevesat-primary-deep group-hover:text-tevesat-tertiary-dark" />
+                <a href="https://wa.me/573112728366" className="flex items-center gap-4 group">
+                  <div className="w-12 h-12 rounded-2xl bg-white border border-gray-200 flex items-center justify-center text-tevesat-primary-deep group-hover:bg-tevesat-primary group-hover:text-white transition-all duration-300">
+                    <WhatsappIcon className="w-6 h-6 text-tevesat-primary-deep group-hover:text-white" />
                   </div>
                   <div>
-                    <p className="text-tevesat-tertiary-dark font-black text-lg leading-none">314 433 3896</p>
+                    <p className="text-tevesat-tertiary-dark font-black text-lg leading-none">311 272 8366</p>
                     <p className="text-gray-400 text-[10px] font-black uppercase tracking-widest mt-1">WhatsApp / Soporte</p>
                   </div>
                 </a>
 
-                <a href="mailto:interjassas@gmail.com" className="flex items-center gap-4 group">
-                  <div className="w-12 h-12 rounded-2xl bg-white border border-gray-200 flex items-center justify-center text-tevesat-primary-deep group-hover:bg-tevesat-primary group-hover:text-tevesat-tertiary-dark transition-all duration-300">
+                <a href="mailto:csisaszomac@gmail.com" className="flex items-center gap-4 group">
+                  <div className="w-12 h-12 rounded-2xl bg-white border border-gray-200 flex items-center justify-center text-tevesat-primary-deep group-hover:bg-tevesat-primary group-hover:text-white transition-all duration-300">
                     <Mail size={22} strokeWidth={2.5} />
                   </div>
                   <div>
-                    <p className="text-tevesat-tertiary-dark font-black text-sm break-all leading-none italic">interjassas@gmail.com</p>
+                    <p className="text-tevesat-tertiary-dark font-black text-sm break-all leading-none italic">csisaszomac@gmail.com</p>
                     <p className="text-gray-400 text-[10px] font-black uppercase tracking-widest mt-1">Correo</p>
                   </div>
                 </a>
+
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-2xl bg-white border border-gray-200 flex items-center justify-center text-tevesat-primary-deep">
+                    <MapPin size={22} strokeWidth={2.5} />
+                  </div>
+                  <div>
+                    <p className="text-tevesat-tertiary-dark font-black text-sm leading-snug">Cll 21 # 18B-16</p>
+                    <p className="text-gray-400 text-[10px] font-black uppercase tracking-widest mt-1">Barrio Comuneros</p>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -140,16 +150,16 @@ export default function Footer() {
 
 
           <p className="text-gray-400 font-black uppercase text-[10px] tracking-[0.3em] text-center md:text-left">
-            <span className="text-tevesat-tertiary-dark">Razón Social: INTERJAS S.A.S</span>
+            NIT: 901615125 | <span className="text-tevesat-tertiary-dark">Razón Social: ZOMAC COMUNICACIONES S.A.S</span>
           </p>
 
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="group flex items-center gap-3 bg-white border border-gray-200 px-6 py-3 rounded-full hover:bg-tevesat-primary hover:border-tevesat-primary transition-all duration-500"
           >
-            <span className="text-tevesat-tertiary-dark group-hover:text-tevesat-tertiary-dark font-black text-[10px] uppercase tracking-widest transition-colors">Volver al inicio</span>
+            <span className="text-tevesat-tertiary-dark group-hover:text-white font-black text-[10px] uppercase tracking-widest transition-colors">Volver al inicio</span>
             <div className="w-8 h-8 rounded-full bg-tevesat-primary group-hover:bg-white flex items-center justify-center transition-all">
-              <ArrowUp size={16} className="text-tevesat-tertiary-dark group-hover:text-tevesat-primary-deep" strokeWidth={3} />
+              <ArrowUp size={16} className="text-white group-hover:text-tevesat-primary-deep" strokeWidth={3} />
             </div>
           </button>
         </div>

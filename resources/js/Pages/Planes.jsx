@@ -107,7 +107,7 @@ export default function Planes() {
                   onClick={() => setActiveTab(key)}
                   className={`rounded-xl px-8 py-3 text-sm font-black uppercase tracking-widest transition-all duration-300 ${
                     activeTab === key
-                      ? 'bg-tevesat-primary text-tevesat-tertiary-dark shadow-lg shadow-tevesat-primary/30'
+                      ? 'bg-tevesat-primary text-white shadow-lg shadow-tevesat-primary/30'
                       : 'text-gray-500 hover:text-tevesat-primary-deep'
                   }`}
                 >
@@ -140,7 +140,7 @@ export default function Planes() {
                 key={item.title}
                 className="rounded-3xl border border-gray-100 bg-white p-8 text-center shadow-[0_30px_70px_-30px_rgba(0,0,0,0.2)] transition-all duration-500 hover:-translate-y-2"
               >
-                <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-tevesat-primary text-tevesat-tertiary-dark shadow-lg shadow-tevesat-primary/20">
+                <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-tevesat-primary text-white shadow-lg shadow-tevesat-primary/20">
                   <item.icon size={28} strokeWidth={2.4} />
                 </div>
                 <h3 className="mb-2 text-lg font-black text-tevesat-tertiary-dark">{item.title}</h3>
@@ -178,10 +178,10 @@ export default function Planes() {
       {/* CTA final */}
       <section className="bg-white px-4 pb-24 md:px-8">
         <div className="mx-auto max-w-5xl">
-          <div className="relative overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-tevesat-primary to-tevesat-primary-light p-10 text-center shadow-[0_40px_90px_-30px_rgba(239,205,40,0.5)] md:p-16">
+          <div className="relative overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-tevesat-primary to-tevesat-primary-light p-10 text-center shadow-[0_40px_90px_-30px_rgba(53,122,184,0.5)] md:p-16">
             <div className="pointer-events-none absolute -top-1/2 -left-1/2 h-full w-full rounded-full bg-white/10 blur-[100px]" />
             <div className="relative z-10">
-              <h2 className="text-3xl font-black leading-tight tracking-tight text-tevesat-tertiary-dark md:text-4xl">
+              <h2 className="text-3xl font-black leading-tight tracking-tight text-white md:text-4xl">
                 ¿No sabes cuál elegir?
               </h2>
               <p className="mx-auto mt-4 max-w-xl text-lg font-medium text-white/90">

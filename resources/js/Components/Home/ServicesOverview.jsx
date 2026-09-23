@@ -82,7 +82,7 @@ export default function ServicesOverview() {
               <a
                 href="#contacto"
                 onClick={scrollToContacto}
-                className="group flex transform items-center justify-between rounded-2xl bg-tevesat-primary px-8 py-6 font-black uppercase tracking-widest text-tevesat-tertiary-dark shadow-xl shadow-tevesat-primary/30 transition-all duration-500 hover:scale-105 hover:bg-tevesat-primary-light active:scale-95"
+                className="group flex transform items-center justify-between rounded-2xl bg-tevesat-primary px-8 py-6 font-black uppercase tracking-widest text-white shadow-xl shadow-tevesat-primary/30 transition-all duration-500 hover:scale-105 hover:bg-tevesat-primary-light active:scale-95"
               >
                 Contáctanos
                 <ArrowRight size={24} className="transition-transform duration-300 group-hover:translate-x-2" />

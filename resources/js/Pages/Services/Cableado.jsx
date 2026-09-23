@@ -68,7 +68,7 @@ export default function Cableado() {
                 <p className="text-gray-300 mb-8 leading-relaxed">
                   En {import.meta.env.VITE_NOMBRE_EMPRESA} nos especializamos en crear soluciones de cableado que no solo cumplen con las necesidades actuales, sino que están preparadas para el crecimiento futuro. Utilizamos materiales de la más alta calidad y seguimos las normativas TIA/EIA para asegurar que su red sea un activo confiable para su negocio.
                 </p>
-                <button className="bg-tevesat-primary text-tevesat-tertiary-dark px-10 py-4 rounded-2xl font-bold uppercase tracking-widest hover:scale-105 transition-transform">
+                <button className="bg-tevesat-primary text-white px-10 py-4 rounded-2xl font-bold uppercase tracking-widest hover:scale-105 transition-transform">
                   Solicitar Auditoría
                 </button>
               </div>

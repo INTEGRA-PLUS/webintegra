@@ -70,14 +70,14 @@ export default function ManosRemotas() {
             ))}
           </div>
 
-          <div className="mt-20 flex flex-col md:flex-row items-center gap-12 bg-tevesat-primary rounded-[3rem] p-10 md:p-16 text-tevesat-tertiary-dark overflow-hidden relative">
+          <div className="mt-20 flex flex-col md:flex-row items-center gap-12 bg-tevesat-primary rounded-[3rem] p-10 md:p-16 text-white overflow-hidden relative">
             <div className="flex-1 relative z-10">
               <h2 className="text-4xl font-black mb-6 uppercase tracking-tighter">¿Necesitas ayuda inmediata?</h2>
               <p className="text-lg opacity-90 mb-8 leading-relaxed">
                 Nuestros técnicos están listos para intervenir de forma remota o presencial según la necesidad de su infraestructura. Optimizamos sus tiempos de respuesta y minimizamos el downtime.
               </p>
               <a 
-                href="https://wa.me/573144333896" 
+                href="https://wa.me/573112728366" 
                 target="_blank" 
                 className="inline-block bg-white text-tevesat-primary-deep px-10 py-4 rounded-2xl font-black uppercase tracking-widest hover:bg-gray-100 transition-colors shadow-2xl"
               >

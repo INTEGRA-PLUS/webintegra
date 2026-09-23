@@ -206,7 +206,7 @@ export default function PqrsForm() {
         <button
           type="submit"
           disabled={loading}
-          className="flex w-full items-center justify-center gap-2 rounded-2xl bg-tevesat-primary py-5 text-xs font-black uppercase tracking-[0.2em] text-tevesat-tertiary-dark shadow-xl shadow-tevesat-primary/30 transition-all duration-300 hover:bg-tevesat-primary-light disabled:opacity-50"
+          className="flex w-full items-center justify-center gap-2 rounded-2xl bg-tevesat-primary py-5 text-xs font-black uppercase tracking-[0.2em] text-white shadow-xl shadow-tevesat-primary/30 transition-all duration-300 hover:bg-tevesat-primary-light disabled:opacity-50"
         >
           {loading ? 'Enviando...' : 'Enviar solicitud'}
           {!loading && <Send size={16} />}

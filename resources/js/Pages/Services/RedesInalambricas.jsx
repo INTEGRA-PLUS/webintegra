@@ -60,7 +60,7 @@ export default function RedesInalambricas() {
                 key={index}
                 className="bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-3xl hover:border-tevesat-primary/50 transition-all duration-300 group"
               >
-                <div className="mb-6 bg-tevesat-primary/10 w-14 h-14 rounded-2xl flex items-center justify-center group-hover:bg-tevesat-primary group-hover:text-tevesat-tertiary-dark transition-all">
+                <div className="mb-6 bg-tevesat-primary/10 w-14 h-14 rounded-2xl flex items-center justify-center group-hover:bg-tevesat-primary group-hover:text-white transition-all">
                   {item.icon}
                 </div>
                 <h3 className="text-lg font-bold text-white mb-3">{item.title}</h3>
@@ -93,7 +93,7 @@ export default function RedesInalambricas() {
                   </li>
                 ))}
               </ul>
-              <button className="bg-tevesat-primary text-tevesat-tertiary-dark px-10 py-4 rounded-2xl font-black uppercase tracking-widest hover:scale-105 transition-transform">
+              <button className="bg-tevesat-primary text-white px-10 py-4 rounded-2xl font-black uppercase tracking-widest hover:scale-105 transition-transform">
                 Consultar Planes
               </button>
             </div>

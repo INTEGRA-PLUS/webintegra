@@ -192,7 +192,7 @@ export default function ContactForm() {
                   <button
                     type="submit"
                     disabled={loading}
-                    className="w-full bg-tevesat-primary text-tevesat-tertiary-dark py-5 rounded-2xl font-black uppercase tracking-[0.2em] text-xs hover:bg-tevesat-primary-light transition-all duration-300 shadow-xl shadow-tevesat-primary/30 disabled:opacity-50"
+                    className="w-full bg-tevesat-primary text-white py-5 rounded-2xl font-black uppercase tracking-[0.2em] text-xs hover:bg-tevesat-primary-light transition-all duration-300 shadow-xl shadow-tevesat-primary/30 disabled:opacity-50"
                   >
                     {loading ? 'ENVIANDO...' : 'SOLICITAR ASESORÍA'}
                   </button>

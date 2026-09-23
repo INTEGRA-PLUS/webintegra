@@ -36,7 +36,7 @@ export default function PromotionModal() {
       ></div>
 
       {/* Modal Content */}
-      <div className="relative w-full max-w-lg bg-white rounded-[2rem] md:rounded-[2.5rem] p-6 md:p-10 border border-gray-100 shadow-[0_30px_80px_rgba(239,205,40,0.2)] animate-modalIn my-auto">
+      <div className="relative w-full max-w-lg bg-white rounded-[2rem] md:rounded-[2.5rem] p-6 md:p-10 border border-gray-100 shadow-[0_30px_80px_rgba(53,122,184,0.2)] animate-modalIn my-auto">
 
         {/* Close Button */}
         <button
@@ -50,7 +50,7 @@ export default function PromotionModal() {
         {!submitted ? (
           <>
             <div className="text-center">
-              <div className="inline-block bg-tevesat-primary text-tevesat-tertiary-dark font-black uppercase text-[10px] tracking-widest px-6 py-2 rounded-full mb-8 shadow-lg shadow-tevesat-primary/20">
+              <div className="inline-block bg-tevesat-primary text-white font-black uppercase text-[10px] tracking-widest px-6 py-2 rounded-full mb-8 shadow-lg shadow-tevesat-primary/20">
                 Lleva Internet
               </div>
 
@@ -97,7 +97,7 @@ export default function PromotionModal() {
 
                 <button 
                   type="submit"
-                  className="w-full bg-tevesat-primary text-tevesat-tertiary-dark font-black uppercase py-5 rounded-2xl text-lg tracking-widest hover:bg-tevesat-primary-light transition-all duration-300 transform hover:scale-[1.02] shadow-xl shadow-tevesat-primary/30"
+                  className="w-full bg-tevesat-primary text-white font-black uppercase py-5 rounded-2xl text-lg tracking-widest hover:bg-tevesat-primary-light transition-all duration-300 transform hover:scale-[1.02] shadow-xl shadow-tevesat-primary/30"
                 >
                   ¡Quiero la promo!
                 </button>

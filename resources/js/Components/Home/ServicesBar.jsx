@@ -48,7 +48,7 @@ export default function ServicesBar() {
 
                 <div className="relative z-10">
                   <div className="relative z-10 mb-8 inline-flex h-20 w-20 transform items-center justify-center rounded-2xl bg-tevesat-primary shadow-xl shadow-tevesat-primary/20 transition-all duration-500 group-hover:rotate-6 group-hover:bg-tevesat-primary-light">
-                    <IconComponent className="text-tevesat-tertiary-dark" size={40} strokeWidth={2.5} />
+                    <IconComponent className="text-white" size={40} strokeWidth={2.5} />
                   </div>
                   <h3 className="mb-4 text-2xl font-black uppercase tracking-tighter text-tevesat-tertiary-dark">
                     {service.title}

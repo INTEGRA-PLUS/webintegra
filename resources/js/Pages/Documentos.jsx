@@ -127,7 +127,7 @@ export default function Documentos() {
                     href={doc.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl bg-tevesat-primary text-tevesat-tertiary-dark shadow-lg shadow-tevesat-primary/20 transition-all duration-300 hover:scale-110 hover:bg-tevesat-primary-light"
+                    className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl bg-tevesat-primary text-white shadow-lg shadow-tevesat-primary/20 transition-all duration-300 hover:scale-110 hover:bg-tevesat-primary-light"
                     title="Descargar"
                   >
                     <Download size={17} strokeWidth={2.4} />
@@ -184,7 +184,7 @@ export default function Documentos() {
                   href={law.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex flex-shrink-0 items-center justify-center gap-2 rounded-2xl bg-tevesat-primary px-8 py-4 text-xs font-black uppercase tracking-[0.2em] text-tevesat-tertiary-dark shadow-lg shadow-tevesat-primary/20 transition-all duration-300 hover:scale-105 hover:bg-tevesat-primary-light"
+                  className="inline-flex flex-shrink-0 items-center justify-center gap-2 rounded-2xl bg-tevesat-primary px-8 py-4 text-xs font-black uppercase tracking-[0.2em] text-white shadow-lg shadow-tevesat-primary/20 transition-all duration-300 hover:scale-105 hover:bg-tevesat-primary-light"
                 >
                   Descargar
                   <ExternalLink size={14} />

@@ -192,7 +192,7 @@ export default function SpeedTest() {
               <button
                 type="button"
                 onClick={runTest}
-                className="group flex items-center gap-3 rounded-2xl bg-tevesat-primary px-10 py-5 font-black uppercase tracking-widest text-tevesat-tertiary-dark shadow-xl shadow-tevesat-primary/30 transition-all duration-300 hover:scale-105 hover:bg-tevesat-primary-light active:scale-95"
+                className="group flex items-center gap-3 rounded-2xl bg-tevesat-primary px-10 py-5 font-black uppercase tracking-widest text-white shadow-xl shadow-tevesat-primary/30 transition-all duration-300 hover:scale-105 hover:bg-tevesat-primary-light active:scale-95"
               >
                 <Play size={20} className="fill-white" />
                 Iniciar test

@@ -21,7 +21,7 @@ export default function TvSection() {
           </h2>
 
           <div className="flex flex-col sm:flex-row items-center gap-6">
-            <button className="bg-tevesat-primary text-tevesat-tertiary-dark px-10 py-5 rounded-2xl font-black uppercase text-sm tracking-[0.2em] shadow-xl hover:bg-tevesat-primary-light hover:scale-105 transition-all w-full sm:w-auto shadow-tevesat-primary/30">
+            <button className="bg-tevesat-primary text-white px-10 py-5 rounded-2xl font-black uppercase text-sm tracking-[0.2em] shadow-xl hover:bg-tevesat-primary-light hover:scale-105 transition-all w-full sm:w-auto shadow-tevesat-primary/30">
               Compra sin complicaciones
             </button>
             <div className="flex items-center gap-4 bg-white px-6 py-4 rounded-2xl border border-gray-200 shadow-sm">
@@ -40,7 +40,7 @@ export default function TvSection() {
           <div className="relative w-full max-w-[600px] transform hover:scale-[1.03] transition-transform duration-1000">
             {/* Glossy orb element like DGO in ref */}
             <div className="absolute -top-10 left-10 w-24 h-24 bg-tevesat-primary backdrop-blur-xl rounded-full border border-tevesat-primary/30 flex items-center justify-center p-4 shadow-2xl animate-bounce-slow z-10">
-               <span className="text-tevesat-tertiary-dark font-black italic text-2xl drop-shadow-md">DGO</span>
+               <span className="text-white font-black italic text-2xl drop-shadow-md">DGO</span>
             </div>
 
             <img

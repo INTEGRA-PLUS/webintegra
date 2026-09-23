@@ -9,7 +9,7 @@ import react from '@vitejs/plugin-react';
 
 // Nombre por defecto de la empresa: sin esto, los componentes que leen
 // VITE_NOMBRE_EMPRESA lo compilan como undefined y el nombre sale vacío.
-const NOMBRE_EMPRESA = 'INTERJAS';
+const NOMBRE_EMPRESA = 'ZOMAC';
 
 export default defineConfig(({ mode }) => ({
   plugins: [

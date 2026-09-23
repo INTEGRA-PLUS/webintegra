@@ -18,7 +18,7 @@ const PlanCard = ({ plan }) => {
         {plan.badge && (
           <div className="absolute top-8 left-1/2 -translate-x-1/2 w-full px-10">
             <div className="bg-tevesat-primary rounded-full py-2 px-4 shadow-lg border border-white/20">
-              <span className="text-tevesat-tertiary-dark font-black uppercase text-[10px] tracking-tight block leading-tight">
+              <span className="text-white font-black uppercase text-[10px] tracking-tight block leading-tight">
                 {plan.badge}
               </span>
             </div>
@@ -41,10 +41,10 @@ const PlanCard = ({ plan }) => {
           <div className="w-6 h-6 rounded-full border border-white/20 flex items-center justify-center text-white font-black text-sm">+</div>
           {plan.promo ? (
             <div className="bg-tevesat-primary rounded-xl py-3 px-6 flex items-center gap-3 shadow-lg transform group-hover:scale-110 transition-transform duration-500">
-              <div className="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center text-tevesat-tertiary-dark">
+              <div className="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center text-white">
                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17 1H7c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2m0 18H7V5h10v14z"/></svg>
               </div>
-              <span className="text-tevesat-tertiary-dark font-black uppercase text-[12px] tracking-tighter leading-tight text-left">
+              <span className="text-white font-black uppercase text-[12px] tracking-tighter leading-tight text-left">
                 {plan.promo.split(' ')[0]}<br />{plan.promo.split(' ').slice(1).join(' ')}
               </span>
             </div>
@@ -72,7 +72,7 @@ const PlanCard = ({ plan }) => {
 
         {/* Action Button & More - Pushed to bottom */}
         <div className="mt-auto">
-          <button className="w-full bg-tevesat-primary text-tevesat-tertiary-dark py-4 rounded-[2rem] font-black uppercase tracking-[0.1em] text-[12px] flex items-center justify-center gap-3 hover:bg-white hover:text-tevesat-primary-deep transition-all duration-300 shadow-[0_15px_30px_rgba(239,205,40,0.2)] mb-8 font-outfit">
+          <button className="w-full bg-tevesat-primary text-white py-4 rounded-[2rem] font-black uppercase tracking-[0.1em] text-[12px] flex items-center justify-center gap-3 hover:bg-white hover:text-tevesat-primary-deep transition-all duration-300 shadow-[0_15px_30px_rgba(53,122,184,0.2)] mb-8 font-outfit">
             Compra ahora <MessageCircle size={20} />
           </button>
 
@@ -130,9 +130,9 @@ const StratumHeader = ({ subtitle, title, arrowText }) => (
       <h2 className="text-2xl md:text-3xl font-black text-white mb-10 leading-[1.2] tracking-tight italic">
         {title}
       </h2>
-      <button className="flex items-center gap-4 text-tevesat-tertiary-dark group bg-white/5 pr-8 pl-2 py-2 rounded-full border border-white/10 hover:bg-tevesat-primary hover:border-tevesat-primary transition-all">
+      <button className="flex items-center gap-4 text-white group bg-white/5 pr-8 pl-2 py-2 rounded-full border border-white/10 hover:bg-tevesat-primary hover:border-tevesat-primary transition-all">
         <div className="w-12 h-12 rounded-full bg-tevesat-primary flex items-center justify-center shadow-lg group-hover:bg-white transition-colors">
-          <ArrowRight className="text-tevesat-tertiary-dark group-hover:text-tevesat-primary-deep transition-colors" size={24} strokeWidth={3} />
+          <ArrowRight className="text-white group-hover:text-tevesat-primary-deep transition-colors" size={24} strokeWidth={3} />
         </div>
         <span className="font-black uppercase text-[10px] tracking-widest group-hover:text-tevesat-primary-deep transition-colors">
           {arrowText}
