@@ -104,7 +104,7 @@ export default function WhyTevesat() {
 
           <div className="relative z-10 grid grid-cols-1 gap-12 divide-y divide-gray-100 md:grid-cols-3 md:divide-y-0 md:divide-x">
             <div className="pb-12 text-center md:pb-0">
-              <p className="mb-4 text-6xl font-black tracking-tighter text-tevesat-primary md:text-7xl">+50K</p>
+              <p className="mb-4 text-6xl font-black tracking-tighter text-tevesat-primary md:text-7xl">+1K</p>
               <p className="mt-2 text-[10px] font-black uppercase tracking-[0.4em] text-gray-400">Usuarios Activos</p>
             </div>
 
