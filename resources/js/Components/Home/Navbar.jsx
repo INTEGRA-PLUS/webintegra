@@ -18,13 +18,15 @@ export default function Navbar() {
 
   // Los links con hash (#) navegan a anclas dentro del Home, por eso usan <a>;
   // el resto son rutas Inertia y usan <Link> para navegación SPA sin recarga.
+  // /documentos responde 404 por ahora: con <a> se carga la página 404 normal
+  // en vez de abrirse dentro del modal de error de Inertia.
   const navLinks = [
     { label: 'Inicio', href: '/' },
     { label: 'Speedtest', href: '/speedtest' },
     { label: 'Quiénes somos', href: '/#quienes-somos', anchor: true },
     { label: 'PQRS', href: '/pqrs' },
     { label: 'Normatividad', href: '/normatividad' },
-    { label: 'Documentos', href: '/documentos' },
+    { label: 'Documentos', href: '/documentos', anchor: true },
     { label: 'Contacto', href: '/#contacto', anchor: true },
   ];
 
