@@ -44,7 +44,7 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className={`flex justify-between items-center h-20 transition-all duration-500 rounded-3xl px-8 border ${
+        <div className={`flex justify-between items-center gap-6 h-20 transition-all duration-500 rounded-3xl px-8 border ${
           isScrolled
             ? 'bg-white/90 backdrop-blur-2xl border-gray-100 shadow-[0_20px_50px_-20px_rgba(0,0,0,0.25)]'
             : 'bg-white/60 backdrop-blur-md border-gray-100/80'
@@ -52,18 +52,18 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center gap-3 group">
-              <div className="flex items-center justify-center rounded-xl bg-tevesat-tertiary-dark p-1.5 shadow-sm">
+              <div className="flex items-center justify-center rounded-xl bg-tevesat-tertiary-dark px-3 py-1.5 shadow-sm">
                 <img
                   src="/images/empresa/logo.png"
                   alt={import.meta.env.VITE_NOMBRE_EMPRESA}
-                  className="h-9 md:h-11 w-auto object-contain group-hover:scale-105 transition-transform duration-300"
+                  className="h-8 md:h-9 w-auto object-contain group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
             </Link>
           </div>
 
           {/* Desktop Links */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden xl:flex items-center space-x-6">
             {navLinks.map((link) => {
               const LinkTag = link.anchor ? 'a' : Link;
               return (
@@ -106,14 +106,14 @@ export default function Navbar() {
           </div>
 
           {/* Desktop CTA Button */}
-          <div className="hidden md:flex">
+          <div className="hidden xl:flex flex-shrink-0">
             <button className="bg-tevesat-primary text-white border-2 border-transparent px-8 py-3 rounded-2xl font-black uppercase text-[10px] tracking-widest hover:bg-transparent hover:border-tevesat-primary hover:text-tevesat-primary transition-all duration-500 transform hover:scale-105 shadow-[0_10px_30px_rgba(159,189,54,0.3)]">
               Contratar
             </button>
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center">
+          <div className="xl:hidden flex items-center">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-tevesat-tertiary-dark"
@@ -125,7 +125,7 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-2 bg-white/95 backdrop-blur-lg rounded-2xl border border-gray-100 p-4 shadow-[0_30px_70px_-20px_rgba(0,0,0,0.25)] max-h-[80vh] overflow-y-auto">
+          <div className="xl:hidden mt-2 bg-white/95 backdrop-blur-lg rounded-2xl border border-gray-100 p-4 shadow-[0_30px_70px_-20px_rgba(0,0,0,0.25)] max-h-[80vh] overflow-y-auto">
             <div className="space-y-1">
               {navLinks.map((link) => {
                 const LinkTag = link.anchor ? 'a' : Link;
