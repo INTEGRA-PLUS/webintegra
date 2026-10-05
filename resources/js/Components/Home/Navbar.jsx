@@ -22,6 +22,8 @@ export default function Navbar() {
   // en vez de abrirse dentro del modal de error de Inertia.
   const navLinks = [
     { label: 'Inicio', href: '/' },
+    { label: 'Televisión', href: '/television' },
+    { label: 'Móvil', href: '/movil' },
     { label: 'Speedtest', href: '/speedtest' },
     { label: 'Quiénes somos', href: '/#quienes-somos', anchor: true },
     { label: 'PQRS', href: '/pqrs' },
@@ -65,14 +67,14 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Links */}
-          <div className="hidden xl:flex items-center space-x-6">
+          <div className="hidden xl:flex items-center space-x-4">
             {navLinks.map((link) => {
               const LinkTag = link.anchor ? 'a' : Link;
               return (
                 <LinkTag
                   key={link.label}
                   href={link.href}
-                  className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-500 hover:text-tevesat-primary transition-all duration-300 relative group"
+                  className="whitespace-nowrap text-[10px] font-black uppercase tracking-[0.1em] text-gray-500 hover:text-tevesat-primary transition-all duration-300 relative group"
                 >
                   {link.label}
                   <span className="absolute -bottom-2 left-0 w-0 h-1 bg-tevesat-primary transition-all duration-300 group-hover:w-full rounded-full"></span>
@@ -86,7 +88,7 @@ export default function Navbar() {
               onMouseEnter={() => setIsServicesOpen(true)}
               onMouseLeave={() => setIsServicesOpen(false)}
             >
-              <button className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-gray-500 hover:text-tevesat-primary transition-all duration-300">
+              <button className="flex items-center gap-2 whitespace-nowrap text-[10px] font-black uppercase tracking-[0.1em] text-gray-500 hover:text-tevesat-primary transition-all duration-300">
                 Servicios
                 <ChevronDown size={14} className={`transition-transform duration-300 ${isServicesOpen ? 'rotate-180' : ''}`} />
               </button>
@@ -109,7 +111,7 @@ export default function Navbar() {
 
           {/* Desktop CTA Button */}
           <div className="hidden xl:flex flex-shrink-0">
-            <button className="bg-tevesat-primary text-white border-2 border-transparent px-8 py-3 rounded-2xl font-black uppercase text-[10px] tracking-widest hover:bg-transparent hover:border-tevesat-primary hover:text-tevesat-primary transition-all duration-500 transform hover:scale-105 shadow-[0_10px_30px_rgba(159,189,54,0.3)]">
+            <button className="bg-tevesat-primary text-white border-2 border-transparent px-6 py-3 rounded-2xl font-black uppercase text-[10px] tracking-widest hover:bg-transparent hover:border-tevesat-primary hover:text-tevesat-primary transition-all duration-500 transform hover:scale-105 shadow-[0_10px_30px_rgba(159,189,54,0.3)]">
               Contratar
             </button>
           </div>

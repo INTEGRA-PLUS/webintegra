@@ -41,6 +41,16 @@ class HomeController extends Controller
     }
 
     /**
+     * Mostrar la página de telefonía móvil y portabilidad
+     *
+     * @return \Inertia\Response
+     */
+    public function movil()
+    {
+        return Inertia::render('Movil');
+    }
+
+    /**
      * Mostrar la página de test de velocidad
      *
      * @return \Inertia\Response

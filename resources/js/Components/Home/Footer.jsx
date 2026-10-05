@@ -52,7 +52,8 @@ export default function Footer() {
                 {[
                   { label: 'Planes de Internet', href: '#' },
                   { label: 'Medidor de Velocidad', href: '/speedtest' },
-                  { label: 'Internet Móvil', href: '#' },
+                  { label: 'Telefonía Móvil', href: '/movil' },
+                  { label: 'Televisión', href: '/television' },
                   { label: 'Cámaras de Seguridad', href: '/servicios/cctv' },
                   { label: 'Soluciones PYME', href: '/servicios/redes-inalambricas' },
                   { label: 'Trabaja con nosotros', href: '/#contacto' },

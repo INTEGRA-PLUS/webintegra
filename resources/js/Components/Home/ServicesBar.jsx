@@ -1,5 +1,6 @@
 import React from 'react';
-import { Wifi, Camera } from 'lucide-react';
+import { Wifi, Tv, Smartphone, Camera } from 'lucide-react';
+import { Link } from '@inertiajs/react';
 
 export default function ServicesBar() {
   const services = [
@@ -7,6 +8,18 @@ export default function ServicesBar() {
       icon: Wifi,
       title: 'Internet Hogar',
       description: 'Conexión rápida y confiable',
+    },
+    {
+      icon: Tv,
+      title: 'Televisión',
+      description: 'Canales HD incluidos',
+      href: '/television',
+    },
+    {
+      icon: Smartphone,
+      title: 'Telefonía Móvil',
+      description: 'Internet ilimitado y portabilidad',
+      href: '/movil',
     },
     {
       icon: Camera,
@@ -35,13 +48,16 @@ export default function ServicesBar() {
           </h2>
         </div>
 
-        <div className="mx-auto grid max-w-4xl grid-cols-1 gap-8 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {services.map((service) => {
             const IconComponent = service.icon;
+            // Las tarjetas con página propia (TV, Móvil) son enlaces Inertia.
+            const CardTag = service.href ? Link : 'div';
             return (
-              <div
+              <CardTag
                 key={service.title}
-                className="group relative overflow-hidden rounded-[2.5rem] border border-gray-100 bg-white p-10 text-center shadow-[0_30px_70px_-30px_rgba(0,0,0,0.25)] transition-all duration-500 hover:-translate-y-4"
+                href={service.href}
+                className="group relative block overflow-hidden rounded-[2.5rem] border border-gray-100 bg-white p-10 text-center shadow-[0_30px_70px_-30px_rgba(0,0,0,0.25)] transition-all duration-500 hover:-translate-y-4"
               >
                 {/* Círculo decorativo de fondo */}
                 <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-tevesat-primary/5 transition-transform duration-700 group-hover:scale-150" />
@@ -61,7 +77,7 @@ export default function ServicesBar() {
 
                 {/* Línea inferior de acento */}
                 <div className="absolute bottom-0 left-0 h-2 w-full translate-y-full transform bg-tevesat-primary transition-transform duration-500 group-hover:translate-y-0" />
-              </div>
+              </CardTag>
             );
           })}
         </div>
