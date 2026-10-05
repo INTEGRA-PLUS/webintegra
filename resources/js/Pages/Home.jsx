@@ -8,7 +8,6 @@ import CoverageCheck from '../Components/Home/CoverageCheck';
 import WhyTevesat from '../Components/Home/WhyTevesat';
 import Faq from '../Components/Home/Faq';
 import ContactForm from '../Components/Home/ContactForm';
-import ImageBanner from '../Components/Home/ImageBanner';
 import Footer from '../Components/Home/Footer';
 
 
@@ -48,9 +47,6 @@ export default function Home() {
 
       {/* Contact Form - Formulario de contacto */}
       <ContactForm />
-
-      {/* Image Banner - Promocional */}
-      <ImageBanner />
 
       {/* Footer - Pie de página */}
       <Footer />
