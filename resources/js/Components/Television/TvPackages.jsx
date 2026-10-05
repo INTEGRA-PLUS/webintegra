@@ -17,7 +17,7 @@ export default function TvPackages() {
         className="relative overflow-hidden px-4 pt-40 pb-44 md:px-8 md:pb-60"
         style={{
           background:
-            'linear-gradient(160deg, #171717 0%, #201013 55%, #2b0e11 100%)',
+            'linear-gradient(160deg, #121212 0%, #161b0c 55%, #1d2510 100%)',
         }}
       >
         {/* Glows decorativos */}

@@ -40,9 +40,9 @@ body {
 
 /* Animations & Utils */
 @keyframes pulse-orange {
-  0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 170, 0, 0.4); }
-  70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(255, 170, 0, 0); }
-  100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 170, 0, 0); }
+  0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(159, 189, 54, 0.4); }
+  70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(159, 189, 54, 0); }
+  100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(159, 189, 54, 0); }
 }
 
 .animate-pulse-orange {
