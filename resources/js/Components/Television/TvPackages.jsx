@@ -34,7 +34,7 @@ export default function TvPackages() {
 
           <h1 className="text-5xl font-black leading-[1.02] tracking-tight text-white md:text-7xl">
             Televisión Digital{' '}
-            <span className="bg-gradient-to-r from-tevesat-primary-light to-tevesat-primary bg-clip-text text-transparent">
+            <span className="inline-block bg-gradient-to-r from-tevesat-primary-light to-tevesat-primary bg-clip-text pl-2 pr-1 text-transparent md:pl-3">
               IPTV
             </span>
           </h1>
