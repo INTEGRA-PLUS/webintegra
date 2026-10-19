@@ -72,7 +72,7 @@ export default function PromotionModal() {
               <div className="bg-gray-50 rounded-2xl p-4 mb-8 border border-gray-100">
                 <p className="text-gray-600 font-bold text-sm leading-relaxed italic">
                   Y súmale otro de nuestros servicios:<br />
-                  <span className="text-tevesat-primary-deep uppercase text-[10px] font-black tracking-widest">Televisión DGO | Movilidad 48 GB | Cámaras 24H</span>
+                  <span className="text-tevesat-primary-deep uppercase text-[10px] font-black tracking-widest">Televisión DGO | Cámaras 24H</span>
                 </p>
               </div>
 
