@@ -7,42 +7,42 @@ export default function RedesInalambricas() {
     {
       title: "Redes LAN y WAN",
       description: "Diseño y despliegue de infraestructuras de red local y de área amplia para interconexión de sedes con alta disponibilidad.",
-      icon: <Network className="w-8 h-8 text-tevesat-primary" />
+      icon: <Network className="w-8 h-8 text-tevesat-primary-deep" />
     },
     {
       title: "Redes MESH",
       description: "Sistemas de red en malla para cobertura total sin interrupciones en grandes superficies, eliminando zonas muertas.",
-      icon: <Share2 className="w-8 h-8 text-tevesat-primary" />
+      icon: <Share2 className="w-8 h-8 text-tevesat-primary-deep" />
     },
     {
       title: "Punto a Multipunto (PMP)",
       description: "Soluciones de conectividad inalámbrica para múltiples ubicaciones desde un nodo central, ideal para campus o sectores rurales.",
-      icon: <Radio className="w-8 h-8 text-tevesat-primary" />
+      icon: <Radio className="w-8 h-8 text-tevesat-primary-deep" />
     },
     {
       title: "Punto a Punto (PTP)",
       description: "Enlaces inalámbricos de alta capacidad para unir dos puntos distantes con latencia mínima y gran ancho de banda.",
-      icon: <Zap className="w-8 h-8 text-tevesat-primary" />
+      icon: <Zap className="w-8 h-8 text-tevesat-primary-deep" />
     },
     {
       title: "Red WiFi 6 / 6E",
       description: "Implementación del último estándar inalámbrico para soportar mayor densidad de dispositivos y velocidades Gigabit.",
-      icon: <Wifi className="w-8 h-8 text-tevesat-primary" />
+      icon: <Wifi className="w-8 h-8 text-tevesat-primary-deep" />
     },
     {
       title: "Hotspot WiFi",
       description: "Sistemas de acceso público o para clientes con gestión de ancho de banda y portales cautivos personalizados.",
-      icon: <Router className="w-8 h-8 text-tevesat-primary" />
+      icon: <Router className="w-8 h-8 text-tevesat-primary-deep" />
     },
     {
       title: "WiFi Protegido",
       description: "Capas de seguridad avanzadas WPA3 y aislamiento de clientes para redes WiFi corporativas y seguras.",
-      icon: <Lock className="w-8 h-8 text-tevesat-primary" />
+      icon: <Lock className="w-8 h-8 text-tevesat-primary-deep" />
     },
     {
       title: "Soporte WiFi Profesional",
       description: "Análisis de espectro, mapas de calor y optimización de canales para resolver problemas de interferencia.",
-      icon: <CircleHelp className="w-8 h-8 text-tevesat-primary" />
+      icon: <CircleHelp className="w-8 h-8 text-tevesat-primary-deep" />
     }
   ];
 
@@ -60,7 +60,7 @@ export default function RedesInalambricas() {
                 key={index}
                 className="bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-3xl hover:border-tevesat-primary/50 transition-all duration-300 group"
               >
-                <div className="mb-6 bg-tevesat-primary/10 w-14 h-14 rounded-2xl flex items-center justify-center group-hover:bg-tevesat-primary group-hover:text-white transition-all">
+                <div className="mb-6 bg-tevesat-primary/10 w-14 h-14 rounded-2xl flex items-center justify-center group-hover:bg-tevesat-primary group-hover:text-tevesat-tertiary-dark transition-all">
                   {item.icon}
                 </div>
                 <h3 className="text-lg font-bold text-white mb-3">{item.title}</h3>
@@ -81,7 +81,7 @@ export default function RedesInalambricas() {
               />
             </div>
             <div>
-              <h2 className="text-4xl font-black text-white mb-8 uppercase leading-tight">Máxima Cobertura, <br/><span className="text-tevesat-primary">Cero Zonas Muertas</span></h2>
+              <h2 className="text-4xl font-black text-white mb-8 uppercase leading-tight">Máxima Cobertura, <br/><span className="text-tevesat-primary-deep">Cero Zonas Muertas</span></h2>
               <p className="text-gray-300 text-lg mb-8 leading-relaxed">
                 Nuestras soluciones de Redes MESH y WiFi 6 aseguran que cada rincón de su espacio cuente con una señal potente y estable. Optimizamos el tráfico para que sus videoconferencias, streaming y aplicaciones críticas funcionen sin cortes.
               </p>
@@ -93,7 +93,7 @@ export default function RedesInalambricas() {
                   </li>
                 ))}
               </ul>
-              <button className="bg-tevesat-primary text-white px-10 py-4 rounded-2xl font-black uppercase tracking-widest hover:scale-105 transition-transform">
+              <button className="bg-tevesat-primary text-tevesat-tertiary-dark px-10 py-4 rounded-2xl font-black uppercase tracking-widest hover:scale-105 transition-transform">
                 Consultar Planes
               </button>
             </div>

@@ -3,7 +3,6 @@
 /public/hot
 /public/storage
 /storage/*.key
-/bootstrap/cache
 .env
 .env.backup
 .phpunit.result.cache
@@ -30,4 +29,4 @@ vendor/
 
 # Logs
 *.log
-logs/
+/logs/

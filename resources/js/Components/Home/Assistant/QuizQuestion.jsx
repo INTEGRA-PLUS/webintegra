@@ -15,10 +15,10 @@ export default function QuizQuestion({ step, selectedIndex, onSelect }) {
   return (
     <div className="animate-[fadeIn_0.4s_ease]">
       <div className="mb-8 flex flex-col items-center text-center">
-        <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-tevesat-primary text-white shadow-lg shadow-tevesat-primary/30">
+        <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-tevesat-primary text-tevesat-tertiary-dark shadow-lg shadow-tevesat-primary/30">
           <StepIcon size={30} strokeWidth={2.4} />
         </div>
-        <span className="mb-2 text-xs font-black uppercase tracking-[0.3em] text-tevesat-primary">
+        <span className="mb-2 text-xs font-black uppercase tracking-[0.3em] text-tevesat-primary-deep">
           {step.eyebrow}
         </span>
         <h3 className="text-2xl font-black tracking-tight text-tevesat-tertiary-dark md:text-3xl">

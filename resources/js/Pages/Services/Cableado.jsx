@@ -7,32 +7,32 @@ export default function Cableado() {
     {
       title: "Cableado de fibra óptica",
       description: "Implementación de redes de fibra óptica de última generación para garantizar la máxima velocidad y estabilidad en la transmisión de datos a largas distancias.",
-      icon: <Activity className="w-8 h-8 text-tevesat-primary" />
+      icon: <Activity className="w-8 h-8 text-tevesat-primary-deep" />
     },
     {
       title: "Cableado UTP",
       description: "Instalación de cableado estructurado categoría 6, 6A y 7 para redes LAN empresariales, asegurando un rendimiento óptimo y reducción de interferencias.",
-      icon: <Cable className="w-8 h-8 text-tevesat-primary" />
+      icon: <Cable className="w-8 h-8 text-tevesat-primary-deep" />
     },
     {
       title: "Cableado DC y AC",
       description: "Soluciones integrales de alimentación eléctrica para equipos de red, incluyendo sistemas de corriente continua (DC) y corriente alterna (AC).",
-      icon: <Zap className="w-8 h-8 text-tevesat-primary" />
+      icon: <Zap className="w-8 h-8 text-tevesat-primary-deep" />
     },
     {
       title: "Suministro de Internet y TV",
       description: "Integración de servicios de conectividad de alta velocidad y televisión digital para edificios, condominios y empresas.",
-      icon: <Tv className="w-8 h-8 text-tevesat-primary" />
+      icon: <Tv className="w-8 h-8 text-tevesat-primary-deep" />
     },
     {
       title: "Certificado de cableado y fibra",
       description: "Certificación profesional de puntos de red y enlaces de fibra óptica bajo estándares internacionales para garantizar el cumplimiento técnico.",
-      icon: <ShieldCheck className="w-8 h-8 text-tevesat-primary" />
+      icon: <ShieldCheck className="w-8 h-8 text-tevesat-primary-deep" />
     },
     {
       title: "Otros servicios",
       description: "Mantenimiento preventivo, peinado de racks, migración de centros de datos y auditoría de infraestructura de red.",
-      icon: <Wifi className="w-8 h-8 text-tevesat-primary" />
+      icon: <Wifi className="w-8 h-8 text-tevesat-primary-deep" />
     }
   ];
 
@@ -68,7 +68,7 @@ export default function Cableado() {
                 <p className="text-gray-300 mb-8 leading-relaxed">
                   En {import.meta.env.VITE_NOMBRE_EMPRESA} nos especializamos en crear soluciones de cableado que no solo cumplen con las necesidades actuales, sino que están preparadas para el crecimiento futuro. Utilizamos materiales de la más alta calidad y seguimos las normativas TIA/EIA para asegurar que su red sea un activo confiable para su negocio.
                 </p>
-                <button className="bg-tevesat-primary text-white px-10 py-4 rounded-2xl font-bold uppercase tracking-widest hover:scale-105 transition-transform">
+                <button className="bg-tevesat-primary text-tevesat-tertiary-dark px-10 py-4 rounded-2xl font-bold uppercase tracking-widest hover:scale-105 transition-transform">
                   Solicitar Auditoría
                 </button>
               </div>

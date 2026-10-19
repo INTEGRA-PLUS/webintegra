@@ -31,8 +31,8 @@ export default function OptionCard({ option, selected, featured = false, onSelec
           <div
             className={`flex h-14 w-14 items-center justify-center rounded-2xl transition-colors ${
               selected
-                ? 'bg-tevesat-primary text-white'
-                : 'bg-gray-50 text-gray-400 group-hover:bg-tevesat-primary/10 group-hover:text-tevesat-primary'
+                ? 'bg-tevesat-primary text-tevesat-tertiary-dark'
+                : 'bg-gray-50 text-gray-400 group-hover:bg-tevesat-primary/10 group-hover:text-tevesat-primary-deep'
             }`}
           >
             {OptIcon && <OptIcon size={26} strokeWidth={2.4} />}
@@ -40,7 +40,7 @@ export default function OptionCard({ option, selected, featured = false, onSelec
           <div
             className={`flex h-7 w-7 items-center justify-center rounded-full border-2 transition-all ${
               selected
-                ? 'border-tevesat-primary bg-tevesat-primary text-white'
+                ? 'border-tevesat-primary bg-tevesat-primary text-tevesat-tertiary-dark'
                 : 'border-gray-200 text-transparent group-hover:border-tevesat-primary/40'
             }`}
           >
@@ -69,8 +69,8 @@ export default function OptionCard({ option, selected, featured = false, onSelec
         <div
           className={`flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-xl transition-colors ${
             selected
-              ? 'bg-tevesat-primary text-white'
-              : 'bg-gray-50 text-gray-400 group-hover:bg-tevesat-primary/10 group-hover:text-tevesat-primary'
+              ? 'bg-tevesat-primary text-tevesat-tertiary-dark'
+              : 'bg-gray-50 text-gray-400 group-hover:bg-tevesat-primary/10 group-hover:text-tevesat-primary-deep'
           }`}
         >
           <OptIcon size={20} strokeWidth={2.4} />
@@ -83,7 +83,7 @@ export default function OptionCard({ option, selected, featured = false, onSelec
       <div
         className={`flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full border-2 transition-all ${
           selected
-            ? 'border-tevesat-primary bg-tevesat-primary text-white'
+            ? 'border-tevesat-primary bg-tevesat-primary text-tevesat-tertiary-dark'
             : 'border-gray-200 text-transparent group-hover:border-tevesat-primary/40'
         }`}
       >

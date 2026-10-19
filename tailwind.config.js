@@ -9,7 +9,7 @@ export default {
     extend: {
       colors: {
         tevesat: {
-          // COLOR_PRINCIPAL (Rojo) - Se usa para acentos, botones y secciones destacadas
+          // COLOR_PRINCIPAL - Se usa para acentos, botones y secciones destacadas
           primary: themeColors.COLOR_PRINCIPAL,
           // COLOR_SECUNDARIO (Negro/Gris) - Se usa para fondos oscuros y contrastes elegantes
           secondary: themeColors.COLOR_SECUNDARIO,
@@ -18,6 +18,11 @@ export default {
           
           'primary-light': themeColors.COLOR_PRINCIPAL_LIGHT,
           'tertiary-dark': themeColors.COLOR_TERCIARIO_DARK,
+          // COLOR_PRINCIPAL_DEEP - Para texto sobre fondo claro. El naranja
+          // principal solo sirve como fondo, y siempre con texto oscuro encima.
+          'primary-deep': themeColors.COLOR_PRINCIPAL_DEEP,
+          // COLOR_ACENTO - Solo decorativo (puntos, degradados), nunca como texto.
+          accent: themeColors.COLOR_ACENTO,
         },
       },
       fontFamily: {

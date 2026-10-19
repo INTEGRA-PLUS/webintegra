@@ -18,13 +18,13 @@ export default function TvPackageCard({ pkg }) {
     <div
       className={`group relative flex flex-col rounded-[2.5rem] p-8 transition-all duration-500 ${
         recommended
-          ? 'border-2 border-tevesat-primary bg-white shadow-[0_40px_90px_-30px_rgba(236,50,55,0.45)] lg:-translate-y-4 lg:scale-[1.03]'
+          ? 'border-2 border-tevesat-primary bg-white shadow-[0_40px_90px_-30px_rgba(239,205,40,0.45)] lg:-translate-y-4 lg:scale-[1.03]'
           : 'border border-gray-100 bg-white shadow-[0_30px_70px_-30px_rgba(0,0,0,0.2)] hover:-translate-y-2'
       }`}
     >
       {recommended && (
         <div className="absolute -top-4 left-1/2 -translate-x-1/2 whitespace-nowrap">
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-tevesat-primary px-5 py-2 text-[10px] font-black uppercase tracking-[0.2em] text-white shadow-lg shadow-tevesat-primary/30">
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-tevesat-primary px-5 py-2 text-[10px] font-black uppercase tracking-[0.2em] text-tevesat-tertiary-dark shadow-lg shadow-tevesat-primary/30">
             <Star size={12} className="fill-white" /> Altamente Recomendado
           </span>
         </div>
@@ -32,14 +32,14 @@ export default function TvPackageCard({ pkg }) {
 
       {/* Encabezado */}
       <div className="mb-5 text-center">
-        <span className="text-xs font-black uppercase tracking-[0.3em] text-tevesat-primary">
+        <span className="text-xs font-black uppercase tracking-[0.3em] text-tevesat-primary-deep">
           {pkg.name}
         </span>
         <h3 className="mt-2 text-2xl font-black tracking-tight text-tevesat-tertiary-dark">
           {pkg.title}
         </h3>
         <p className="mt-1 flex items-center justify-center gap-1.5 text-sm font-bold text-gray-400">
-          <Tv size={14} className="text-tevesat-primary" /> {pkg.channels}
+          <Tv size={14} className="text-tevesat-primary-deep" /> {pkg.channels}
         </p>
       </div>
 
@@ -52,7 +52,7 @@ export default function TvPackageCard({ pkg }) {
           </span>
           <span className="text-sm font-bold text-gray-400">/mes</span>
         </div>
-        <p className="mt-1 text-[11px] font-black uppercase tracking-widest text-tevesat-primary">
+        <p className="mt-1 text-[11px] font-black uppercase tracking-widest text-tevesat-primary-deep">
           {selected === 0 ? 'Valor Mensual' : current.note}
         </p>
       </div>
@@ -62,7 +62,7 @@ export default function TvPackageCard({ pkg }) {
 
       {/* Selector de adicionales */}
       <p className="mb-3 flex items-center gap-2 text-sm font-black text-tevesat-tertiary-dark">
-        <Trophy size={16} className="text-tevesat-primary" /> {pkg.addonQuestion}
+        <Trophy size={16} className="text-tevesat-primary-deep" /> {pkg.addonQuestion}
       </p>
       <div className="mb-8 space-y-3">
         {pkg.options.map((opt, idx) => {
@@ -81,7 +81,7 @@ export default function TvPackageCard({ pkg }) {
               <span
                 className={`flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full border-2 transition-all ${
                   active
-                    ? 'border-tevesat-primary bg-tevesat-primary text-white'
+                    ? 'border-tevesat-primary bg-tevesat-primary text-tevesat-tertiary-dark'
                     : 'border-gray-300 text-transparent'
                 }`}
               >
@@ -107,8 +107,8 @@ export default function TvPackageCard({ pkg }) {
         rel="noopener noreferrer"
         className={`group/cta mt-auto flex items-center justify-center gap-2 rounded-2xl py-4 text-xs font-black uppercase tracking-widest transition-all duration-300 ${
           recommended
-            ? 'bg-tevesat-primary text-white shadow-xl shadow-tevesat-primary/30 hover:bg-tevesat-primary-light hover:scale-105'
-            : 'border-2 border-gray-200 bg-white text-tevesat-tertiary-dark hover:border-tevesat-primary hover:text-tevesat-primary'
+            ? 'bg-tevesat-primary text-tevesat-tertiary-dark shadow-xl shadow-tevesat-primary/30 hover:bg-tevesat-primary-light hover:scale-105'
+            : 'border-2 border-gray-200 bg-white text-tevesat-tertiary-dark hover:border-tevesat-primary hover:text-tevesat-primary-deep'
         }`}
       >
         Contratar {pkg.name}

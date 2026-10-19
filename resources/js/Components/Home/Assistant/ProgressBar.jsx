@@ -13,11 +13,11 @@ export default function ProgressBar({ label, percent }) {
         <span className="text-xs font-black uppercase tracking-[0.25em] text-gray-400">
           {label}
         </span>
-        <span className="text-xs font-black text-tevesat-primary">{percent}%</span>
+        <span className="text-xs font-black text-tevesat-primary-deep">{percent}%</span>
       </div>
       <div className="h-2 w-full overflow-hidden rounded-full bg-gray-100">
         <div
-          className="h-full rounded-full bg-gradient-to-r from-tevesat-primary to-tevesat-primary-light transition-all duration-500 ease-out"
+          className="h-full rounded-full bg-gradient-to-r from-tevesat-primary to-tevesat-accent transition-all duration-500 ease-out"
           style={{ width: `${percent}%` }}
         />
       </div>

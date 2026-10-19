@@ -18,7 +18,7 @@ const PlanCard = ({ plan }) => {
         {plan.badge && (
           <div className="absolute top-8 left-1/2 -translate-x-1/2 w-full px-10">
             <div className="bg-tevesat-primary rounded-full py-2 px-4 shadow-lg border border-white/20">
-              <span className="text-white font-black uppercase text-[10px] tracking-tight block leading-tight">
+              <span className="text-tevesat-tertiary-dark font-black uppercase text-[10px] tracking-tight block leading-tight">
                 {plan.badge}
               </span>
             </div>
@@ -41,10 +41,10 @@ const PlanCard = ({ plan }) => {
           <div className="w-6 h-6 rounded-full border border-white/20 flex items-center justify-center text-white font-black text-sm">+</div>
           {plan.promo ? (
             <div className="bg-tevesat-primary rounded-xl py-3 px-6 flex items-center gap-3 shadow-lg transform group-hover:scale-110 transition-transform duration-500">
-              <div className="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center text-white">
+              <div className="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center text-tevesat-tertiary-dark">
                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17 1H7c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2m0 18H7V5h10v14z"/></svg>
               </div>
-              <span className="text-white font-black uppercase text-[12px] tracking-tighter leading-tight text-left">
+              <span className="text-tevesat-tertiary-dark font-black uppercase text-[12px] tracking-tighter leading-tight text-left">
                 {plan.promo.split(' ')[0]}<br />{plan.promo.split(' ').slice(1).join(' ')}
               </span>
             </div>
@@ -60,7 +60,7 @@ const PlanCard = ({ plan }) => {
         
         {/* Price */}
         <div className="flex items-start justify-center mb-10 text-white">
-          <span className="text-lg font-black mt-2 mr-1 text-tevesat-primary">$</span>
+          <span className="text-lg font-black mt-2 mr-1 text-tevesat-primary-deep">$</span>
           <span className="text-5xl font-black leading-none tracking-tighter">{plan.precio}</span>
           <div className="text-left mt-2 ml-1">
             <p className="text-xl font-black leading-none">{plan.decimal}</p>
@@ -72,7 +72,7 @@ const PlanCard = ({ plan }) => {
 
         {/* Action Button & More - Pushed to bottom */}
         <div className="mt-auto">
-          <button className="w-full bg-tevesat-primary text-white py-4 rounded-[2rem] font-black uppercase tracking-[0.1em] text-[12px] flex items-center justify-center gap-3 hover:bg-white hover:text-tevesat-primary transition-all duration-300 shadow-[0_15px_30px_rgba(236,50,55,0.2)] mb-8 font-outfit">
+          <button className="w-full bg-tevesat-primary text-tevesat-tertiary-dark py-4 rounded-[2rem] font-black uppercase tracking-[0.1em] text-[12px] flex items-center justify-center gap-3 hover:bg-white hover:text-tevesat-primary-deep transition-all duration-300 shadow-[0_15px_30px_rgba(239,205,40,0.2)] mb-8 font-outfit">
             Compra ahora <MessageCircle size={20} />
           </button>
 
@@ -92,14 +92,14 @@ const PlanCard = ({ plan }) => {
           <div className="absolute top-0 right-0 w-32 h-32 bg-tevesat-primary/10 rounded-full blur-3xl pointer-events-none"></div>
           {benefitsList.map((section, sidx) => (
             <div key={sidx} className="mb-6 last:mb-0">
-                <h4 className="text-tevesat-primary font-black text-sm uppercase mb-4 flex items-center gap-2">
+                <h4 className="text-tevesat-primary-deep font-black text-sm uppercase mb-4 flex items-center gap-2">
                   <div className="w-1.5 h-1.5 bg-tevesat-primary rounded-full animate-pulse"></div>
                   {section.title}
                 </h4>
                 <ul className="space-y-3">
                   {section.items.map((item, iidx) => (
                     <li key={iidx} className="flex items-start gap-3 text-white font-bold leading-relaxed">
-                      <Check size={14} className="text-tevesat-primary flex-shrink-0 mt-0.5" />
+                      <Check size={14} className="text-tevesat-primary-deep flex-shrink-0 mt-0.5" />
                       {item}
                     </li>
                   ))}
@@ -130,11 +130,11 @@ const StratumHeader = ({ subtitle, title, arrowText }) => (
       <h2 className="text-2xl md:text-3xl font-black text-white mb-10 leading-[1.2] tracking-tight italic">
         {title}
       </h2>
-      <button className="flex items-center gap-4 text-white group bg-white/5 pr-8 pl-2 py-2 rounded-full border border-white/10 hover:bg-tevesat-primary hover:border-tevesat-primary transition-all">
+      <button className="flex items-center gap-4 text-tevesat-tertiary-dark group bg-white/5 pr-8 pl-2 py-2 rounded-full border border-white/10 hover:bg-tevesat-primary hover:border-tevesat-primary transition-all">
         <div className="w-12 h-12 rounded-full bg-tevesat-primary flex items-center justify-center shadow-lg group-hover:bg-white transition-colors">
-          <ArrowRight className="text-white group-hover:text-tevesat-primary transition-colors" size={24} strokeWidth={3} />
+          <ArrowRight className="text-tevesat-tertiary-dark group-hover:text-tevesat-primary-deep transition-colors" size={24} strokeWidth={3} />
         </div>
-        <span className="font-black uppercase text-[10px] tracking-widest group-hover:text-tevesat-primary transition-colors">
+        <span className="font-black uppercase text-[10px] tracking-widest group-hover:text-tevesat-primary-deep transition-colors">
           {arrowText}
         </span>
       </button>

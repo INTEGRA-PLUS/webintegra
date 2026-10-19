@@ -7,42 +7,42 @@ export default function Cctv() {
     {
       title: "Diseño y Planificación",
       description: "Diseño estratégico de sistemas de vigilancia para cubrir puntos ciegos y maximizar la seguridad perimetral.",
-      icon: <Layout className="w-8 h-8 text-tevesat-primary" />
+      icon: <Layout className="w-8 h-8 text-tevesat-primary-deep" />
     },
     {
       title: "Administración del Sistema",
       description: "Gestión centralizada de servidores de video, almacenamiento en la nube y visualización remota en tiempo real.",
-      icon: <Shield className="w-8 h-8 text-tevesat-primary" />
+      icon: <Shield className="w-8 h-8 text-tevesat-primary-deep" />
     },
     {
       title: "Instalación Profesional",
       description: "Montaje y puesta en marcha de cámaras IP, análogas y térmicas con los más altos estándares de calidad.",
-      icon: <Camera className="w-8 h-8 text-tevesat-primary" />
+      icon: <Camera className="w-8 h-8 text-tevesat-primary-deep" />
     },
     {
       title: "Configuración Avanzada",
       description: "Optimización de grabadores (DVR/NVR), analíticas de video, detección de movimiento y alertas inteligentes.",
-      icon: <Settings className="w-8 h-8 text-tevesat-primary" />
+      icon: <Settings className="w-8 h-8 text-tevesat-primary-deep" />
     },
     {
       title: "Mantenimiento Preventivo",
       description: "Limpieza de lentes, revisión de conexiones y actualización de firmware para asegurar operatividad 24/7.",
-      icon: <Wrench className="w-8 h-8 text-tevesat-primary" />
+      icon: <Wrench className="w-8 h-8 text-tevesat-primary-deep" />
     },
     {
       title: "Reemplazo de Cableado",
       description: "Revisión y cambio de cableado UTP o coaxial para solucionar problemas de interferencia o pérdida de señal.",
-      icon: <Cable className="w-8 h-8 text-tevesat-primary" />
+      icon: <Cable className="w-8 h-8 text-tevesat-primary-deep" />
     },
     {
       title: "Reprogramación de Grabadores",
       description: "Configuración de acceso remoto, respaldo de grabaciones y gestión de usuarios autorizados.",
-      icon: <RefreshCw className="w-8 h-8 text-tevesat-primary" />
+      icon: <RefreshCw className="w-8 h-8 text-tevesat-primary-deep" />
     },
     {
       title: "Visión Nocturna y Especializada",
       description: "Implementación de tecnologías ColorVu, DarkFighter e Infrarrojos para visibilidad total en cualquier condición.",
-      icon: <Eye className="w-8 h-8 text-tevesat-primary" />
+      icon: <Eye className="w-8 h-8 text-tevesat-primary-deep" />
     }
   ];
 
@@ -86,13 +86,13 @@ export default function Cctv() {
                   Nuestros sistemas de CCTV permiten monitorear su empresa u hogar desde cualquier parte del mundo a través de su smartphone. Integramos analíticas inteligentes que le avisan ante cualquier actividad sospechosa, permitiéndole actuar a tiempo.
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  <span className="px-6 py-2 rounded-full bg-tevesat-primary/20 text-tevesat-primary text-sm font-bold border border-tevesat-primary/30">Acceso Remoto</span>
-                  <span className="px-6 py-2 rounded-full bg-tevesat-primary/20 text-tevesat-primary text-sm font-bold border border-tevesat-primary/30">Full HD / 4K</span>
-                  <span className="px-6 py-2 rounded-full bg-tevesat-primary/20 text-tevesat-primary text-sm font-bold border border-tevesat-primary/30">IA Integrada</span>
+                  <span className="px-6 py-2 rounded-full bg-tevesat-primary/20 text-tevesat-primary-deep text-sm font-bold border border-tevesat-primary/30">Acceso Remoto</span>
+                  <span className="px-6 py-2 rounded-full bg-tevesat-primary/20 text-tevesat-primary-deep text-sm font-bold border border-tevesat-primary/30">Full HD / 4K</span>
+                  <span className="px-6 py-2 rounded-full bg-tevesat-primary/20 text-tevesat-primary-deep text-sm font-bold border border-tevesat-primary/30">IA Integrada</span>
                 </div>
               </div>
               <div className="flex justify-center">
-                 <button className="bg-tevesat-primary text-white text-xl px-12 py-6 rounded-3xl font-black uppercase tracking-widest hover:scale-110 transition-all shadow-[0_30px_60px_rgba(236,50,55,0.4)]">
+                 <button className="bg-tevesat-primary text-tevesat-tertiary-dark text-xl px-12 py-6 rounded-3xl font-black uppercase tracking-widest hover:scale-110 transition-all shadow-[0_30px_60px_rgba(239,205,40,0.4)]">
                     Solicitar Diseño
                  </button>
               </div>

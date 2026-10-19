@@ -17,10 +17,10 @@ export default function DiscoverSection() {
         {/* Left Side: Text and CTA */}
         <div className="lg:w-1/3 text-left">
           <h2 className="text-3xl md:text-4xl font-black text-tevesat-tertiary-dark mb-10 leading-tight">
-            ¡Descubre todo lo que <span className="text-tevesat-primary">{import.meta.env.VITE_NOMBRE_EMPRESA}</span> hace por ti!
+            ¡Descubre todo lo que <span className="text-tevesat-primary-deep">{import.meta.env.VITE_NOMBRE_EMPRESA}</span> hace por ti!
           </h2>
 
-          <button className="flex items-center gap-4 text-tevesat-tertiary-dark group bg-gray-50 pr-8 pl-2 py-2 rounded-full border border-gray-200 hover:bg-tevesat-primary hover:text-white hover:border-tevesat-primary transition-all duration-300 shadow-lg">
+          <button className="flex items-center gap-4 text-tevesat-tertiary-dark group bg-gray-50 pr-8 pl-2 py-2 rounded-full border border-gray-200 hover:bg-tevesat-primary hover:text-tevesat-tertiary-dark hover:border-tevesat-primary transition-all duration-300 shadow-lg">
             Compra ahora <MessageCircle size={24} />
           </button>
         </div>
@@ -42,7 +42,7 @@ export default function DiscoverSection() {
               {/* Orange Underline */}
               <div className="w-12 h-1 bg-tevesat-primary rounded-full mb-4 group-hover:w-20 transition-all duration-500"></div>
 
-              <p className="text-gray-500 font-bold leading-relaxed group-hover:text-tevesat-primary transition-colors italic text-sm">
+              <p className="text-gray-500 font-bold leading-relaxed group-hover:text-tevesat-primary-deep transition-colors italic text-sm">
                 {card.description}
               </p>
             </div>

@@ -6,28 +6,29 @@ import Footer from '../Components/Home/Footer';
 
 /**
  * Documentos Page - Documentos regulatorios y formatos de la empresa (/documentos).
- * Los documentos de la empresa sin archivo (href: null) se muestran como
- * "Próximamente": subir el PDF a public/docs/ y poner la ruta en href.
+ * Los documentos de la empresa apuntan a public/docs/: mientras no se suba
+ * el PDF de Interconexiones con ese nombre, el enlace responde 404.
+ * Los que no tengan href (null) se muestran como "Próximamente".
  */
 export default function Documentos() {
   const companyDocs = [
-    { title: 'Contrato único de prestación de servicios', href: 'https://usc1.contabostorage.com/ec0270e0cc0b4fc6bf9c10fa0d981689:integra/smtelecomunicaciones/adjuntos/CONTRATO%20DIGITAL%20SM.pdf' },
-    { title: 'Carta de suspensión de contrato de servicios de internet', href: 'https://usc1.contabostorage.com/ec0270e0cc0b4fc6bf9c10fa0d981689:integra/smtelecomunicaciones/adjuntos/CARTA%20DE%20SUSPENSION%20DEL%20CONTRATO.pdf' },
-    { title: 'Formato de cesión de derechos', href: 'https://usc1.contabostorage.com/ec0270e0cc0b4fc6bf9c10fa0d981689:integra/smtelecomunicaciones/adjuntos/formato-cesion-de-derechos.pdf' },
-    { title: 'Formato de solicitud de ampliación o cambio de plan', href: 'https://usc1.contabostorage.com/ec0270e0cc0b4fc6bf9c10fa0d981689:integra/smtelecomunicaciones/adjuntos/Formato_Cambio_de_Plan_SM_Telecomunicaciones.pdf' },
-    { title: 'Procedimiento de solicitudes y PQRS', href: 'https://usc1.contabostorage.com/ec0270e0cc0b4fc6bf9c10fa0d981689:integra/smtelecomunicaciones/adjuntos/FORMATO%20DE%20PETICIONES.pdf' },
-    { title: 'Política de neutralidad en internet', href: 'https://usc1.contabostorage.com/ec0270e0cc0b4fc6bf9c10fa0d981689:integra/smtelecomunicaciones/adjuntos/POLITICA%20DE%20NEUTRALIDAD%20EN%20LA%20RED%20DE%20SM%20OPTIAL%20FIBER%20S.pdf' },
-    { title: 'Autorización para el tratamiento de datos personales', href: 'https://usc1.contabostorage.com/ec0270e0cc0b4fc6bf9c10fa0d981689:integra/smtelecomunicaciones/adjuntos/FORMATO%20AUTORIZACION%20DE%20DATOS.pdf' },
-    { title: 'Política de facturación, recaudo, suspensión y reconexión del servicio', href: 'https://usc1.contabostorage.com/ec0270e0cc0b4fc6bf9c10fa0d981689:integra/smtelecomunicaciones/adjuntos/politica-facturacion-recaudo-suspension.pdf' },
-    { title: 'Política de protección de datos personales', href: 'https://usc1.contabostorage.com/ec0270e0cc0b4fc6bf9c10fa0d981689:integra/smtelecomunicaciones/adjuntos/POL%C3%8DTICA%20DE%20PROTECCI%C3%93N%20Y%20TRATAMIENTO%20DE%20DATOS%20PERSONALES.pdf' },
-    { title: 'Guía de acuerdo de nivel de servicio (SLA)', href: '/docs/guia-acuerdo-nivel-servicio-sla.pdf' },
-    { title: 'Protocolo de seguridad de la información', href: 'https://usc1.contabostorage.com/ec0270e0cc0b4fc6bf9c10fa0d981689:integra/smtelecomunicaciones/adjuntos/PROTOCOLO%20DE%20SEGURIDAD%20DE%20INFORMACI%C3%93N.pdf' },
-    { title: 'Sistema de políticas y gestión de seguridad de la información', href: 'https://usc1.contabostorage.com/ec0270e0cc0b4fc6bf9c10fa0d981689:integra/smtelecomunicaciones/adjuntos/SISTEMA%20DE%20POL%C3%8DTICAS%20Y%20GESTI%C3%93N%20DE%20SEGURIDAD%20DE%20LA%20INFORMACI%C3%93N%20RESOLUCI%C3%93N%20CRC%205050%20DE%202016%20Y%20RESOLUCI%C3%93N%20CRC%205569%20DE%202018.pdf' },
-    { title: 'Acciones para la gestión de tráfico del usuario', href: 'https://usc1.contabostorage.com/ec0270e0cc0b4fc6bf9c10fa0d981689:integra/smtelecomunicaciones/adjuntos/ACCIONES%20PARA%20LA%20GESTI%C3%93N%20DE%20TRAFICO%20DEL%20USUARIO.pdf' },
-    { title: 'Guía de seguridad en la red para usuarios', href: 'https://usc1.contabostorage.com/ec0270e0cc0b4fc6bf9c10fa0d981689:integra/smtelecomunicaciones/adjuntos/SEGURIDAD%20EN%20LA%20RED.pdf' },
-    { title: 'Control parental', href: 'https://usc1.contabostorage.com/ec0270e0cc0b4fc6bf9c10fa0d981689:integra/smtelecomunicaciones/adjuntos/CONTROL%20PARENTAL.pdf' },
-    { title: 'Sistema de políticas y gestión de seguridad de la red', href: '/docs/sistema-politicas-seguridad-red.pdf' },
-    { title: 'Condiciones de calidad del servicio de internet', href: 'https://usc1.contabostorage.com/ec0270e0cc0b4fc6bf9c10fa0d981689:integra/smtelecomunicaciones/adjuntos/CONDICIONES%20DE%20CALIDAD%20DE%20LOS%20SERVICIOS%20OFRECIDOS%20POR%20SM%20OPTICAL%20FIBER%20S.pdf' },
+    { title: 'Contrato único de prestación de servicios', href: '/docs/contrato-unico-prestacion-servicios.pdf' },
+    { title: 'Carta de suspensión de contrato de servicios de internet', href: '/docs/carta-suspension-contrato-servicios-internet.pdf' },
+    { title: 'Formato de cesión de derechos', href: '/docs/formato-cesion-derechos.pdf' },
+    { title: 'Formato de solicitud de ampliación o cambio de plan', href: '/docs/formato-solicitud-ampliacion-cambio-plan.pdf' },
+    { title: 'Procedimiento de solicitudes y PQRS', href: '/docs/procedimiento-solicitudes-pqrs.pdf' },
+    { title: 'Política de neutralidad en internet', href: '/docs/politica-neutralidad-internet.pdf' },
+    { title: 'Autorización para el tratamiento de datos personales', href: '/docs/autorizacion-tratamiento-datos-personales.pdf' },
+    { title: 'Política de facturación, recaudo, suspensión y reconexión del servicio', href: '/docs/politica-facturacion-recaudo-suspension-reconexion-servicio.pdf' },
+    { title: 'Política de protección de datos personales', href: '/docs/politica-proteccion-datos-personales.pdf' },
+    { title: 'Guía de acuerdo de nivel de servicio (SLA)', href: '/docs/guia-acuerdo-nivel-servicio.pdf' },
+    { title: 'Protocolo de seguridad de la información', href: '/docs/protocolo-seguridad-informacion.pdf' },
+    { title: 'Sistema de políticas y gestión de seguridad de la información', href: '/docs/sistema-politicas-gestion-seguridad-informacion.pdf' },
+    { title: 'Acciones para la gestión de tráfico del usuario', href: '/docs/acciones-gestion-trafico-usuario.pdf' },
+    { title: 'Guía de seguridad en la red para usuarios', href: '/docs/guia-seguridad-red-usuarios.pdf' },
+    { title: 'Control parental', href: '/docs/control-parental.pdf' },
+    { title: 'Sistema de políticas y gestión de seguridad de la red', href: '/docs/sistema-politicas-gestion-seguridad-red.pdf' },
+    { title: 'Condiciones de calidad del servicio de internet', href: '/docs/condiciones-calidad-servicio-internet.pdf' },
   ];
 
   const laws = [
@@ -86,13 +87,13 @@ export default function Documentos() {
         />
         <div className="relative z-10 mx-auto max-w-3xl text-center">
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-tevesat-primary/20 bg-tevesat-primary/5 px-5 py-2">
-            <FileText size={16} className="text-tevesat-primary" />
-            <span className="text-xs font-black uppercase tracking-[0.3em] text-tevesat-primary">
+            <FileText size={16} className="text-tevesat-primary-deep" />
+            <span className="text-xs font-black uppercase tracking-[0.3em] text-tevesat-primary-deep">
               Centro de Documentación
             </span>
           </div>
           <h1 className="text-4xl font-black leading-[1.05] tracking-tight text-tevesat-tertiary-dark md:text-6xl">
-            <span className="italic text-tevesat-primary">Documentos</span>
+            <span className="italic text-tevesat-primary-deep">Documentos</span>
           </h1>
           <p className="mx-auto mt-5 max-w-xl text-lg font-medium leading-relaxed text-gray-500">
             Contratos, formatos, políticas y la normativa TIC que rige la prestación
@@ -106,7 +107,7 @@ export default function Documentos() {
         <div className="mx-auto max-w-7xl">
           <div className="mb-12 text-center">
             <h2 className="text-3xl font-black uppercase tracking-tight text-tevesat-tertiary-dark md:text-4xl">
-              Documentos y <span className="italic text-tevesat-primary">Formatos</span>
+              Documentos y <span className="italic text-tevesat-primary-deep">Formatos</span>
             </h2>
           </div>
 
@@ -116,7 +117,7 @@ export default function Documentos() {
                 key={doc.title}
                 className="flex items-center gap-4 rounded-2xl border border-gray-100 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_50px_-25px_rgba(0,0,0,0.25)]"
               >
-                <div className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-xl bg-tevesat-primary/5 text-tevesat-primary">
+                <div className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-xl bg-tevesat-primary/5 text-tevesat-primary-deep">
                   <FileText size={20} strokeWidth={2.4} />
                 </div>
                 <p className="flex-1 text-sm font-bold leading-snug text-tevesat-tertiary-dark">
@@ -127,7 +128,7 @@ export default function Documentos() {
                     href={doc.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl bg-tevesat-primary text-white shadow-lg shadow-tevesat-primary/20 transition-all duration-300 hover:scale-110 hover:bg-tevesat-primary-light"
+                    className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl bg-tevesat-primary text-tevesat-tertiary-dark shadow-lg shadow-tevesat-primary/20 transition-all duration-300 hover:scale-110 hover:bg-tevesat-primary-light"
                     title="Descargar"
                   >
                     <Download size={17} strokeWidth={2.4} />
@@ -152,13 +153,13 @@ export default function Documentos() {
         <div className="mx-auto max-w-5xl">
           <div className="mb-14 text-center">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-tevesat-primary/20 bg-tevesat-primary/5 px-5 py-2">
-              <Landmark size={16} className="text-tevesat-primary" />
-              <span className="text-xs font-black uppercase tracking-[0.3em] text-tevesat-primary">
+              <Landmark size={16} className="text-tevesat-primary-deep" />
+              <span className="text-xs font-black uppercase tracking-[0.3em] text-tevesat-primary-deep">
                 Marco Legal
               </span>
             </div>
             <h2 className="text-3xl font-black uppercase tracking-tight text-tevesat-tertiary-dark md:text-4xl">
-              Leyes y <span className="italic text-tevesat-primary">Normativa TIC</span>
+              Leyes y <span className="italic text-tevesat-primary-deep">Normativa TIC</span>
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-base font-medium text-gray-500">
               Normativa colombiana que regula el sector de las telecomunicaciones,
@@ -184,7 +185,7 @@ export default function Documentos() {
                   href={law.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex flex-shrink-0 items-center justify-center gap-2 rounded-2xl bg-tevesat-primary px-8 py-4 text-xs font-black uppercase tracking-[0.2em] text-white shadow-lg shadow-tevesat-primary/20 transition-all duration-300 hover:scale-105 hover:bg-tevesat-primary-light"
+                  className="inline-flex flex-shrink-0 items-center justify-center gap-2 rounded-2xl bg-tevesat-primary px-8 py-4 text-xs font-black uppercase tracking-[0.2em] text-tevesat-tertiary-dark shadow-lg shadow-tevesat-primary/20 transition-all duration-300 hover:scale-105 hover:bg-tevesat-primary-light"
                 >
                   Descargar
                   <ExternalLink size={14} />

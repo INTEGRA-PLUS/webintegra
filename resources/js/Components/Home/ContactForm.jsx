@@ -93,15 +93,15 @@ export default function ContactForm() {
 
           {/* Left Side: Title & Info */}
           <div className="lg:w-2/5 text-center lg:text-left">
-            <div className="inline-block bg-tevesat-primary/5 px-4 py-1 rounded-full border border-tevesat-primary/20 mb-6 font-black uppercase text-xs tracking-widest text-tevesat-primary">
+            <div className="inline-block bg-tevesat-primary/5 px-4 py-1 rounded-full border border-tevesat-primary/20 mb-6 font-black uppercase text-xs tracking-widest text-tevesat-primary-deep">
               Contacto Directo
             </div>
             <h2 className="text-4xl md:text-5xl font-black text-tevesat-tertiary-dark mb-6 leading-tight tracking-tighter italic">
               ¿LISTO PARA <br />
-              <span className="text-tevesat-primary">CONECTARTE?</span>
+              <span className="text-tevesat-primary-deep">CONECTARTE?</span>
             </h2>
             <p className="text-gray-500 text-lg font-medium max-w-md mx-auto lg:mx-0 border-l-4 border-tevesat-primary/50 pl-6 italic">
-              Déjanos tus datos y un experto te llamará en menos de <span className="text-tevesat-primary font-black">10 minutos</span> para darte la mejor oferta.
+              Déjanos tus datos y un experto te llamará en menos de <span className="text-tevesat-primary-deep font-black">10 minutos</span> para darte la mejor oferta.
             </p>
           </div>
 
@@ -114,7 +114,7 @@ export default function ContactForm() {
               {submitted ? (
                 <div className="py-12 text-center animate-fadeIn">
                   <div className="w-20 h-20 bg-tevesat-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <CheckCircle className="text-tevesat-primary" size={40} />
+                    <CheckCircle className="text-tevesat-primary-deep" size={40} />
                   </div>
                   <h3 className="text-3xl font-black text-tevesat-tertiary-dark mb-2 uppercase tracking-tighter">¡LISTO!</h3>
                   <p className="text-gray-400 font-medium">Pronto un asesor te contactará.</p>
@@ -192,7 +192,7 @@ export default function ContactForm() {
                   <button
                     type="submit"
                     disabled={loading}
-                    className="w-full bg-tevesat-primary text-white py-5 rounded-2xl font-black uppercase tracking-[0.2em] text-xs hover:bg-tevesat-primary-light transition-all duration-300 shadow-xl shadow-tevesat-primary/30 disabled:opacity-50"
+                    className="w-full bg-tevesat-primary text-tevesat-tertiary-dark py-5 rounded-2xl font-black uppercase tracking-[0.2em] text-xs hover:bg-tevesat-primary-light transition-all duration-300 shadow-xl shadow-tevesat-primary/30 disabled:opacity-50"
                   >
                     {loading ? 'ENVIANDO...' : 'SOLICITAR ASESORÍA'}
                   </button>

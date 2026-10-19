@@ -14,13 +14,13 @@ export default function TvPlans() {
         <div className="mx-auto mb-16 max-w-2xl text-center">
           <div className="mb-5 flex items-center justify-center gap-2">
             <span className="h-px w-8 bg-tevesat-primary" />
-            <span className="text-xs font-black uppercase tracking-[0.3em] text-tevesat-primary">
+            <span className="text-xs font-black uppercase tracking-[0.3em] text-tevesat-primary-deep">
               Paquetes de TV
             </span>
             <span className="h-px w-8 bg-tevesat-primary" />
           </div>
           <h2 className="text-4xl font-black leading-[1.05] tracking-tight text-tevesat-tertiary-dark md:text-5xl">
-            Elige tu paquete <span className="italic text-tevesat-primary">ideal</span>
+            Elige tu paquete <span className="italic text-tevesat-primary-deep">ideal</span>
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-lg font-medium leading-relaxed text-gray-500">
             Todos incluyen la App DGO para ver tus contenidos favoritos donde quieras.

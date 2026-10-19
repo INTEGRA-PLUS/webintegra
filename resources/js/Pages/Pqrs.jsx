@@ -33,13 +33,13 @@ export default function Pqrs() {
         />
         <div className="relative z-10 mx-auto max-w-3xl text-center">
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-tevesat-primary/20 bg-tevesat-primary/5 px-5 py-2">
-            <MessageSquareWarning size={16} className="text-tevesat-primary" />
-            <span className="text-xs font-black uppercase tracking-[0.3em] text-tevesat-primary">
+            <MessageSquareWarning size={16} className="text-tevesat-primary-deep" />
+            <span className="text-xs font-black uppercase tracking-[0.3em] text-tevesat-primary-deep">
               Atención al Cliente
             </span>
           </div>
           <h1 className="text-4xl font-black leading-[1.05] tracking-tight text-tevesat-tertiary-dark md:text-6xl">
-            <span className="italic text-tevesat-primary">PQRS</span>
+            <span className="italic text-tevesat-primary-deep">PQRS</span>
           </h1>
           <p className="mx-auto mt-3 text-sm font-black uppercase tracking-[0.2em] text-gray-400">
             Peticiones · Quejas · Reclamos · Sugerencias
@@ -61,7 +61,7 @@ export default function Pqrs() {
                 key={note.title}
                 className="flex items-start gap-4 rounded-2xl border border-gray-100 bg-white p-5 shadow-sm"
               >
-                <div className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-xl bg-tevesat-primary/5 text-tevesat-primary">
+                <div className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-xl bg-tevesat-primary/5 text-tevesat-primary-deep">
                   <note.icon size={20} strokeWidth={2.4} />
                 </div>
                 <div>

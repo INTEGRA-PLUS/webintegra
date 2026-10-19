@@ -21,16 +21,16 @@ export default function ServicesOverview() {
           {/* Izquierda: títulos de servicios */}
           <div className="space-y-12 lg:col-span-3">
             <div className="group cursor-default">
-              <h3 className="mb-4 text-xs font-black uppercase tracking-[0.3em] text-tevesat-primary">Soluciones Corporativas</h3>
-              <h2 className="text-3xl font-black leading-tight text-tevesat-tertiary-dark transition-colors duration-300 group-hover:text-tevesat-primary md:text-4xl">
+              <h3 className="mb-4 text-xs font-black uppercase tracking-[0.3em] text-tevesat-primary-deep">Soluciones Corporativas</h3>
+              <h2 className="text-3xl font-black leading-tight text-tevesat-tertiary-dark transition-colors duration-300 group-hover:text-tevesat-primary-deep md:text-4xl">
                 SERVICIOS PARA <span className="italic">EMPRESAS</span>
               </h2>
               <div className="mt-4 h-1 w-12 bg-tevesat-primary transition-all duration-700 group-hover:w-full" />
             </div>
 
             <div className="group cursor-default">
-              <h3 className="mb-4 text-xs font-black uppercase tracking-[0.3em] text-tevesat-primary">Conectividad Total</h3>
-              <h2 className="text-3xl font-black leading-tight text-tevesat-tertiary-dark transition-colors duration-300 group-hover:text-tevesat-primary md:text-4xl">
+              <h3 className="mb-4 text-xs font-black uppercase tracking-[0.3em] text-tevesat-primary-deep">Conectividad Total</h3>
+              <h2 className="text-3xl font-black leading-tight text-tevesat-tertiary-dark transition-colors duration-300 group-hover:text-tevesat-primary-deep md:text-4xl">
                 SERVICIOS PARA <span className="italic">HOGAR</span>
               </h2>
               <div className="mt-4 h-1 w-12 bg-tevesat-primary transition-all duration-700 group-hover:w-full" />
@@ -60,19 +60,19 @@ export default function ServicesOverview() {
           {/* Derecha: promesa y CTA */}
           <div className="space-y-8 lg:col-span-4 lg:pl-8">
             <div className="space-y-4">
-              <h4 className="text-sm font-black uppercase tracking-[0.2em] italic text-tevesat-primary">
+              <h4 className="text-sm font-black uppercase tracking-[0.2em] italic text-tevesat-primary-deep">
                 Nuestra Promesa
               </h4>
               <p className="text-4xl font-black leading-[0.9] tracking-tighter text-tevesat-tertiary-dark md:text-5xl">
                 SOMOS EL <br />
-                <span className="italic text-tevesat-primary">RESPALDO</span> <br />
+                <span className="italic text-tevesat-primary-deep">RESPALDO</span> <br />
                 DE NUESTROS CLIENTES
               </p>
             </div>
 
             <div className="space-y-6">
               <div className="flex items-center gap-4 text-gray-600">
-                <Globe size={24} className="flex-shrink-0 text-tevesat-primary" />
+                <Globe size={24} className="flex-shrink-0 text-tevesat-primary-deep" />
                 <p className="text-lg font-bold leading-tight text-tevesat-tertiary-dark">
                   INTERNET HOGAR Y EMPRESAS <br />
                   <span className="text-sm font-medium uppercase tracking-widest text-gray-400">Al alcance de todos, zona rural y urbana</span>
@@ -82,7 +82,7 @@ export default function ServicesOverview() {
               <a
                 href="#contacto"
                 onClick={scrollToContacto}
-                className="group flex transform items-center justify-between rounded-2xl bg-tevesat-primary px-8 py-6 font-black uppercase tracking-widest text-white shadow-xl shadow-tevesat-primary/30 transition-all duration-500 hover:scale-105 hover:bg-tevesat-primary-light active:scale-95"
+                className="group flex transform items-center justify-between rounded-2xl bg-tevesat-primary px-8 py-6 font-black uppercase tracking-widest text-tevesat-tertiary-dark shadow-xl shadow-tevesat-primary/30 transition-all duration-500 hover:scale-105 hover:bg-tevesat-primary-light active:scale-95"
               >
                 Contáctanos
                 <ArrowRight size={24} className="transition-transform duration-300 group-hover:translate-x-2" />

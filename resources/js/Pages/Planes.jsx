@@ -41,7 +41,7 @@ function FaqItem({ faq, isOpen, onToggle }) {
         className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left"
       >
         <span className="font-black text-tevesat-tertiary-dark">{faq.q}</span>
-        <span className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-tevesat-primary/10 text-tevesat-primary">
+        <span className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-tevesat-primary/10 text-tevesat-primary-deep">
           {isOpen ? <Minus size={16} strokeWidth={3} /> : <Plus size={16} strokeWidth={3} />}
         </span>
       </button>
@@ -79,13 +79,13 @@ export default function Planes() {
         />
         <div className="relative z-10 mx-auto max-w-3xl text-center">
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-tevesat-primary/20 bg-tevesat-primary/5 px-5 py-2">
-            <Zap size={16} className="text-tevesat-primary" />
-            <span className="text-xs font-black uppercase tracking-[0.3em] text-tevesat-primary">
+            <Zap size={16} className="text-tevesat-primary-deep" />
+            <span className="text-xs font-black uppercase tracking-[0.3em] text-tevesat-primary-deep">
               Nuestros Planes
             </span>
           </div>
           <h1 className="text-5xl font-black leading-[1.02] tracking-tight text-tevesat-tertiary-dark md:text-7xl">
-            Planes diseñados <span className="text-tevesat-primary italic">para ti</span>
+            Planes diseñados <span className="text-tevesat-primary-deep italic">para ti</span>
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-lg font-medium leading-relaxed text-gray-500">
             Velocidad de fibra óptica, instalación sin costo y soporte que nunca te deja solo.
@@ -107,8 +107,8 @@ export default function Planes() {
                   onClick={() => setActiveTab(key)}
                   className={`rounded-xl px-8 py-3 text-sm font-black uppercase tracking-widest transition-all duration-300 ${
                     activeTab === key
-                      ? 'bg-tevesat-primary text-white shadow-lg shadow-tevesat-primary/30'
-                      : 'text-gray-500 hover:text-tevesat-primary'
+                      ? 'bg-tevesat-primary text-tevesat-tertiary-dark shadow-lg shadow-tevesat-primary/30'
+                      : 'text-gray-500 hover:text-tevesat-primary-deep'
                   }`}
                 >
                   {PLAN_GROUPS[key].label}
@@ -131,7 +131,7 @@ export default function Planes() {
         <div className="mx-auto max-w-7xl">
           <div className="mb-16 text-center">
             <h2 className="text-3xl font-black tracking-tight text-tevesat-tertiary-dark md:text-4xl">
-              Todos los planes <span className="text-tevesat-primary italic">incluyen</span>
+              Todos los planes <span className="text-tevesat-primary-deep italic">incluyen</span>
             </h2>
           </div>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
@@ -140,7 +140,7 @@ export default function Planes() {
                 key={item.title}
                 className="rounded-3xl border border-gray-100 bg-white p-8 text-center shadow-[0_30px_70px_-30px_rgba(0,0,0,0.2)] transition-all duration-500 hover:-translate-y-2"
               >
-                <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-tevesat-primary text-white shadow-lg shadow-tevesat-primary/20">
+                <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-tevesat-primary text-tevesat-tertiary-dark shadow-lg shadow-tevesat-primary/20">
                   <item.icon size={28} strokeWidth={2.4} />
                 </div>
                 <h3 className="mb-2 text-lg font-black text-tevesat-tertiary-dark">{item.title}</h3>
@@ -155,7 +155,7 @@ export default function Planes() {
       <section className="bg-white px-4 py-24 md:px-8">
         <div className="mx-auto max-w-3xl">
           <div className="mb-12 text-center">
-            <span className="text-xs font-black uppercase tracking-[0.3em] text-tevesat-primary">
+            <span className="text-xs font-black uppercase tracking-[0.3em] text-tevesat-primary-deep">
               Preguntas Frecuentes
             </span>
             <h2 className="mt-4 text-3xl font-black tracking-tight text-tevesat-tertiary-dark md:text-4xl">
@@ -178,10 +178,10 @@ export default function Planes() {
       {/* CTA final */}
       <section className="bg-white px-4 pb-24 md:px-8">
         <div className="mx-auto max-w-5xl">
-          <div className="relative overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-tevesat-primary to-tevesat-primary-light p-10 text-center shadow-[0_40px_90px_-30px_rgba(236,50,55,0.5)] md:p-16">
+          <div className="relative overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-tevesat-primary to-tevesat-primary-light p-10 text-center shadow-[0_40px_90px_-30px_rgba(239,205,40,0.5)] md:p-16">
             <div className="pointer-events-none absolute -top-1/2 -left-1/2 h-full w-full rounded-full bg-white/10 blur-[100px]" />
             <div className="relative z-10">
-              <h2 className="text-3xl font-black leading-tight tracking-tight text-white md:text-4xl">
+              <h2 className="text-3xl font-black leading-tight tracking-tight text-tevesat-tertiary-dark md:text-4xl">
                 ¿No sabes cuál elegir?
               </h2>
               <p className="mx-auto mt-4 max-w-xl text-lg font-medium text-white/90">
@@ -191,7 +191,7 @@ export default function Planes() {
                 href={WHATSAPP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-8 inline-flex items-center justify-center gap-2 rounded-2xl bg-white px-10 py-5 font-black uppercase tracking-widest text-tevesat-primary shadow-xl transition-all duration-300 hover:scale-105 active:scale-95"
+                className="mt-8 inline-flex items-center justify-center gap-2 rounded-2xl bg-white px-10 py-5 font-black uppercase tracking-widest text-tevesat-primary-deep shadow-xl transition-all duration-300 hover:scale-105 active:scale-95"
               >
                 Hablar con un asesor
               </a>

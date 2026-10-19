@@ -30,7 +30,7 @@ export default function ChannelFinder({
       <div className="rounded-[2rem] border border-gray-100 bg-white p-7 shadow-[0_30px_70px_-30px_rgba(0,0,0,0.2)]">
         {/* Encabezado del panel */}
         <div className="mb-6 flex items-center gap-3">
-          <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-tevesat-primary text-white shadow-lg shadow-tevesat-primary/20">
+          <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-tevesat-primary text-tevesat-tertiary-dark shadow-lg shadow-tevesat-primary/20">
             <SlidersHorizontal size={20} strokeWidth={2.4} />
           </div>
           <div>
@@ -60,7 +60,7 @@ export default function ChannelFinder({
             <button
               type="button"
               onClick={() => onQueryChange('')}
-              className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 transition-colors hover:text-tevesat-primary"
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 transition-colors hover:text-tevesat-primary-deep"
               aria-label="Limpiar búsqueda"
             >
               <X size={18} />
@@ -82,8 +82,8 @@ export default function ChannelFinder({
                 onClick={() => onCategoryChange(cat)}
                 className={`rounded-full px-4 py-2 text-[11px] font-black uppercase tracking-wider transition-all duration-300 ${
                   active
-                    ? 'bg-tevesat-primary text-white shadow-md shadow-tevesat-primary/30'
-                    : 'border border-gray-200 bg-white text-gray-500 hover:border-tevesat-primary/40 hover:text-tevesat-primary'
+                    ? 'bg-tevesat-primary text-tevesat-tertiary-dark shadow-md shadow-tevesat-primary/30'
+                    : 'border border-gray-200 bg-white text-gray-500 hover:border-tevesat-primary/40 hover:text-tevesat-primary-deep'
                 }`}
               >
                 {cat}
@@ -94,9 +94,9 @@ export default function ChannelFinder({
 
         {/* Contador de resultados */}
         <div className="flex items-center gap-3 rounded-2xl bg-tevesat-primary/5 px-5 py-4">
-          <Tv2 size={20} className="text-tevesat-primary" />
+          <Tv2 size={20} className="text-tevesat-primary-deep" />
           <p className="text-sm font-bold text-tevesat-tertiary-dark">
-            <span className="text-tevesat-primary">{resultCount}</span> de {totalCount} canales
+            <span className="text-tevesat-primary-deep">{resultCount}</span> de {totalCount} canales
           </p>
         </div>
       </div>

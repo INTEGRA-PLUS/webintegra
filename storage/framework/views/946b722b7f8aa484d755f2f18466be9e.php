@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>">
 
-        <title inertia><?php echo e(config('app.name', 'INTERJAS')); ?></title>
+        <title inertia><?php echo e(config('app.name', 'Interconexiones')); ?></title>
 
         <!-- Favicon -->
         <link rel="icon" type="image/png" href="/images/empresa/logo.png">

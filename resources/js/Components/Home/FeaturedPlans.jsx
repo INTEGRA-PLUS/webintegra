@@ -20,13 +20,13 @@ export default function FeaturedPlans() {
         <div className="mx-auto mb-16 max-w-2xl text-center">
           <div className="mb-5 flex items-center justify-center gap-2">
             <span className="h-px w-8 bg-tevesat-primary" />
-            <span className="text-xs font-black uppercase tracking-[0.3em] text-tevesat-primary">
+            <span className="text-xs font-black uppercase tracking-[0.3em] text-tevesat-primary-deep">
               Nuestros Planes
             </span>
             <span className="h-px w-8 bg-tevesat-primary" />
           </div>
           <h2 className="text-4xl font-black leading-[1.05] tracking-tight text-tevesat-tertiary-dark md:text-5xl">
-            Planes diseñados <span className="text-tevesat-primary italic">para ti</span>
+            Planes diseñados <span className="text-tevesat-primary-deep italic">para ti</span>
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-lg font-medium leading-relaxed text-gray-500">
             Elige el plan perfecto para tu hogar. Velocidad de fibra óptica, instalación
@@ -45,7 +45,7 @@ export default function FeaturedPlans() {
         <div className="mt-14 text-center">
           <Link
             href="/planes"
-            className="group inline-flex items-center justify-center gap-2 rounded-2xl border-2 border-gray-200 bg-white px-8 py-4 font-black uppercase tracking-widest text-tevesat-tertiary-dark transition-all duration-300 hover:border-tevesat-primary hover:text-tevesat-primary"
+            className="group inline-flex items-center justify-center gap-2 rounded-2xl border-2 border-gray-200 bg-white px-8 py-4 font-black uppercase tracking-widest text-tevesat-tertiary-dark transition-all duration-300 hover:border-tevesat-primary hover:text-tevesat-primary-deep"
           >
             Ver todos los planes
             <ArrowRight size={20} className="transition-transform group-hover:translate-x-1" />

@@ -20,7 +20,7 @@ export default function ResultStat({ icon: Icon, label, value, unit, active = fa
     >
       <div
         className={`mb-3 flex h-11 w-11 items-center justify-center rounded-xl transition-colors ${
-          active ? 'bg-tevesat-primary text-white' : 'bg-tevesat-primary/5 text-tevesat-primary'
+          active ? 'bg-tevesat-primary text-tevesat-tertiary-dark' : 'bg-tevesat-primary/5 text-tevesat-primary-deep'
         }`}
       >
         <Icon size={20} strokeWidth={2.4} />
