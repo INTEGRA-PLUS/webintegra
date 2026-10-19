@@ -20,8 +20,7 @@ export default function ImageBanner() {
               
               <h2 className="text-5xl md:text-7xl font-black text-white mb-6 leading-[0.9] tracking-tighter uppercase italic">
                 INTERNET <br />
-                <span className="text-tevesat-primary">MÓVIL</span> <br />
-                RÁPIDO Y <br />
+                <span className="text-tevesat-primary">RÁPIDO Y</span> <br />
                 CONFIABLE.
               </h2>
               
