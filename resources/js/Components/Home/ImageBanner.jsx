@@ -5,7 +5,7 @@ export default function ImageBanner() {
     <section className="w-full bg-white">
       <div className="w-full relative overflow-hidden h-[400px] md:h-[550px] lg:h-[650px] xl:h-[600px] group">
         <img
-          src="/images/banner_red_theme.png"
+          src="/images/banner_interconexiones.png"
           alt={`Promoción ${import.meta.env.VITE_NOMBRE_EMPRESA}`}
           className="w-full h-full object-cover transition-transform duration-[2000ms] group-hover:scale-110"
         />
@@ -20,7 +20,7 @@ export default function ImageBanner() {
               
               <h2 className="text-5xl md:text-7xl font-black text-white mb-6 leading-[0.9] tracking-tighter uppercase italic">
                 INTERNET <br />
-                <span className="text-tevesat-primary-deep">MÓVIL</span> <br />
+                <span className="text-tevesat-primary">MÓVIL</span> <br />
                 RÁPIDO Y <br />
                 CONFIABLE.
               </h2>

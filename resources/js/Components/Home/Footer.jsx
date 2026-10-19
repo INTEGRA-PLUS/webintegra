@@ -149,7 +149,7 @@ export default function Footer() {
                     <MapPin size={22} strokeWidth={2.5} />
                   </div>
                   <div>
-                    <p className="text-tevesat-tertiary-dark font-black text-sm leading-snug">CR 7 16 59, Barrio Libertad</p>
+                    <p className="text-tevesat-tertiary-dark font-black text-sm leading-snug">CR 7 16 59 BRR Libertad</p>
                     <p className="text-gray-400 text-[10px] font-black uppercase tracking-widest mt-1">Dirección</p>
                   </div>
                 </div>
@@ -169,7 +169,7 @@ export default function Footer() {
 
 
           <p className="text-gray-400 font-black uppercase text-[10px] tracking-[0.3em] text-center md:text-left">
-            NIT: 901112037-1 | <span className="text-tevesat-tertiary-dark">Interconexiones Internet y TV</span>
+            NIT: 901112037-1 | <span className="text-tevesat-tertiary-dark">Razón Social: Interconexiones &amp; Comunicaciones S.A.S.</span>
           </p>
 
           <button
