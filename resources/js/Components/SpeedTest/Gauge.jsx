@@ -48,8 +48,8 @@ export default function Gauge({ value = 0, max = 500, label = 'Mbps', caption = 
         />
         <defs>
           <linearGradient id="gaugeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#f39323" />
-            <stop offset="100%" stopColor="#ecc732" />
+            <stop offset="0%" stopColor="#567484" />
+            <stop offset="100%" stopColor="#164760" />
           </linearGradient>
         </defs>
       </svg>
@@ -63,7 +63,7 @@ export default function Gauge({ value = 0, max = 500, label = 'Mbps', caption = 
         >
           {display}
         </span>
-        <span className="mt-1 text-sm font-black uppercase tracking-[0.3em] text-tevesat-primary-deep">
+        <span className="mt-1 text-sm font-black uppercase tracking-[0.3em] text-tevesat-primary">
           {label}
         </span>
         {caption && (

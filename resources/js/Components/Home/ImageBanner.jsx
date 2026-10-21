@@ -5,7 +5,7 @@ export default function ImageBanner() {
     <section className="w-full bg-white">
       <div className="w-full relative overflow-hidden h-[400px] md:h-[550px] lg:h-[650px] xl:h-[600px] group">
         <img
-          src="/images/banner_interconexiones.png"
+          src="/images/banner_azsoluciones.png"
           alt={`Promoción ${import.meta.env.VITE_NOMBRE_EMPRESA}`}
           className="w-full h-full object-cover transition-transform duration-[2000ms] group-hover:scale-110"
         />
@@ -15,7 +15,7 @@ export default function ImageBanner() {
           <div className="max-w-7xl mx-auto px-4 md:px-16 lg:px-24 w-full">
             <div className="max-w-2xl">
               <div className="inline-block bg-tevesat-primary px-6 py-2 rounded-full mb-8 animate-bounce-slow">
-                <span className="text-tevesat-tertiary-dark font-black uppercase text-xs tracking-widest italic">Oferta Limitada</span>
+                <span className="text-white font-black uppercase text-xs tracking-widest italic">Oferta Limitada</span>
               </div>
               
               <h2 className="text-5xl md:text-7xl font-black text-white mb-6 leading-[0.9] tracking-tighter uppercase italic">
@@ -28,7 +28,7 @@ export default function ImageBanner() {
                 Conéctate con la red más sofisticada del país. Planes que se adaptan a tu ritmo de vida.
               </p>
               
-              <button className="bg-white text-tevesat-tertiary-dark px-10 py-5 rounded-2xl font-black uppercase text-sm tracking-[0.2em] transform hover:scale-105 active:scale-95 transition-all shadow-2xl hover:bg-tevesat-primary hover:text-tevesat-tertiary-dark">
+              <button className="bg-white text-tevesat-tertiary-dark px-10 py-5 rounded-2xl font-black uppercase text-sm tracking-[0.2em] transform hover:scale-105 active:scale-95 transition-all shadow-2xl hover:bg-tevesat-primary hover:text-white">
                 Comienza Ahora
               </button>
             </div>

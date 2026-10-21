@@ -35,7 +35,7 @@ export default function ChannelLogo({ name }) {
 
   if (error) {
     return (
-      <span className="text-sm font-black tracking-tight text-tevesat-primary-deep">
+      <span className="text-sm font-black tracking-tight text-tevesat-primary">
         {initials(name)}
       </span>
     );

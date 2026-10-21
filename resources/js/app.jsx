@@ -10,7 +10,7 @@ import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
  * Configura Inertia.js con React
  */
 
-const appName = import.meta.env.VITE_NOMBRE_EMPRESA || 'Interconexiones';
+const appName = import.meta.env.VITE_NOMBRE_EMPRESA || 'AZ Soluciones';
 
 createInertiaApp({
   title: (title) => `${title} - ${appName}`,
@@ -22,6 +22,6 @@ createInertiaApp({
     createRoot(el).render(<App {...props} />);
   },
   progress: {
-    color: '#f39323',
+    color: '#164760',
   },
 });

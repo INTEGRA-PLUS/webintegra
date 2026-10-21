@@ -42,7 +42,7 @@ function FaqItem({ faq, isOpen, onToggle }) {
         className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left"
       >
         <span className="font-black text-tevesat-tertiary-dark">{faq.q}</span>
-        <span className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-tevesat-primary/10 text-tevesat-primary-deep">
+        <span className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-tevesat-primary/10 text-tevesat-primary">
           {isOpen ? <Minus size={16} strokeWidth={3} /> : <Plus size={16} strokeWidth={3} />}
         </span>
       </button>
@@ -66,13 +66,13 @@ export default function Faq({ faqs = DEFAULT_FAQS }) {
         {/* Encabezado */}
         <div className="mb-14 text-center">
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-tevesat-primary/20 bg-white px-5 py-2 shadow-sm">
-            <HelpCircle size={16} className="text-tevesat-primary-deep" />
-            <span className="text-xs font-black uppercase tracking-[0.3em] text-tevesat-primary-deep">
+            <HelpCircle size={16} className="text-tevesat-primary" />
+            <span className="text-xs font-black uppercase tracking-[0.3em] text-tevesat-primary">
               Preguntas Frecuentes
             </span>
           </div>
           <h2 className="text-4xl font-black leading-[1.05] tracking-tight text-tevesat-tertiary-dark md:text-5xl">
-            Resolvemos tus <span className="italic text-tevesat-primary-deep">dudas</span>
+            Resolvemos tus <span className="italic text-tevesat-primary">dudas</span>
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-lg font-medium leading-relaxed text-gray-500">
             Todo lo que necesitas saber antes de conectarte con nosotros.
@@ -95,10 +95,10 @@ export default function Faq({ faqs = DEFAULT_FAQS }) {
         <div className="mt-12 text-center">
           <p className="mb-4 text-sm font-bold text-gray-500">¿Aún tienes preguntas?</p>
           <a
-            href="https://wa.me/573203149366"
+            href="https://wa.me/573004603927"
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex items-center justify-center gap-2 rounded-2xl bg-tevesat-primary px-8 py-4 font-black uppercase tracking-widest text-tevesat-tertiary-dark shadow-xl shadow-tevesat-primary/30 transition-all duration-300 hover:scale-105 hover:bg-tevesat-primary-light active:scale-95"
+            className="group inline-flex items-center justify-center gap-2 rounded-2xl bg-tevesat-primary px-8 py-4 font-black uppercase tracking-widest text-white shadow-xl shadow-tevesat-primary/30 transition-all duration-300 hover:scale-105 hover:bg-tevesat-primary-light active:scale-95"
           >
             <MessageCircle size={20} />
             Escríbenos por WhatsApp

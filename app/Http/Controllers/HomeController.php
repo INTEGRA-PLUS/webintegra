@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Inertia\Inertia;
 
 /**
- * HomeController - Controlador principal de la página Home de Interconexiones
+ * HomeController - Controlador principal de la página Home de AZ Soluciones
  * Renderiza la página de inicio usando Inertia.js
  */
 class HomeController extends Controller

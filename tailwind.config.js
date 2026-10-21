@@ -18,8 +18,7 @@ export default {
           
           'primary-light': themeColors.COLOR_PRINCIPAL_LIGHT,
           'tertiary-dark': themeColors.COLOR_TERCIARIO_DARK,
-          // COLOR_PRINCIPAL_DEEP - Para texto sobre fondo claro. El naranja
-          // principal solo sirve como fondo, y siempre con texto oscuro encima.
+          // COLOR_PRINCIPAL_DEEP - Para texto sobre fondo claro.
           'primary-deep': themeColors.COLOR_PRINCIPAL_DEEP,
           // COLOR_ACENTO - Solo decorativo (puntos, degradados), nunca como texto.
           accent: themeColors.COLOR_ACENTO,
