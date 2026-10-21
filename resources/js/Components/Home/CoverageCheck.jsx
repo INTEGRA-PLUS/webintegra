@@ -35,7 +35,7 @@ export default function CoverageCheck() {
         >
           {/* Main Card - Banda roja CTA */}
           <div
-            className="rounded-[2.5rem] p-10 md:p-14 relative bg-gradient-to-br from-tevesat-primary to-tevesat-primary-light overflow-hidden shadow-[0_40px_90px_-30px_rgba(239,205,40,0.5)]"
+            className="rounded-[2.5rem] p-10 md:p-14 relative bg-gradient-to-br from-tevesat-primary to-tevesat-primary-light overflow-hidden shadow-[0_40px_90px_-30px_rgba(243,147,35,0.5)]"
           >
             {/* Glow effect */}
             <div className="absolute -top-1/2 -left-1/2 w-full h-full bg-white/10 rounded-full blur-[100px] pointer-events-none"></div>

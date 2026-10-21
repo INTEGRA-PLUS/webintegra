@@ -107,7 +107,7 @@ export default function Navbar() {
 
           {/* Desktop CTA Button */}
           <div className="hidden md:flex">
-            <button className="bg-tevesat-primary text-tevesat-tertiary-dark border-2 border-transparent px-8 py-3 rounded-2xl font-black uppercase text-[10px] tracking-widest hover:bg-transparent hover:border-tevesat-primary hover:text-tevesat-primary-deep transition-all duration-500 transform hover:scale-105 shadow-[0_10px_30px_rgba(239,205,40,0.3)]">
+            <button className="bg-tevesat-primary text-tevesat-tertiary-dark border-2 border-transparent px-8 py-3 rounded-2xl font-black uppercase text-[10px] tracking-widest hover:bg-transparent hover:border-tevesat-primary hover:text-tevesat-primary-deep transition-all duration-500 transform hover:scale-105 shadow-[0_10px_30px_rgba(243,147,35,0.3)]">
               Contratar
             </button>
           </div>
