@@ -53,9 +53,9 @@ export default function Navbar() {
             <Link href="/" className="flex items-center gap-3 group">
               <div className="flex items-center justify-center rounded-xl bg-white p-1 shadow-sm ring-1 ring-gray-100">
                 <img
-                  src="/images/empresa/logo.png"
+                  src="/images/empresa/logo.png?v=2"
                   alt={import.meta.env.VITE_NOMBRE_EMPRESA}
-                  className="h-9 md:h-11 w-auto object-contain group-hover:scale-105 transition-transform duration-300"
+                  className="h-11 md:h-14 w-auto object-contain group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
             </Link>

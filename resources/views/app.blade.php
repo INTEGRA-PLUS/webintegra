@@ -8,7 +8,7 @@
         <title inertia>{{ config('app.name', 'Reintechsas') }}</title>
 
         <!-- Favicon -->
-        <link rel="icon" type="image/png" href="/images/empresa/logo.png">
+        <link rel="icon" type="image/png" href="/images/empresa/logo.png?v=2">
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
