@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Tv, Trophy, Check, Star, ArrowRight } from 'lucide-react';
-import { WHATSAPP_URL } from './data/tv';
+import { CHANNELS, WHATSAPP_URL } from './data/tv';
+import LogoTile from './LogoTile';
 
 /**
  * TvPackageCard - Tarjeta de paquete IPTV con selector interactivo de
@@ -13,6 +14,7 @@ export default function TvPackageCard({ pkg }) {
   const [selected, setSelected] = useState(0);
   const recommended = pkg.recommended;
   const current = pkg.options[selected];
+  const canales = CHANNELS.filter((ch) => ch[pkg.flag]).sort((a, b) => a.name.localeCompare(b.name));
 
   return (
     <div
@@ -59,6 +61,22 @@ export default function TvPackageCard({ pkg }) {
 
       {/* Descripción */}
       <p className="mb-6 text-sm font-medium leading-relaxed text-gray-500">{pkg.description}</p>
+
+      {/* Canales incluidos: grilla de logos con desplazamiento propio */}
+      <p className="mb-3 flex items-center justify-between text-sm font-black text-tevesat-tertiary-dark">
+        <span className="flex items-center gap-2">
+          <Tv size={16} className="text-tevesat-primary" /> Canales incluidos
+        </span>
+        <span className="text-xs font-bold text-gray-400">{canales.length}</span>
+      </p>
+      <div className="mb-8 grid max-h-64 grid-cols-4 gap-x-2 gap-y-3 overflow-y-auto rounded-2xl bg-gray-50 p-3 [scrollbar-width:thin] sm:grid-cols-5 md:grid-cols-4">
+        {canales.map((ch) => (
+          <div key={ch.slug} className="flex min-w-0 flex-col items-center gap-1">
+            <LogoTile channel={ch} size="h-12" />
+            <span className="w-full truncate text-center text-[9px] font-bold text-gray-500">{ch.name}</span>
+          </div>
+        ))}
+      </div>
 
       {/* Selector de adicionales */}
       <p className="mb-3 flex items-center gap-2 text-sm font-black text-tevesat-tertiary-dark">

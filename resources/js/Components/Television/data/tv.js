@@ -83,6 +83,7 @@ export const TV_ALLIANCE = {
 /**
  * Paquetes de televisión IPTV con selector interactivo de WIN SPORTS.
  *
+ * `flag` indica qué canales de CHANNELS incluye (flex | basico | basicoPlus).
  * Cada paquete tiene `options` (adicionales de Win Sports). Al seleccionar una
  * opción, la tarjeta muestra dinámicamente su `total`. La primera opción es la
  * predeterminada (sin adicionales / valor base).
@@ -90,6 +91,7 @@ export const TV_ALLIANCE = {
 export const TV_PACKAGES = [
   {
     id: 'flex',
+    flag: 'flex',
     name: 'FLEX',
     title: 'Paquete FLEX',
     channels: '47 canales de televisión abierta y por cable',
@@ -106,6 +108,7 @@ export const TV_PACKAGES = [
   },
   {
     id: 'basico',
+    flag: 'basico',
     name: 'BÁSICO',
     title: 'Paquete BÁSICO',
     channels: '58 canales con programación completa',
@@ -121,6 +124,7 @@ export const TV_PACKAGES = [
   },
   {
     id: 'basico-plus',
+    flag: 'basicoPlus',
     name: 'BÁSICO+',
     title: 'Paquete BÁSICO+',
     channels: '83 canales premium deportivos y de cine',
