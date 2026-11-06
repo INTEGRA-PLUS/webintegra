@@ -15,9 +15,6 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 // Página de Planes
 Route::get('/planes', [HomeController::class, 'planes'])->name('planes');
 
-// Página de Televisión
-Route::get('/television', [HomeController::class, 'television'])->name('television');
-
 // Test de velocidad
 Route::get('/speedtest', [HomeController::class, 'speedtest'])->name('speedtest');
 

@@ -31,16 +31,6 @@ class HomeController extends Controller
     }
 
     /**
-     * Mostrar la página de televisión
-     *
-     * @return \Inertia\Response
-     */
-    public function television()
-    {
-        return Inertia::render('Television');
-    }
-
-    /**
      * Mostrar la página de test de velocidad
      *
      * @return \Inertia\Response

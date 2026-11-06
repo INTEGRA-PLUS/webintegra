@@ -37,7 +37,6 @@ export const HOME_PLANS = [
     tech: 'Fibra Óptica',
     features: [
       'Todo lo del Esencial',
-      'TV con DGO incluida',
       'Streaming 4K sin cortes',
       'Router de alta potencia',
     ],

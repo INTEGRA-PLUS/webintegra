@@ -3,7 +3,7 @@ import { Plus, Minus, HelpCircle, MessageCircle } from 'lucide-react';
 
 /**
  * Faq - Sección de Preguntas Frecuentes con acordeón interactivo.
- * Tema claro/blanco. Datos por defecto pensados para un ISP (internet/TV).
+ * Tema claro/blanco. Datos por defecto pensados para un ISP (internet).
  */
 
 const DEFAULT_FAQS = [
@@ -22,10 +22,6 @@ const DEFAULT_FAQS = [
   {
     q: '¿Tienen permanencia o cláusulas?',
     a: 'Nuestros planes son flexibles: puedes cambiar de plan cuando lo necesites contactando a soporte, sin penalidades por permanencia.',
-  },
-  {
-    q: '¿Puedo combinar Internet y Televisión?',
-    a: 'Sí. Puedes armar el paquete perfecto sumando Internet de fibra óptica y nuestros planes de Televisión Digital IPTV, y ahorrar al combinarlos.',
   },
   {
     q: '¿Qué pasa si presento una falla en el servicio?',

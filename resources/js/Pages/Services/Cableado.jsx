@@ -1,6 +1,6 @@
 import React from 'react';
 import ServiceLayout from '../../Layouts/ServiceLayout';
-import { Cable, Wifi, Zap, Tv, ShieldCheck, Activity } from 'lucide-react';
+import { Cable, Wifi, Zap, Globe, ShieldCheck, Activity } from 'lucide-react';
 
 export default function Cableado() {
   const items = [
@@ -20,9 +20,9 @@ export default function Cableado() {
       icon: <Zap className="w-8 h-8 text-tevesat-primary-deep" />
     },
     {
-      title: "Suministro de Internet y TV",
-      description: "Integración de servicios de conectividad de alta velocidad y televisión digital para edificios, condominios y empresas.",
-      icon: <Tv className="w-8 h-8 text-tevesat-primary-deep" />
+      title: "Suministro de Internet",
+      description: "Integración de servicios de conectividad de alta velocidad para edificios, condominios y empresas.",
+      icon: <Globe className="w-8 h-8 text-tevesat-primary-deep" />
     },
     {
       title: "Certificado de cableado y fibra",
