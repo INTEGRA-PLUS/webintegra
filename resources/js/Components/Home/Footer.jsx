@@ -95,12 +95,12 @@ export default function Footer() {
               <h4 className="text-base font-black uppercase tracking-widest text-tevesat-primary mb-8 italic">Contacto</h4>
 
               <div className="space-y-6">
-                <a href="tel:+573154808114" className="flex items-center gap-4 group">
+                <a href="tel:+573214486466" className="flex items-center gap-4 group">
                   <div className="w-12 h-12 rounded-2xl bg-white border border-gray-200 flex items-center justify-center text-tevesat-primary group-hover:bg-tevesat-primary group-hover:text-white transition-all duration-300">
                     <Phone size={22} strokeWidth={2.5} />
                   </div>
                   <div>
-                    <p className="text-tevesat-tertiary-dark font-black text-lg leading-none">315 480 8114</p>
+                    <p className="text-tevesat-tertiary-dark font-black text-lg leading-none">321 448 6466</p>
                     <p className="text-gray-400 text-[10px] font-black uppercase tracking-widest mt-1">Línea Principal / Ventas</p>
                   </div>
                 </a>
